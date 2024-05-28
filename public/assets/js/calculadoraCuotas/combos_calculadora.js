@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $.ajax({
         method: "GET",
         headers: {
@@ -9,8 +8,14 @@ $(document).ready(function () {
     }).done(function (data) {
         console.log(data);
         $.each(data, function (index, value) {
-            $('#selectPlantel').append("<option value='" + value.clave + "'>" + value
-                .descrip + "</option>");
+            if (value.clave == 5) {
+                estatus = "selected";
+            }
+            else {
+                estatus = "";
+            }
+            $('#selectPlantel').append(`<option ${estatus} value="${value.clave}">${value.descrip}</option>`);
+            getPeriodos();
         });
 
     }).fail(function () {

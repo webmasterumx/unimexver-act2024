@@ -1,8 +1,6 @@
 function llenaComboPlantel(clavePlantel) {
     $('#textCargaPreinscripcion').html('Obteniendo oferta académica..');
 
-
-
     let ruta = setUrlBase() + 'getPlanteles';
 
     $.ajax({

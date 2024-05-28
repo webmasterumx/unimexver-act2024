@@ -242,7 +242,7 @@
          *   -> formularioTrabajaUnimex
          * 
          */
-        $('#contactoHeader').click(function(event) {
+        function redirectContactHeader() {
             console.log("entra al formulario desde la parte de contacto");
             let elementForm = "formularioContactanos";
 
@@ -256,7 +256,7 @@
                 console.log("Algo salió mal");
             });
             window.open("{{ route('contacto') }}", '_blank');
-        });
+        }
 
         $('#linkSmContacto').click(function(event) {
             console.log("entra al formulario desde la parte de contacto");
@@ -274,7 +274,7 @@
             window.open("{{ route('contacto') }}", '_blank');
         });
 
-        $('#contactoBolsaTrabajo').click(function(event) {
+        function redirectContactBolsaTrabajo() {
             console.log("entra al formulario desde la parte de bolsa de trabajo");
 
             let elementForm = "formularioTrabajaUnimex";
@@ -289,7 +289,7 @@
                 console.log("Algo salió mal");
             });
             window.open("{{ route('contacto') }}", '_blank');
-        });
+        }
 
         function gerenerarMenuSm() {
             let menu = `
@@ -323,11 +323,11 @@
                                 <a id="linkSmContacto" href="#" title="¿Necesitas ayuda?">Contacto</a>
                             </li>
                             <li>
-                                <a id="linkCalculaTuBeca" style="color: #004b93;" href="#" rel="noopener"
-                                    title="Calcula tu Cuota">Calculadora de becas</a>
+                                <a id="linkCalculaTuBeca" style="color: #004b93;" href="javascript:calculadoraHeader();" rel="noopener"
+                                    title="Calcula tu Cuota">Calculadora de Cuotas</a>
                             </li>
                             <li>
-                                <a id="linkPreinscripcionEnLinea" style="color: #004b93;" href="#" rel="noopener"
+                                <a id="linkPreinscripcionEnLinea" style="color: #004b93;" href="javascript:preinscripcionHeader()" rel="noopener"
                                     title="Calcula tu Cuota">Preinscripción en línea</a>
                             </li>
                         </ul>
@@ -736,7 +736,7 @@
                                             </li>
                                         @endif
                                     @endforeach
-                                    <li style="background: none;">
+                                    {{-- <li style="background: none;">
                                         <span class="txtpequeno">DISPONIBLE SOLO EN PLANTELES METROPOLITANOS </span>
                                     </li>
                                     @foreach ($data['menus'] as $menu)
@@ -747,7 +747,7 @@
                                                 </a>
                                             </li>
                                         @endif
-                                    @endforeach
+                                    @endforeach --}}
                                 </ul>
                             </div>
                         </div>
@@ -782,7 +782,7 @@
                                     title="Servicios para nuestos Alumnos y Egresados">Alumnos Y Egresados</a>
                             </li>
                             <li>
-                                <a id="contactoHeader" href="#"
+                                <a id="contactoHeader" href="javascript:redirectContactHeader()"
                                     title="Servicios para nuestos Alumnos y Egresados">Informes</a>
                             </li>
                         </ul>
@@ -814,10 +814,10 @@
                                 <a onclick="subnav.show('subnavSchools')" title="Conoce nuestros 4 Planteles">Planteles</a>
                             </li>
                             <li class="text-center">
-                                <button id="calculadoraHeader" class="btn btn-outline-warning">CALCULADORA DE BECAS</button>
+                                <button id="calculadoraHeader" onclick="calculadoraHeader();" class="btn btn-outline-warning">CALCULADORA DE CUOTAS</button>
                             </li>
                             <li class="text-center">
-                                <button id="preinscripcionHeader" class="btn btn-outline-warning">PREINSCRIPCIÓN EN
+                                <button id="preinscripcionHeader" onclick="preinscripcionHeader()" class="btn btn-outline-warning">PREINSCRIPCIÓN EN
                                     LINEA</button>
                             </li>
                         </ul>
@@ -1222,7 +1222,7 @@
                                             </li>
                                         @endif
                                     @endforeach
-                                    <li style="background: none;">
+                                    {{-- <li style="background: none;">
                                         <span class="txtpequeno">DISPONIBLE SOLO EN PLANTELES METROPOLITANOS </span>
                                     </li>
                                     @foreach ($data['menus'] as $menu)
@@ -1233,7 +1233,7 @@
                                                 </a>
                                             </li>
                                         @endif
-                                    @endforeach
+                                    @endforeach --}}
                                 </ul>
                             </div>
                         </div>

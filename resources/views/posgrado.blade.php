@@ -67,7 +67,7 @@
                     <div class="col-12 col-md-6 mb-2 mb-md-0">
                         <div class="d-grid gap-2">
                             <a id="redireccionCTCL" href="#" class="btn btn-outline-primary">
-                                Calculadora de Becas
+                                Calculadora de Cuotas
                             </a>
                         </div>
                     </div>

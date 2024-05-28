@@ -19,7 +19,13 @@ $(document).ready(function () {
         url: setUrlBase() + "getPlanteles       ",
     }).done(function (data) {
         $.each(data, function (index, value) {
-            let option = `<option value="${value.clave}">${value.descrip}</option>`;
+            if (value.clave == 5) {
+                estatus = "selected";
+            }
+            else {
+                estatus = "";
+            }
+            let option = `<option ${estatus} value="${value.clave}">${value.descrip}</option>`;
             $('#plantelSelect').append(option);
         });
 

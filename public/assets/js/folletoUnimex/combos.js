@@ -17,10 +17,10 @@ $(document).ready(function () {
  * y muestra las carreras segun: plantel, nivel y periodo
  */
 $("select[name=peridoSelectFolleto]").change(function () {
-    
+
     $('#plantelSelectFolleto').empty();
     $("#plantelSelectFolleto").append(`<option value="" selected disabled>Selecciona el plantel</option>`);
-    
+
 
     $.ajax({
         method: "GET",
@@ -31,8 +31,13 @@ $("select[name=peridoSelectFolleto]").change(function () {
     }).done(function (data) {
         console.log(data);
         $.each(data, function (index, value) {
-            $('#plantelSelectFolleto').append("<option value='" + value.clave + "'>" + value
-                .descrip + "</option>");
+            if (value.clave == 5) {
+                estatus = "selected";
+            }
+            else {
+                estatus = "";
+            }
+            $('#plantelSelectFolleto').append(`<option ${estatus} value="${value.clave}">${value.descrip}</option>`);
         });
 
     }).fail(function () {

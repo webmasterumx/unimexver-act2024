@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculadora de Becas | UNIMEX</title>
+    <title>Calculadora de Cuotas | UNIMEX</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
     <meta name="description"
         content="Con la calculadora de becas obtén el valor de tu beca para licenciatura, especialidad o maestría. Ingresa y obtén la promoción especial">
@@ -165,7 +165,7 @@
                 <div class="col-4 text-center">
                     <a class="blog-header-logo text-decoration-none" href="#">
                         <h1 class="text-white fw-normal d-none d-md-block d-lg-block">
-                            Calculadora de Becas
+                            Calculadora de Cuotas
                         </h1>
                     </a>
                 </div>

@@ -33,7 +33,7 @@
 @if (session('elementPosicionContactForm') == 'formularioContactanos')
     @php
         $claseFormContactanos = 'active';
-        $claseModuloContactanos = 'show active';
+        $claseModuloContactanos = 'active show';
 
         $claseFormBolsaTrabajo = '';
         $claseModuloBolsaTrabajo = '';
@@ -68,8 +68,8 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button id="formularioContactanos" class="nav-link {{ $claseFormContactanos }}" id="home-tab"
-                            data-bs-toggle="tab" data-bs-target="#contact-pane" type="button" role="tab"
-                            aria-controls="contact-pane" aria-selected="true">Contáctanos</button>
+                            data-bs-toggle="tab" data-bs-target="#seccionFormContactanos" type="button" role="tab"
+                            aria-controls="seccionFormContactanos" aria-selected="true">Contáctanos</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#service-pane"
@@ -84,8 +84,8 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <button id="formularioTrabajaUnimex" class="nav-link {{ $claseFormBolsaTrabajo }}" id="disabled-tab"
-                            data-bs-toggle="tab" data-bs-target="#trabaja-pane" type="button" role="tab"
-                            aria-controls="trabaja-pane" aria-selected="false">Trabaja en
+                            data-bs-toggle="tab" data-bs-target="#seccionFormTrabajaUnimex" type="button" role="tab"
+                            aria-controls="seccionFormTrabajaUnimex" aria-selected="false">Trabaja en
                             UNIMEX®</button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -96,7 +96,7 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div id="seccionFormContactanos" class="tab-pane {{ $claseModuloContactanos }} fade border"
-                        id="contact-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                         @include('include.contactoForm')
                     </div>
                     <div class="tab-pane fade px-5 py-3 border" id="service-pane" role="tabpanel"
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <div id="seccionFormTrabajaUnimex" class="tab-pane {{ $claseModuloBolsaTrabajo }} fade px-5 py-3 border"
-                        id="trabaja-pane" role="tabpanel" aria-labelledby="trabaja-tab" tabindex="0">
+                        role="tabpanel" aria-labelledby="trabaja-tab" tabindex="0">
                         @include('forms.trabaja-unimex')
                     </div>
                     <div class="tab-pane fade px-5 py-3 border" id="sugerencia-pane" role="tabpanel"

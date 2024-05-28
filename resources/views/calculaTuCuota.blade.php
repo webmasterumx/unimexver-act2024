@@ -255,6 +255,8 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -262,11 +264,15 @@
                                 alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('assets/img/calculadora_de_cuotas/2.webp') }}" class="d-block w-100"
+                            <img src="{{ asset('assets/img/calculadora_de_cuotas/2.jpg') }}" class="d-block w-100"
                                 alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('assets/img/calculadora_de_cuotas/3.webp') }}" class="d-block w-100"
+                            <img src="{{ asset('assets/img/calculadora_de_cuotas/3.jpg') }}" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ asset('assets/img/calculadora_de_cuotas/4.jpg') }}" class="d-block w-100"
                                 alt="...">
                         </div>
                     </div>
@@ -296,7 +302,7 @@
                     </div>
                     <div class="col-12">
                         <select id="selectCarrera" name="selectCarrera" class="form-select mx-auto w-75 text-center">
-                            <option value="" selected disabled>- Selecciona una carrera -</option>
+                            <option value="" disabled> - Selecciona una carrera - </option>
                         </select>
                     </div>
                     <div id="cargador_horarios" class="col-12 text-center d-none mt-3">
