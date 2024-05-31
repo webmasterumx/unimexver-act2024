@@ -95,7 +95,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <input type="number" class="form-control" id="operacion_trabaja" name="operacion_trabaja"
-                    placeholder="Introduce el resultadio aquí" maxlength="2">
+                    placeholder="Introduce el resultado aquí" maxlength="2">
             </div>
         </div>
     </div>

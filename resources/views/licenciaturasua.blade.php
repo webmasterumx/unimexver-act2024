@@ -62,7 +62,7 @@
                     {!! $licenciatura_sua->reconocimiento !!}
                 </p>
             </div>
-            <div class="col-12  text-center">
+            <div class="col-12">
                 {!! $licenciatura_sua->objetivo !!}
             </div>
             <div class="col-12 mt-3">

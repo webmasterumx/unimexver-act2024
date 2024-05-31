@@ -42,6 +42,8 @@ $("#form_calculadora").validate({
         },
         telefonoProspecto: {
             required: "Ingresa tu telefono",
+            minlength: "El teléfono celular debe tener mínimo 10 digitos.",
+            maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
         emailProspecto: {
             required: "Ingresa tu correo",

@@ -95,7 +95,7 @@
                         </div>
                         <div class="col-12 col-md-5">
                             <input type="number" class="form-control" id="operacion_empresaOCC"
-                                name="operacion_empresaOCC" placeholder="Introduce el resultadio aquí"
+                                name="operacion_empresaOCC" placeholder="Introduce el resultado aquí"
                                 maxlength="2">
                         </div>
                     </div>

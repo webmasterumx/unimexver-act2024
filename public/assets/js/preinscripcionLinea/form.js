@@ -18,8 +18,8 @@ $("#formPreincripcion").validate({
         },
         telefono: {
             required: "Ingresa tu teléfono.",
-            minlength: "El teléfono celular debe tener mínimo 8 o 10 digitos.",
-            maxlength: "El teléfono celular debe tener máximo 8 o 10 digitos."
+            minlength: "El teléfono celular debe tener mínimo 10 digitos.",
+            maxlength: "El teléfono celular debe tener máximo 10 digitos."
         }
     },
     submitHandler: function (form) {
