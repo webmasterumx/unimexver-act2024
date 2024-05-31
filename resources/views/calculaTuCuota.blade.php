@@ -36,7 +36,7 @@
                         </div>
                     </div>
 
-                    <h5>Personaliza Tu Beca</h5>
+                    <h5>Personaliza Tu Cuota</h5>
                     <hr>
                     <div class="mb-2 p-0 col-6">
                         <input type="text" class="form-control form-control-sm" id="nombreProspecto"

@@ -251,7 +251,7 @@
             $("#carreraSelect").append(`<option value="">Carrera</option>`);
 
             $(document).ready(function() {
-                $('#exampleModal').modal('show')
+                //$('#exampleModal').modal('show')
             });
         });
     </script>
