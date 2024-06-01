@@ -4,6 +4,11 @@
     <section class="container py-5">
         <div class="row">
             <div class="col-12">
+                <h1 style="font-size: 1.438rem;" class="underlined-head">
+                    RVOES
+                </h1>
+            </div>
+            <div class="col-12">
                 <table id="example" class="table table-striped">
                     <thead>
                         <tr>
@@ -1329,7 +1334,7 @@
                     "loadingRecords": "Cargando...",
                     "processing": "Procesando...",
                     "search": "Buscar:",
-                    "zeroRecords": "Sin resultados encontrados",
+                    "zeroRecords": "No se encontraron resultados",
                     "paginate": {
                         "first": "<<",
                         "last": ">>",

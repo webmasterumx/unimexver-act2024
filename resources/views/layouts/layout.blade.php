@@ -62,7 +62,10 @@
     <!-- Inicio de Footer -->
     <footer class="bg-footer container-fluid text-center px-5 text-white">
         <div class="row">
-            <div class="col-12 col-md-12 mt-5 mb-4">
+            <div class="col-12 mt-5">
+                <p class="fs-6">SÍGUENOS</p>
+            </div>
+            <div class="col-12 col-md-12 mb-4">
                 <a href="https://www.facebook.com/UNIMEX/" target="_blank"><img
                         src="{{ asset('assets/img/social_media/facebook.png') }}" alt=""></a>
                 <a class="ms-2" href="https://twitter.com/soyUNIMEX/" target="_blank"><img
