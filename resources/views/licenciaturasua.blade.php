@@ -135,11 +135,11 @@
                     virtuales (en línea) los sábados entre 8 y 14:30 hrs.
                     Tu Asesor y la Red de Apoyo te brindarán el acompañamiento académico que necesites durante la carrera.
                     <br><br>
-                    <b>Beca del 40%</b> Te apoyamos con una beca académica desde el inicio de la carrera y cuotas muy
+                  {{--   <b>Beca del 40%</b> Te apoyamos con una beca académica desde el inicio de la carrera y cuotas muy
                     accesibles.
                     Sin gastos adicionales: incluye incorporación a la SEP, uso de plataformas, asesorías, servicio de
                     biblioteca y primera credencial de alumno.
-                    <br><br>
+                    <br><br> --}}
                     <b>Reconocimiento de Validez Oficial de Estudios</b> RVOE Federal otorgado por la SEP que garantiza que
                     tus estudios serán oficialmente válidos.
                 </p>
