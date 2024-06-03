@@ -2,6 +2,15 @@
     @csrf
     <div class="col-12">
         <h4 class="fw-normal">Bolsa de trabajo para Administrativos y Docentes</h4>
+        <p>Llena el formulario, compartenos tu CV y comentanos tu experiencia laboral.</p>
+    </div>
+    <div class="col-12 mb-3">
+        <label class="form-label badge text-bg-primary">
+            <a target="_blank" class="text-white"
+                href="https://www.occ.com.mx/empleos-en-mexico-y-el-mundo/para-trabajar-en-Universidad-Mexicana"> Conoce
+                nuestras vacantes: Aqui
+            </a>
+        </label>
     </div>
     <div class="mb-3 col-12 col-md-6">
         <label for="nombre_trabajo" class="form-label">
@@ -72,8 +81,8 @@
         <label for="puesto_interes" class="form-label">
             <i class="bi bi-person-workspace" style="color: #004b93;"></i> ¿Qué puesto te interesa?
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm" id="puesto_interes"
-            name="puesto_interes">
+        <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+            id="puesto_interes" name="puesto_interes">
         <label for="puesto_interes">Evita usar caracteres especiales.</label>
     </div>
     <div class="mb-3 col-12">

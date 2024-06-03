@@ -61,7 +61,7 @@
                             </label>
                         </div>
                         <input type="text" class="form-control form-control-sm" aria-label="Text input with radio button"
-                            id="telefonoProspecto" name="telefonoProspecto" placeholder="Telefono (Obligatorio)"
+                            id="telefonoProspecto" name="telefonoProspecto" placeholder="Teléfono (Obligatorio)"
                             maxlength="10" minlength="10">
                     </div>
                     <div class="input-group mb-2 col-12 p-0 mb-1">

@@ -8,7 +8,7 @@
                     SERVICIO SOCIAL
                 </h2>
             </div>
-            <div class="col-12 col-md-9 fs-5" >
+            <div class="col-12 col-md-9 fs-5">
                 <h4>
                     Objetivo
                 </h4>
@@ -49,4 +49,8 @@
             </div>
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    @include('include.redirecciones.outOfertaAcademica')
 @endsection

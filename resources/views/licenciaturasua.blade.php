@@ -156,8 +156,8 @@
                     ASEGURA TU LUGAR Y TU BECA, TENEMOS CUPO LIMITADO:
                 </h2>
                 <p>
-                    Debido a nuestro excelente Programa de Becas el cupo es limitado, así que te recomendamos completar tu
-                    inscripción en el ciclo deseado para asegurar tu lugar y tu beca.
+                    Debido a nuestro excelente <b>Programa Académico de corta duración</b> el cupo es limitado, así que te
+                    recomendamos completar tu inscripción en el ciclo deseado para <b>asegurar tu lugar.</b>
                 </p>
                 <ol class="ms-3">
                     <li>
@@ -179,13 +179,13 @@
                         Estas son las formas de pago:
                         <ol class="ms-4" type="a">
                             <li>
-                                Transferencia SPEI: consulta los datos del plantel seleccionado
+                                Transferencia SPEI: consulta los datos del plantel.
                             </li>
                             <li>
                                 Pago en sucursal Scotiabank, solicita la ficha con tu asesor o por WhatsApp al <a
                                     target="_blank" style="color: #de951b"
                                     href="https://wa.me/525511020290/?text=Hola!+Me+gustaría+recibir+más+información+sobre+los+programas,+cuotas+y+promociones+de+UNIMEX;+me+interesó+lo+que+vi+en+Página+Web+Metro+sobre+contacto+en+WhatsApp+(botón).+¡Gracias!">55
-                                    1102 0290.</a>
+                                    1102 0290</a>.
                             </li>
                             <li>
                                 Pago con tarjeta de débito o crédito en plantel, aceptamos Visa y Mastercard.
@@ -310,9 +310,8 @@
                             </ul>
                             <p>
                                 <br>
-                                Para apartar tu lugar y tu beca en Universidad Mexicana puedes inscribirte desde que inicias
-                                el último año del bachillerato, sólo considera que es indispensable tener aprobadas todas
-                                las materias del bachillerato antes del primer día de clases de tu Licenciatura.
+                                Es indispensable tener aprobadas todas las materias del bachillerato antes del primer día de
+                                clases de tu Licenciatura.
                             </p>
                         </div>
                     </div>

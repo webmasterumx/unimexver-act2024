@@ -258,7 +258,8 @@
             }).fail(function() {
                 console.log("Algo salió mal");
             });
-            window.open("{{ route('contacto') }}", '_blank');
+            //window.open("{{ route('contacto') }}");
+            window.location.href = "{{ route('contacto') }}";
         }
 
         $('#linkSmContacto').click(function(event) {

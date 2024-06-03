@@ -68,7 +68,7 @@
                                 <span class="input-group-text" id="inputPhone">
                                     <i class="bi bi-telephone-fill"></i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Telefono movil"
+                                <input type="text" class="form-control" placeholder="Teléfono movil"
                                     aria-label="telefono" aria-describedby="inputPhone" name="telefono" id="telefono"
                                     minlength="10" maxlength="10">
                             </div>

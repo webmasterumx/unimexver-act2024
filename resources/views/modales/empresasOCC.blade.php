@@ -45,7 +45,7 @@
                     <div class="mb-2 col-12">
                         <div class="mb-3">
                             <label for="telefono_empresaOCC" class="form-label">
-                                <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Telefono de Casa
+                                <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Teléfono de Casa
                             </label>
                             <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
                                 id="telefono_empresaOCC" name="telefono_empresaOCC" maxlength="10" minlength="10">
@@ -54,7 +54,7 @@
                     <div class="mb-2 col-12">
                         <div class="mb-3">
                             <label for="celular_empresaOCC" class="form-label">
-                                <i class="bi bi-phone-fill" style="color: #004b93;"></i> Telefono Celular
+                                <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono Celular
                             </label>
                             <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
                                 id="celular_empresaOCC" name="celular_empresaOCC" maxlength="10" minlength="10">

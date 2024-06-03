@@ -33,32 +33,32 @@ $("#servicio_alumnos").validate({
     },
     messages: {
         name_service: {
-            required: "Debes ingresar un nombre válido.",
+            required: "Nombre obligatorio.",
         },
         email_service: {
-            required: "Debes ingresar un correo válido.",
-            email: "Ingrese una dirección de E-mail correcta.",
+            required: "Correo obligatorio.",
+            email: "Dirección de E-mail invalida.",
         },
         phone_casa_service: {
-            required: "Teléfono requerido.",
-            minlength: "Debes ingresar el número a 10 digitos.",
-            maxlength: "Debes ingresar el número a 10 digitos."
+            required: "Teléfono obligatorio.",
+            minlength: "El número de teléfono debe tener mínimo 10 digitos.",
+            maxlength: "El número de teléfono debe tener máximo 10 digitos."
         },
         movil_service: {
-            required: "Celular requerido.",
-            minlength: "Debes ingresar el número a 10 digitos.",
-            maxlength: "Debes ingresar el número a 10 digitos."
+            required: "Celular obligatorio.",
+            minlength: "El número de celular debe tener mínimo 10 digitos.",
+            maxlength: "El número de celular debe tener máximo 10 digitos."
         },
         asunto_service: {
-            required: "Por favor, introduce un asunto.",
+            required: "Asunto obligatorio.",
         },
         matricula_service: {
-            required: "Su matrícula es obligatoria.",
-            minlength: "Su matrícula debe tener mínimo 11 digitos.",
-            maxlength: "Su matrícula debe tener máximo 11 digitos."
+            required: "Matrícula obligatoria.",
+            minlength: "La matrícula debe tener mínimo 11 digitos.",
+            maxlength: "La matrícula debe tener máximo 11 digitos."
         },
         mensaje_service: {
-            required: "Debe de ingresar su mensaje.",
+            required: "Mensaje obligatorio.",
         }
     },
     submitHandler: function (form) {
@@ -174,24 +174,24 @@ $("#form_contacto").validate({
     },
     messages: {
         nombre_prospecto: {
-            required: "Nombre requerido.",
+            required: "Nombre obligatorio.",
         },
         apellidos_prospecto: {
-            required: "Apellidos requeridos.",
+            required: "Apellidos obligatorios.",
         },
         mail_prospecto: {
             required: "Correo obligatorio.",
-            email: "Ingresa un formato valido de correo."
+            email: "Dirección de E-mail invalida."
         },
         celular_prospecto: {
             required: "Teléfono celular obligatorio.",
-            minlength: "Numero celular de 10 dig minimo.",
-            maxlength: "Numero celular de 10 dig maximo."
+            minlength: "El número de celular debe tener mínimo 10 digitos.",
+            maxlength: "El número de celular debe tener máximo 10 digitos."
         },
         telefono_prospecto: {
             required: "Teléfono de casa obligatorio.",
-            minlength: "Numero teléfonico de 10 dig minimo.",
-            maxlength: "Numero teléfonico de 10 dig maximo."
+            minlength: "El número de teléfono debe tener mínimo 10 digitos.",
+            maxlength: "El número de teléfono debe tener máximo 10 digitos."
         },
         plantelSelect: {
             required: "Selecciona un plantel.",
@@ -262,19 +262,19 @@ $("#form_trabaja").validate({
     },
     messages: {
         nombre_trabajo: {
-            required: "Debe de ingresar su nombre.",
+            required: "Nombre obligatorio.",
         },
         email_trabaja: {
-            required: "El e-mail es obligatorio.",
-            email: "Ingrese una dirección de E-mail correcta.",
+            required: "Correo obligatorio.",
+            email: "Dirección de E-mail invalida."
         },
         telefono_casa_trabaja: {
-            required: "El teléfono es obligatorio.",
+            required: "Teléfono de casa obligatorio.",
             minlength: "El teléfono debe tener mínimo 10 digitos.",
             maxlength: "El teléfono debe tener máximo 10 digitos."
         },
         telefono_movil_trabaja: {
-            required: "El teléfono celular es obligatorio.",
+            required: "Teléfono celular obligatorio.",
             minlength: "El teléfono celular debe tener mínimo 10 digitos.",
             maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
@@ -285,13 +285,13 @@ $("#form_trabaja").validate({
             required: "Seleccione un nivel escolar para continuar.",
         },
         cv_trabaja: {
-            required: "Por favor, compartenos tu CV.",
+            required: "CV obligatorio.",
         },
         puesto_interes: {
-            required: "Debe de ingresar un puesto de interés.",
+            required: "Puesto de interés obligatorio.",
         },
         experiencia_trabaja: {
-            required: "Debes de ingresar tu experiencia laboral.",
+            required: "Experiencia laboral obligatoria.",
         },
     },
     submitHandler: function (form) {
@@ -399,11 +399,11 @@ $("#form_quejaSugerencia").validate({
     },
     messages: {
         nombre_qys: {
-            required: "Debe de ingresar su nombre",
+            required: "Nombre obligatorio.",
         },
         mail_qys: {
-            required: "El e-mail es obligatorio.",
-            email: "Ingrese una dirección de e-mail correcta.",
+            required: "Correo obligatorio.",
+            email: "Dirección de E-mail invalida."
         },
         telefono_casa_qys: {
             required: "El teléfono es obligatorio.",
@@ -421,10 +421,10 @@ $("#form_quejaSugerencia").validate({
             maxlength: "Su matrícula debe tener máximo 11 digitos."
         },
         asunto_qys: {
-            required: "Por favor, introduce un asunto.",
+            required: "Asunto obligatorio.",
         },
         mensaje_qys: {
-            required: "Debe de ingresar su mensaje.",
+            required: "Mensaje obligatorio.",
         }
     },
     submitHandler: function (form) {
@@ -532,14 +532,14 @@ $("#form_empresasOCC").validate({
     },
     messages: {
         nombre_empresaOCC: {
-            required: "Debe de ingresar el nombre de su empresa.",
+            required: "Nombre de su empresa es obligatoria.",
         },
         contacto_empresaOCC: {
-            required: "Debe de ingresar el nombre de su contacto.",
+            required: "Nombre de su contacto es obligatorio.",
         },
         email_empresaOCC: {
-            required: "E-mail obligatoria.",
-            email: "Formato de correo incorrecto.",
+            required: "Correo obligatorio.",
+            email: "Dirección de E-mail invalida."
         },
         telefono_empresaOCC: {
             required: "Teléfono requerido.",
@@ -547,18 +547,18 @@ $("#form_empresasOCC").validate({
             maxlength: "El teléfono debe tener máximo 8 o 10 digitos."
         },
         celular_empresaOCC: {
-            required: "Celular requerido.",
+            required: "Teléfono celular requerido.",
             minlength: "El teléfono celular debe tener mínimo 10 digitos.",
             maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
         razon_empresaOCC: {
-            required: "Debe de ingresar su razón social."
+            required: "Razón social obligatoria."
         },
         rfc_empresaOCC: {
-            required: "Debe de ingresar su RFC",
+            required: "RFC obligatorio.",
         },
         comentarios_empresaOCC: {
-            required: "Debe de ingresar sus comentarios.",
+            required: "Comentarios obligatorios.",
         }
     },
     submitHandler: function (form) {
