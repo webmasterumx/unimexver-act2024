@@ -25,6 +25,17 @@ class UnimexController extends Controller
 
     public function inicio(): View
     {
+
+        if (isset($_REQUEST['utm_source']) || $_REQUEST['utm_medium'] || $_REQUEST['utm_campaign']) {
+            dd($_REQUEST['utm_source']);
+        }
+
+       
+        /**
+         * ruta con utm incluidas
+         * 
+         * https://unimex.edu.mx/?utm_source=google&utm_medium=cpc&utm_campaign=2024+2&utm_term=brand&utm_content=metro&gad_source=1&gclid=EAIaIQobChMIjr6tgJCkhQMVDDutBh3jTg1eEAAYASAAEgLC8_D_BwE
+         */
         //$listaCarreras = DB::table('c_carreras')->orderBy('titulo', 'asc')->get();
         $listaCarreras = CCarreras::all();
         $banners = Banner::where('ubicacion', 0)->orWhere('ubicacion', 2)->orderBy('orden', 'ASC')->get();

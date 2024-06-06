@@ -268,8 +268,8 @@
 
                     $('#correoInscripcion').val(data.email);
                     $('#nombreInscripcion').val(data.nombre);
-                    $('#apellidoPatInscripcion').val(data.apellido_mat);
-                    $('#apellidoMatInscripcion').val(data.apellido_pat);
+                    $('#apellidoPatInscripcion').val(data.apellido_pat);
+                    $('#apellidoMatInscripcion').val(data.apellido_mat);
                     $('#telefonoInscripcion').val(data.telefono);
                     $('#telefonoCelInscripcion').val(data.celular);
                     $('#calleInscripcion').val(data.calle);

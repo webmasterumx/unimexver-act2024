@@ -135,7 +135,7 @@
                     virtuales (en línea) los sábados entre 8 y 14:30 hrs.
                     Tu Asesor y la Red de Apoyo te brindarán el acompañamiento académico que necesites durante la carrera.
                     <br><br>
-                  {{--   <b>Beca del 40%</b> Te apoyamos con una beca académica desde el inicio de la carrera y cuotas muy
+                    {{--   <b>Beca del 40%</b> Te apoyamos con una beca académica desde el inicio de la carrera y cuotas muy
                     accesibles.
                     Sin gastos adicionales: incluye incorporación a la SEP, uso de plataformas, asesorías, servicio de
                     biblioteca y primera credencial de alumno.
@@ -261,8 +261,10 @@
                 <h2 style="font-size: 1.50rem;" class="underlined-head text-uppercase text-white">
                     LICENCIATURA ABIERTA EN {{ $licenciatura_sua->titulo }}
                 </h2>
+                <p class="text-center">
+                    Campo Laboral
+                </p>
                 <p class="text-justify">
-                    Campo Laboral <br>
                     {{ $licenciatura_sua->campo_laboral }}
                 </p>
             </div>

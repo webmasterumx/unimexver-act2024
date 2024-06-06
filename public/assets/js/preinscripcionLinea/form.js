@@ -13,11 +13,11 @@ $("#formPreincripcion").validate({
     },
     messages: {
         correo: {
-            required: "Ingresa tu correo.",
-            email: "Formato de correo incorrecto.",
+            required: "Correo obligatorio.",
+            email: "Ingresa un formato valido de correo."
         },
         telefono: {
-            required: "Ingresa tu teléfono.",
+            required: "Teléfono obligatorio.",
             minlength: "El teléfono celular debe tener mínimo 10 digitos.",
             maxlength: "El teléfono celular debe tener máximo 10 digitos."
         }
@@ -150,62 +150,62 @@ $("#formPromoPreinscripcion").validate({
     },
     messages: {
         nombreInscripcion: {
-            required: "Ingresa tu nombre(s).",
+            required: "Nombre(s) obligatorio(s)",
         },
         apellidoPatInscripcion: {
-            required: "Ingresa tu apellido paterno.",
+            required: "Apellido paterno obligatorio.",
         },
         apellidoMatInscripcion: {
-            required: "Ingresa tu apellido materno.",
+            required: "Apellido materno obligatorio.",
         },
         diaNacimiento: {
-            required: "Día requerido.",
+            required: "Día obligatorio.",
         },
         mesNacimiento: {
-            required: "Mes requerido.",
+            required: "Mes obligatorio.",
         },
         yearNacimiento: {
-            required: "Año requerido.",
+            required: "Año obligatorio.",
         },
         telefonoInscripcion: {
-            required: "Ingresa un número de teléfono.",
-            minlength: "El teléfono celular debe tener mínimo 8 o 10 digitos.",
-            maxlength: "El teléfono celular debe tener máximo 8 o 10 digitos."
+            required: "Número de teléfono obligatorio.",
+            minlength: "El teléfono debe tener mínimo 10 digitos.",
+            maxlength: "El teléfono debe tener máximo 10 digitos."
         },
         telefonoCelInscripcion: {
-            required: "Ingresa un número de celular.",
-            minlength: "El teléfono celular debe tener mínimo 8 o 10 digitos.",
-            maxlength: "El teléfono celular debe tener máximo 8 o 10 digitos."
+            required: "Número de celular obligatorio.",
+            minlength: "El teléfono celular debe tener mínimo 10 digitos.",
+            maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
         calleInscripcion: {
-            required: "Calle requerida.",
+            required: "Calle obligatoria.",
         },
         numeroInscripcion: {
-            required: "Número requerido.",
+            required: "Número obligatorio.",
         },
         coloniaInscripcion: {
-            required: "Colonia requerida.",
+            required: "Colonia obligatoria.",
         },
         estadoInscripcion: {
-            required: "Estado requerido.",
+            required: "Estado obligatorio.",
         },
         municipioInscripcion: {
-            required: "Municipio requerido.",
+            required: "Municipio obligatorio.",
         },
         plantelSelect: {
-            required: "Plantel requerido.",
+            required: "Plantel obligatorio.",
         },
         periodoSelect: {
-            required: "Periodo requerido.",
+            required: "Periodo obligatorio.",
         },
         nivelSelect: {
-            required: "Nivel requerido.",
+            required: "Nivel obligatorio.",
         },
         carreraSelect: {
-            required: "Carrera requerida.",
+            required: "Carrera obligatoria.",
         },
         horarioSelect: {
-            required: "Horario requerido.",
+            required: "Horario obligatorio.",
         }
     },
     submitHandler: function (form) {

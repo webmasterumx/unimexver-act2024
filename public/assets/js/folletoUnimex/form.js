@@ -19,20 +19,20 @@ $("#form_folleto").validate({
     },
     messages: {
         peridoSelectFolleto: {
-            required: "Periodo requerido",
+            required: "Periodo obligatorio.",
         },
         plantelSelectFolleto: {
-            required: "Plantel requerido",
+            required: "Plantel obligatorio.",
         },
         nombreFolleto: {
-            required: "Nombre requerido",
+            required: "Nombre obligatorio",
         },
         correoFolleto: {
-            required: "Correo requerido",
-            email: "Formato de correo incorrecto"
+            required: "Correo obligatorio",
+            email: "Ingresa un formato valido de correo."
         },
         celularFolleto: {
-            required: "Teléfono celular requerido",
+            required: "Teléfono obligatorio.",
         }
     },
     submitHandler: function (form) {

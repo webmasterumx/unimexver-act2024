@@ -399,7 +399,7 @@ function enviarDetallesHorarioBeca() {
         console.log(data);
         Swal.fire({
             icon: "success",
-            text: "Los detalles de tu beca han sido mandados a tu correo.",
+            text: "Los detalles de tu Beca se han enviado a tu correo.",
         });
     }).fail(function () {
         console.log("Algo salió mal");

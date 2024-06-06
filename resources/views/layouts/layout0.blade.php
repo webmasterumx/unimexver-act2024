@@ -158,7 +158,7 @@
         <header class="border-bottom lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="" href="#"><img class="ms-4"
+                    <a href="{{ route('inicio') }}"><img class="ms-4"
                             src="{{ asset('assets/img/header/logo-2020.webp') }}" alt=""
                             style="width: 200px;"></a>
                 </div>

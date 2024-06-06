@@ -42,6 +42,9 @@ function estadoCampos(estado) {
     $("#nivelSelect").prop("disabled", estado);
     $("#carreraSelect").prop("disabled", estado);
     $("#horarioSelect").prop("disabled", estado);
+    $("#diaNacimiento").prop("disabled", estado);
+    $("#mesNacimiento").prop("disabled", estado);
+    $("#yearNacimiento").prop("disabled", estado);
 }
 
 function agregarProspecto() {
