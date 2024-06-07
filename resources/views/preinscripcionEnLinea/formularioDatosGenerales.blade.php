@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class=" col-12 col-lg-8"></div>
-                        <div class="col-12 col-lg-3">
+                        <div class="col-12 col-lg-4">
                             <div class="mb-3">
                                 <label style="color: #00539a !important;" for="nombreInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span>
@@ -35,7 +35,7 @@
                                     value="">
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3">
+                        <div class="col-12 col-lg-2">
                             <div class="mb-3">
                                 <label style="color: #00539a !important;" for="apellidoPatInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span>
@@ -44,7 +44,7 @@
                                     name="apellidoPatInscripcion">
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3">
+                        <div class="col-12 col-lg-2">
                             <div class="mb-3">
                                 <label style="color: #00539a !important;" for="apellidoMatInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span>
@@ -53,14 +53,14 @@
                                     name="apellidoMatInscripcion">
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3">
+                        <div class="col-12 col-lg-4">
                             <div class="row">
                                 <div class="col-12 mb-2">
                                     <label style="color: #00539a !important;" for="" class="form-label m-0">
                                         <span style="color: red !important;">*</span> Fecha de Nacimiento
                                     </label>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div class="col-12 col-lg-3">
                                     <select id="diaNacimiento" name="diaNacimiento" class="form-select"
                                         aria-label="Default select example">
                                         <option value="" selected>Dia</option>
@@ -69,7 +69,7 @@
                                         @endfor
                                     </select>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div class="col-12 col-lg-3">
                                     <select id="mesNacimiento" name="mesNacimiento" class="form-select"
                                         aria-label="Default select example">
                                         <option value="" selected>Mes</option>
@@ -87,7 +87,7 @@
                                         <option value="12">12</option>
                                     </select>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div class="col-12 col-lg-6">
                                     <select id="yearNacimiento" name="yearNacimiento" class="form-select">
                                         <option value="" selected>Año</option>
                                         @for ($i = 1970; $i <= 2004; $i++)
