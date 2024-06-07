@@ -26,9 +26,9 @@ class UnimexController extends Controller
     public function inicio(): View
     {
 
-        if (isset($_REQUEST['utm_source']) || $_REQUEST['utm_medium'] || $_REQUEST['utm_campaign']) {
+      /*   if (isset($_REQUEST['utm_source']) || $_REQUEST['utm_medium'] || $_REQUEST['utm_campaign']) {
             dd($_REQUEST['utm_source']);
-        }
+        } */
 
        
         /**
