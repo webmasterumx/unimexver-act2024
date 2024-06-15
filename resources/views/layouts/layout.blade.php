@@ -685,7 +685,7 @@
                                         <span class="txtpequeno">DISPONIBLE SOLO EN PLANTELES METROPOLITANOS</span>
                                     </li>
                                     @foreach ($data['menus'] as $menu)
-                                        @if ($menu->estado == 2)
+                                        @if ($menu->estado == 2 && $menu->mostrar == 1)
                                             <li>
                                                 <a href="{{ route('licenciatura', $menu->slug) }}">
                                                     {{ $menu->nombre }}

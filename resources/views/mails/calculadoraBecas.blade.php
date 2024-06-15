@@ -374,16 +374,23 @@
                             <td class="wrapper">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td> <img src="'.$logoimg.'" style="width:35%;" /></td>
+                                        <td> <img src="{{ asset('assets/img/header/logo-2020.webp') }}"
+                                                style="width:35%;" /></td>
                                     </tr>
                                     <tr>
                                         <td class="align-justify">
                                             <br />
-                                            <p>Número de Folio: <b> {{ session('datoCincoCalculadora') }} </b><br /><br />
-                                                ¡Felicidades! <b> {{ session('datoUnoCalculadora') . ' ' .session('datoDosCalculadora') }} </b> ya diste el primer paso para
+                                            <p>Número de Folio: <b> {{ session('datoCincoCalculadora') }}
+                                                </b><br /><br />
+                                                ¡Felicidades! <b>
+                                                    {{ session('datoUnoCalculadora') . ' ' . session('datoDosCalculadora') }}
+                                                </b> ya diste el primer paso para
                                                 cambiar tu vida.
-                                                <br /><br />Has enviado tu solicitud para cursar <b>  </b> </b> <b></b> en el Plantel <b>  </b> para
-                                                iniciar tus estudios en <b>  </b>
+                                                <br /><br />Has enviado tu solicitud para cursar la<b>
+                                                    {{ session('nombreNivel') }} </b> en el Plantel <b>
+                                                    {{ session('nombrePlantel') }}
+                                                </b> para
+                                                iniciar tus estudios en <b> {{ session('nombrePeriodo') }} </b>
                                             </p><br>
                                             <table border="0" cellpadding="0" cellspacing="0">
                                                 <tbody>
@@ -449,11 +456,11 @@
 
                                                                             configuración para facilitar la
                                                                             recepción).<br><br>
-                                                                           {{--  Si deseas comunicarte con un asesor, marca
+                                                                            Si deseas comunicarte con un asesor, marca
                                                                             al:
-                                                                            <strong><u>'.$telPlan.'</u></strong>.<br>
+                                                                            <strong><u>{{ session('telefonoPlanCorreo') }}</u></strong>.<br>
                                                                             Visítanos en:
-                                                                            <strong><u>'.$dirPlan.'</u></strong> --}}
+                                                                            <strong><u>{{ session('plantelDir') }}</u></strong>
                                                                             <br>
                                                                         </td>
                                                                     </tr>
@@ -478,7 +485,9 @@
                                                     </p>
                                                 </tbody>
                                             </table>
-                                            <p class="legals">  </p>
+                                            <p class="legals">
+                                                {!! session('legales') !!}
+                                            </p>
                                         </td>
                                     </tr>
                                 </table>
@@ -492,16 +501,17 @@
                         <table border="0" cellpadding="0" cellspacing="0" style="font-size:9px">
                             <tr>
                                 <td class="content-block">
-                                    <span class="apple-link">Universidad Mexicana Plantel '.$plantelcor.', '.$dirPlan.'
+                                    <span class="apple-link">Universidad Mexicana Plantel
+                                        {{ session('nombrePlantel') }}, {{ session('plantelDir') }}
                                     </span><br>
                                     <br>Teléfonos:<br />
-                                    '.$telPlan.'<br />
                                     <br />
+                                    {{ session('telefonoPlanCorreo') }}
                                 </td>
                             </tr>
                             <tr>
                                 <td class="content-block powered-by">
-                                    Email: '. $correocontacto .'
+                                    Email: {{ session('emailPlantel') }}
                                 </td>
                             </tr>
                         </table>

@@ -124,7 +124,7 @@
                             Para mayor información dirigirse a:
                             <br><br>
                             CENEVAL Av. Camino al Desierto de los Leones No. 19, Col. San Ángel, Del. Álvaro Obregón
-                            México, DF 01000 Teléfono: 53-22-92-00 / 53-22-54-80 Ext. 1093 <a
+                            México, DF 01000 Teléfono: 53-22-92-00 / 53-22-54-80 Ext. 1093 <a target="_blank"
                                 href="https://ceneval.edu.mx">www.ceneval.edu.mx</a>
                         </p>
                     </div>

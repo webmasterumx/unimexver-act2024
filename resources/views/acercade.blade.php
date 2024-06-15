@@ -67,3 +67,5 @@
     </section>
     <!-- Fin de Sección de Recomendaciones -->
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

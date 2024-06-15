@@ -242,6 +242,8 @@
     </section>
     <!-- Fin de temario de especialidad y maestria -->
 
+    @include('include.folletoForm')
+
     <!-- Inicio de la Sección de Contacto -->
     @include('include.contactoForm')
     <!-- Fin de la Sección de Contacto -->
@@ -471,9 +473,42 @@
             window.open("{{ route('preinscripcion.linea') }}", '_blank');
         });
 
+        function getCarreraPosicion() {
+            let carreraPosicionado = "{{ $posgrado->titulo }}";
+
+            return carreraPosicionado;
+        }
+
+        function getNivelPosicion() {
+            let nivelPosicionado = 2;
+
+            return nivelPosicionado;
+        }
+
+        function getNivelPagina() {
+            let nivelPosicionado = 3;
+
+            return nivelPosicionado;
+        }
+
         var nivelPosicionado = "Especialidad";
         var carreraPosicionado = "{{ $posgrado->titulo }}";
+
+        $('#aceptarAvisoPrivacidadFolleto').on('click', function() {
+            if ($(this).is(':checked')) {
+                // Hacer algo si el checkbox ha sido seleccionado
+                //console.log("El checkbox con valor " + $(this).val() + " ha sido seleccionado");
+                $('#descargaFolleto').attr('disabled', false);
+            } else {
+                // Hacer algo si el checkbox ha sido deseleccionado
+                //console.log("El checkbox con valor " + $(this).val() + " ha sido deseleccionado");
+                $('#descargaFolleto').attr('disabled', true);
+            }
+        });
     </script>
+
+    <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
+    <script src="{{ asset('assets/js/folletoUnimex/form.js') }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection

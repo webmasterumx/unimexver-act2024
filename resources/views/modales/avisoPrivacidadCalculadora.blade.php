@@ -1,7 +1,7 @@
 <!-- Modal -->
 <div class="modal fade" id="avisoPrivacidadCalculadora" tabindex="-1" aria-labelledby="avisoPrivacidadCalculadoraLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-lg modal-dialog- tered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header" style="background: #337ab7; color: #ffff;">
                 <h1 class="modal-title fs-5" id="avisoPrivacidadCalculadoraLabel">Aviso de Privacidad</h1>

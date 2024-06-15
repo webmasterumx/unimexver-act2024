@@ -78,3 +78,5 @@
     </section>
     <!-- Fin de Opciones para Titularse -->
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

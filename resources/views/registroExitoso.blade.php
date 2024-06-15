@@ -32,3 +32,5 @@
         </div>
     </section>
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

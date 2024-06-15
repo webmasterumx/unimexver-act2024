@@ -37,15 +37,15 @@ $("#servicio_alumnos").validate({
         },
         email_service: {
             required: "Correo obligatorio.",
-            email: "Ingresa un formato valido de correo."
+            email: "Ingrese una dirección de E-mail correcta.",
         },
         phone_casa_service: {
-            required: "Teléfono obligatorio.",
+            required: "Teléfono requerido.",
             minlength: "Debes ingresar el número a 10 digitos.",
             maxlength: "Debes ingresar el número a 10 digitos."
         },
         movil_service: {
-            required: "Teléfono celular obligatorio.",
+            required: "Celular requerido.",
             minlength: "Debes ingresar el número a 10 digitos.",
             maxlength: "Debes ingresar el número a 10 digitos."
         },
@@ -53,7 +53,7 @@ $("#servicio_alumnos").validate({
             required: "Asunto obligatorio.",
         },
         matricula_service: {
-            required: "Matrícula obligatoria.",
+            required: "Su matrícula es obligatoria.",
             minlength: "Su matrícula debe tener mínimo 11 digitos.",
             maxlength: "Su matrícula debe tener máximo 11 digitos."
         },
@@ -269,12 +269,12 @@ $("#form_trabaja").validate({
             email: "Ingresa un formato valido de correo."
         },
         telefono_casa_trabaja: {
-            required: "El teléfono es obligatorio.",
+            required: "Teléfono obligatorio.",
             minlength: "El teléfono debe tener mínimo 10 digitos.",
             maxlength: "El teléfono debe tener máximo 10 digitos."
         },
         telefono_movil_trabaja: {
-            required: "El teléfono celular es obligatorio.",
+            required: "Teléfono celular obligatorio.",
             minlength: "El teléfono celular debe tener mínimo 10 digitos.",
             maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
@@ -399,32 +399,32 @@ $("#form_quejaSugerencia").validate({
     },
     messages: {
         nombre_qys: {
-            required: "Debe de ingresar su nombre",
+            required: "Nombre obligatorio.",
         },
         mail_qys: {
-            required: "El e-mail es obligatorio.",
+            required: "Correo obligatorio.",
             email: "Ingresa un formato valido de correo."
         },
         telefono_casa_qys: {
-            required: "El teléfono es obligatorio.",
+            required: "Teléfono obligatorio.",
             minlength: "El teléfono debe tener mínimo 10 digitos.",
             maxlength: "El teléfono debe tener máximo 10 digitos."
         },
         telefono_movil_qys: {
-            required: "El teléfono celular es obligatorio.",
+            required: "Teléfono celular obligatorio.",
             minlength: "El teléfono celular debe tener mínimo 10 digitos.",
             maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
         matricula_qys: {
-            required: "Su matrícula es obligatoria.",
+            required: "Matrícula obligatoria.",
             minlength: "Su matrícula debe tener mínimo 11 digitos.",
             maxlength: "Su matrícula debe tener máximo 11 digitos."
         },
         asunto_qys: {
-            required: "Por favor, introduce un asunto.",
+            required: "Asunto obligatorio.",
         },
         mensaje_qys: {
-            required: "Debe de ingresar su mensaje.",
+            required: "Mensaje obligatorio.",
         }
     },
     submitHandler: function (form) {
@@ -539,7 +539,7 @@ $("#form_empresasOCC").validate({
         },
         email_empresaOCC: {
             required: "Correo obligatorio.",
-            email: "Ingrese una dirección de e-mail correcta.",
+            email: "Ingresa un formato valido de correo."
         },
         telefono_empresaOCC: {
             required: "Teléfono obligatorio.",

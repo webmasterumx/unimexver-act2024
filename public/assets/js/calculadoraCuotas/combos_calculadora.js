@@ -90,6 +90,11 @@ $("select[name=selectPeriodo]").change(function () {
                         console.log(data.nivel_calculadora);
                         if (value.descrip == data.nivel_calculadora) {
                             estado = "selected";
+                            if (value.clave > 1) {
+                                if ($("#selectEgresado").hasClass("d-none") === true) {
+                                    $('#selectEgresado').removeClass('d-none');
+                                }
+                            }
                         } else {
                             estado = "";
                         }
@@ -122,6 +127,7 @@ $("select[name=selectPeriodo]").change(function () {
     }
 
 });
+
 
 $("select[name=selectNivel]").change(function () {
 

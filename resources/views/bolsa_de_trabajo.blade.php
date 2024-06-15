@@ -66,3 +66,5 @@
         })();
     </script>
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

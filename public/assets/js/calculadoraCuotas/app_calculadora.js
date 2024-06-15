@@ -311,10 +311,15 @@ function getPeriodos() {
         }
     }).done(function (data) {
         console.log(data);
-        $.each(data, function (index, value) {
-            $('#selectPeriodo').append("<option value='" + value.clave + "'>" + value
+        if (data.clave == undefined || data.clave == null) {
+            $.each(data, function (index, value) {
+                $('#selectPeriodo').append("<option value='" + value.clave + "'>" + value
+                    .descrip + "</option>");
+            });
+        } else {
+            $('#selectPeriodo').append("<option value='" + data.clave + "'>" + data
                 .descrip + "</option>");
-        });
+        }
 
     }).fail(function () {
         console.log("Algo salió mal");

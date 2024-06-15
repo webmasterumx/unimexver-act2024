@@ -67,3 +67,5 @@
     </section>
     <!-- Fin de Examen de Conocimientos -->
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

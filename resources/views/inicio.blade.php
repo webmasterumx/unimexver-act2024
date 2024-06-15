@@ -258,3 +258,5 @@
 
     @include('include.redirecciones.outOfertaAcademica')
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

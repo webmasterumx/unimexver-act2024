@@ -56,3 +56,5 @@
     </section>
     <!-- Fin de Calendarios Escolares-->
 @endsection
+
+@include('include.redirecciones.outOfertaAcademica')

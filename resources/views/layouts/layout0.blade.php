@@ -162,14 +162,12 @@
                             src="{{ asset('assets/img/header/logo-2020.webp') }}" alt=""
                             style="width: 200px;"></a>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-8">
                     <a class="blog-header-logo text-decoration-none" href="#">
                         <h1 class="text-white fw-normal d-none d-md-block d-lg-block">
                             Calculadora de Cuotas
                         </h1>
                     </a>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
                 </div>
             </div>
         </header>

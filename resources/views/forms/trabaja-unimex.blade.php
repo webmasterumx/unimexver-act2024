@@ -66,10 +66,6 @@
             <option value="Posgrado">POSGRADO</option>
         </select>
     </div>
-    <div class="col-12">
-        <label class="form-label">Conoce nuestras vacantes: <a target="_blank"
-                href="https://www.occ.com.mx/empleos-en-mexico-y-el-mundo/para-trabajar-en-Universidad-Mexicana">Aqui</a></label>
-    </div>
     <div class="mb-3 col-12">
         <div class="mb-3">
             <label for="cv_trabaja" class="form-label">Adjunta tu CV:</label>

@@ -250,6 +250,8 @@
     </section>
     <!-- Fin de temario -->
 
+    @include('include.folletoForm')
+
     <!-- Inicio de la Sección de Contacto -->
     @include('include.contactoForm')
     <!-- Fin de la Sección de Contacto -->
@@ -335,21 +337,6 @@
         </div>
     </section>
     <!-- Fin de la Sección de Requisitos -->
-
-    <!-- Inicio de la Sección de disponibilidad -->
-    {{-- <section class="container-fluid px-5 py-5 bg_planteles_dis">
-        <div class="row">
-            <div class="col-12 text-center p-0 mb-3">
-                <h1 class="fw-light" style="font-size: 1.438rem; color: #ffff;">ESTA LICENCIATURA ESTÁ DISPONIBLE EN LOS
-                    PLANTELES:</h1>
-                <p class="text-white">
-                    VERACRUZ <br>
-                    {{ $licenciatura_sua->reconocimiento }}
-                </p>
-            </div>
-        </div>
-    </section> --}}
-    <!-- Fin de la Sección de disponibilidad -->
 
     <!-- Inicio del Modal Como Obtengo Mi Beca -->
     @include('modales.comoObtengoMiBeca')
@@ -472,6 +459,24 @@
             window.open("{{ route('preinscripcion.linea') }}", '_blank');
         });
 
+        function getCarreraPosicion() {
+            let carreraPosicionado = "{{ $licenciatura_sua->titulo }}";
+
+            return carreraPosicionado;
+        }
+
+        function getNivelPosicion() {
+            let nivelPosicionado = 1;
+
+            return nivelPosicionado;
+        }
+
+        function getNivelPagina() {
+            let nivelPosicionado = 2;
+
+            return nivelPosicionado;
+        }
+
         var nivelPosicionado = "Licenciatura";
         var carreraPosicionado = "{{ $licenciatura_sua->titulo }}";
 
@@ -481,7 +486,22 @@
             dots: false,
             arrows: false,
         });
+
+        $('#aceptarAvisoPrivacidadFolleto').on('click', function() {
+            if ($(this).is(':checked')) {
+                // Hacer algo si el checkbox ha sido seleccionado
+                //console.log("El checkbox con valor " + $(this).val() + " ha sido seleccionado");
+                $('#descargaFolleto').attr('disabled', false);
+            } else {
+                // Hacer algo si el checkbox ha sido deseleccionado
+                //console.log("El checkbox con valor " + $(this).val() + " ha sido deseleccionado");
+                $('#descargaFolleto').attr('disabled', true);
+            }
+        });
     </script>
+
+    <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
+    <script src="{{ asset('assets/js/folletoUnimex/form.js') }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection

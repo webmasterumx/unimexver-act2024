@@ -6,10 +6,7 @@ use App\Http\Controllers\CalculadoraCuotasController;
 use App\Http\Controllers\ExtrasUnimexController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\PreinscripcionEnLineaController;
-use App\Http\Controllers\ProspectacionController;
-use App\Http\Controllers\ProyeccionProfesionalController;
 use App\Http\Controllers\UnimexController;
-use App\Mail\CalculadoraCuotas;
 use Illuminate\Support\Facades\Route;
 use Spatie\FlareClient\Api;
 
