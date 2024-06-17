@@ -80,7 +80,28 @@ $(document).ready(function () {
                     };
                     let element = '#periodoSelect';
 
-                    postAjaxPeticionContact(ruta, data, element);
+                    $.ajax({
+                        method: "POST",
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        url: ruta,
+                        data: data
+                    }).done(function (data) {
+                        console.log(data);
+                        if (data.clave == undefined || data.clave == null) {
+                            $.each(data, function (index, value) {
+                                let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                                $(element).append(option);
+                            });
+                        } else {
+                            let option = `<option value="${data.clave}">${data.descrip}</option>`;
+                            $(element).append(option);
+                        }
+
+                    }).fail(function () {
+                        console.log("Algo salió mal");
+                    });
 
                     $("select[name=periodoSelect]").prop("disabled", false);
 
@@ -124,7 +145,28 @@ $(document).ready(function () {
         };
         let element = '#periodoSelect';
 
-        postAjaxPeticionContact(ruta, data, element);
+        $.ajax({
+            method: "POST",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: ruta,
+            data: data
+        }).done(function (data) {
+            console.log(data);
+            if (data.clave == undefined || data.clave == null) {
+                $.each(data, function (index, value) {
+                    let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                    $(element).append(option);
+                });
+            } else {
+                let option = `<option value="${data.clave}">${data.descrip}</option>`;
+                $(element).append(option);
+            }
+
+        }).fail(function () {
+            console.log("Algo salió mal");
+        });
 
         $("select[name=periodoSelect]").prop("disabled", false);
 

@@ -297,7 +297,6 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('assets/js/combosCarrera.js') }}"></script>
     <script>
         $('#temario').slick({
             infinite: false,
@@ -444,7 +443,10 @@
                 $('#descargaFolleto').attr('disabled', true);
             }
         });
+
+
     </script>
+    <script src="{{ asset('assets/js/combosCarrerasNew.js') }}"></script>
     <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
     <script src="{{ asset('assets/js/folletoUnimex/form.js') }}"></script>
 

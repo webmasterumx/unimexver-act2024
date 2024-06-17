@@ -68,11 +68,11 @@
             <div class="col-12 col-md-12 mb-4">
                 <a href="https://www.facebook.com/UNIMEX/" target="_blank"><img
                         src="{{ asset('assets/img/social_media/facebook.png') }}" alt=""></a>
-                <a class="ms-2" href="https://twitter.com/soyUNIMEX/" target="_blank"><img
-                        src="{{ asset('assets/img/social_media/instagram.png') }}" alt=""></a>
                 <a class="ms-2" href="https://www.instagram.com/universidadmexicana/" target="_blank"><img
-                        src="{{ asset('assets/img/social_media/linkedin.png') }}" alt=""></a>
+                        src="{{ asset('assets/img/social_media/instagram.png') }}" alt=""></a>
                 <a class="ms-2" href="https://mx.linkedin.com/school/universidad-mexicana/" target="_blank"><img
+                        src="{{ asset('assets/img/social_media/linkedin.png') }}" alt=""></a>
+                <a class="ms-2" href="https://twitter.com/soyUNIMEX/" target="_blank"><img
                         src="{{ asset('assets/img/social_media/twitter.png') }}" alt=""></a>
                 <a class="ms-2" href="https://www.youtube.com/user/SoyUNIMEX" target="_blank"><img
                         src="{{ asset('assets/img/social_media/youtube.png') }}" alt=""></a>
