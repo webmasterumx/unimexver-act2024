@@ -231,10 +231,17 @@ function getHorariosContacto() {
     }).done(function (data) {
 
         console.log(data);
-        $.each(data, function (index, value) {
-            option = `<option value="${value.clave}">${value.descrip}</option>`;
+        if (data.clave == undefined || data.clave == null) {
+            $.each(data, function (index, value) {
+                option = `<option value="${value.clave}">${value.descrip}</option>`;
+                $('#horarioSelect').append(option);
+            });
+        }
+        else {
+            option = `<option value="${data.clave}">${data.descrip}</option>`;
             $('#horarioSelect').append(option);
-        });
+        }
+
 
     }).fail(function () {
         console.log("Algo salió mal");
