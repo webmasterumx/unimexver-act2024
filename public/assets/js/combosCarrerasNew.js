@@ -32,6 +32,18 @@ $("select[name=plantelSelect]").change(function () {
     getNivelesContacto();
 });
 
+$("select[name=nivelSelect]").change(function () {
+    getPeriodosContacto();
+});
+
+$("select[name=periodoSelect]").change(function () {
+    getCarrerasContacto();
+});
+
+$("select[name=carreraSelect]").change(function () {
+    getHorariosContacto();
+});
+
 function getPlantelesContacto() {
 
     $.ajax({
