@@ -230,7 +230,7 @@ function getHorariosContacto() {
         },
     }).done(function (data) {
 
-        console.log(data);
+        console.log(data); 
         if (data.clave == undefined || data.clave == null) {
             $.each(data, function (index, value) {
                 option = `<option value="${value.clave}">${value.descrip}</option>`;
