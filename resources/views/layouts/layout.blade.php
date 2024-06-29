@@ -233,7 +233,7 @@
         obtenHover.addEventListener('click', () => {
 
             window.open(
-                'https://wa.me/525511020290/?text=Buenas+tardes%2C+me+pueden+ayudar+con+más+informaci%C3%B3n');
+                'https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0');
         });
 
         /*

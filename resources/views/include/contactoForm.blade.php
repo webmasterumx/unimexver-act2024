@@ -14,7 +14,7 @@
                     </a>
                     <br>
                     <img src="{{ asset('assets/img/flotante/whats-2.png') }}" alt="">
-                    <a href="https://wa.me/525511020290/?text=Hola!+Me+gustaría+recibir+más+información+sobre+los+programas,+cuotas+y+promociones+de+UNIMEX;+me+interesó+lo+que+vi+en+Página+Web+Metro+sobre+contacto+en+WhatsApp+(botón).+¡Gracias!"
+                    <a href="https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0"
                         target="_blank" style="color: #ffff;">
                         +52 1 55 1102 0290
                     </a>
