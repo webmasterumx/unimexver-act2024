@@ -21,9 +21,26 @@ $(document).ready(function () {
         url: setUrlBase() + "getPlanteles",
     }).done(function (data) {
         $.each(data, function (index, value) {
-            let option = `<option value="${value.clave}">${value.descrip}</option>`;
+
+            if (value.clave == 5) {
+                option = `<option selected value="${value.clave}">${value.descrip}</option>`;
+            } else {
+                option = `<option value="${value.clave}">${value.descrip}</option>`;
+            }
             $('#plantelSelect').append(option);
+
         });
+
+        $("select[name=nivelSelect]").prop("disabled", false);
+        let nivel = $('select[name=nivelSelect]').val();
+        let ruta = setUrlBase() + "getNiveles";
+        let plantel = $('select[name=plantelSelect]').val();
+        let info = {
+            plantel: plantel
+        }
+        let element = '#nivelSelect';
+
+        postAjaxPeticionContact(ruta, info, element);
 
     }).fail(function () {
         console.log("Algo salió mal");

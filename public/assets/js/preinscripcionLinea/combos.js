@@ -16,7 +16,7 @@ $(document).ready(function () {
      */
     $.ajax({
         method: "GET",
-        url: setUrlBase() + "getPlanteles       ",
+        url: setUrlBase() + "getPlanteles",
     }).done(function (data) {
         $.each(data, function (index, value) {
             if (value.clave == 5) {

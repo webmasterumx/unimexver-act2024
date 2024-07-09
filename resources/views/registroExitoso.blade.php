@@ -25,12 +25,35 @@
                     Ven al plantel y conócenos. <br>
                     Te esperamos de: Lunes a Viernes de 8:00 am - 9:00pm y los Sábados de 9:00 am a 4:00 pm. <br>
                     O comunícate a tu plantel para más información: <br><br>
-                    IMPRIME ESTA PANTALLA Y ENTRÉGALA EN PLANTEL PARA PRESENTAR TU EXAMEN DE UBICACIÓN SIN COSTO. <br>
+                    IMPRIME ESTA PANTALLA Y ENTRÉGALA EN PLANTEL PARA PRESENTAR TU EXAMEN DE UBICACIÓN SIN COSTO. <br><br>
+                    <button onclick="imprimir()" class="btn btn-primary text-center">Imprimir</button>
                 </p>
-                <button class="btn btn-primary">Imprimir</button>
+            
             </div>
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('assets/js/JQuery.print.js') }}"></script>
+    <script>
+        function imprimir() {
+            $.print("#registroExitoso", {
+                globalStyles: true,
+                mediaPrint: true,
+                stylesheet: null,
+                noPrintSelector: ".no-print",
+                iframe: true,
+                append: null,
+                prepend: null,
+                manuallyCopyFormValues: true,
+                deferred: $.Deferred(),
+                timeout: 750,
+                title: 'Registro Exitoso',
+                doctype: ' <!doctype html> '
+            });
+        }
+    </script>
 @endsection
 
 @include('include.redirecciones.outOfertaAcademica')
