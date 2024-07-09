@@ -36,7 +36,7 @@ class ContactoProspecto extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Registro Home Metro',
+            subject: 'Registro Home Veracruz',
         );
     }
 

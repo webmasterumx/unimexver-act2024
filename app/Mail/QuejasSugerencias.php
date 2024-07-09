@@ -29,7 +29,7 @@ class QuejasSugerencias extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Quejas y Sugerencias Metropolitano',
+            subject: 'Quejas y Sugerencias Sitio Veracruz',
         );
     }
 

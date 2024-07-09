@@ -32,7 +32,7 @@ class TrabajaUnimex extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Trabaja en UNIMEX Metro',
+            subject: 'Trabaja en UNIMEX Registro Sitio Veracruz',
         );
     }
 

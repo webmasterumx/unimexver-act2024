@@ -169,10 +169,10 @@ class FormController extends Controller
 
         if ($request->type_empresaOCC == 1) //tiene cuenta en occ
         {
-            $asunto = "Empresas Registradas en OCC";
+            $asunto = "Empresas Registradas en OCC Veracruz";
         } else //no tiene cuenta en occ
         {
-            $asunto = "Empresas por Registrar en OCC";
+            $asunto = "Empresas por Registrar en OCC Veracruz";
         }
 
         $recive = "lishanxime201099@gmail.com";

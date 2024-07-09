@@ -29,7 +29,7 @@ class ServicioAlumno extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Servicios para alumnos',
+            subject: 'Servicios para alumnos Veracruz',
         );
     }
 
