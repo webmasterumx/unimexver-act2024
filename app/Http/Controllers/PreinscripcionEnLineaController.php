@@ -220,7 +220,7 @@ class PreinscripcionEnLineaController extends Controller
                                 <table style="width: 100%">
                                     <tr>
                                         <td style="width: 50%;">Nombre del Alumno:</td>
-                                        <td style="width: 50%;">' . session('Nombre') . session('ApPaterno') . session('ApMaterno') . '</td>
+                                        <td style="width: 50%;">' . session('Nombre') . ' ' . session('ApPaterno') . ' ' . session('ApMaterno') . '</td>
                                     </tr>
                                     <tr>
                                         <td style="width: 50%;">Grado:</td>

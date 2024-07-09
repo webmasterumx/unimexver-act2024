@@ -67,7 +67,7 @@
                 <i class="bi bi-credit-card-fill" style="color: #004b93;"></i> Matrícula
             </label>
             <input style="height: 32px !important;" type="text" class="form-control" id="matricula_service"
-                name="matricula_service">
+                name="matricula_service" maxlength="11" minlength="11">
             <label for="matricula_service">Ingresa el formato correcto de tu matrícula. ej:(12345678-90)</label>
         </div>
     </div>
