@@ -135,12 +135,12 @@
                         <input disabled type="text" class="form-control text-center rounded-0" style="color: #004b93;"
                             id="nivelCrm" name="nivelCrm">
                     </div>
-                    <div class="col-12 mt-3">
+                    <div class="col-12 mt-3 no-print">
                         <p class="text-center">
                             Elige la Licenciatura de interés y después el horario que prefieres.
                         </p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 no-print">
                         <select id="selectCarrera" name="selectCarrera" class="form-select mx-auto w-75 text-center">
                             <option value="" disabled> - Selecciona una carrera - </option>
                         </select>
@@ -153,7 +153,7 @@
                             Obteniendo horarios disponibles...
                         </p>
                     </div>
-                    <div class="col-12 row" id="grupoBotones">
+                    <div class="col-12 row no-print" id="grupoBotones">
                     </div>
                     <div id="cargador_costos" class="col-12 text-center d-none mt-3 mb-3">
                         <div class="spinner-border" role="status">
@@ -178,7 +178,7 @@
                                 Enviar a correo
                             </button>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card" style="border: 1px solid #004b93">
                                 <div class="card-header text-center text-white"
                                     style="background: #004b93; font-size: 13px;">
@@ -197,8 +197,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card" style="border: 1px solid #004b93">
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="card h-100" style="border: 1px solid #004b93">
                                 <div class="card-header text-center text-white"
                                     style="background: #004b93; font-size: 13px;">
                                     4 PARCIALIDADES DE
@@ -215,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card" style="border: 1px solid #004b93">
                                 <div class="card-header text-center text-white"
                                     style="background: #004b93; font-size: 13px;">
@@ -255,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 text-end mt-3">
+                        <div class="col-12 text-end mt-3 no-print">
                             <button onclick="redireccionPreinscripcionEnLinea()" id="redireccionPEL" href="#"
                                 class="btn" style="background-color: #de951b;">
                                 PREINSCRIPCIÓN EN LINEA
@@ -300,10 +300,10 @@
                 globalStyles: true,
                 mediaPrint: true,
                 stylesheet: null,
-                noPrintSelector: " .no-print ",
+                noPrintSelector: ".no-print",
                 iframe: true,
                 append: null,
-                prepend: null,
+                prepend: null, 
                 manuallyCopyFormValues: true,
                 deferred: $.Deferred(),
                 timeout: 750,

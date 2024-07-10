@@ -29,6 +29,8 @@ $(document).ready(function () {
             $('#plantelSelect').append(option);
         });
 
+        llenarComboPeriodosSinSeleccion();
+
     }).fail(function () {
         console.log("Algo salió mal");
     });
@@ -222,4 +224,48 @@ function postAjaxPeticionContact(ruta, data, element) {
     }).fail(function () {
         console.log("Algo salió mal");
     });
+}
+
+function llenarComboPeriodosSinSeleccion() {
+    setVariablesPrecargadas();
+    $('#periodoSelect').empty();
+    $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar? </option>`);
+    $('#horarioSelect').empty();
+    $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+    let plantel = $('select[name=plantelSelect]').val();
+    let ruta = setUrlBase() + "getPeriodos";
+    let info = {
+        plantel: plantel
+    };
+    let element = '#periodoSelect';
+
+
+    $.ajax({
+        method: "POST",
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        url: ruta,
+        data: info
+    }).done(function (result) {
+        console.log(result);
+
+        if (result.clave == undefined || result.clave == null) {
+            $.each(result, function (index, value) {
+                let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                $(element).append(option);
+            });
+        }
+        else {
+            let option = `<option selected value="${result.clave}">${result.descrip}</option>`;
+            $(element).append(option);
+        }
+
+
+    }).fail(function () {
+        console.log("Algo salió mal");
+    });
+
+
+    $("select[name=periodoSelect]").prop("disabled", false);
 }
