@@ -233,7 +233,8 @@
         obtenHover.addEventListener('click', () => {
 
             window.open(
-                'https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0');
+                'https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0'
+                );
         });
 
         /*
@@ -1171,7 +1172,7 @@
                                         <span class="txtpequeno">DISPONIBLE SOLO EN PLANTELES METROPOLITANOS</span>
                                     </li>
                                     @foreach ($data['menus'] as $menu)
-                                        @if ($menu->estado == 2)
+                                       @if ($menu->estado == 2 && $menu->mostrar == 1)
                                             <li>
                                                 <a href="{{ route('licenciatura', $menu->slug) }}">
                                                     {{ $menu->nombre }}
