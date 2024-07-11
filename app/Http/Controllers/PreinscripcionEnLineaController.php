@@ -181,13 +181,15 @@ class PreinscripcionEnLineaController extends Controller
          * prueba@gmail.com
          */
 
+        dd($registro);
+        
         session(['Matricula' => $registro['Matricula']]);
         session(['FolioCrm' => $registro['FolioCrm']]);
 
         dd(session('Matricula'));
 
         SELF::getPlantelInfo();
-        
+
         return view('preinscripcionEnLinea.formaDePago');
     }
 
@@ -368,7 +370,6 @@ class PreinscripcionEnLineaController extends Controller
         session(['empresa' => $this->plantelInfo['empresa']]);
         session(['ns' => $this->plantelInfo['ns']]);
         session(['referencia' => $this->plantelInfo['referencia']]);
-
     }
 
     public function getInfoProspecto()
@@ -387,7 +388,7 @@ class PreinscripcionEnLineaController extends Controller
 
     function insertarRegistroActividadParaMatriculado()
     {
-        
+
         $date_now = date('d-m-Y');
         $date_future = strtotime('+1 day', strtotime($date_now));
         $date_future = date('Y-d-m', $date_future);
@@ -408,6 +409,6 @@ class PreinscripcionEnLineaController extends Controller
 
         $insertarActividad = app(ApiConsumoController::class)->guardarActividadBitacora($data);
 
-        var_dump($insertarActividad); 
+        var_dump($insertarActividad);
     }
 }
