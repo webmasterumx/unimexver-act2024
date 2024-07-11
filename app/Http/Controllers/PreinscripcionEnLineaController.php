@@ -181,7 +181,7 @@ class PreinscripcionEnLineaController extends Controller
          * prueba@gmail.com
          */
 
-        dd($registro);
+        dd($valores);
 
         session(['Matricula' => $registro['Matricula']]);
         session(['FolioCrm' => $registro['FolioCrm']]);
