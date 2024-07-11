@@ -184,6 +184,8 @@ class PreinscripcionEnLineaController extends Controller
         session(['Matricula' => $registro['Matricula']]);
         session(['FolioCrm' => $registro['FolioCrm']]);
 
+        dd(session('Matricula'));
+
         SELF::getPlantelInfo();
         
         return view('preinscripcionEnLinea.formaDePago');
