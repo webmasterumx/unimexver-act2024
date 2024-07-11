@@ -305,15 +305,34 @@
         <script src="{{ asset('assets/js/preinscripcionLinea/llenar_combos.js') }}"></script>
     @else
         <script>
-            let correoGuardado = "{{ session('email') }}";
-            let telefonoGuardado = "{{ session('telefono') }}";
-            $('#correoInscripcion').val(correoGuardado);
-            $('#telefonoInscripcion').val(telefonoGuardado);
+            $(document).ready(function() {
+                $('#modalCarga').modal('show');
+
+                let correoGuardado = "{{ session('email') }}";
+                let telefonoGuardado = "{{ session('telefono') }}";
+                $('#correoInscripcion').val(correoGuardado);
+                $('#telefonoInscripcion').val(telefonoGuardado);
+            });
         </script>
     @endif
     <script>
         window.onbeforeunload = function(e) {
             e.preventDefault();
         };
+
+        $('#nombreInscripcion').keypress(function(tecla) {
+            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
+                    .charCode > 90) && (tecla.charCode != 45)) return false;
+        });
+
+        $('#apellidoPatInscripcion').keypress(function(tecla) {
+            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
+                    .charCode > 90) && (tecla.charCode != 45)) return false;
+        });
+
+        $('#apellidoMatInscripcion').keypress(function(tecla) {
+            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
+                    .charCode > 90) && (tecla.charCode != 45)) return false;
+        });
     </script>
 @endsection

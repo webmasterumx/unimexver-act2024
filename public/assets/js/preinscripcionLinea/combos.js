@@ -92,6 +92,7 @@ $("select[name=periodoSelect]").change(function () {
         },
         url: setUrlBase() + "get/variables/preinscripcion",
     }).done(function (info) {
+
         if (info.carrera_preinscripcion != null) {
             recalculoDeComboNivel(ruta, data, element, info)
         }
@@ -100,17 +101,18 @@ $("select[name=periodoSelect]").change(function () {
             postAjaxPeticionContact(ruta, data, element);
         }
 
+
     }).fail(function () {
         console.log("Algo salió mal");
     });
 
-    if (nivel != '' || nivel !== '' || nivel != null) {
-        $("select[name=nivelSelect]").prop("disabled", false);
-    } else {
-        $("select[name=periodoSelect]").prop("disabled", true);
-        $("select[name=carreraSelect]").prop("disabled", true);
-        $("select[name=horarioSelect]").prop("disabled", true);
-    }
+    // if (nivel != '' || nivel !== '' || nivel != null) {
+    //     $("select[name=nivelSelect]").prop("disabled", false);
+    // } else {
+    //     $("select[name=periodoSelect]").prop("disabled", true);
+    //     $("select[name=carreraSelect]").prop("disabled", true);
+    //     $("select[name=horarioSelect]").prop("disabled", true);
+    // }
 
 });
 
@@ -259,6 +261,10 @@ function llenarComboPeriodosSinSeleccion() {
         else {
             let option = `<option selected value="${result.clave}">${result.descrip}</option>`;
             $(element).append(option);
+
+            console.log('solo un periodo ');
+
+            programarRecalculoDeNivel();
         }
 
 
@@ -268,4 +274,36 @@ function llenarComboPeriodosSinSeleccion() {
 
 
     $("select[name=periodoSelect]").prop("disabled", false);
+}
+
+function programarRecalculoDeNivel() {
+    let ruta = setUrlBase() + "getNiveles";
+    let plantel = $('select[name=plantelSelect]').val();
+    let data = {
+        plantel: plantel
+    }
+    let element = '#nivelSelect';
+
+    $.ajax({
+        method: "GET",
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        url: setUrlBase() + "get/variables/preinscripcion",
+    }).done(function (info) {
+        console.log(info);
+        $("select[name=nivelSelect]").prop("disabled", false);
+        if (info.carrera_preinscripcion != null) {
+            recalculoDeComboNivel(ruta, data, element, info)
+        }
+        else {
+
+            postAjaxPeticionContact(ruta, data, element);
+
+            $('#modalCarga').modal('hide');
+        }
+
+    }).fail(function () {
+        console.log("Algo salió mal");
+    });
 }

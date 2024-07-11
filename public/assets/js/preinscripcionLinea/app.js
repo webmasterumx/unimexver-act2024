@@ -158,6 +158,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
     }).done(function (data) {
         console.log(data);
         $('#nivelSelect').empty();
+        $("#nivelSelect").append(`<option value="" selected>Selecciona un nivel</option>`);
         $.each(data, function (index, value) {
             if (info.nivel_preinscripcion == value.descrip) {
                 option = `<option value="${value.clave}" selected>${value.descrip}</option>`;
@@ -191,6 +192,9 @@ function recalculoDeComboNivel(ruta, data, element, info) {
         }).done(function (result) {
 
             console.log(result);
+
+            $('#carreraSelect').empty();
+            $("#carreraSelect").append(`<option value="" selected>Selecciona una carrera</option>`);
 
             $.each(result, function (index, value) {
 
@@ -233,6 +237,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
                 });
 
                 $("select[name=horarioSelect]").prop("disabled", false);
+                $('#modalCarga').modal('hide');
 
             }).fail(function () {
                 console.log("Algo salió mal");
@@ -348,5 +353,7 @@ function rechazoAgendar() {
     $('#statictConfirmPreinscripcion').modal('hide');
 
     Swal.fire("¡Proceso Terminado!", "", "error");
+
+    $("#aceptarActividad").prop("disabled", false);
 
 }
