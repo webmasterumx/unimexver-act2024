@@ -181,12 +181,12 @@ class PreinscripcionEnLineaController extends Controller
          * prueba@gmail.com
          */
 
-        dd($valores);
+        //dd($valores);
 
         session(['Matricula' => $registro['Matricula']]);
         session(['FolioCrm' => $registro['FolioCrm']]);
 
-        dd(session('Matricula'));
+        //dd(session('Matricula'));
 
         SELF::getPlantelInfo();
 
