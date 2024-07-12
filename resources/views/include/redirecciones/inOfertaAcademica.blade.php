@@ -6,7 +6,10 @@
     $("#preinscripcionHeader").on('click', function() {
         preinscripcionHeader();
     });
-
+    
+    $("#redireccionCTCL").on('click', function() {
+        calculadoraHeader();
+    });
 
     $('#linkCalculaTuBeca').click(function(event) {
         console.log("click desde oferta");
