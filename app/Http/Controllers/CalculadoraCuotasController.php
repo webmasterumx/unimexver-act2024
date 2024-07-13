@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Mail;
 class CalculadoraCuotasController extends Controller
 {
 
+    public $message = "";
+    public $result  = false;
+    public $records = array();
+
     public function index(): View
     {
         return view('calculadoraDeBecas.inicio');
@@ -66,10 +70,29 @@ class CalculadoraCuotasController extends Controller
         //$recive = "lishanxime201099@gmail.com";
 
         SELF::establecerVariablesCorreo($request, $respuesta);
-        $envio =  Mail::to($request->emailProspecto)->bcc("umrec_web@unimex.edu.mx")->send(new CalculadoraCuotas());
+        try {
+
+            Mail::to($request->emailProspecto)->bcc("umrec_web@unimex.edu.mx")->send(new CalculadoraCuotas());
+
+            $statusCode     = 200;
+            $this->message  = "Correo enviado correctamente.";
+            $this->result   = true;
+        } catch (\Throwable $th) {
+            $statusCode     = 200;
+            //$this->message  = $th->getMessage();
+            $this->message  = "Error al enviar correo.";
+        } finally {
+            $response = [
+                'message'   => $this->message,
+                'result'    => $this->result,
+                'records'   => $this->records
+            ];
+        }
         $legales = SELF::definirLegales($request->selectNivel);
 
         $respuesta['legales'] = $legales;
+        $respuesta['estadoCorreo'] = $this->result;
+        $respuesta['mensajeCorreo'] =  $this->message;
 
         return response()->json($respuesta);
     }

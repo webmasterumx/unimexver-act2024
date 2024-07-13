@@ -103,6 +103,26 @@ $("#form_calculadora").validate({
                         let respuesta = JSON.parse(data);
                         console.log(respuesta);
 
+                        let estatusCorreo = respuesta.estadoCorreo;
+                        if (estatusCorreo == true) {
+                            console.log("correo enviado correctamente");
+                            $('#mensajeCorrreo').html(`
+                                <div id="alertSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+                                    ¡Correo enviado correctamente!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            `);
+                        } else {
+                            console.log("error en el envio del correo ");
+                            $('#mensajeCorrreo').html(`
+                                <div id="alertError" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    ¡Error al enviar correo!
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            `);
+                        }
+
+
                         let nombreProspecto = $('#nombreProspecto').val() + " " + $('#apellidosProspecto').val();
                         let periodoProspecto = $('select[name="selectPeriodo"] option:selected').text();
                         let nivelProspecto = $('select[name="selectNivel"] option:selected').text();
@@ -187,6 +207,25 @@ $("#form_calculadora").validate({
                 }).done(function (data) {
                     let respuesta = JSON.parse(data);
                     console.log(respuesta);
+
+                    let estatusCorreo = respuesta.estadoCorreo;
+                    if (estatusCorreo == true) {
+                        console.log("correo enviado correctamente");
+                        $('#mensajeCorrreo').html(`
+                            <div id="alertSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+                                ¡Correo enviado correctamente!
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        `);
+                    } else {
+                        console.log("error en el envio del correo ");
+                        $('#mensajeCorrreo').html(`
+                            <div id="alertError" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                ¡Error al enviar correo!
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        `);
+                    }
 
                     let nombreProspecto = $('#nombreProspecto').val() + " " + $('#apellidosProspecto').val();
                     let periodoProspecto = $('select[name="selectPeriodo"] option:selected').text();

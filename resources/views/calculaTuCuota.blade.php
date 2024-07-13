@@ -3,6 +3,9 @@
 @section('content')
     <section class="container-fluid pt-2 px-5">
         <div class="row">
+            <div class="col-12 col-md-8"></div>
+            <div id="mensajeCorrreo" class="col-12 col-md-4">
+            </div>
             <div class="col-12 col-md-3 col-lg-3 px-3" style="background-color: rgba(0, 75, 174, 30%);">
                 <form id="form_calculadora" class="row p-3">
                     @csrf
@@ -100,8 +103,8 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{ asset('assets/img/calculadora_de_cuotas/2024/2024_1.jpg') }}" class="d-block w-100"
-                                alt="...">
+                            <img src="{{ asset('assets/img/calculadora_de_cuotas/2024/2024_1.jpg') }}"
+                                class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('assets/img/calculadora_de_cuotas/2.jpg') }}" class="d-block w-100"
@@ -303,7 +306,7 @@
                 noPrintSelector: ".no-print",
                 iframe: true,
                 append: null,
-                prepend: null, 
+                prepend: null,
                 manuallyCopyFormValues: true,
                 deferred: $.Deferred(),
                 timeout: 750,
