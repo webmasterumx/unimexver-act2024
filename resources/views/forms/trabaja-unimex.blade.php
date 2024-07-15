@@ -69,7 +69,7 @@
     <div class="mb-3 col-12">
         <div class="mb-3">
             <label for="cv_trabaja" class="form-label">Adjunta tu CV:</label>
-            <input class="form-control" type="file" id="cv_trabaja" name="cv_trabaja">
+            <input class="form-control" type="file" id="cv_trabaja" name="cv_trabaja" accept=".pdf,.doc,.docx,application">
             *Se aceptan archivos Word y PDF
         </div>
     </div>

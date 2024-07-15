@@ -19,10 +19,10 @@
 
 $(document).ready(function () {
 
-    //$("select[name=nivelSelect]").prop("disabled", true);
-    //$("select[name=periodoSelect]").prop("disabled", true);
-    //$("select[name=carreraSelect]").prop("disabled", true);
-    //$("select[name=horarioSelect]").prop("disabled", true);
+    $("select[name=nivelSelect]").prop("disabled", true);
+    $("select[name=periodoSelect]").prop("disabled", true);
+    $("select[name=carreraSelect]").prop("disabled", true);
+    $("select[name=horarioSelect]").prop("disabled", true);
 
     getPlantelesContacto();
 
@@ -65,6 +65,8 @@ function getPlantelesContacto() {
         });
 
         getNivelesContacto();
+
+        $("select[name=nivelSelect]").prop("disabled", false);
 
     }).fail(function (error) {
 
@@ -118,6 +120,7 @@ function getNivelesContacto() {
 }
 
 function getPeriodosContacto() {
+    $("select[name=periodoSelect]").prop("disabled", false);
     $("#periodoSelect").empty();
     $("#periodoSelect").append(`<option>¿Cuándo deseas iniciar?</option>`);
 
@@ -140,12 +143,16 @@ function getPeriodosContacto() {
                 option = `<option value="${value.clave}">${value.descrip}</option>`;
                 $('#periodoSelect').append(option);
             });
+
+            
         } else {
             option = `<option selected value="${data.clave}">${data.descrip}</option>`;
             $('#periodoSelect').append(option);
+
+            getCarrerasContacto();
         }
 
-        getCarrerasContacto();
+
 
     }).fail(function () {
         console.log("Algo salió mal");
@@ -154,6 +161,7 @@ function getPeriodosContacto() {
 
 function getCarrerasContacto() {
 
+    $("select[name=carreraSelect]").prop("disabled", false);
     $("#carreraSelect").empty();
     $("#carreraSelect").append(`<option>Selecciona una carrera</option>`);
 
@@ -204,6 +212,7 @@ function getCarrerasContacto() {
 }
 
 function getHorariosContacto() {
+    $("select[name=horarioSelect]").prop("disabled", false);
     $("#horarioSelect").empty();
     $("#horarioSelect").append(`<option>Selecciona un horario</option>`);
 
@@ -230,7 +239,7 @@ function getHorariosContacto() {
         },
     }).done(function (data) {
 
-        console.log(data); 
+        console.log(data);
         if (data.clave == undefined || data.clave == null) {
             $.each(data, function (index, value) {
                 option = `<option value="${value.clave}">${value.descrip}</option>`;
