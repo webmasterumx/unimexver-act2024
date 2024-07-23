@@ -117,7 +117,7 @@
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
                 <h2 style="font-size: 1.438rem;" class="underlined-head text-uppercase fw-normal">
-                    VENTAJAS DE ESTUDIAR LA LICENCIATURA ABIERTA EN {{ $licenciatura_sua->titulo }}
+                    VENTAJAS DE ESTUDIAR LA LICENCIATURA ABIERTA EN {{ $licenciatura_sua->titulo }} (SUA)
                 </h2>
                 <p>
                     <b>Se adapta a tu tiempo y tu vida.</b> Plan modular de 2 años 4 meses (7 cuatrimestres) que te permite

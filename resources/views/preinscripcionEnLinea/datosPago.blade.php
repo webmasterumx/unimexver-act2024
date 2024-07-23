@@ -127,7 +127,7 @@
                         @endswitch
                         <div class="col-12 col-md-12 col-lg-4">
                             <div class="mb-3">
-                                <label for="plantel" class="form-label">Plantel</label>
+                                <label style="color: #00539a !important;" for="plantel" class="form-label">Plantel</label>
                                 <input disabled type="text" class="form-control" id="plantel"
                                     value="{{ $nombrePlantel }}">
                             </div>

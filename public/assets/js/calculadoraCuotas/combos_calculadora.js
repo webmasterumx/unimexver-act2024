@@ -43,7 +43,7 @@ $("select[name=selectPlantel]").change(function () {
         $('#grupoBotones').empty();
         $('#grupoInformacion').addClass('d-none');
         $("#selectCarrera").empty();
-        $("#selectCarrera").append(`<option><div class="spinner-border" role="status"><span class="visually-hidden">Recalculando...</span></div></option>`);
+        $("#selectCarrera").append(`<option>Recalculando..</option>`);
 
         recalculoDeCombos(carreraResguardo, nombreCarreraRes);
 
@@ -84,6 +84,8 @@ $("select[name=selectPeriodo]").change(function () {
                         plantel: plantel
                     }
                 }).done(function (info) {
+                    $("#selectNivel").empty();
+                    $("#selectNivel").append(`<option>¿Cuándo deseas iniciar?</option>`);
                     console.log(info);
                     $.each(info, function (index, value) {
                         console.log(value.descrip);

@@ -154,15 +154,21 @@ $(document).ready(function () {
             data: data
         }).done(function (data) {
             console.log(data);
-            if (data.clave == undefined || data.clave == null) {
-                $.each(data, function (index, value) {
-                    let option = `<option value="${value.clave}">${value.descrip}</option>`;
+            if (data.error != null || data.error != undefined) {
+                    console.log("no hay error ");
+                if (data.clave == undefined || data.clave == null) {
+                    $.each(data, function (index, value) {
+                        let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                        $(element).append(option);
+                    });
+                } else {
+                    let option = `<option value="${data.clave}">${data.descrip}</option>`;
                     $(element).append(option);
-                });
+                }
             } else {
-                let option = `<option value="${data.clave}">${data.descrip}</option>`;
-                $(element).append(option);
+                console.log("hay error");
             }
+
 
         }).fail(function () {
             console.log("Algo salió mal");

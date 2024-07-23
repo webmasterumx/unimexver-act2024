@@ -199,7 +199,7 @@
             <div class="col-12">
                 <p>
                     <b>
-                        Especialidad con Reconocimiento de Validez Oficial de Estudios de la SEP:
+                        Maestría con Reconocimiento de Validez Oficial de Estudios de la SEP:
                     </b>
                     <br><br>
                     @for ($i = 0; $i < sizeof($rvoe_maestria); $i++)

@@ -196,52 +196,58 @@ function recalculoDeComboNivel(ruta, data, element, info) {
             $('#carreraSelect').empty();
             $("#carreraSelect").append(`<option value="" selected>Selecciona una carrera</option>`);
 
-            $.each(result, function (index, value) {
+            if (result.error == undefined || result.error == null) {
+                $.each(result, function (index, value) {
 
-                if (info.carrera_preinscripcion.replaceAll('_', " ") == value.descrip) {
-                    option = `<option value="${value.clave}" selected>${value.descrip}</option>`;
-                } else {
-                    option = `<option value="${value.clave}">${value.descrip}</option>`;
-                }
+                    if (info.carrera_preinscripcion.replaceAll('_', " ") == value.descrip) {
+                        option = `<option value="${value.clave}" selected>${value.descrip}</option>`;
+                    } else {
+                        option = `<option value="${value.clave}">${value.descrip}</option>`;
+                    }
 
-                $(elementCarreras).append(option);
-            });
-
-            $("select[name=carreraSelect]").prop("disabled", false);
-
-            //! calculo de lista de horarios 
-
-            let carrera = $('select[name=carreraSelect]').val();
-
-            let rutaCarrera = setUrlBase() + "getHorarios";
-            let dataCarrera = {
-                plantel: plantel,
-                nivel: nivel,
-                periodo: periodo,
-                carrera: carrera
-            };
-            let elementCarrera = '#horarioSelect';
-
-            $.ajax({
-                method: "POST",
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                url: rutaCarrera,
-                data: dataCarrera
-            }).done(function (list) {
-                console.log(list);
-                $.each(list, function (index, value) {
-                    let option = `<option value="${value.clave}">${value.descrip}</option>`;
-                    $(elementCarrera).append(option);
+                    $(elementCarreras).append(option);
                 });
 
-                $("select[name=horarioSelect]").prop("disabled", false);
-                $('#modalCarga').modal('hide');
+                $("select[name=carreraSelect]").prop("disabled", false);
 
-            }).fail(function () {
-                console.log("Algo salió mal");
-            });
+                //! calculo de lista de horarios 
+
+                let carrera = $('select[name=carreraSelect]').val();
+
+                let rutaCarrera = setUrlBase() + "getHorarios";
+                let dataCarrera = {
+                    plantel: plantel,
+                    nivel: nivel,
+                    periodo: periodo,
+                    carrera: carrera
+                };
+                let elementCarrera = '#horarioSelect';
+
+                $.ajax({
+                    method: "POST",
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: rutaCarrera,
+                    data: dataCarrera
+                }).done(function (list) {
+                    console.log(list);
+                    $.each(list, function (index, value) {
+                        let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                        $(elementCarrera).append(option);
+                    });
+
+                    $("select[name=horarioSelect]").prop("disabled", false);
+                    $('#modalCarga').modal('hide');
+
+                }).fail(function () {
+                    console.log("Algo salió mal");
+                });
+            }
+            else {
+                
+            }
+
 
         }).fail(function () {
             console.log("Algo salió mal");

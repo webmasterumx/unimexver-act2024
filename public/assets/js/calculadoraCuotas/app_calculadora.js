@@ -74,12 +74,12 @@ function establecerValoresCosto(data) {
     $('#costoPromocion').html(`$${data.TotalCB}`);
 
     //datos de informacion
-    $('#carreraInfo').html(`${nombreNivel} en ${nombreCarrera}`);
-    $('#plantelInfo').html(`${nombrePlantel}`);
-    $('#turnoInfo').html(`${data.Turno}`);
-    $('#horarioInfo').html(`${data.Horario}`);
-    $('#incioInfo').html(`${data.DescripPer}`);
-    $('#vigenciaInfo').html(`${data.Vigencia}`);
+    $('#carreraInfo').html(`<b>${nombreNivel} en ${nombreCarrera}</b>`);
+    $('#plantelInfo').html(`<b>${nombrePlantel}</b>`);
+    $('#turnoInfo').html(`<b>${data.Turno}</b>`);
+    $('#horarioInfo').html(`<b>${data.Horario}</b>`);
+    $('#incioInfo').html(`<b>${data.DescripPer}</b>`);
+    $('#vigenciaInfo').html(`<b>${data.Vigencia}</b>`);
 
     $('#cargador_costos').addClass('d-none');
     $('#grupoInformacion').removeClass('d-none');
@@ -129,7 +129,7 @@ function getCarreras() {
 function getNiveles() {
 
     $("#selectNivel").empty();
-    $("#selectNivel").append(`<option>Selecciona el nivel</option>`);
+    $("#selectNivel").append(`<option disabled>Selecciona el nivel</option>`);
 
     let plantel = $('select[name=selectPlantel]').val();
     $.ajax({
@@ -197,7 +197,7 @@ function recalculoDeCombos(carreraResguardo, nombreCarreraRes) {
     }).done(function (data) {
         console.log(data);
         $("#selectCarrera").empty();
-        $("#selectCarrera").append(`<option>- Selecciona una Carrera- </option>`);
+        $("#selectCarrera").append(`<option disabled>- Selecciona una Carrera- </option>`);
 
         for (let index = 0; index < data.length; index++) { //recorrer el array de carreras
             const element = data[index]; // se establece un elemento por carrera optenida
@@ -580,7 +580,7 @@ function aceptoAgendar() {
 
         $('#statictConfirmPreinscripcion').modal('hide');
 
-        Swal.fire("Llamada agendada", "", "success");
+        Swal.fire("Llamada agendada, más tarde uno de nuestros asesores se comunicara contigo", "", "success");
 
     }).fail(function () {
         console.log("Algo salió mal");

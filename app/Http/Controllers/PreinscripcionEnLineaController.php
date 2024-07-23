@@ -323,7 +323,7 @@ class PreinscripcionEnLineaController extends Controller
         $dompdf->render();
 
         // Output the generated PDF to Browser
-        $dompdf->stream();
+        $dompdf->stream('Ficha_Pago.pdf');
     }
 
     public function getPlantelInfo()

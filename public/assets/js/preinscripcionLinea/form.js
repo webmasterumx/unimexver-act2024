@@ -229,31 +229,97 @@ $("#formPromoPreinscripcion").validate({
             contentType: false,
             processData: false,
         }).done(function (data) {
-            $('#calcularPromo').html(`
-            <i class="bi bi-box-arrow-right"></i>
-            Continuar
-            `);
-            console.log(data);
-            estadoCampos(true);
 
-            let respuesta = JSON.parse(data);
-            console.log(respuesta);
+            let nombreProspecto = $('#nombreInscripcion').val().replace(/ /g, "");
+            let apellidoPatProspecto = $('#apellidoPatInscripcion').val().replace(/ /g, "");
+            let apellidoMatProspecto = $('#apellidoMatInscripcion').val().replace(/ /g, "");
+            let calleProspecto = $('#calleInscripcion').val().replace(/ /g, "");
+            let numeroProspecto = $('#numeroInscripcion').val().replace(/ /g, "");
+            let coloniaProspecto = $('#coloniaInscripcion').val().replace(/ /g, "");
 
-            $('#calcularPromo').addClass("d-none");
+            if (nombreProspecto == "") {
+                Swal.fire({
+                    icon: "error",
+                    text: "El campo de nombre no puede estar vacio",
+                });
 
-            if (respuesta.Success == true) {
-                $('#continuarProceso').removeClass('d-none');
-                $('#corregirDatos').removeClass('d-none');
-                $("#respuestaSuccess").removeClass('d-none');
-                $('#precioPromo').html("$" + respuesta.Importe);
-                $('#fechaLimitePromo').html(respuesta.FechaFinalPromocion);
-                $("#respuestaError").addClass('d-none');
+                $('#calcularPromo').html(`
+                    Continuar
+                `);
+            }
+            else if (apellidoPatProspecto == "") {
+                Swal.fire({
+                    icon: "error",
+                    text: "El campo de apellido paterno no puede estar vacio",
+                });
+                $('#calcularPromo').html(`
+                    Continuar
+                `);
+            }
+            else if (apellidoMatProspecto == "") {
+                Swal.fire({
+                    icon: "error",
+                    text: "El campo de apellido materno no puede estar vacio",
+                });
+                $('#calcularPromo').html(`
+                    Continuar
+                `);
+            }
+            else if (calleProspecto == "") {
+                Swal.fire({
+                    icon: "error",
+                    text: "El campo de calle no puede estar vacio",
+                });
+                $('#calcularPromo').html(`
+                    Continuar
+                `);
+            }
+            else if (numeroProspecto == "") {
+                Swal.fire({
+                    icon: "error",
+                    text: "El campo de número no puede estar vacio",
+                });
+                $('#calcularPromo').html(`
+                    Continuar
+                `);
+            }
+            else if (coloniaProspecto == "") {
+                Swal.fire({
+                    icon: "error",
+                    text: "El campo de colonia no puede estar vacio",
+                });
+                $('#calcularPromo').html(`
+                    Continuar
+                `);
             }
             else {
-                $("#respuestaError").removeClass('d-none');
-                $('#corregirDatos').removeClass('d-none');
-                $("#respuestaError").html(respuesta.MensajeDeError);
+                $('#calcularPromo').html(`
+                    <i class="bi bi-box-arrow-right"></i>
+                    Continuar
+                `);
+                console.log(data);
+                estadoCampos(true);
+
+                let respuesta = JSON.parse(data);
+                console.log(respuesta);
+
+                $('#calcularPromo').addClass("d-none");
+
+                if (respuesta.Success == true) {
+                    $('#continuarProceso').removeClass('d-none');
+                    $('#corregirDatos').removeClass('d-none');
+                    $("#respuestaSuccess").removeClass('d-none');
+                    $('#precioPromo').html("$" + respuesta.Importe);
+                    $('#fechaLimitePromo').html(respuesta.FechaFinalPromocion);
+                    $("#respuestaError").addClass('d-none');
+                }
+                else {
+                    $("#respuestaError").removeClass('d-none');
+                    $('#corregirDatos').removeClass('d-none');
+                    $("#respuestaError").html(respuesta.MensajeDeError);
+                } 
             }
+
 
         }).fail(function () {
             console.log("Algo salió mal");
@@ -263,3 +329,6 @@ $("#formPromoPreinscripcion").validate({
     }
 });
 
+function validarTextoVacio() {
+
+}

@@ -144,7 +144,7 @@ function getPeriodosContacto() {
                 $('#periodoSelect').append(option);
             });
 
-            
+
         } else {
             option = `<option selected value="${data.clave}">${data.descrip}</option>`;
             $('#periodoSelect').append(option);
@@ -189,20 +189,37 @@ function getCarrerasContacto() {
         },
     }).done(function (data) {
 
-        console.log(data);
-        $.each(data, function (index, value) {
+        console.log(data.error);
 
-            //console.log(carreraInicialSelect);
-            //console.log(value);
+        if (data.error == undefined || data.error == null) {
 
-            if (carreraInicialSelect == value.descrip) {
-                option = `<option selected value="${value.clave}">${value.descrip}</option>`;
-            } else {
-                option = `<option value="${value.clave}">${value.descrip}</option>`;
-            }
+            console.log('no hay error');
 
-            $('#carreraSelect').append(option);
-        });
+            $.each(data, function (index, value) {
+
+                //console.log(carreraInicialSelect);
+                //console.log(value);
+
+
+                if (carreraInicialSelect == value.descrip) {
+                    option = `<option selected value="${value.clave}">${value.descrip}</option>`;
+                } else {
+                    option = `<option value="${value.clave}">${value.descrip}</option>`;
+                }
+
+                $('#carreraSelect').append(option);
+            });
+
+
+        } else {
+
+            console.log('hay error');
+
+
+
+        }
+
+
 
         getHorariosContacto();
 
