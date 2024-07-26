@@ -175,7 +175,7 @@ class ExtrasUnimexController extends Controller
     }
 
 
-    public function setVariablesFormContacto($elemento) 
+    public function setVariablesFormContacto($elemento)
     {
         session(["elementPosicionContactForm" => $elemento]);
 
@@ -185,10 +185,55 @@ class ExtrasUnimexController extends Controller
         return response()->json($respuesta);
     }
 
-    public function getVariablesFormContacto()  
+    public function getVariablesFormContacto()
     {
         $respuesta['elementPosicionContactForm'] = session('elementPosicionContactForm');
 
         return response()->json($respuesta);
     }
+
+    public function setVariableCarreraCombo($idCarrera, $nombreCarrera)
+    {
+        //! si el id de carrera viene nulo o vacio en su cadena quiere decir que la opcion de selecciona tu carrera es la que esta en el select
+        if ($idCarrera == null || $idCarrera == "") {
+            session(["nombreCarreraComboResguardo" => session('nivel_calculadora')]);
+            session(["idCarreraComboResguardo" => session('carrera_calculadora')]);
+
+            $respuesta['nombre'] = session("nombreCarreraComboResguardo");
+            $respuesta['id'] = session("idCarreraComboResguardo");
+            $respuesta['mensaje'] = "variable establecida";
+            //echo('no hay nada en el select');
+        }
+        //* si el id de carrera viene con el valor de 0 quiere decir que hay que reguardar la carrera ya que se esta llamando en casos especificos del flujo
+        else if ($idCarrera == 0) {
+            session(["nombreCarreraComboResguardo" => $nombreCarrera]);
+            session(["idCarreraComboResguardo" => 0]);
+
+            $respuesta['nombre'] = session("nombreCarreraComboResguardo");
+            $respuesta['id'] = session("idCarreraComboResguardo");
+            $respuesta['mensaje'] = "variable establecida para caso especifico";
+        }
+        //? la llamada del metodo se hace desde que se hace algun cambio de correra
+        else {
+            session(["nombreCarreraComboResguardo" => $nombreCarrera]);
+            session(["idCarreraComboResguardo" => $idCarrera]);
+
+            $respuesta['nombre'] = session("nombreCarreraComboResguardo");
+            $respuesta['id'] = session("idCarreraComboResguardo");
+            $respuesta['mensaje'] = "variable establecida";
+            //echo('hay algo en el select');
+        }
+
+        return response()->json($respuesta);
+    }
+
+    public function getVariableCarreraCombo()
+    {
+        $respuesta['nombre'] = session("nombreCarreraComboResguardo");
+        $respuesta['id'] = session("idCarreraComboResguardo");
+        $respuesta['mensaje'] = "nombre obtenido";
+
+        return response()->json($respuesta);
+    }
+
 }

@@ -122,6 +122,10 @@ $("#form_calculadora").validate({
                             `);
                         }
 
+                        setTimeout(function () {
+                            $('#alertSuccess').addClass('d-none');
+                            $('#alertError').addClass('d-none');
+                        }, 5000);
 
                         let nombreProspecto = $('#nombreProspecto').val() + " " + $('#apellidosProspecto').val();
                         let periodoProspecto = $('select[name="selectPeriodo"] option:selected').text();
@@ -146,6 +150,11 @@ $("#form_calculadora").validate({
                             else {
                                 getCarreras();
                             }
+
+                            $("#nombreProspecto").prop("disabled", true);
+                            $("#apellidosProspecto").prop("disabled", true);
+                            $("#telefonoProspecto").prop("disabled", true);
+                            $("#emailProspecto").prop("disabled", true);
 
                             $('#terminosCondicionesText').html(respuesta.legales);
                             $('#terminosCondiciones').removeClass('d-none');
@@ -227,6 +236,11 @@ $("#form_calculadora").validate({
                         `);
                     }
 
+                    setTimeout(function () {
+                        $('#alertSuccess').addClass('d-none');
+                        $('#alertError').addClass('d-none');
+                    }, 5000);
+
                     let nombreProspecto = $('#nombreProspecto').val() + " " + $('#apellidosProspecto').val();
                     let periodoProspecto = $('select[name="selectPeriodo"] option:selected').text();
                     let nivelProspecto = $('select[name="selectNivel"] option:selected').text();
@@ -250,6 +264,11 @@ $("#form_calculadora").validate({
                         else {
                             getCarreras();
                         }
+
+                        $("#nombreProspecto").prop("disabled", true);
+                        $("#apellidosProspecto").prop("disabled", true);
+                        $("#telefonoProspecto").prop("disabled", true);
+                        $("#emailProspecto").prop("disabled", true);
 
                         $('#terminosCondicionesText').html(respuesta.legales);
                         $('#terminosCondiciones').removeClass('d-none');

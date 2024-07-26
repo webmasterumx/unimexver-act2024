@@ -183,14 +183,41 @@ class PreinscripcionEnLineaController extends Controller
 
         //dd($valores);
 
-        session(['Matricula' => $registro['Matricula']]);
-        session(['FolioCrm' => $registro['FolioCrm']]);
 
-        //dd(session('Matricula'));
+        if (isset($registro['Success'])) {
+            //echo 'el procedimieto paso';
+            if (isset($registro['Matricula'])) {
 
-        SELF::getPlantelInfo();
+                if ($registro['Matricula'] == "" || $registro['FolioCrm'] == 0) {
+                    //echo "matriculacion fallida";
 
-        return view('preinscripcionEnLinea.formaDePago');
+                    $response['estado'] = false;
+                    $response['mensaje'] = "Lo sentimos, ocurro un error inesperado, favor de verificar los datos introducidos";
+                } else {
+                    //echo "matriculacion exitosa";
+
+                    session(['Matricula' => $registro['Matricula']]);
+                    session(['FolioCrm' => $registro['FolioCrm']]);
+
+                    SELF::getPlantelInfo();
+
+                    $response['estado'] = true;
+                    $response['matricula'] = session('Matricula');
+                    $response['mensaje'] = "Registro completado";
+                }
+
+                //echo 'se matriculo correctamente';
+
+            } else {
+                $response['estado'] = false;
+                $response['mensaje'] = "Lo sentimos, ocurro un error inesperado, favor de verificar los datos introducidos";
+            }
+        } else {
+            $response['estado'] = false;
+            $response['mensaje'] = "Lo sentimos, ocurro un error inesperado, favor de verificar los datos introducidos";
+        }
+
+        return response()->json($response);
     }
 
     public function fichaPDFGenerar()

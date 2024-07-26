@@ -129,7 +129,7 @@ function getCarreras() {
 function getNiveles() {
 
     $("#selectNivel").empty();
-    $("#selectNivel").append(`<option disabled>Selecciona el nivel</option>`);
+    $("#selectNivel").append(`<option value="" selected disabled>Selecciona el nivel</option>`);
 
     let plantel = $('select[name=selectPlantel]').val();
     $.ajax({
@@ -165,6 +165,51 @@ function setNombreCarrreraSaleccionada() {
     return nombre;
 }
 
+/**
+ * Esta funcion permite establcer ls varibles carrera para hacer recalculos
+ */
+function setVariablesCombosReguardadas(carrera, nombre) {
+
+    console.log(carrera);
+    console.log(nombre);
+
+    let ruta = setUrlBase() + "set/variables/combos/calculadora/" + carrera + "/" + nombre;
+
+    $.ajax({
+        method: "GET",
+        url: ruta,
+        dataType: "html",
+    }).done(function (data) {
+
+        console.log(data);
+
+    }).fail(function () {
+        console.log("Algo salió mal");
+    });
+}
+
+function getVariablesCombosResguardadas() {
+
+    let ruta = setUrlBase() + "get/variables/combos/calculadora/";
+
+    $.ajax({
+        method: "GET",
+        url: ruta,
+        dataType: "json",
+    }).done(function (data) {
+
+        console.log(data);
+
+        let carreraResguardo = data.id;
+        let nombreCarreraRes = data.nombre;
+
+        recalculoDeCombos(carreraResguardo, nombreCarreraRes);
+
+    }).fail(function () {
+        console.log("Algo salió mal");
+    });
+}
+
 function recalculoDeCombos(carreraResguardo, nombreCarreraRes) {
     // se resguarda la carrera previamente seleccinada
 
@@ -197,7 +242,7 @@ function recalculoDeCombos(carreraResguardo, nombreCarreraRes) {
     }).done(function (data) {
         console.log(data);
         $("#selectCarrera").empty();
-        $("#selectCarrera").append(`<option disabled>- Selecciona una Carrera- </option>`);
+        $("#selectCarrera").append(`<option selected disabled> - Selecciona una Carrera - </option>`);
 
         for (let index = 0; index < data.length; index++) { //recorrer el array de carreras
             const element = data[index]; // se establece un elemento por carrera optenida
@@ -296,8 +341,7 @@ function obtenerHorariosBeca() {
 }
 
 function getPeriodos() {
-    $("#selectPeriodo").empty();
-    $("#selectPeriodo").append(`<option>¿Cuándo deseas iniciar?</option>`);
+
 
     let plantel = $('select[name=selectPlantel]').val();
     $.ajax({
@@ -310,6 +354,10 @@ function getPeriodos() {
             plantel: plantel
         }
     }).done(function (data) {
+
+        $("#selectPeriodo").empty();
+        $("#selectPeriodo").append(`<option value="" selected disabled>¿Cuándo deseas iniciar?</option>`);
+
         console.log(data);
         if (data.clave == undefined || data.clave == null) {
             $.each(data, function (index, value) {
@@ -395,6 +443,14 @@ function establecerVariablesPromo(data) {
 
 function enviarDetallesHorarioBeca() {
 
+    $("#correoButton").prop("disabled", true);
+    $('#correoButton').html(`
+        <div class="spinner-border me-1" style="width: 20px; height: 20px; color: #de951b;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        Enviando correo
+    `);
+
     let rutaActualizar = setUrlBase() + 'enviar/detalles/beca';
 
     $.ajax({
@@ -402,10 +458,24 @@ function enviarDetallesHorarioBeca() {
         url: rutaActualizar,
     }).done(function (data) {
         console.log(data);
-        Swal.fire({
-            icon: "success",
-            text: "Los detalles de tu Beca se han enviado a tu correo.",
-        });
+        if (data.result == true) {
+            Swal.fire({
+                icon: "success",
+                text: "Los detalles de tu Beca se han enviado a tu correo.",
+            });
+        } else {
+            Swal.fire({
+                icon: "error",
+                text: "¡Error al enviar correo!",
+            });
+        }
+
+        $("#correoButton").prop("disabled", false);
+        $('#correoButton').html(`
+            <i class="bi bi-envelope" style="color: #de951b;"></i>
+            Enviar a correo
+        `);
+
     }).fail(function () {
         console.log("Algo salió mal");
     });
@@ -456,6 +526,7 @@ function getCarrerasWithVariableEstablecida(carreraEnVariable) {
             $("#selectCarrera").append(option); // se inserta la carrera de cada elemento
         }
 
+        setVariablesCombosReguardadas(0, carreraFinal);
         obtenerHorariosBeca();
 
     }).fail(function () {
@@ -506,7 +577,7 @@ function redireccionPreinscripcionEnLinea() {
 
         if (respuesta.acceso == true) {
             // se hace la redireccion al formulario
-            let redireccion = setUrlBase() + "form/datos_gemerales/preinscripcion";
+            let redireccion = setUrlBase() + "form/datos_generales/preinscripcion";
 
             //setTimeout(`location.href='${redireccion}'`, 2000);
             window.open(redireccion, '_blank');
@@ -600,4 +671,5 @@ function rechazoAgendar() {
     Swal.fire("¡Proceso Terminado!", "", "error");
 
 }
+
 

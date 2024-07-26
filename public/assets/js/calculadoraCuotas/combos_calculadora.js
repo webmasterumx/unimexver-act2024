@@ -15,8 +15,10 @@ $(document).ready(function () {
                 estatus = "";
             }
             $('#selectPlantel').append(`<option ${estatus} value="${value.clave}">${value.descrip}</option>`);
-            getPeriodos();
+
         });
+
+        getPeriodos();
 
     }).fail(function () {
         console.log("Algo salió mal");
@@ -35,17 +37,13 @@ $("select[name=selectPlantel]").change(function () {
     }
     else {
         console.log('se hizo ya un calculo se requiere un recalculo');
-        let carreraResguardo = setCarreraSeleccionada();
-        let nombreCarreraRes = setNombreCarrreraSaleccionada();
-        console.log(carreraResguardo);
-        console.log(nombreCarreraRes);
 
         $('#grupoBotones').empty();
         $('#grupoInformacion').addClass('d-none');
         $("#selectCarrera").empty();
-        $("#selectCarrera").append(`<option>Recalculando..</option>`);
+        $("#selectCarrera").append(`<option><div class="spinner-border" role="status"><span class="visually-hidden">Recalculando...</span></div></option>`);
 
-        recalculoDeCombos(carreraResguardo, nombreCarreraRes);
+        getVariablesCombosResguardadas();
 
     }
 
@@ -59,7 +57,7 @@ $("select[name=selectPeriodo]").change(function () {
     //es la primera peticion o se limpio el combo de carreras
 
     if ($('#folioCrm').val() == "" || $('#folioCrm').val() == null) {
-        console.log('es elprimer calculo, verificar si no hay variables de sesion para evitar perder la infirmacion');
+        console.log('es el primer calculo, verificar si no hay variables de sesion para evitar perder la infirmacion');
 
         $.ajax({
             method: "GET",
@@ -84,8 +82,10 @@ $("select[name=selectPeriodo]").change(function () {
                         plantel: plantel
                     }
                 }).done(function (info) {
+
                     $("#selectNivel").empty();
-                    $("#selectNivel").append(`<option>¿Cuándo deseas iniciar?</option>`);
+                    $("#selectNivel").append(`<option value="" selected disabled>Selecciona el nivel</option>`);
+
                     console.log(info);
                     $.each(info, function (index, value) {
                         console.log(value.descrip);
@@ -117,15 +117,12 @@ $("select[name=selectPeriodo]").change(function () {
         });
     }
     else {
-        console.log('se hizo ya un calculo');
-        let carreraResguardo = setCarreraSeleccionada();
-        let nombreCarreraRes = setNombreCarrreraSaleccionada();
         $('#selectCarrera').empty();
-        $('#selectCarrera').append(`<option value="">Selecciona un Carrera</option>`);
+        $('#selectCarrera').append(`<option><div class="spinner-border" role="status"><span class="visually-hidden">Recalculando...</span></div></option>`);
         $('#grupoBotones').empty();
         $('#grupoInformacion').addClass('d-none');
 
-        recalculoDeCombos(carreraResguardo, nombreCarreraRes);
+        getVariablesCombosResguardadas();
     }
 
 });
@@ -160,6 +157,11 @@ $("select[name=selectNivel]").change(function () {
 
 // detecta el cambio de carrera para mostrar horarios
 $("select[name=selectCarrera]").change(function () {
+
+    let carrera = $('select[name=selectCarrera]').val();
+    let nombre = $('select[name="selectCarrera"] option:selected').text();
+
+    setVariablesCombosReguardadas(carrera, nombre);
 
     $('#cargador_horarios').removeClass('d-none');
     $('#grupoBotones').empty();

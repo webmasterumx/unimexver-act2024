@@ -205,8 +205,8 @@
                         <div class="col-12 col-lg-3">
                             <button id="calcularPromo" type="submit" class="btn btn-primary mt-4">Continuar</button>
 
-                            <a href="{{ route('registrar.prospecto.preinscripcion') }}" id="continuarProceso"
-                                type="button" class="btn btn-primary mt-4 d-none">Continuar </a>
+                            <button id="continuarProceso" onclick="registrarProspectoPreinscripcionEnLinea()"
+                                type="button" class="btn btn-primary mt-4 d-none">Continuar </button>
                             <button onclick="correccionDatos()" id="corregirDatos" type="button"
                                 class="btn btn-primary mt-4 d-none">Corregir Datos</button>
                         </div>

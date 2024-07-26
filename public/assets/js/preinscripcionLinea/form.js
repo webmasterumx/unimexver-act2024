@@ -56,7 +56,7 @@ $("#formPreincripcion").validate({
                 </div>
                 Redirigiendo
                 `);
-                let redireccion = setUrlBase() + "form/datos_gemerales/preinscripcion";
+                let redireccion = setUrlBase() + "form/datos_generales/preinscripcion";
 
                 setTimeout(`location.href='${redireccion}'`, 2000);
             } else if (respuesta.acceso == false) {

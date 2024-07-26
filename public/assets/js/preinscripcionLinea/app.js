@@ -245,7 +245,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
                 });
             }
             else {
-                
+
             }
 
 
@@ -341,7 +341,7 @@ function aceptoAgendar() {
 
         $('#statictConfirmPreinscripcion').modal('hide');
 
-        Swal.fire("Llamada agendada", "", "success");
+        Swal.fire("Llamada agendada, más tarde uno de nuestros asesores se comunicara contigo.", "", "success");
 
     }).fail(function () {
         console.log("Algo salió mal");
@@ -362,4 +362,63 @@ function rechazoAgendar() {
 
     $("#aceptarActividad").prop("disabled", false);
 
+}
+
+function registrarProspectoPreinscripcionEnLinea() {
+
+    $("#continuarProceso").prop("disabled", true);
+    $('#continuarProceso').html(`
+        <div style="width: 20px !important; height: 20px !important;"
+        class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        Registrando datos
+    `);
+
+    let ruta = setUrlBase() + "registrar/prospecto/preinscripcion/linea";
+
+    $.ajax({
+        method: "GET",
+        url: ruta,
+        dataType: "html",
+    }).done(function (data) {
+
+        console.log(data);
+
+        let response = JSON.parse(data);
+
+        console.log(response);
+
+        if (response.estado == true) {
+
+            Swal.fire({
+                icon: "success",
+                title: "Registro exitoso",
+                text: response.mensaje,
+            });
+
+            let redireccionamiento = setUrlBase() + "preinscripcionEnLinea/forma_de_pago";
+
+            setTimeout(function () {
+                window.location.href = redireccionamiento;
+            }, 3000);
+
+        } else {
+            Swal.fire({
+                icon: "error",
+                title: "Registro invalido",
+                text: response.mensaje,
+            });
+
+            $("#continuarProceso").prop("disabled", false);
+            $('#continuarProceso').html(`
+                Continuar
+            `);
+        }
+
+
+
+    }).fail(function () {
+        console.log("Algo salió mal");
+    });
 }

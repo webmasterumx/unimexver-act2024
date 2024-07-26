@@ -60,9 +60,10 @@ Route::get('/get/variables/foliocrm', [ExtrasUnimexController::class, 'getVariab
 //!modulo de preinscripcion en linea
 Route::get('/App/Preinscripcion-online', [PreinscripcionEnLineaController::class, 'index'])->name('preinscripcion.linea');
 Route::post('/validacion/preinscripcion', [PreinscripcionEnLineaController::class, 'validacionDeCorreo'])->name('validacion.preinscripcion.linea');
-Route::get('/form/datos_gemerales/preinscripcion', [PreinscripcionEnLineaController::class, 'formDatosGenerales'])->name('form.datos.generales.preinscripcion');
+Route::get('/form/datos_generales/preinscripcion', [PreinscripcionEnLineaController::class, 'formDatosGenerales'])->name('form.datos.generales.preinscripcion');
 Route::post('/obtener/promo/preinscripcion', [PreinscripcionEnLineaController::class, 'obtenerPromocion'])->name('obtener.promo.preinscripcion');
 Route::get('/registrar/prospecto/preinscripcion/linea', [PreinscripcionEnLineaController::class, 'registrarPreinscripcionEnLinea'])->name('registrar.prospecto.preinscripcion');
+Route::view('/preinscripcionEnLinea/forma_de_pago', 'preinscripcionEnLinea.formaDePago')->name("preinscripcionEnLinea.formaPago");
 Route::get('/ficha/generar/pdf', [PreinscripcionEnLineaController::class, 'fichaPDFGenerar'])->name('ficha.pdf');
 Route::get('/get/info/prospecto', [PreinscripcionEnLineaController::class, 'getInfoProspecto'])->name('get.info.prospecto');
 Route::get('/agendar/actividad/preinscripcion', [PreinscripcionEnLineaController::class, 'insertarRegistroActividadParaMatriculado'])->name('agendar.actividad.preinscripcion');
@@ -95,6 +96,9 @@ Route::post('/form/empresas/occ', [FormController::class, 'empresasOCC'])->name(
 Route::post('/insertar/prospecto/calculadora', [CalculadoraCuotasController::class, 'insertarProspecto'])->name('paso.uno');
 Route::get('/enviar/detalles/beca', [CalculadoraCuotasController::class, 'enviarCorreoCalculadoraDetalleBeca']);
 Route::post('/establecer/variables/oferta', [CalculadoraCuotasController::class, 'establecerVariablesPromocion'])->name('establecer.variables.oferta');
+//* variables de establecimiento para calculadora de cuotas
+Route::get('/set/variables/combos/calculadora/{carrera}/{id}', [ExtrasUnimexController::class, 'setVariableCarreraCombo'])->name('set.variables.combos.carrera');
+Route::get('/get/variables/combos/calculadora/', [ExtrasUnimexController::class, 'getVariableCarreraCombo'])->name('get.variables.combos.carrera');
 
 //!testing
 Route::get('/testing', [FormController::class, 'testerEnvio'])->name('testing');

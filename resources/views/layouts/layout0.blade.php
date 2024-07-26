@@ -26,7 +26,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#004A92">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="canonical" href="https://unimex.edu.mx/calcula-tu-cuota/">
     <link rel="alternate" href="https://unimex.edu.mx/calcula-tu-cuota/" hreflang="x-default">
     <meta name="csrf-token" content="{{ csrf_token() }}">
