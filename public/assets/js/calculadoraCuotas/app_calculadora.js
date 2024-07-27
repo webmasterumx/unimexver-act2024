@@ -669,7 +669,7 @@ function rechazoAgendar() {
     $('#statictConfirmPreinscripcion').modal('hide');
 
     Swal.fire("¡Proceso Terminado!", "", "error");
-
+ 
 }
 
 
