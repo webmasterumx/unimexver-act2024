@@ -56,6 +56,9 @@ Route::get('/set/variables/foliocrm/{foliocrm}', [ExtrasUnimexController::class,
 Route::get('/get/variables/calculadora', [ExtrasUnimexController::class, 'getVariablesPosicionamientoCalculadora'])->name('get.variables.calculadora');
 Route::get('/get/variables/preinscripcion', [ExtrasUnimexController::class, 'getVariablesPosicionamientoPreinscripcion'])->name('get.variables.preinscripcion');
 Route::get('/get/variables/foliocrm', [ExtrasUnimexController::class, 'getVariablePosicionamientoFolioCrm'])->name('get.variable.foliocrm');
+//* variables de establecimiento para calculadora de cuotas
+Route::post('/set/variables/combos/calculadora/', [ExtrasUnimexController::class, 'setVariableCarreraCombo'])->name('set.variables.combos.carrera');
+Route::get('/get/variables/combos/calculadora/', [ExtrasUnimexController::class, 'getVariableCarreraCombo'])->name('get.variables.combos.carrera');
 
 //!modulo de preinscripcion en linea
 Route::get('/App/Preinscripcion-online', [PreinscripcionEnLineaController::class, 'index'])->name('preinscripcion.linea');
@@ -96,9 +99,6 @@ Route::post('/form/empresas/occ', [FormController::class, 'empresasOCC'])->name(
 Route::post('/insertar/prospecto/calculadora', [CalculadoraCuotasController::class, 'insertarProspecto'])->name('paso.uno');
 Route::get('/enviar/detalles/beca', [CalculadoraCuotasController::class, 'enviarCorreoCalculadoraDetalleBeca']);
 Route::post('/establecer/variables/oferta', [CalculadoraCuotasController::class, 'establecerVariablesPromocion'])->name('establecer.variables.oferta');
-//* variables de establecimiento para calculadora de cuotas
-Route::post('/set/variables/combos/calculadora/', [ExtrasUnimexController::class, 'setVariableCarreraCombo'])->name('set.variables.combos.carrera');
-Route::get('/get/variables/combos/calculadora/', [ExtrasUnimexController::class, 'getVariableCarreraCombo'])->name('get.variables.combos.carrera');
 
 //!testing
 Route::get('/testing', [FormController::class, 'testerEnvio'])->name('testing');
