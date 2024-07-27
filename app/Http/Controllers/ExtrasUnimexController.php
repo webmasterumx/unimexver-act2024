@@ -195,7 +195,7 @@ class ExtrasUnimexController extends Controller
     public function setVariableCarreraCombo(Request $request)
     {
 
-        $idCarrera = $request->carrera;
+        $idCarrera = $request->idCarrera;
         $nombreCarrera = $request->nombreCarrera;
 
         //! si el id de carrera viene nulo o vacio en su cadena quiere decir que la opcion de selecciona tu carrera es la que esta en el select
