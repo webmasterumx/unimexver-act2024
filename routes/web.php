@@ -97,7 +97,7 @@ Route::post('/insertar/prospecto/calculadora', [CalculadoraCuotasController::cla
 Route::get('/enviar/detalles/beca', [CalculadoraCuotasController::class, 'enviarCorreoCalculadoraDetalleBeca']);
 Route::post('/establecer/variables/oferta', [CalculadoraCuotasController::class, 'establecerVariablesPromocion'])->name('establecer.variables.oferta');
 //* variables de establecimiento para calculadora de cuotas
-Route::get('/set/variables/combos/calculadora/{carrera}/{id}', [ExtrasUnimexController::class, 'setVariableCarreraCombo'])->name('set.variables.combos.carrera');
+Route::post('/set/variables/combos/calculadora/', [ExtrasUnimexController::class, 'setVariableCarreraCombo'])->name('set.variables.combos.carrera');
 Route::get('/get/variables/combos/calculadora/', [ExtrasUnimexController::class, 'getVariableCarreraCombo'])->name('get.variables.combos.carrera');
 
 //!testing

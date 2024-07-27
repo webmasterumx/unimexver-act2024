@@ -192,12 +192,16 @@ class ExtrasUnimexController extends Controller
         return response()->json($respuesta);
     }
 
-    public function setVariableCarreraCombo($idCarrera, $nombreCarrera)
+    public function setVariableCarreraCombo(Request $request)
     {
+
+        $idCarrera = $request->carrera;
+        $nombreCarrera = $request->nombreCarrera;
+
         //! si el id de carrera viene nulo o vacio en su cadena quiere decir que la opcion de selecciona tu carrera es la que esta en el select
         if ($idCarrera == null || $idCarrera == "") {
-            session(["nombreCarreraComboResguardo" => session('nivel_calculadora')]);
-            session(["idCarreraComboResguardo" => session('carrera_calculadora')]);
+            session(["nombreCarreraComboResguardo" => $nombreCarrera]);
+            session(["idCarreraComboResguardo" => session('nivel_calculadora')]);
 
             $respuesta['nombre'] = session("nombreCarreraComboResguardo");
             $respuesta['id'] = session("idCarreraComboResguardo");
