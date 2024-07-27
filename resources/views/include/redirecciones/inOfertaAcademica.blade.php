@@ -1,26 +1,5 @@
 <script>
-    $("#calculadoraHeader").on('click', function() {
-        calculadoraHeader();
-    });
-
-    $("#preinscripcionHeader").on('click', function() {
-        preinscripcionHeader();
-    });
-    
-    $("#redireccionCTCL").on('click', function() {
-        calculadoraHeader();
-    });
-
-    $('#linkCalculaTuBeca').click(function(event) {
-        console.log("click desde oferta");
-        calculadoraHeader();
-    });
-
-    $('#linkPreinscripcionEnLinea').click(function(event) {
-        console.log("click desde oferta");
-        preinscripcionHeader();
-    })
-
+   
     function calculadoraHeader() {
         let nivel = nivelPosicionado;
         let carrera = carreraPosicionado;
