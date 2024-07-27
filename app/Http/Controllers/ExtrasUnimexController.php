@@ -201,7 +201,7 @@ class ExtrasUnimexController extends Controller
         //! si el id de carrera viene nulo o vacio en su cadena quiere decir que la opcion de selecciona tu carrera es la que esta en el select
         if ($idCarrera == null || $idCarrera == "") {
             session(["nombreCarreraComboResguardo" => $nombreCarrera]);
-            session(["idCarreraComboResguardo" => session('nivel_calculadora')]);
+            session(["idCarreraComboResguardo" => 0]);
 
             $respuesta['nombre'] = session("nombreCarreraComboResguardo");
             $respuesta['id'] = session("idCarreraComboResguardo");
