@@ -69,7 +69,7 @@
                 <div class="row">
                     <div class="col-12 col-md-6 mb-3 mb-md-0">
                         <div class="d-grid gap-2">
-                            <a id="redireccionCTCL" href="javascript:calculadoraHeader();" class="btn btn-outline-primary">
+                            <a id="redireccionCTCL" class="btn btn-outline-primary">
                                 Calculadora de Cuotas
                             </a>
                         </div>
