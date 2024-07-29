@@ -278,20 +278,12 @@ function setVariablesCombosReguardadas(carrera, nombre) {
     console.log(carrera);
     console.log(nombre);
 
-    let ruta = setUrlBase() + "set/variables/combos/calculadora/";
-    let data = {
-        "nombreCarrera": nombre,
-        "idCarrera": carrera,
-    }
+    let ruta = setUrlBase() + "set/variables/combos/calculadora/" + carrera + "/" + nombre;
 
     $.ajax({
-        method: "POST",
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
+        method: "GET",
         url: ruta,
-        data : data,
-        dataType: "json",
+        dataType: "html",
     }).done(function (data) {
 
         console.log(data);
