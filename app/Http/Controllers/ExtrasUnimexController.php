@@ -195,6 +195,9 @@ class ExtrasUnimexController extends Controller
     public function setVariableCarreraCombo($idCarrera, $nombreCarrera)
     {
 
+        echo $idCarrera;
+        echo $nombreCarrera;
+
         //! si el id de carrera viene nulo o vacio en su cadena quiere decir que la opcion de selecciona tu carrera es la que esta en el select
         if ($idCarrera == null || $idCarrera == "") {
             session(["nombreCarreraComboResguardo" => $nombreCarrera]);
