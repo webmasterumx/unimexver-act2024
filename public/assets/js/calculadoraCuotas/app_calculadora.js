@@ -308,7 +308,10 @@ function getVariablesCombosResguardadas() {
         console.log(data);
 
         let carreraResguardo = data.id;
-        let nombreCarreraRes = data.nombre;
+        //let nombreCarreraRes = data.nombre;
+
+        let nombreCarreraRes = sessionStorage.getItem("nombreCarrera");
+        console.log(nombreCarreraRes);
 
         recalculoDeCombos(carreraResguardo, nombreCarreraRes);
 
