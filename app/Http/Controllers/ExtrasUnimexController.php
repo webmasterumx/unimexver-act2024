@@ -242,7 +242,7 @@ class ExtrasUnimexController extends Controller
         $respuesta['id'] = session("idCarreraComboResguardo");
         $respuesta['mensaje'] = "nombre obtenido";
 
-        return response()->json($respuesta);
+        //return response()->json($respuesta);
     }
 
 }
