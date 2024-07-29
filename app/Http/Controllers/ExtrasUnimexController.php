@@ -236,6 +236,8 @@ class ExtrasUnimexController extends Controller
 
     public function getVariableCarreraCombo()
     {
+        echo session("idCarreraComboResguardo");
+
         $respuesta['nombre'] = session("nombreCarreraComboResguardo");
         $respuesta['id'] = session("idCarreraComboResguardo");
         $respuesta['mensaje'] = "nombre obtenido";
