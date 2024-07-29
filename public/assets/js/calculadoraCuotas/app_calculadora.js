@@ -278,6 +278,8 @@ function setVariablesCombosReguardadas(carrera, nombre) {
     console.log(carrera);
     console.log(nombre);
 
+    sessionStorage.setItem("nombreCarrera", nombre);
+
     let ruta = setUrlBase() + "set/variables/combos/calculadora/" + carrera + "/" + nombre;
 
     $.ajax({
