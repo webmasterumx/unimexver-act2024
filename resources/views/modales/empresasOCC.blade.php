@@ -76,7 +76,7 @@
                                 <i class="bi bi-file-earmark-fill" style="color: #004b93;"></i> RFC
                             </label>
                             <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
-                                id="rfc_empresaOCC" name="rfc_empresaOCC">
+                                id="rfc_empresaOCC" name="rfc_empresaOCC" maxlength="13">
                             <label for="rfc_empresaOCC">Evita usar caracteres especiales.</label>
                         </div>
                     </div>

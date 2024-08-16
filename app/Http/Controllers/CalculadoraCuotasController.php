@@ -97,15 +97,24 @@ class CalculadoraCuotasController extends Controller
         return response()->json($respuesta);
     }
 
-    public function enviarCorreoCalculadoraDetalleBeca()
+    public function enviarCorreoDetallesBeca(Request $request)
     {
+
         //$recive = "lishanxime201099@gmail.com";
 
         try {
+            $nombreNivel = $request->nombreNivel;
+            $carrera = $request->nombreCarrera;
+            $nombrePlantel = $request->nombrePlantel;
+            $turno = $request->Turno;
+            $horario = $request->Horario;
+            $beca = $request->Beca;
+            $descripPer = $request->DescripPer;
+            $vigencia = $request->Vigencia;
 
             $recive = session('datoCuatroCalculadora');
-            //var_dump(session('ClaveCuoProm'));
-            $envio =  Mail::to($recive)->bcc("umrec_web@unimex.edu.mx")->send(new CalculadoraDetallesBeca());
+            //var_dump(session('ClaveCuoProm')); ->bcc("umrec_web@unimex.edu.mx")
+            $envio =  Mail::to($recive)->send(new CalculadoraDetallesBeca($carrera, $nombrePlantel, $turno, $descripPer, $beca, $vigencia, $horario));
 
             $statusCode     = 200;
             $this->message  = "Correo enviado correctamente.";
@@ -125,7 +134,7 @@ class CalculadoraCuotasController extends Controller
 
             //dd($response);
         }
-        //Mail::to($recive)->send(new CalculadoraDetallesBeca());
+        //Mail::to($recive)->send(new CalculadoraDetallesBeca()); 
     }
 
     public function establecerVariablesCorreo(Request $request, $respuesta)

@@ -137,6 +137,11 @@
     <!-- DataTables -->
     <script src="//cdn.datatables.net/2.0.1/js/dataTables.min.js"></script>
 
+    <!-- script de validacion de entrada de caracteres a inputs -->
+    <script
+        src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
+    </script>
+
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/app.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
@@ -234,7 +239,7 @@
 
             window.open(
                 'https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0'
-                );
+            );
         });
 
         /*
@@ -295,6 +300,10 @@
             });
             window.open("{{ route('contacto') }}", '_blank');
         }
+
+        $('#nombre_prospecto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#apellidos_prospecto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#nombreFolleto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
 
         function gerenerarMenuSm() {
             let menu = `

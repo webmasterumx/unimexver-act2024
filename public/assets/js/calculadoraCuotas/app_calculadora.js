@@ -186,6 +186,8 @@ function establecerValoresCosto(data) {
     $('#incioInfo').html(`<b>${data.DescripPer}</b>`);
     $('#vigenciaInfo').html(`<b>${data.Vigencia}</b>`);
 
+    conservarVariablesDetalleCalculadora(nombreNivel, nombreCarrera, nombrePlantel, data);
+
     $('#cargador_costos').addClass('d-none');
     $('#grupoInformacion').removeClass('d-none');
 }
@@ -729,6 +731,84 @@ function redireccionPreinscripcionEnLinea() {
         console.log("Algo salió mal");
     });
 
+
+}
+
+function conservarVariablesDetalleCalculadora(nombreNivel, nombreCarrera, nombrePlantel, data) {
+
+    sessionStorage.setItem("nombreNivel", nombreNivel);
+    sessionStorage.setItem("nombreCarrera", nombreCarrera);
+    sessionStorage.setItem("nombrePlantel", nombrePlantel);
+    sessionStorage.setItem("Turno", data.Turno);
+    sessionStorage.setItem("Horario", data.Horario);
+    sessionStorage.setItem("Beca", data.Beca);
+    sessionStorage.setItem("DescripPer", data.DescripPer);
+    sessionStorage.setItem("Vigencia", data.Vigencia);
+
+    console.log(sessionStorage.getItem("Horario"));
+
+}
+
+function enviarCorreoConVariablesGuardadas() {
+    $("#correoButton").prop("disabled", true);
+    $('#correoButton').html(`
+        <div class="spinner-border me-1" style="width: 20px; height: 20px; color: #de951b;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        Enviando correo
+    `);
+
+    let ruta = setUrlBase() + "enviar/correo/detalles/beca";
+
+    console.log(ruta);
+
+
+    let data = {
+        nombreNivel: sessionStorage.getItem("nombreNivel"),
+        nombreCarrera: sessionStorage.getItem("nombreCarrera"),
+        nombrePlantel: sessionStorage.getItem("nombrePlantel"),
+        Turno: sessionStorage.getItem("Turno"),
+        Horario: sessionStorage.getItem("Horario"),
+        Beca: sessionStorage.getItem("Beca"),
+        DescripPer: sessionStorage.getItem("DescripPer"),
+        Vigencia: sessionStorage.getItem("Vigencia"),
+    }
+
+    console.log(data);
+
+    $.ajax({
+        method: "POST",
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        url: ruta,
+        data: data,
+        dataType: 'json'
+    }).done(function (data) {
+
+        console.log(data);
+        if (data.result == true) {
+            Swal.fire({
+                icon: "success",
+                text: "Los detalles de tu Beca se han enviado a tu correo.",
+            });
+        } else {
+            Swal.fire({
+                icon: "error",
+                text: "¡Error al enviar correo!",
+            });
+        }
+
+        $("#correoButton").prop("disabled", false);
+        $('#correoButton').html(`
+            <i class="bi bi-envelope" style="color: #de951b;"></i>
+            Enviar a correo
+        `);
+
+    }).fail(function (e) {
+        console.log("Algo salió mal");
+        console.log(e);
+    });
 
 }
 

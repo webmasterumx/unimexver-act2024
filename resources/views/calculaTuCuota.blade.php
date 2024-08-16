@@ -274,6 +274,9 @@
 @endsection
 
 @section('scripts')
+    <script type="text/javascript"
+        src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
+    </script>
     <script>
         $.ajax({
             method: "GET",
@@ -336,15 +339,8 @@
             }
         });
 
-        $('#nombreProspecto').keypress(function(tecla) {
-            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
-                    .charCode > 90) && (tecla.charCode != 45) && (tecla.charCode != 32) && (tecla.charCode != 241)) return false;
-        });
-
-        $('#apellidosProspecto').keypress(function(tecla) {
-            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
-                    .charCode > 90) && (tecla.charCode != 45) && (tecla.charCode != 32) && (tecla.charCode != 241)) return false;
-        });
+        $('#nombreProspecto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#apellidosProspecto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
     </script>
     <script src="{{ asset('assets/js/calculadoraCuotas/app_calculadora.js') }}"></script>
     <script src="{{ asset('assets/js/calculadoraCuotas/combos_calculadora.js') }}"></script>

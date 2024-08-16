@@ -13,12 +13,26 @@ class CalculadoraDetallesBeca extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $carrera;
+    public $nombrePlantel;
+    public $turno;
+    public $descripPer;
+    public $beca;
+    public $vigencia;
+    public $horario;
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($carrera, $nombrePlantel, $turno, $descripPer, $beca, $vigencia, $horario)
     {
-        //
+        $this->carrera = $carrera;
+        $this->nombrePlantel = $nombrePlantel;
+        $this->turno = $turno;
+        $this->descripPer = $descripPer;
+        $this->beca = $beca;
+        $this->vigencia = $vigencia;
+        $this->horario = $horario;
     }
 
     /**

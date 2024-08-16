@@ -149,6 +149,9 @@
 @include('modales.empresasOCC')
 
 @section('scripts')
+    <script
+        src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
+    </script>
     <script src="{{ asset('assets/js/combos.js') }}"></script>
     <script>
         $(document).ready(function() {
@@ -184,24 +187,6 @@
                 return false;
             }
         });
-
-        /*   $("#matricula_service").bind('keypress', function(event) {
-              var regex = new RegExp("^[0-9]+$");
-              var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-              if (!regex.test(key)) {
-                  event.preventDefault();
-                  return false;
-              }
-          });
-
-          $("#matricula_qys").bind('keypress', function(event) {
-              var regex = new RegExp("^[0-9]+$");
-              var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-              if (!regex.test(key)) {
-                  event.preventDefault();
-                  return false;
-              }
-          }); */
 
         $("#nivelSelect").append(`<option value="">Nivel</option>`);
         $("#carreraSelect").append(`<option value="">Carrera</option>`);
@@ -241,9 +226,20 @@
                 $('#enviarDatosEmpresasOCC').attr('disabled', true);
             }
         });
+
+        $('#name_service').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#asunto_service').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#nombre_empresaOCC').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#contacto_empresaOCC').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#razon_empresaOCC').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#nombre_trabajo').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#puesto_interes').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#nombre_qys').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#asunto_qys').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
+        $('#matricula_service').validCampoFranz('123456789-');
+        $('#matricula_qys').validCampoFranz('123456789-');
+        $('#rfc_empresaOCC').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú1234567890');
     </script>
 
     @include('include.redirecciones.outOfertaAcademica')
 @endsection
-
-
