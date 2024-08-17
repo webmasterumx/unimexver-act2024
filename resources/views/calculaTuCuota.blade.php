@@ -175,7 +175,7 @@
                                 <i class="bi bi-printer" style="color: #de951b;"></i>
                                 Imprimir
                             </button>
-                            <button onclick="enviarDetallesHorarioBeca()" id="correoButton" type="button"
+                            <button onclick="enviarCorreoConVariablesGuardadas()" id="correoButton" type="button"
                                 class="btn mb-3 ms-2">
                                 <i class="bi bi-envelope" style="color: #de951b;"></i>
                                 Enviar a correo
