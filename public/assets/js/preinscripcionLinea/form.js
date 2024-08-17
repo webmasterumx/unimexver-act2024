@@ -65,6 +65,12 @@ $("#formPreincripcion").validate({
                 `);
 
                 $('#statictConfirmPreinscripcion').modal('show');
+
+                $("#validarCorreo").prop("disabled", false);
+                $('#validarCorreo').html(`
+                <i class="bi bi-box-arrow-right"></i>
+                Continuar
+                `);
             } else if (respuesta.acceso = "Descartar") {
                 $("#validarCorreo").prop("disabled", false);
                 $('#validarCorreo').html(`
@@ -317,7 +323,7 @@ $("#formPromoPreinscripcion").validate({
                     $("#respuestaError").removeClass('d-none');
                     $('#corregirDatos').removeClass('d-none');
                     $("#respuestaError").html(respuesta.MensajeDeError);
-                } 
+                }
             }
 
 
