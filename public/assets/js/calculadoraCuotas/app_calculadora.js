@@ -146,7 +146,7 @@ function selectHorario(turno, beca, element) {
 
         if (data.Beca != undefined) {
             establecerValoresCosto(data);
-            establecerVariablesPromo(data);
+            //establecerVariablesPromo(data);
         }
         else {
             if ($("#grupoInformacion").hasClass("d-none") === false) {

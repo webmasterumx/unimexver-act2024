@@ -252,6 +252,10 @@
 @include('modales.modalCargaPreinscripcion')
 
 @section('scripts')
+    <script type="text/javascript"
+        src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
+    </script>
+    <script src="{{ asset('assets/js/validarCampos.js') }}"></script>
     @if (session('estadoCRM') == 1 || session()->has('foliocrm') == true)
         <script>
             $(document).ready(function() {
@@ -322,19 +326,48 @@
             //e.preventDefault();
         };
 
-        $('#nombreInscripcion').keypress(function(tecla) {
-            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
-                    .charCode > 90) && (tecla.charCode != 45) && (tecla.charCode != 32) && (tecla.charCode != 241)) return false;
-        });
+        $('#nombreInscripcion').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiou');
+        $('#apellidoPatInscripcion').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiou');
+        $('#apellidoMatInscripcion').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiou');
 
-        $('#apellidoPatInscripcion').keypress(function(tecla) {
-            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
-                    .charCode > 90) && (tecla.charCode != 45) && (tecla.charCode != 32) && (tecla.charCode != 241)) return false;
-        });
+        validarCamposLetrasOnPasteV1('#nombreInscripcion');
+        validarCamposLetrasOnPasteV1('#apellidoPatInscripcion');
+        validarCamposLetrasOnPasteV1('#apellidoMatInscripcion');
+        validarCamposLetrasOnPasteV1('#telefonoInscripcion');
+        validarCamposLetrasOnPasteV1('#telefonoCelInscripcion');
+        validarCamposLetrasOnPasteV1('#calleInscripcion');
+        validarCamposLetrasOnPasteV1('#numeroInscripcion');
+        validarCamposLetrasOnPasteV1('#coloniaInscripcion');
+    </script>
 
-        $('#apellidoMatInscripcion').keypress(function(tecla) {
-            if ((tecla.charCode < 97 || tecla.charCode > 122) && (tecla.charCode < 65 || tecla
-                    .charCode > 90) && (tecla.charCode != 45) && (tecla.charCode != 32) && (tecla.charCode != 241)) return false;
-        });
+    <script language="JavaScript">
+        var msg = "¡El botón derecho está desactivado para este sitio !";
+
+        function disableIE() {
+            if (document.all) {
+                //alert(msg);
+                return false;
+            }
+        }
+
+        function disableNS(e) {
+            if (document.layers || (document.getElementById && !document.all)) {
+                if (e.which == 2 || e.which == 3) {
+                    //alert(msg);
+                    return false;
+                }
+            }
+        }
+        if (document.layers) {
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown = disableNS;
+        } else {
+            document.onmouseup = disableNS;
+            document.oncontextmenu = disableIE;
+        }
+        document.oncontextmenu = ev => {
+            ev.preventDefault();
+            console.log("Prevented to open menu!");
+        }
     </script>
 @endsection

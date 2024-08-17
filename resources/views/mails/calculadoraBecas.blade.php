@@ -379,6 +379,20 @@
                                     </tr>
                                     <tr>
                                         <td class="align-justify">
+                                            @if (session('nombreNivel') == 'Licenciatura')
+                                                @php
+                                                    $nivel = 'Licenciaturas';
+                                                @endphp
+                                            @elseif(session('nombreNivel') == 'Especialidad')
+                                                @php
+                                                    $nivel = 'Especialidades';
+                                                @endphp
+                                            @elseif(session('nombreNivel') == 'Maestría')
+                                                @php
+                                                    $nivel = 'Maestrías';
+                                                @endphp
+                                            @else
+                                            @endif
                                             <br />
                                             <p>Número de Folio: <b> {{ session('datoCincoCalculadora') }}
                                                 </b><br /><br />
@@ -386,8 +400,8 @@
                                                     {{ session('datoUnoCalculadora') . ' ' . session('datoDosCalculadora') }}
                                                 </b> ya diste el primer paso para
                                                 cambiar tu vida.
-                                                <br /><br />Has enviado tu solicitud para cursar la<b>
-                                                    {{ session('nombreNivel') }} </b> en el Plantel <b>
+                                                <br /><br />Has enviado tu solicitud para cursar algunas de nuestras <b> {{ $nivel }}
+                                                </b> en el Plantel <b>
                                                     {{ session('nombrePlantel') }}
                                                 </b> para
                                                 iniciar tus estudios en <b> {{ session('nombrePeriodo') }} </b>
