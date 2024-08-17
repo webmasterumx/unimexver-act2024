@@ -52,6 +52,9 @@ $("#form_calculadora").validate({
     },
     submitHandler: function (form) {
 
+        let nombreProspecto = $('#nombreProspecto').val().replace(/ /g, "");
+        let apellidosProspecto = $('#apellidosProspecto').val().replace(/ /g, "");
+
         if (nombreProspecto == "") {
             Swal.fire({
                 icon: "error",
