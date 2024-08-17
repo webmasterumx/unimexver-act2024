@@ -62,58 +62,86 @@ $("#servicio_alumnos").validate({
         }
     },
     submitHandler: function (form) {
-        //* cambiar estado del boton
-        $('#enviarDatosServicio').prop("disabled", true);
-        $('#enviarDatosServicio').html(`
+
+        let name_service = $('#name_service').val().replace(/ /g, "");
+        let asunto_service = $('#asunto_service').val().replace(/ /g, "");
+
+        if (name_service == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo nombre no puede estar vacio",
+            });
+        }
+        else if (asunto_service == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo asunto no puede estar vacio",
+            });
+        }
+        else {
+            //* cambiar estado del boton
+            $('#enviarDatosServicio').prop("disabled", true);
+            $('#enviarDatosServicio').html(`
             <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
             &nbsp;Enviando Datos..
-        `);
+            `);
 
-        //!validacion de operacion
-        let operacion = Number($('#number1').val()) + Number($('#number2').val());
-        let operacionUsuario = $('#operacion_service').val();
-        let element = $("#deacuerdo_service");
+            //!validacion de operacion
+            let operacion = Number($('#number1').val()) + Number($('#number2').val());
+            let operacionUsuario = $('#operacion_service').val();
+            let element = $("#deacuerdo_service");
 
-        if (validarAvisoDePrivacidad(element) == true) {
-            if (operacion == operacionUsuario) {
-                let ruta = setUrlBase() + "form/servicio/alumno";
-                let formData = new FormData(form);
+            if (validarAvisoDePrivacidad(element) == true) {
+                if (operacion == operacionUsuario) {
+                    let ruta = setUrlBase() + "form/servicio/alumno";
+                    let formData = new FormData(form);
 
-                $.ajax({
-                    method: "POST",
-                    url: ruta,
-                    dataType: "html",
-                    data: formData,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                }).done(function (data) {
-                    console.log(data);
+                    $.ajax({
+                        method: "POST",
+                        url: ruta,
+                        dataType: "html",
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                    }).done(function (data) {
+                        console.log(data);
 
-                    Swal.fire({
-                        title: "¡REGISTRO EXITOSO!",
-                        text: "Datos enviados correctamente",
-                        icon: "success"
+                        Swal.fire({
+                            title: "¡REGISTRO EXITOSO!",
+                            text: "Datos enviados correctamente",
+                            icon: "success"
+                        });
+
+                        resetForms(1);
+
+                        $('#enviarDatosServicio').prop("disabled", false);
+                        $('#enviarDatosServicio').html(`
+                            ENVIAR DATOS
+                        `);
+
+                    }).fail(function (e) {
+                        console.log("Request: " + JSON.stringify(e));
                     });
 
-                    resetForms(1);
+                } else {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Resultado de la operación es incorrecto!",
+                        icon: "error"
+                    });
 
                     $('#enviarDatosServicio').prop("disabled", false);
                     $('#enviarDatosServicio').html(`
                         ENVIAR DATOS
                     `);
-
-                }).fail(function (e) {
-                    console.log("Request: " + JSON.stringify(e));
-                });
-
+                }
             } else {
                 Swal.fire({
-                    title: "Error!",
-                    text: "Resultado de la operación es incorrecto!",
-                    icon: "error"
+                    icon: "error",
+                    text: "Debe aceptar el aviso de privacidad para poder continuar.",
                 });
 
                 $('#enviarDatosServicio').prop("disabled", false);
@@ -121,17 +149,9 @@ $("#servicio_alumnos").validate({
                     ENVIAR DATOS
                 `);
             }
-        } else {
-            Swal.fire({
-                icon: "error",
-                text: "Debe aceptar el aviso de privacidad para poder continuar.",
-            });
-
-            $('#enviarDatosServicio').prop("disabled", false);
-            $('#enviarDatosServicio').html(`
-                ENVIAR DATOS
-            `);
         }
+
+
     }
 });
 
@@ -318,58 +338,86 @@ $("#form_trabaja").validate({
     },
     submitHandler: function (form) {
 
-        //* cambiar estado del boton
-        $('#enviarDatosTrabaja').prop("disabled", true);
-        $('#enviarDatosTrabaja').html(`
-            <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            &nbsp;Enviando Datos..
-        `);
+        let nombre_trabajo = $('#nombre_trabajo').val().replace(/ /g, "");
+        let puesto_interes = $('#puesto_interes').val().replace(/ /g, "");
+
+        if (nombre_trabajo == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo nombre no puede estar vacio",
+            });
+        }
+        else if (puesto_interes == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo asunto no puede estar vacio",
+            });
+        }
+        else {
+
+            //* cambiar estado del boton
+            $('#enviarDatosTrabaja').prop("disabled", true);
+            $('#enviarDatosTrabaja').html(`
+                <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                &nbsp;Enviando Datos..
+            `);
 
 
-        //!validacion de operacion
-        let operacion = Number($('#number3').val()) + Number($('#number4').val());
-        let operacionUsuario = $('#operacion_trabaja').val();
-        let element = $("#aceptar_trabajar");
+            //!validacion de operacion
+            let operacion = Number($('#number3').val()) + Number($('#number4').val());
+            let operacionUsuario = $('#operacion_trabaja').val();
+            let element = $("#aceptar_trabajar");
 
-        if (validarAvisoDePrivacidad(element) == true) {
-            if (operacion == operacionUsuario) {
-                let ruta = setUrlBase() + "form/trabaja/unimex";
-                let formData = new FormData(form);
+            if (validarAvisoDePrivacidad(element) == true) {
+                if (operacion == operacionUsuario) {
+                    let ruta = setUrlBase() + "form/trabaja/unimex";
+                    let formData = new FormData(form);
 
-                $.ajax({
-                    method: "POST",
-                    url: ruta,
-                    dataType: "html",
-                    data: formData,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                }).done(function (data) {
-                    console.log(data);
+                    $.ajax({
+                        method: "POST",
+                        url: ruta,
+                        dataType: "html",
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                    }).done(function (data) {
+                        console.log(data);
 
-                    Swal.fire({
-                        title: "¡REGISTRO EXITOSO!",
-                        text: "Datos enviados correctamente",
-                        icon: "success"
+                        Swal.fire({
+                            title: "¡REGISTRO EXITOSO!",
+                            text: "Datos enviados correctamente",
+                            icon: "success"
+                        });
+
+                        resetForms(2);
+
+                        $('#enviarDatosTrabaja').prop("disabled", false);
+                        $('#enviarDatosTrabaja').html(`
+                            ENVIAR DATOS
+                        `);
+
+                    }).fail(function (e) {
+                        console.log("Request: " + JSON.stringify(e));
                     });
-
-                    resetForms(2);
+                } else {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Resultado de la operación es incorrecto!",
+                        icon: "error"
+                    });
 
                     $('#enviarDatosTrabaja').prop("disabled", false);
                     $('#enviarDatosTrabaja').html(`
                         ENVIAR DATOS
                     `);
-
-                }).fail(function (e) {
-                    console.log("Request: " + JSON.stringify(e));
-                });
+                }
             } else {
                 Swal.fire({
-                    title: "Error!",
-                    text: "Resultado de la operación es incorrecto!",
-                    icon: "error"
+                    icon: "error",
+                    text: "Debe aceptar el aviso de privacidad para poder continuar.",
                 });
 
                 $('#enviarDatosTrabaja').prop("disabled", false);
@@ -377,17 +425,8 @@ $("#form_trabaja").validate({
                     ENVIAR DATOS
                 `);
             }
-        } else {
-            Swal.fire({
-                icon: "error",
-                text: "Debe aceptar el aviso de privacidad para poder continuar.",
-            });
-
-            $('#enviarDatosTrabaja').prop("disabled", false);
-            $('#enviarDatosTrabaja').html(`
-                ENVIAR DATOS
-            `);
         }
+
     }
 });
 
@@ -450,56 +489,85 @@ $("#form_quejaSugerencia").validate({
         }
     },
     submitHandler: function (form) {
-        //* cambiar estado del boton
-        $('#enviarDatosAceptar').prop("disabled", true);
-        $('#enviarDatosAceptar').html(`
-             <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
-                 <span class="visually-hidden">Loading...</span>
-             </div>
-             &nbsp;Enviando Datos..
-         `);
 
-        //!validacion de operacion
-        let operacion = Number($('#number5').val()) + Number($('#number6').val());
-        let operacionUsuario = $('#operacion_qys').val();
-        let element = $("#aceptar_qys");
+        let nombre_qys = $('#nombre_qys').val().replace(/ /g, "");
+        let asunto_qys = $('#asunto_qys').val().replace(/ /g, "");
 
-        if (validarAvisoDePrivacidad(element) == true) {
-            if (operacion == operacionUsuario) {
-                let ruta = setUrlBase() + "form/quejas/sugerencias";
-                let formData = new FormData(form);
+        if (nombre_qys == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo nombre no puede estar vacio",
+            });
+        }
+        else if (asunto_qys == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo asunto no puede estar vacio",
+            });
+        }
+        else {
+            //* cambiar estado del boton
+            $('#enviarDatosAceptar').prop("disabled", true);
+            $('#enviarDatosAceptar').html(`
+                <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                &nbsp;Enviando Datos..
+            `);
 
-                $.ajax({
-                    method: "POST",
-                    url: ruta,
-                    dataType: "html",
-                    data: formData,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                }).done(function (data) {
-                    console.log(data);
+            //!validacion de operacion
+            let operacion = Number($('#number5').val()) + Number($('#number6').val());
+            let operacionUsuario = $('#operacion_qys').val();
+            let element = $("#aceptar_qys");
 
-                    Swal.fire({
-                        title: "¡REGISTRO EXITOSO!",
-                        text: "Datos enviados correctamente",
-                        icon: "success"
+            if (validarAvisoDePrivacidad(element) == true) {
+                if (operacion == operacionUsuario) {
+                    let ruta = setUrlBase() + "form/quejas/sugerencias";
+                    let formData = new FormData(form);
+
+                    $.ajax({
+                        method: "POST",
+                        url: ruta,
+                        dataType: "html",
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                    }).done(function (data) {
+                        console.log(data);
+
+                        Swal.fire({
+                            title: "¡REGISTRO EXITOSO!",
+                            text: "Datos enviados correctamente",
+                            icon: "success"
+                        });
+
+                        resetForms(3);
+
+                        $('#enviarDatosAceptar').prop("disabled", false);
+                        $('#enviarDatosAceptar').html(`
+                            ENVIAR DATOS
+                        `);
+
+                    }).fail(function (e) {
+                        console.log("Request: " + JSON.stringify(e));
                     });
-
-                    resetForms(3);
+                } else {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Resultado de la operación es incorrecto!",
+                        icon: "error"
+                    });
 
                     $('#enviarDatosAceptar').prop("disabled", false);
                     $('#enviarDatosAceptar').html(`
                         ENVIAR DATOS
                     `);
+                }
 
-                }).fail(function (e) {
-                    console.log("Request: " + JSON.stringify(e));
-                });
             } else {
                 Swal.fire({
-                    title: "Error!",
-                    text: "Resultado de la operación es incorrecto!",
+                    text: "Debe aceptar el aviso de privacidad para poder continuar.",
                     icon: "error"
                 });
 
@@ -508,18 +576,8 @@ $("#form_quejaSugerencia").validate({
                     ENVIAR DATOS
                 `);
             }
-
-        } else {
-            Swal.fire({
-                text: "Debe aceptar el aviso de privacidad para poder continuar.",
-                icon: "error"
-            });
-
-            $('#enviarDatosAceptar').prop("disabled", false);
-            $('#enviarDatosAceptar').html(`
-                ENVIAR DATOS
-            `);
         }
+
     }
 });
 
@@ -584,57 +642,101 @@ $("#form_empresasOCC").validate({
         }
     },
     submitHandler: function (form) {
-        //* cambiar estado del boton
-        $('#enviarDatosEmpresasOCC').prop("disabled", true);
-        $('#enviarDatosEmpresasOCC').html(`
-             <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
-                 <span class="visually-hidden">Loading...</span>
-             </div>
-             &nbsp;Enviando Datos..
-         `);
 
-        //!validacion de operacion
-        let operacion = Number($('#number7').val()) + Number($('#number8').val());
-        let operacionUsuario = $('#operacion_empresaOCC').val();
-        let element = $("#aceptar_empresasocc");
+        let nombre_empresaOCC = $('#nombre_empresaOCC').val().replace(/ /g, "");
+        let contacto_empresaOCC = $('#contacto_empresaOCC').val().replace(/ /g, "");
+        let razon_empresaOCC = $('#razon_empresaOCC').val().replace(/ /g, "");
+        let rfc_empresaOCC = $('#rfc_empresaOCC').val().replace(/ /g, "");
 
-        if (validarAvisoDePrivacidad(element) == true) {
-            if (operacion == operacionUsuario) {
-                let ruta = setUrlBase() + "form/empresas/occ";
-                let formData = new FormData(form);
 
-                $.ajax({
-                    method: "POST",
-                    url: ruta,
-                    dataType: "html",
-                    data: formData,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                }).done(function (data) {
-                    console.log(data);
+        if (nombre_empresaOCC == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El nombre de su empresa es obligatorio.",
+            });
+        }
+        else if (contacto_empresaOCC == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El nombre de su contacto es obligatorio.",
+            });
+        }
+        else if (razon_empresaOCC == "") {
+            Swal.fire({
+                icon: "error",
+                text: "Razón social obligatoria.",
+            });
+        }
+        else if (rfc_empresaOCC == "") {
+            Swal.fire({
+                icon: "error",
+                text: "RFC obligatorio",
+            });
+        }
+        else {
+            //* cambiar estado del boton
+            $('#enviarDatosEmpresasOCC').prop("disabled", true);
+            $('#enviarDatosEmpresasOCC').html(`
+                <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                &nbsp;Enviando Datos..
+            `);
 
-                    Swal.fire({
-                        title: "¡REGISTRO EXITOSO!",
-                        text: "Datos enviados correctamente",
-                        icon: "success"
+            //!validacion de operacion
+            let operacion = Number($('#number7').val()) + Number($('#number8').val());
+            let operacionUsuario = $('#operacion_empresaOCC').val();
+            let element = $("#aceptar_empresasocc");
+
+            if (validarAvisoDePrivacidad(element) == true) {
+                if (operacion == operacionUsuario) {
+                    let ruta = setUrlBase() + "form/empresas/occ";
+                    let formData = new FormData(form);
+
+                    $.ajax({
+                        method: "POST",
+                        url: ruta,
+                        dataType: "html",
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                    }).done(function (data) {
+                        console.log(data);
+
+                        Swal.fire({
+                            title: "¡REGISTRO EXITOSO!",
+                            text: "Datos enviados correctamente",
+                            icon: "success"
+                        });
+
+                        resetForms(4);
+
+                        $('#enviarDatosEmpresasOCC').prop("disabled", false);
+                        $('#enviarDatosEmpresasOCC').html(`
+                            ENVIAR DATOS
+                        `);
+
+                    }).fail(function (e) {
+                        console.log("Request: " + JSON.stringify(e));
                     });
-
-                    resetForms(4);
+                } else {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Resultado de la operación es incorrecto!",
+                        icon: "error"
+                    });
 
                     $('#enviarDatosEmpresasOCC').prop("disabled", false);
                     $('#enviarDatosEmpresasOCC').html(`
                         ENVIAR DATOS
                     `);
-
-                }).fail(function (e) {
-                    console.log("Request: " + JSON.stringify(e));
-                });
+                }
             } else {
+
                 Swal.fire({
-                    title: "Error!",
-                    text: "Resultado de la operación es incorrecto!",
-                    icon: "error"
+                    icon: "error",
+                    text: "Debe aceptar el aviso de privacidad para poder continuar.",
                 });
 
                 $('#enviarDatosEmpresasOCC').prop("disabled", false);
@@ -642,17 +744,6 @@ $("#form_empresasOCC").validate({
                     ENVIAR DATOS
                 `);
             }
-        } else {
-
-            Swal.fire({
-                icon: "error",
-                text: "Debe aceptar el aviso de privacidad para poder continuar.",
-            });
-
-            $('#enviarDatosEmpresasOCC').prop("disabled", false);
-            $('#enviarDatosEmpresasOCC').html(`
-                ENVIAR DATOS
-            `);
         }
 
 
