@@ -211,16 +211,38 @@ $("#form_contacto").validate({
     },
     submitHandler: function (form) {
 
-        $('#envio_contacto').prop("disabled", true);
-        $('#envio_contacto').html(`
-            <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            &nbsp;Enviando Datos..
-        `);
+        let nombreProspecto = $('#nombre_prospecto').val().replace(/ /g, "");
+        let apellidosProspecto = $('#apellidos_prospecto').val().replace(/ /g, "");
+
+        console.log(nombreProspecto);
 
 
-        form.submit();
+        if (nombreProspecto == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo de nombre no puede estar vacio",
+            });
+        }
+        else if (apellidosProspecto == "") {
+            Swal.fire({
+                icon: "error",
+                text: "El campo de apellidos no puede estar vacio",
+            });
+        }
+        else {
+            $('#envio_contacto').prop("disabled", true);
+            $('#envio_contacto').html(`
+                <div class="spinner-border" style="width: 20px; height: 20px;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                &nbsp;Enviando Datos..
+            `);
+
+
+            form.submit();
+        }
+
+
     }
 });
 
