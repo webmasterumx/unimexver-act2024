@@ -139,9 +139,7 @@
                             id="nivelCrm" name="nivelCrm">
                     </div>
                     <div class="col-12 mt-3 no-print">
-                        <p class="text-center">
-                            Elige la Licenciatura de interés y después el horario que prefieres.
-                        </p>
+                        <p class="text-center" id="textComboCarreras"></p>
                     </div>
                     <div class="col-12 no-print">
                         <select id="selectCarrera" name="selectCarrera" class="form-select mx-auto w-75 text-center">

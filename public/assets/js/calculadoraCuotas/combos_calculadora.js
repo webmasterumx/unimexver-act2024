@@ -145,6 +145,7 @@ $("select[name=selectNivel]").change(function () {
             $('#selectEgresado').addClass('d-none');
         }
     }
+    establecerTextoComboCarrera();
 
     $('#selectCarrera').empty();
     $('#grupoBotones').empty();

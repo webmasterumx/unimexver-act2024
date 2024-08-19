@@ -62,6 +62,7 @@ function envioFormulario(form) {
         $('#nombreCrm').val(nombreProspecto);
         $('#periodoCrm').val(periodoProspecto);
         $('#nivelCrm').val(nivelProspecto);
+        establecerTextoComboCarrera();
 
         $.ajax({
             method: "GET",
@@ -809,6 +810,26 @@ function enviarCorreoConVariablesGuardadas() {
         console.log("Algo salió mal");
         console.log(e);
     });
+
+}
+
+function establecerTextoComboCarrera() {
+
+    let nivelSelect = $('#selectNivel').val();
+
+    if (nivelSelect == 1) {
+        text = `Elige la Licenciatura de interés y después el horario que prefieres.`;
+
+    } else if (nivelSelect == 2) {
+        text = `Elige la Especialidad de interés y después el horario que prefieres.`;
+    }
+    else if (nivelSelect == 3) {
+        text = `Elige la Maestría de interés y después el horario que prefieres.`;
+    }
+
+    console.log(text);
+
+    $('#textComboCarreras').html(text);
 
 }
 
