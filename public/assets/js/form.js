@@ -29,6 +29,10 @@ $("#servicio_alumnos").validate({
         },
         mensaje_service: {
             required: true
+        },
+        operacion_service: {
+            required: true,
+            maxlength: 2,
         }
     },
     messages: {
@@ -59,6 +63,10 @@ $("#servicio_alumnos").validate({
         },
         mensaje_service: {
             required: "Mensaje obligatorio.",
+        },
+        operacion_service: {
+            required: "Resultado de la operacion requerido.",
+            maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },
     submitHandler: function (form) {
@@ -301,6 +309,10 @@ $("#form_trabaja").validate({
         experiencia_trabaja: {
             required: true,
         },
+        operacion_trabaja: {
+            required: true,
+            maxlength: 2,
+        }
     },
     messages: {
         nombre_trabajo: {
@@ -335,6 +347,10 @@ $("#form_trabaja").validate({
         experiencia_trabaja: {
             required: "Experiencia laboral obligatoria.",
         },
+        operacion_trabaja: {
+            required: "Resultado de la operacion requerido.",
+            maxlength: "Solo se permiten resultados de dos digitos.",
+        }
     },
     submitHandler: function (form) {
 
@@ -456,6 +472,10 @@ $("#form_quejaSugerencia").validate({
         },
         mensaje_qys: {
             required: true,
+        },
+        operacion_qys: {
+            required: true,
+            maxlength: 2,
         }
     },
     messages: {
@@ -486,6 +506,10 @@ $("#form_quejaSugerencia").validate({
         },
         mensaje_qys: {
             required: "Mensaje obligatorio.",
+        },
+        operacion_qys: {
+            required: "Resultado de la operacion requerido.",
+            maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },
     submitHandler: function (form) {
@@ -608,6 +632,10 @@ $("#form_empresasOCC").validate({
         },
         comentarios_empresaOCC: {
             required: true,
+        },
+        operacion_empresaOCC: {
+            required: true,
+            maxlength: 2,
         }
     },
     messages: {
@@ -639,6 +667,10 @@ $("#form_empresasOCC").validate({
         },
         comentarios_empresaOCC: {
             required: "Comentarios obligatorios.",
+        },
+        operacion_empresaOCC: {
+            required: "Resultado de la operacion requerido.",
+            maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },
     submitHandler: function (form) {

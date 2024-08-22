@@ -125,6 +125,7 @@ $("#formPromoPreinscripcion").validate({
         },
         calleInscripcion: {
             required: true,
+            maxlength: 15,
         },
         numeroInscripcion: {
             required: true,
@@ -188,6 +189,7 @@ $("#formPromoPreinscripcion").validate({
         },
         numeroInscripcion: {
             required: "Número obligatorio.",
+            maxlength: "El número debe tener máximo 10 digitos.",
         },
         coloniaInscripcion: {
             required: "Colonia obligatoria.",

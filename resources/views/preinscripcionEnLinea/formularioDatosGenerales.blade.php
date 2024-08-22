@@ -129,7 +129,7 @@
                                 <label style="color: #00539a !important;" for="numeroInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span> Número</label>
                                 <input type="text" class="form-control" id="numeroInscripcion"
-                                    name="numeroInscripcion">
+                                    name="numeroInscripcion" maxlength="15">
                             </div>
                         </div>
                         <div class="col-12 col-lg-3">
