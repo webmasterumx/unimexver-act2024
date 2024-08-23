@@ -62,7 +62,7 @@
                 <input disabled type="text" class="text-center" id="number6" name="number6">
             </div>
             <div class="col-12 col-md-4">
-                <input type="number" class="form-control" id="operacion_qys" name="operacion_qys"
+                <input type="text" class="form-control" id="operacion_qys" name="operacion_qys"
                     placeholder="Introduce el resultado aquí" maxlength="2">
             </div>
         </div>

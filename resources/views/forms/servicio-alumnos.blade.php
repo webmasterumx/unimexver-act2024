@@ -88,7 +88,7 @@
                 <input disabled type="text" class="text-center" id="number2" name="number2">
             </div>
             <div class="col-12 col-md-4">
-                <input type="number" maxlength="2" class="form-control" id="operacion_service" name="operacion_service"
+                <input type="text" maxlength="2" class="form-control" id="operacion_service" name="operacion_service"
                     placeholder="Introduce el resultado aquí">
             </div>
         </div>

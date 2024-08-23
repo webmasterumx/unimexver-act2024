@@ -239,6 +239,12 @@
         $('#matricula_service').validCampoFranz('123456789-');
         $('#matricula_qys').validCampoFranz('123456789-');
         $('#rfc_empresaOCC').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú1234567890');
+
+        // limitador de entrada de caracteres inputs resultados
+        $('#operacion_qys').validCampoFranz('1234567890');
+        $('#operacion_service').validCampoFranz('1234567890');
+        $('#operacion_trabaja').validCampoFranz('1234567890');
+        $('#operacion_empresaOCC').validCampoFranz('1234567890');
     </script>
 
     @include('include.redirecciones.outOfertaAcademica')

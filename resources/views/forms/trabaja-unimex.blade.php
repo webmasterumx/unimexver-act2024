@@ -99,7 +99,7 @@
                 <input disabled type="text" class="text-center" id="number4" name="number4">
             </div>
             <div class="col-12 col-md-4">
-                <input type="number" class="form-control" id="operacion_trabaja" name="operacion_trabaja"
+                <input type="text" class="form-control" id="operacion_trabaja" name="operacion_trabaja"
                     placeholder="Introduce el resultado aquí" maxlength="2">
             </div>
         </div>

@@ -94,7 +94,7 @@
                             <input disabled type="text" class="text-center" id="number8" name="number8">
                         </div>
                         <div class="col-12 col-md-5">
-                            <input type="number" class="form-control" id="operacion_empresaOCC"
+                            <input type="text" class="form-control" id="operacion_empresaOCC"
                                 name="operacion_empresaOCC" placeholder="Introduce el resultado aquí"
                                 maxlength="2">
                         </div>
