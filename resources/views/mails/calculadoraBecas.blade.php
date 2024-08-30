@@ -400,7 +400,7 @@
                                                     {{ session('datoUnoCalculadora') . ' ' . session('datoDosCalculadora') }}
                                                 </b> ya diste el primer paso para
                                                 cambiar tu vida.
-                                                <br /><br />Has enviado tu solicitud para cursar algunas de nuestras <b> {{ $nivel }}
+                                                <br /><br />Has enviado tu solicitud para cursar alguna de nuestras <b> {{ $nivel }}
                                                 </b> en el Plantel <b>
                                                     {{ session('nombrePlantel') }}
                                                 </b> para

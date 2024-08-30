@@ -96,22 +96,24 @@
                 <div class="col-12">
                     <div id="listCarreras">
                         @foreach ($listaCarreras as $carrera)
-                            <a href="{{ route('licenciatura', $carrera->slug) }}" class="card mx-2 h-100">
-                                <div class="card-body p-3 p-md-2">
-                                    <center>
-                                        <img style="min-height: 80px !important;" src="{{ $carrera->icon }}"
-                                            alt="{{ $carrera->slug }}" title="Ver más">
-                                    </center>
-                                    {!! $carrera->titulo !!}
-                                    <hr>
-                                    <p class="card-text text-justify">{{ $carrera->descripcion }}</p>
-                                    @if ($carrera->veracruz == true)
-                                        <div class="w-100 d-flex" style="justify-content: flex-end;">
-                                            <img src="{{ asset('assets/img/extras/descarga.webp') }}" alt="">
-                                        </div>
-                                    @endif
-                                </div>
-                            </a>
+                            @if ($carrera->mostrar == true)
+                                <a href="{{env('APP_URL')}}licenciatura/{{$carrera->slug}}{{$carrera->urlUTM}}" class="card mx-2 h-100">
+                                    <div class="card-body p-3 p-md-2">
+                                        <center>
+                                            <img style="min-height: 80px !important;" src="{{ $carrera->icon }}"
+                                                alt="{{ $carrera->slug }}" title="Ver más">
+                                        </center>
+                                        {!! $carrera->titulo !!}
+                                        <hr>
+                                        <p class="card-text text-justify">{{ $carrera->descripcion }}</p>
+                                        @if ($carrera->veracruz == true)
+                                            <div class="w-100 d-flex" style="justify-content: flex-end;">
+                                                <img src="{{ asset('assets/img/extras/descarga.webp') }}" alt="">
+                                            </div>
+                                        @endif
+                                    </div>
+                                </a>
+                            @endif
                         @endforeach
                     </div>
                 </div>

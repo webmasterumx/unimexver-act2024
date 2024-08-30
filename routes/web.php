@@ -43,7 +43,10 @@ Route::view('/servicio-social', 'servicioSocial')->name('servicio.social');
 Route::view('/calendarios-escolares', 'calendarios_escolares')->name('calendarios_escolares');
 Route::view('/aviso-de-privacidad', 'aviso-privacidad')->name('aviso_de_privacidad');
 Route::view('/datos/pago/preinscripcion', 'preinscripcionEnLinea.datosPago')->name('datos.pago');
+Route::view("/registro_exitoso", "registroExitoso")->name('registro.exitoso');
+Route::view("/error_de_registro", "errorRegistro")->name("error.registro");
 Route::post('/procesa/datos/folleto', [FormController::class, 'procesaFormularioFolletos'])->name('procesa.datos.folleto');
+Route::post('/procesa/datos/form/contacto', [FormController::class, 'procesaFormularioContacto'])->name('procesa.datos.contacto.inicial');
 
 //? variables de establecimiento para fomulario de contacto
 Route::get('/set/variables/contactForm/{elemento}', [ExtrasUnimexController::class, 'setVariablesFormContacto'])->name('set.variables.contactForm');
@@ -84,8 +87,7 @@ Route::post('/preinscripcion/get/horarios', [ApiConsumoController::class, 'prein
 Route::post('/guardar/bitacora/preinscripcion', [ApiConsumoController::class, 'guardarActividadBitacora'])->name('guardar.bitacora.preinscripcion');
 Route::post('/add/prospectacion', [ApiConsumoController::class, 'addProspectacion'])->name('add.prospectacion');
 
-//* envio de formularios
-Route::post('/contacto/prospecto', [FormController::class, 'contactoProspecto'])->name('contacto.prospecto');
+
 //* resultados de examen
 Route::post('/obtener/resultados/examen', [FormController::class, 'getResultadosExamen'])->name('obtener.resultdos.examen');
 Route::post('/form/servicio/alumno', [FormController::class, 'servicioAlumnos'])->name('form.servicio.alumno');

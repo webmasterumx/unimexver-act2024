@@ -42,7 +42,7 @@
                 </p>
             </div>
             <div class="col-12 col-md-6 p-0"> <!-- form_contacto -->
-                <form id="form_contacto" action="{{ route('contacto.prospecto') }}" method="POST" class="bg-white p-4 p-md-5">
+                <form id="form_contacto"  method="POST" class="bg-white p-4 p-md-5">
                     @csrf
                     <p style="color: #004b93; font-size: 1.5em;" class="text-center">
                         ¡Estamos para ayudarte! <br>
@@ -53,11 +53,11 @@
                     <div class="w-100 d-flex">
                         <div class="w-50">
                             <input class="w-100 rounded-0 form-control" type="text" name="nombre_prospecto"
-                                id="nombre_prospecto" placeholder="Nombre">
+                                id="nombre_prospecto" placeholder="Nombre" maxlength="50">
                         </div>
                         <div class="w-50">
                             <input class="rounded-0 form-control" type="text" name="apellidos_prospecto"
-                                id="apellidos_prospecto" placeholder="Apellidos">
+                                id="apellidos_prospecto" placeholder="Apellidos" maxlength="60">
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@
                         <i class="bi bi-envelope-fill color-unimex"></i> EMAIL *</label>
                     <div class="w-100">
                         <input class="rounded-0 form-control" type="email" name="mail_prospecto" id="mail_prospecto"
-                            placeholder="nombre@email.com">
+                            placeholder="nombre@email.com" maxlength="50">
                     </div>
 
                     <label class="border p-2 w-100 fw-light mt-3 mb-0" for="celular_prospecto">

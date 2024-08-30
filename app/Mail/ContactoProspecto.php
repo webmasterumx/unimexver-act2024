@@ -14,19 +14,17 @@ class ContactoProspecto extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $infoForm;
-    public $infoGenerada;
+    public $data;
     public $valores;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($infoForm, $infoGenerada)
+    public function __construct($infoGenerada)
     {
-        $this->infoForm = $infoForm;
-        $this->infoGenerada = $infoGenerada;
+        $this->data = $infoGenerada;
 
-        $valores = app(ExtrasUnimexController::class)->complementoMailContactoProspecto($this->infoGenerada);
+        $valores = app(ExtrasUnimexController::class)->complementoMailContactoProspecto($this->data);
         $this->valores = $valores;
     }
 

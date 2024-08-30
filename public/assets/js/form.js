@@ -77,13 +77,13 @@ $("#servicio_alumnos").validate({
         if (name_service == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo nombre no puede estar vacio",
+                text: "El campo nombre no puede estar vacío",
             });
         }
         else if (asunto_service == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo asunto no puede estar vacio",
+                text: "El campo asunto no puede estar vacío",
             });
         }
         else {
@@ -167,12 +167,15 @@ $("#form_contacto").validate({
     rules: {
         nombre_prospecto: {
             required: true,
+            maxlength: 50,
         },
         apellidos_prospecto: {
             required: true,
+            maxlength: 60,
         },
         mail_prospecto: {
             required: true,
+            maxlength: 50,
         },
         celular_prospecto: {
             required: true,
@@ -203,23 +206,26 @@ $("#form_contacto").validate({
     messages: {
         nombre_prospecto: {
             required: "Nombre obligatorio.",
+            maxlength: "El número de caracteres máximo es 50."
         },
         apellidos_prospecto: {
             required: "Apellidos obligatorios.",
+            maxlength: "El número de caracteres máximo es 60."
         },
         mail_prospecto: {
             required: "Correo obligatorio.",
-            email: "Ingresa un formato valido de correo."
+            email: "Ingresa un formato valido de correo.",
+            maxlength: "El número de caracteres máximo es 50."
         },
         celular_prospecto: {
             required: "Teléfono celular obligatorio.",
-            minlength: "Numero celular de 10 dig. minimo.",
-            maxlength: "Numero celular de 10 dig. maximo."
+            minlength: "Numero celular de 10 dig. mínimo.",
+            maxlength: "Numero celular de 10 dig. máximo."
         },
         telefono_prospecto: {
             required: "Teléfono de casa obligatorio.",
-            minlength: "Numero teléfonico de 10 dig. minimo.",
-            maxlength: "Numero teléfonico de 10 dig. maximo."
+            minlength: "Numero teléfonico de 10 dig. mínimo.",
+            maxlength: "Numero teléfonico de 10 dig. máximo."
         },
         plantelSelect: {
             required: "Selecciona un plantel.",
@@ -248,13 +254,13 @@ $("#form_contacto").validate({
         if (nombreProspecto == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo de nombre no puede estar vacio",
+                text: "El campo de nombre no puede estar vacío",
             });
         }
         else if (apellidosProspecto == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo de apellidos no puede estar vacio",
+                text: "El campo de apellidos no puede estar vacío",
             });
         }
         else {
@@ -267,7 +273,54 @@ $("#form_contacto").validate({
             `);
 
 
-            form.submit();
+            //* creacion de variable form data para envio de datos
+            let formData = new FormData(form);
+            let ruta = setUrlBase() + "procesa/datos/form/contacto";
+
+            //! se agregan valores de seleccion para la vista de exito
+            let plantelSeleccion = $('select[name="plantelSelect"] option:selected').text();
+            let nivelSeleccion = $('select[name="nivelSelect"] option:selected').text();
+            let carreraSeleccion = $('select[name="carreraSelect"] option:selected').text();
+            let periodoSeleccion = $('select[name="periodoSelect"] option:selected').text();
+            let horarioSeleccion = $('select[name="horarioSelect"] option:selected').text();
+
+            formData.append("plantelSeleccion", plantelSeleccion);
+            formData.append("nivelSeleccion", nivelSeleccion);
+            formData.append("carreraSeleccion", carreraSeleccion);
+            formData.append("periodoSeleccion", periodoSeleccion);
+            formData.append("horarioSeleccion", horarioSeleccion);
+
+            $.ajax({
+                method: "POST",
+                url: ruta,
+                dataType: "html",
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+            }).done(function (data) {
+
+                console.log(data);
+
+                let respuesta = JSON.parse(data);
+
+                let rutaRedireccion = setUrlBase() + respuesta.ruta;
+
+                setTimeout("location.href='" + rutaRedireccion + "'", 2000);
+
+
+            }).fail(function (e) {
+
+                console.log(e.status);
+
+                if (e.status == 500) {
+                    console.log("Error en el servidor");
+                } else {
+                    console.log("Error desconocido");
+                }
+
+                console.log("Request: " + JSON.stringify(e.status));
+            });
         }
 
 
@@ -360,13 +413,13 @@ $("#form_trabaja").validate({
         if (nombre_trabajo == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo nombre no puede estar vacio",
+                text: "El campo nombre no puede estar vacío",
             });
         }
         else if (puesto_interes == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo asunto no puede estar vacio",
+                text: "El campo asunto no puede estar vacío",
             });
         }
         else {
@@ -520,13 +573,13 @@ $("#form_quejaSugerencia").validate({
         if (nombre_qys == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo nombre no puede estar vacio",
+                text: "El campo nombre no puede estar vacío",
             });
         }
         else if (asunto_qys == "") {
             Swal.fire({
                 icon: "error",
-                text: "El campo asunto no puede estar vacio",
+                text: "El campo asunto no puede estar vacío",
             });
         }
         else {

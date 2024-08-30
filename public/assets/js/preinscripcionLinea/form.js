@@ -248,7 +248,7 @@ $("#formPromoPreinscripcion").validate({
             if (nombreProspecto == "") {
                 Swal.fire({
                     icon: "error",
-                    text: "El campo de nombre no puede estar vacio",
+                    text: "El campo de nombre no puede estar vacío",
                 });
 
                 $('#calcularPromo').html(`
@@ -258,7 +258,7 @@ $("#formPromoPreinscripcion").validate({
             else if (apellidoPatProspecto == "") {
                 Swal.fire({
                     icon: "error",
-                    text: "El campo de apellido paterno no puede estar vacio",
+                    text: "El campo de apellido paterno no puede estar vacío",
                 });
                 $('#calcularPromo').html(`
                     Continuar
@@ -267,7 +267,7 @@ $("#formPromoPreinscripcion").validate({
             else if (apellidoMatProspecto == "") {
                 Swal.fire({
                     icon: "error",
-                    text: "El campo de apellido materno no puede estar vacio",
+                    text: "El campo de apellido materno no puede estar vacío",
                 });
                 $('#calcularPromo').html(`
                     Continuar
@@ -276,7 +276,7 @@ $("#formPromoPreinscripcion").validate({
             else if (calleProspecto == "") {
                 Swal.fire({
                     icon: "error",
-                    text: "El campo de calle no puede estar vacio",
+                    text: "El campo de calle no puede estar vacío",
                 });
                 $('#calcularPromo').html(`
                     Continuar
@@ -285,7 +285,7 @@ $("#formPromoPreinscripcion").validate({
             else if (numeroProspecto == "") {
                 Swal.fire({
                     icon: "error",
-                    text: "El campo de número no puede estar vacio",
+                    text: "El campo de número no puede estar vacío",
                 });
                 $('#calcularPromo').html(`
                     Continuar
@@ -294,7 +294,7 @@ $("#formPromoPreinscripcion").validate({
             else if (coloniaProspecto == "") {
                 Swal.fire({
                     icon: "error",
-                    text: "El campo de colonia no puede estar vacio",
+                    text: "El campo de colonia no puede estar vacío",
                 });
                 $('#calcularPromo').html(`
                     Continuar
@@ -336,7 +336,3 @@ $("#formPromoPreinscripcion").validate({
 
     }
 });
-
-function validarTextoVacio() {
-
-}

@@ -43,11 +43,11 @@
                     <hr>
                     <div class="mb-2 p-0 col-6">
                         <input type="text" class="form-control form-control-sm" id="nombreProspecto"
-                            name="nombreProspecto" placeholder="Nombre (Obligatorio)">
+                            name="nombreProspecto" placeholder="Nombre (Obligatorio)" maxlength="50">
                     </div>
                     <div class="mb-2 p-0 col-6">
                         <input type="text" class="form-control form-control-sm" id="apellidosProspecto"
-                            name="apellidosProspecto" placeholder="Apellidos (Obligatorio)">
+                            name="apellidosProspecto" placeholder="Apellidos (Obligatorio)" maxlength="60">
                     </div>
                     <div class="input-group mb-2 col-12 p-0 mb-1">
                         <div class="input-group-text">
@@ -71,7 +71,7 @@
                             <i class="bi bi-envelope-fill"></i>
                         </span>
                         <input type="email" class="form-control form-control-sm" placeholder="E-mail (Obligatorio)"
-                            id="emailProspecto" name="emailProspecto" aria-label="Username" aria-describedby="basic-addon1">
+                            id="emailProspecto" name="emailProspecto" maxlength="50">
                     </div>
                     <div class="form-check col-12">
                         <input class="form-check-input" type="checkbox" value="" id="terminosYcondiciones"
