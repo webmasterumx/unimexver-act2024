@@ -283,7 +283,9 @@
                                     {{ $disponibilidad[$d]['mixto'] }} <br>
                                 @else
                                     Escolarizado {{ $disponibilidad[$d]['escolarizado'] }} <br>
-                                    Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
+                                    @if ($disponibilidad[$d]['mixto'] != '' || $disponibilidad[$d]['mixto'] != ' ')
+                                        Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
+                                    @endif
                                 @endif
                                 <a style="color: #fff !important;" href=" {{ $disponibilidad[$d]['link'] }}"
                                     target="_blank">{{ $disponibilidad[$d]['url'] }}</a>
