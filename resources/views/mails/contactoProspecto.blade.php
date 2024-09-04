@@ -500,7 +500,7 @@
                             <tr>
                                 <td class="content-block">
                                     <span class="apple-link">Universidad Mexicana Plantel
-                                        {{ $infoGenerada['Plantel'] }}, {{ $valores['dirPlantel'] }} </span><br>
+                                        {{ $data['plantel'] }}, {{ $valores['dirPlantel'] }} </span><br>
                                     <br>Teléfonos:<br />
                                     {!! $valores['Ftelcontacto'] !!} <br />
                                     <br />
