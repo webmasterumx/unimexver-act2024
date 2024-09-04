@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <img src="https://unimex.edu.mx/img/header/logo-2020.jpg" style="width:30%;" /><br>
+    <img src="{{ asset('assets/img/header/logo-2020.webp') }}" style="width:30%;" /><br>
     <ul>
         <li>Nombre Completo: {{ $datos['nombre'] }} </li>
         <li>E-mail: {{ $datos['mail'] }} </li>

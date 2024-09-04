@@ -374,7 +374,7 @@
                             <td class="wrapper">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td> <img src="https://unimex.edu.mx/img/header/logo-2020.jpg"
+                                        <td> <img src="{{ asset('assets/img/header/logo-2020.webp') }}"
                                                 style="width:35%;" /></td>
                                     </tr>
                                     <tr>
