@@ -64,14 +64,14 @@ class ExtrasUnimexController extends Controller
 
 
 
-        switch ($infoGenerada['Plantel']) {
+        switch ($infoGenerada['plantel']) {
             case 'IZCALLI':
                 $Ftelcontacto = $telizc;
                 $correocontacto = 'umizc_resprelaciones@unimex.edu.mx';
                 $face = 'https://www.facebook.com/unimex/';
                 $dirPlantel = "Av. Del Vidrio No. 15, Col. Plaza Dorada, Centro Urbano (Frente a la FES Cuautitlán) Campo 1, C.P. 54760 Cuautitlán Izcalli, Estado de México";
                 break;
-            case 'SATELITE':
+            case 'SATÉLITE':
                 $Ftelcontacto = $telsat;
                 $correocontacto = 'umsat_coorrelaciones@unimex.edu.mx';
                 $face = 'https://www.facebook.com/unimex/';
@@ -94,16 +94,16 @@ class ExtrasUnimexController extends Controller
                 # code...
                 break;
         }
-        if ($infoGenerada['Plantel'] != 'VERACRUZ' && $infoGenerada['Nivel'] == 'Licenciatura') {
+        if ($infoGenerada['plantel'] != 'VERACRUZ' && $infoGenerada['nivel'] == 'Licenciatura') {
             $legales = $licmetroleg;
         }
-        if ($infoGenerada['Plantel'] != 'VERACRUZ' && $infoGenerada['Nivel'] != 'Licenciatura') {
+        if ($infoGenerada['plantel'] != 'VERACRUZ' && $infoGenerada['nivel'] != 'Licenciatura') {
             $legales = $posmetroleg;
         }
-        if ($infoGenerada['Plantel'] == 'VERACRUZ' && $infoGenerada['Nivel'] != '') {
+        if ($infoGenerada['plantel'] == 'VERACRUZ' && $infoGenerada['nivel'] != '') {
             $legales = $verleg;
         }
-        if ($infoGenerada['Plantel'] == 'IZCALLI' && $infoGenerada['Nivel'] == 'Medio Superior') {
+        if ($infoGenerada['plantel'] == 'IZCALLI' && $infoGenerada['nivel'] == 'Medio Superior') {
             $legales = $prepaleg;
         }
 

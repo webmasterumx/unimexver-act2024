@@ -374,17 +374,21 @@
                             <td class="wrapper">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td> <img src="https://unimex.edu.mx/img/header/logo-2020.jpg" style="width:35%;" /></td>
+                                        <td> <img src="https://unimex.edu.mx/img/header/logo-2020.jpg"
+                                                style="width:35%;" /></td>
                                     </tr>
                                     <tr>
                                         <td class="align-justify">
                                             <br />
-                                            <p>Número de Folio: <b> {{ $infoGenerada['FolioCRM'] }} </b><br /><br />
-                                                ¡Felicidades! <b> {{ $infoForm->nombre_prospecto }} </b> ya diste el primer paso para
-                                                iniciar tu proyecto de vida en UNIMEX.
-                                                <br /><br />Has enviado tu solicitud para cursar la <b> {{ $infoGenerada['Nivel'] }}
-                                                    '</b> </b> <b></b> en el Plantel <b> {{ $infoGenerada['Plantel'] }} </b> para
-                                                iniciar tus estudios en el ciclo de <b> {{ $infoGenerada['Ciclo'] }} </b>
+                                            <p>Número de Folio: <b> {{ $data['folio'] }} </b><br /><br />
+                                                ¡Felicidades! <b> {{ $data['nombre'] }} </b> ya diste el primer paso
+                                                para iniciar tu proyecto de vida en UNIMEX.
+                                                <br><br>Has enviado tu solicitud para cursar la <b> {{ $data['nivel'] }}
+                                                </b>
+                                                en {{ $data['carrera'] }} </b>
+                                                dentro del Plantel &nbsp; <b> {{ $data['plantel'] }} </b> &nbsp; para
+                                                iniciar tus estudios en el ciclo de <b> {{ $data['ciclo'] }} </b>
+                                                con el horario de <b>{{ $data['horario'] }}</b>
                                             </p><br>
                                             <table border="0" cellpadding="0" cellspacing="0">
                                                 <tbody>
@@ -450,8 +454,10 @@
                                                                             configuración para facilitar la
                                                                             recepción).<br><br>
                                                                             Si deseas comunicarte con un asesor, marca
-                                                                            al: <strong><u> {!! $valores['Ftelcontacto'] !!} </u></strong>.<br>
-                                                                            Visítanos en: <strong><u> {{ $valores['dirPlantel'] }}
+                                                                            al: <strong><u> {!! $valores['Ftelcontacto'] !!}
+                                                                                </u></strong>.<br>
+                                                                            Visítanos en: <strong><u>
+                                                                                    {{ $valores['dirPlantel'] }}
                                                                                     '</u></strong>
                                                                             <br>
                                                                         </td>
@@ -493,9 +499,10 @@
                         <table border="0" cellpadding="0" cellspacing="0" style="font-size:9px">
                             <tr>
                                 <td class="content-block">
-                                    <span class="apple-link">Universidad Mexicana Plantel {{ $infoGenerada['Plantel'] }}, {{ $valores['dirPlantel'] }} </span><br>
+                                    <span class="apple-link">Universidad Mexicana Plantel
+                                        {{ $infoGenerada['Plantel'] }}, {{ $valores['dirPlantel'] }} </span><br>
                                     <br>Teléfonos:<br />
-                                       {!! $valores['Ftelcontacto'] !!} <br />
+                                    {!! $valores['Ftelcontacto'] !!} <br />
                                     <br />
                                 </td>
                             </tr>
