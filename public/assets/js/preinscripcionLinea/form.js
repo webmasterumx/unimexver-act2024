@@ -1,5 +1,4 @@
 $("#formPreincripcion").validate({
-
     rules: {
         correo: {
             required: true,
