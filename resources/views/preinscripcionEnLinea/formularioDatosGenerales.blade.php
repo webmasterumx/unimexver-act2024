@@ -32,7 +32,7 @@
                                     <span style="color: red !important;">*</span>
                                     Nombre</label>
                                 <input type="text" class="form-control" id="nombreInscripcion" name="nombreInscripcion"
-                                    value="">
+                                    value="" maxlength="50">
                             </div>
                         </div>
                         <div class="col-12 col-lg-2">
@@ -41,7 +41,7 @@
                                     <span style="color: red !important;">*</span>
                                     Apellido Paterno</label>
                                 <input type="text" class="form-control" id="apellidoPatInscripcion"
-                                    name="apellidoPatInscripcion">
+                                    name="apellidoPatInscripcion" maxlength="30">
                             </div>
                         </div>
                         <div class="col-12 col-lg-2">
@@ -50,7 +50,7 @@
                                     <span style="color: red !important;">*</span>
                                     Apellido Materno</label>
                                 <input type="text" class="form-control" id="apellidoMatInscripcion"
-                                    name="apellidoMatInscripcion">
+                                    name="apellidoMatInscripcion" maxlength="30">
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
@@ -121,7 +121,7 @@
                                 <label style="color: #00539a !important;" for="calleInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span> Calle</label>
                                 <input type="text" class="form-control" id="calleInscripcion"
-                                    name="calleInscripcion">
+                                    name="calleInscripcion" maxlength="50">
                             </div>
                         </div>
                         <div class="col-12 col-lg-1">
@@ -137,7 +137,7 @@
                                 <label style="color: #00539a !important;" for="coloniaInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span> Colonia</label>
                                 <input type="text" class="form-control" id="coloniaInscripcion"
-                                    name="coloniaInscripcion">
+                                    name="coloniaInscripcion" maxlength="50">
                             </div>
                         </div>
                         <div class="col-12 col-lg-2">

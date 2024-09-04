@@ -283,7 +283,7 @@
                                     {{ $disponibilidad[$d]['mixto'] }} <br>
                                 @else
                                     Escolarizado {{ $disponibilidad[$d]['escolarizado'] }} <br>
-                                    @if ($disponibilidad[$d]['mixto'] != '' || $disponibilidad[$d]['mixto'] != ' ')
+                                    @if ($disponibilidad[$d]['mixto'] != null )
                                         Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
                                     @endif
                                 @endif
