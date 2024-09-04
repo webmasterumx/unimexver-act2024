@@ -278,8 +278,13 @@
                         <div class="card-body p-0">
                             <p class="card-text" style="font-size: 0.9rem !important;">
                                 {{ $disponibilidad[$d]['palantel'] }} <br>
-                                Escolarizado {{ $disponibilidad[$d]['escolarizado'] }} <br>
-                                Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
+                                @if ($licenciatura->id == 16 || $licenciatura->id == 17)
+                                    {{ $disponibilidad[$d]['escolarizado'] }} <br>
+                                    {{ $disponibilidad[$d]['mixto'] }} <br>
+                                @else
+                                    Escolarizado {{ $disponibilidad[$d]['escolarizado'] }} <br>
+                                    Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
+                                @endif
                                 <a style="color: #fff !important;" href=" {{ $disponibilidad[$d]['link'] }}"
                                     target="_blank">{{ $disponibilidad[$d]['url'] }}</a>
                             </p>
@@ -443,8 +448,6 @@
                 $('#descargaFolleto').attr('disabled', true);
             }
         });
-
-
     </script>
     <script src="{{ asset('assets/js/combosCarrerasNew.js') }}"></script>
     <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
