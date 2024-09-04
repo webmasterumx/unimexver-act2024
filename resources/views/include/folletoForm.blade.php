@@ -22,11 +22,11 @@
                     </select>
                     <div class="mb-3">
                         <input type="text" class="form-control" id="nombreFolleto" name="nombreFolleto"
-                            placeholder="Nombre *">
+                            placeholder="Nombre *" maxlength="60">
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control" id="correoFolleto" name="correoFolleto"
-                            placeholder="Email *">
+                            placeholder="Email *" maxlength="50">
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control" id="celularFolleto" name="celularFolleto"

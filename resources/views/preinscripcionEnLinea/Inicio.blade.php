@@ -57,7 +57,7 @@
                                     <i class="bi bi-envelope-fill"></i>
                                 </span>
                                 <input type="email" class="form-control" placeholder="Ejemplo: micorreo@dominio.com"
-                                    aria-describedby="basic-addon1" name="correo" id="correo">
+                                    name="correo" id="correo" maxlength="50">
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
