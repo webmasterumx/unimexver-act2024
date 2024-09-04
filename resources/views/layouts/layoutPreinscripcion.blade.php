@@ -15,6 +15,7 @@
         .error {
             color: red !important;
             width: 100%;
+            font-size: 15px !important;
         }
     </style>
 </head>
