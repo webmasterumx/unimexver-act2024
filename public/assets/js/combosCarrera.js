@@ -48,7 +48,7 @@ $(document).ready(function () {
         $('#nivelSelect').empty();
         $("#nivelSelect").append(`<option value="" selected disabled>Recalculado..</option>`);
         $('#periodoSelect').empty();
-        $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar?  </option>`);
+        $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar?</option>`);
         $('#horarioSelect').empty();
         $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
 

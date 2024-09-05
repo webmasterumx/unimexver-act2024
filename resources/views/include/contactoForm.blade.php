@@ -97,7 +97,7 @@
                         </div>
                         <div class="w-50">
 
-                            <select class="form-select rounded-0" aria-label="Default select example" id="nivelSelect"
+                            <select class="form-select rounded-0" id="nivelSelect"
                                 name="nivelSelect">
                                 @isset($licenciatura)
                                     <option value="Licenciatura" selected>Licenciatura</option>

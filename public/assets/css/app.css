@@ -299,6 +299,7 @@ body {
 
 .error {
     color: red;
+    margin: 0;
 }
 
 #emailProspecto-error {

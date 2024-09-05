@@ -219,28 +219,28 @@ $("#form_contacto").validate({
         },
         celular_prospecto: {
             required: "Teléfono celular obligatorio.",
-            minlength: "Numero celular de 10 dig. mínimo.",
-            maxlength: "Numero celular de 10 dig. máximo."
+            minlength: "Numero celular de 10 dig.",
+            maxlength: "Numero celular de 10 dig."
         },
         telefono_prospecto: {
             required: "Teléfono de casa obligatorio.",
-            minlength: "Numero teléfonico de 10 dig. mínimo.",
-            maxlength: "Numero teléfonico de 10 dig. máximo."
+            minlength: "Numero teléfonico de 10 dig.",
+            maxlength: "Numero teléfonico de 10 dig."
         },
         plantelSelect: {
-            required: "Selecciona un plantel.",
+            required: "",
         },
         periodoSelect: {
-            required: "Por favor, dinos cuando quieres empezar.",
+            required: "",
         },
         nivelSelect: {
-            required: "Selecciona un nivel",
+            required: "",
         },
         carreraSelect: {
-            required: "Selecciona una carrera",
+            required: "",
         },
         horarioSelect: {
-            required: "Selecciona un horario",
+            required: "",
         }
     },
     submitHandler: function (form) {

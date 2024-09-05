@@ -188,9 +188,6 @@
             }
         });
 
-        $("#nivelSelect").append(`<option value="">Nivel</option>`);
-        $("#carreraSelect").append(`<option value="">Carrera</option>`);
-
         function resetFormEmpresaOCC() {
             document.getElementById("form_empresasOCC").reset();
         }

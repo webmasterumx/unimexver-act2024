@@ -9,6 +9,19 @@ $(document).ready(function () {
     $("select[name=carreraSelect]").prop("disabled", true);
     $("select[name=horarioSelect]").prop("disabled", true);
 
+    /**
+     * hay que buscar el inicializador de combos
+     */
+
+    $("#nivelSelect").empty();
+    $("#nivelSelect").append(`<option value="" selected disabled>- Selecciona un nivel -</option>`);
+    $('#periodoSelect').empty();
+    $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo - </option>`);
+    $('#carreraSelect').empty();
+    $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
+    $('#horarioSelect').empty();
+    $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+
     /*
      * obtiene los planteles para el formulario de contacto.
      * Paginas :
@@ -32,7 +45,6 @@ $(document).ready(function () {
         });
 
         $("select[name=nivelSelect]").prop("disabled", false);
-        let nivel = $('select[name=nivelSelect]').val();
         let ruta = setUrlBase() + "getNiveles";
         let plantel = $('select[name=plantelSelect]').val();
         let info = {
@@ -54,13 +66,13 @@ $(document).ready(function () {
     $("select[name=plantelSelect]").change(function () {
 
         $("#nivelSelect").empty();
-        $("#nivelSelect").append(`<option value="" selected disabled>Selecciona un nivel</option>`);
+        $("#nivelSelect").append(`<option value="" selected disabled>- Selecciona un nivel -</option>`);
         $('#periodoSelect').empty();
-        $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar?  </option>`);
+        $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
         $('#carreraSelect').empty();
-        $("#carreraSelect").append(`<option value="" selected disabled>Selecciona una carrera</option>`);
+        $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera - </option>`);
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
 
         let nivel = $('select[name=nivelSelect]').val();
         let ruta = setUrlBase() + "getNiveles";
@@ -89,11 +101,11 @@ $(document).ready(function () {
     $("select[name=nivelSelect]").change(function () {
 
         $('#periodoSelect').empty();
-        $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar?</option>`);
+        $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
         $('#carreraSelect').empty();
-        $("#carreraSelect").append(`<option value="" selected disabled>Selecciona una carrera</option>`);
+        $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
         let plantel = $('select[name=plantelSelect]').val();
         let ruta = setUrlBase() + "getPeriodos";
         let data = {
@@ -134,9 +146,9 @@ $(document).ready(function () {
      */
     $("select[name=periodoSelect]").change(function () {
         $('#carreraSelect').empty();
-        $("#carreraSelect").append(`<option value="" selected disabled>Selecciona una carrera</option>`);
+        $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
 
         let plantel = $('select[name=plantelSelect]').val();
         let nivel = $('select[name=nivelSelect]').val();
@@ -162,7 +174,7 @@ $(document).ready(function () {
     $("select[name=carreraSelect]").change(function () {
 
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
         let plantel = $('select[name=plantelSelect]').val();
         let nivel = $('select[name=nivelSelect]').val();
         let periodo = $('select[name=periodoSelect]').val();
