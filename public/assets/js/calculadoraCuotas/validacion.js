@@ -29,13 +29,13 @@ $("#form_calculadora").validate({
     },
     messages: {
         selectPlantel: {
-            required: "Selecciona un plantel",
+            required: "",
         },
         selectPeriodo: {
-            required: "Selecciona un periodo",
+            required: "",
         },
         selectNivel: {
-            required: "Selecciona un nivel",
+            required: "",
         },
         nombreProspecto: {
             required: "Nombre obligatorio.",

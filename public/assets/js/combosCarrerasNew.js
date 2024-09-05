@@ -24,6 +24,9 @@ $(document).ready(function () {
     $("select[name=carreraSelect]").prop("disabled", true);
     $("select[name=horarioSelect]").prop("disabled", true);
 
+    $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
+    $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+
     getPlantelesContacto();
 
 });
@@ -80,7 +83,7 @@ function getPlantelesContacto() {
 function getNivelesContacto() {
 
     $("#nivelSelect").empty();
-    $("#nivelSelect").append(`<option>Selecciona el nivel</option>`);
+    $("#nivelSelect").append(`<option value="" selected disabled>- Selecciona un nivel -</option>`);
 
     let nivelInicalSelect = getNivelPosicion();
 
@@ -122,7 +125,7 @@ function getNivelesContacto() {
 function getPeriodosContacto() {
     $("select[name=periodoSelect]").prop("disabled", false);
     $("#periodoSelect").empty();
-    $("#periodoSelect").append(`<option>¿Cuándo deseas iniciar?</option>`);
+    $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
 
     let plantel = $('select[name=plantelSelect]').val();
     $.ajax({
@@ -163,7 +166,7 @@ function getCarrerasContacto() {
 
     $("select[name=carreraSelect]").prop("disabled", false);
     $("#carreraSelect").empty();
-    $("#carreraSelect").append(`<option>Selecciona una carrera</option>`);
+    $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
 
     let clavePlantel = $('select[name=plantelSelect]').val();
     let clavePeriodo = $('select[name=periodoSelect]').val();
@@ -215,10 +218,7 @@ function getCarrerasContacto() {
 
             console.log('hay error');
 
-
-
         }
-
 
 
         getHorariosContacto();
@@ -230,8 +230,6 @@ function getCarrerasContacto() {
 
 function getHorariosContacto() {
     $("select[name=horarioSelect]").prop("disabled", false);
-    $("#horarioSelect").empty();
-    $("#horarioSelect").append(`<option>Selecciona un horario</option>`);
 
     let plantel = $('select[name=plantelSelect]').val();
     let nivel = $('select[name=nivelSelect]').val();
@@ -256,6 +254,11 @@ function getHorariosContacto() {
         },
     }).done(function (data) {
 
+       
+        
+        $("#horarioSelect").empty();
+        $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+
         console.log(data);
         if (data.error == undefined || data.error == null) {
             if (data.clave == undefined || data.clave == null) {
@@ -269,7 +272,7 @@ function getHorariosContacto() {
                 $('#horarioSelect').append(option);
             }
         } else {
-            
+
         }
 
 

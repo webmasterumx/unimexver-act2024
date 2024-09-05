@@ -23,10 +23,10 @@ $("#form_folleto").validate({
     },
     messages: {
         peridoSelectFolleto: {
-            required: "Periodo obligatorio.",
+            required: "",
         },
         plantelSelectFolleto: {
-            required: "Plantel obligatorio.",
+            required: "",
         },
         nombreFolleto: {
             required: "Nombre obligatorio",

@@ -207,25 +207,25 @@ $("#formPromoPreinscripcion").validate({
             maxlength: "El número de caracteres máximo es 50."
         },
         estadoInscripcion: {
-            required: "Estado obligatorio.",
+            required: "",
         },
         municipioInscripcion: {
-            required: "Municipio obligatorio.",
+            required: "",
         },
         plantelSelect: {
-            required: "Plantel obligatorio.",
+            required: "",
         },
         periodoSelect: {
-            required: "Periodo obligatorio.",
+            required: "",
         },
         nivelSelect: {
-            required: "Nivel obligatorio.",
+            required: "",
         },
         carreraSelect: {
-            required: "Carrera obligatoria.",
+            required: "",
         },
         horarioSelect: {
-            required: "Horario obligatorio.",
+            required: "",
         }
     },
     submitHandler: function (form) {
