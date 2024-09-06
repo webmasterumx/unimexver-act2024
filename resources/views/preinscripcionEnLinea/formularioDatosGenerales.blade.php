@@ -213,7 +213,7 @@
 
                         <div id="respuestaSuccess" class="col-12 mt-4 row d-none">
                             <div class="col-12">
-                                <h3 style="color: rgba(241, 145, 29, 1.00);">Cuota de Incripción Preferencial</h3>
+                                <h3 style="color: rgba(241, 145, 29, 1.00);">Cuota de Inscripción Preferencial</h3>
                                 <hr style="border: 1px solid rgba(241, 145, 29, 1.00);">
                             </div>
                             <div class="col-9">
