@@ -1,6 +1,10 @@
 <!-- Inicio de Formulario de Contacto -->
 <style>
-    #periodoSelect-error{
+    #plantelSelect-error,
+    #periodoSelect-error,
+    #nivelSelect-error,
+    #carreraSelect-error,
+    #horarioSelect-error {
         display: none !important;
     }
 </style>
@@ -47,7 +51,7 @@
                 </p>
             </div>
             <div class="col-12 col-md-6 p-0"> <!-- form_contacto -->
-                <form id="form_contacto"  method="POST" class="bg-white p-4 p-md-5">
+                <form id="form_contacto" method="POST" class="bg-white p-4 p-md-5">
                     @csrf
                     <p style="color: #004b93; font-size: 1.5em;" class="text-center">
                         ¡Estamos para ayudarte! <br>
@@ -90,20 +94,17 @@
                         <i class="bi bi-bookmark-fill color-unimex"></i> QUIERO ESTUDIAR EN:</label>
                     <div class="w-100 d-flex">
                         <div class="w-50">
-                            <select class="form-select rounded-0" aria-label="Default select example" id="plantelSelect"
-                                name="plantelSelect">
+                            <select class="form-select rounded-0" id="plantelSelect" name="plantelSelect">
                                 <option value="" selected disabled> -Selecciona Plantel- </option>
 
                             </select>
-                            <select class="form-select rounded-0" aria-label="Default select example" id="periodoSelect"
-                                name="periodoSelect">
+                            <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect">
                                 <option value="" selected>Iniciar clases en: </option>
                             </select>
                         </div>
                         <div class="w-50">
 
-                            <select class="form-select rounded-0" id="nivelSelect"
-                                name="nivelSelect">
+                            <select class="form-select rounded-0" id="nivelSelect" name="nivelSelect">
                                 @isset($licenciatura)
                                     <option value="Licenciatura" selected>Licenciatura</option>
                                 @endisset
@@ -114,8 +115,7 @@
                                     <option value="Especialidad" selected>Especialidad</option>
                                 @endisset
                             </select>
-                            <select class="form-select rounded-0" aria-label="Default select example"
-                                id="carreraSelect" name="carreraSelect">
+                            <select class="form-select rounded-0" id="carreraSelect" name="carreraSelect">
                                 @isset($licenciatura)
                                     <option value="{{ $licenciatura->subtitulo }}"> {{ $licenciatura->subtitulo }}
                                     </option>
@@ -134,8 +134,7 @@
                         </div>
                     </div>
                     <div class="w-100">
-                        <select class="form-select rounded-0" aria-label="Default select example" id="horarioSelect"
-                            name="horarioSelect">
+                        <select class="form-select rounded-0" id="horarioSelect" name="horarioSelect">
                             <option value="" selected> Horario </option>
                         </select>
                     </div>
@@ -147,7 +146,7 @@
                             He leído y acepto el <a href="javascript:void(0);"
                                 onclick="window.open('{{ route('aviso_de_privacidad') }}','Privacidad','scrollbars=yes,width=1000,height=700')">
                                 aviso de privacidad.
-                                </a>
+                            </a>
                         </label>
                     </div>
                     <div class="w-100 text-center mt-4">
