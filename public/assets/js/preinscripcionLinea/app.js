@@ -97,7 +97,7 @@ function agregarProspecto() {
 function correccionDatos() {
     estadoCampos(false)
 
-    $("#calcularPromo").prop("disabled", true);
+    $("#calcularPromo").prop("disabled", false);
     $('#continuarProceso').addClass('d-none');
     $('#corregirDatos').addClass('d-none');
     $("#respuestaSuccess").addClass('d-none');
