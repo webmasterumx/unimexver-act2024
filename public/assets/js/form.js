@@ -44,12 +44,12 @@ $("#servicio_alumnos").validate({
             email: "Ingrese una dirección de E-mail correcta.",
         },
         phone_casa_service: {
-            required: "Teléfono requerido.",
+            required: "Teléfono obligatorio.",
             minlength: "Debes ingresar el número a 10 digitos.",
             maxlength: "Debes ingresar el número a 10 digitos."
         },
         movil_service: {
-            required: "Celular requerido.",
+            required: "Celular obligatorio.",
             minlength: "Debes ingresar el número a 10 digitos.",
             maxlength: "Debes ingresar el número a 10 digitos."
         },
@@ -65,7 +65,7 @@ $("#servicio_alumnos").validate({
             required: "Mensaje obligatorio.",
         },
         operacion_service: {
-            required: "Resultado de la operacion requerido.",
+            required: "Resultado de la operación obligatorio.",
             maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },
@@ -401,7 +401,7 @@ $("#form_trabaja").validate({
             required: "Experiencia laboral obligatoria.",
         },
         operacion_trabaja: {
-            required: "Resultado de la operacion requerido.",
+            required: "Resultado de la operación obligatorio.",
             maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },
@@ -561,7 +561,7 @@ $("#form_quejaSugerencia").validate({
             required: "Mensaje obligatorio.",
         },
         operacion_qys: {
-            required: "Resultado de la operacion requerido.",
+            required: "Resultado de la operación obligatorio.",
             maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },
@@ -722,7 +722,7 @@ $("#form_empresasOCC").validate({
             required: "Comentarios obligatorios.",
         },
         operacion_empresaOCC: {
-            required: "Resultado de la operacion requerido.",
+            required: "Resultado de la operacion obligatorio.",
             maxlength: "Solo se permiten resultados de dos digitos.",
         }
     },

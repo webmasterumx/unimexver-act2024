@@ -175,13 +175,13 @@ $("#formPromoPreinscripcion").validate({
             maxlength: "El número de caracteres máximo es 30."
         },
         diaNacimiento: {
-            required: "Día obligatorio.",
+            required: "",
         },
         mesNacimiento: {
-            required: "Mes obligatorio.",
+            required: "",
         },
         yearNacimiento: {
-            required: "Año obligatorio.",
+            required: "",
         },
         telefonoInscripcion: {
             required: "Número de teléfono obligatorio.",
