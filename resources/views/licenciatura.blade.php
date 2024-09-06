@@ -29,6 +29,11 @@
             background-position: center;
             background-size: cover;
         }
+
+        #peridoSelectFolleto-error,
+        #plantelSelectFolleto-error {
+            display: none !important;
+        }
     </style>
 @endsection
 
@@ -283,7 +288,7 @@
                                     {{ $disponibilidad[$d]['mixto'] }} <br>
                                 @else
                                     Escolarizado {{ $disponibilidad[$d]['escolarizado'] }} <br>
-                                    @if ($disponibilidad[$d]['mixto'] != null )
+                                    @if ($disponibilidad[$d]['mixto'] != null)
                                         Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
                                     @endif
                                 @endif

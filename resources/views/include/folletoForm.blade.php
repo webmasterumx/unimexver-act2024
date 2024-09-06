@@ -15,10 +15,10 @@
                 <form id="form_folleto">
                     @csrf
                     <select class="form-select mb-3" id="peridoSelectFolleto" name="peridoSelectFolleto">
-                        <option value="" selected>Selecciona el periodo</option>
+                        <option value="" selected>- Selecciona el periodo -</option>
                     </select>
                     <select class="form-select mb-3" id="plantelSelectFolleto" name="plantelSelectFolleto">
-                        <option value="" selected>Selecciona el plantel</option>
+                        <option value="" selected>- Selecciona el plantel -</option>
                     </select>
                     <div class="mb-3">
                         <input type="text" class="form-control" id="nombreFolleto" name="nombreFolleto"

@@ -42,6 +42,11 @@
     .slick-list {
         max-height: 290px !important;
     }
+
+    #peridoSelectFolleto-error,
+    #plantelSelectFolleto-error {
+        display: none !important;
+    }
 </style>
 
 @section('content')
