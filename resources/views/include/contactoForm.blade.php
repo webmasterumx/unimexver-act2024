@@ -1,7 +1,7 @@
 <!-- Inicio de Formulario de Contacto -->
 <style>
     #periodoSelect-error{
-        display: none;
+        display: none !important;
     }
 </style>
 <section class="py-3" style="background-color: #de951b;">
