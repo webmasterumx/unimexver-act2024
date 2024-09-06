@@ -1,4 +1,9 @@
 <!-- Inicio de Formulario de Contacto -->
+<style>
+    #periodoSelect-error{
+        display: none;
+    }
+</style>
 <section class="py-3" style="background-color: #de951b;">
     <div class="container p-2">
         <div class="row">
