@@ -366,6 +366,7 @@ function rechazoAgendar() {
 
 function registrarProspectoPreinscripcionEnLinea() {
 
+    $("#corregirDatos").prop("disabled", true);
     $("#continuarProceso").prop("disabled", true);
     $('#continuarProceso').html(`
         <div style="width: 20px !important; height: 20px !important;"
@@ -410,6 +411,7 @@ function registrarProspectoPreinscripcionEnLinea() {
                 text: response.mensaje,
             });
 
+            $("#corregirDatos").prop("disabled", false);
             $("#continuarProceso").prop("disabled", false);
             $('#continuarProceso').html(`
                 Continuar
