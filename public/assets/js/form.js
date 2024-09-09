@@ -19,6 +19,9 @@ $("#servicio_alumnos").validate({
             minlength: 10,
             maxlength: 10
         },
+        select_plantel: {
+            required: true,
+        },
         asunto_service: {
             required: true,
         },
@@ -52,6 +55,9 @@ $("#servicio_alumnos").validate({
             required: "Celular obligatorio.",
             minlength: "Debes ingresar el número a 10 digitos.",
             maxlength: "Debes ingresar el número a 10 digitos."
+        },
+        select_plantel: {
+            required: "",
         },
         asunto_service: {
             required: "Asunto obligatorio.",
@@ -386,10 +392,10 @@ $("#form_trabaja").validate({
             maxlength: "El teléfono celular debe tener máximo 10 digitos."
         },
         plantel_trabaja: {
-            required: "Seleccione un plantel para continuar.",
+            required: "",
         },
         nivel_est_trabaja: {
-            required: "Seleccione un nivel escolar para continuar.",
+            required: "",
         },
         cv_trabaja: {
             required: "CV obligatorio.",

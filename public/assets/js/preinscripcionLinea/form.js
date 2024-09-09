@@ -264,6 +264,7 @@ $("#formPromoPreinscripcion").validate({
                     text: "El campo de nombre no puede estar vacío",
                 });
 
+                $("#calcularPromo").prop("disabled", false);
                 $('#calcularPromo').html(`
                     Continuar
                 `);
@@ -273,6 +274,8 @@ $("#formPromoPreinscripcion").validate({
                     icon: "error",
                     text: "El campo de apellido paterno no puede estar vacío",
                 });
+
+                $("#calcularPromo").prop("disabled", false);
                 $('#calcularPromo').html(`
                     Continuar
                 `);
@@ -282,6 +285,8 @@ $("#formPromoPreinscripcion").validate({
                     icon: "error",
                     text: "El campo de apellido materno no puede estar vacío",
                 });
+
+                $("#calcularPromo").prop("disabled", false);
                 $('#calcularPromo').html(`
                     Continuar
                 `);
@@ -291,6 +296,8 @@ $("#formPromoPreinscripcion").validate({
                     icon: "error",
                     text: "El campo de calle no puede estar vacío",
                 });
+
+                $("#calcularPromo").prop("disabled", false);
                 $('#calcularPromo').html(`
                     Continuar
                 `);
@@ -300,6 +307,8 @@ $("#formPromoPreinscripcion").validate({
                     icon: "error",
                     text: "El campo de número no puede estar vacío",
                 });
+
+                $("#calcularPromo").prop("disabled", false);
                 $('#calcularPromo').html(`
                     Continuar
                 `);
@@ -309,6 +318,8 @@ $("#formPromoPreinscripcion").validate({
                     icon: "error",
                     text: "El campo de colonia no puede estar vacío",
                 });
+
+                $("#calcularPromo").prop("disabled", false);
                 $('#calcularPromo').html(`
                     Continuar
                 `);
