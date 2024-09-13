@@ -108,6 +108,9 @@ function envioFormulario(form) {
 
 function selectHorario(turno, beca, element) {
 
+    $("#redireccionPEL").prop("disabled", false);
+    $("#redireccionPEL").html("PREINSCRIPCIÓN EN LINEA");
+
     $('.style_prevu_kit').removeClass("active");
     $(element).addClass('active');
     $('#cargador_costos').removeClass('d-none');
