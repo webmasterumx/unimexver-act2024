@@ -132,15 +132,6 @@ class FormController extends Controller
             $term = session("utm_term");
         }
 
-
-        //! establecimiento de variables para utm
-        $baseUrl = env('APP_URL');
-        $source = session("utm_source");
-        $medium = session("utm_medium");
-        $content = session("utm_content");
-        $campaign = session("utm_campaign");
-        $term = session("utm_term");
-
         //! creando array de datos a procesar
         $valores = array(
             "pNombre" => $request->nombre_prospecto,
@@ -164,17 +155,17 @@ class FormController extends Controller
             "folioReferido" => "0"
         );
 
-        //var_dump($valores);
+        var_dump($valores);
 
         //! envio de datos al WS
-        $respuesta = app(ApiConsumoController::class)->agregarProspectoCRM($valores); //! envio de datos al WS
+        //$respuesta = app(ApiConsumoController::class)->agregarProspectoCRM($valores); //! envio de datos al WS
 
         /**
          * Evalua la respuesta del web service 
          *! Si el folio es 0 ocurrio un error y se redirigira a la vista de error 
          *? Si es diferente a 0 se enviara un correo y redireccionara a la vista de exito
          */
-        if ($respuesta['FolioCRM'] != 0) {
+       /*  if ($respuesta['FolioCRM'] != 0) {
 
             //? se intenta enviar el correo
             try {
@@ -220,7 +211,7 @@ class FormController extends Controller
             $respuestaFinal['ruta'] = "error_de_registro";
         }
 
-        return response()->json($respuestaFinal);
+        return response()->json($respuestaFinal); */
     }
 
     public function servicioAlumnos(Request $request)
