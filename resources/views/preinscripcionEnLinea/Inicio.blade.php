@@ -81,6 +81,16 @@
                                 He leído y estoy de acuerdo con las políticas de pre-inscripción y el aviso de privacidad.
                             </button>
                         </div>
+                        <input type="hidden" name="utm_source" id="utm_source"
+                            @if ($dataUTM != null) value="{{ $dataUTM['utm_source'] }}" @else value="0" @endif>
+                        <input type="hidden" name="utm_medium" id="utm_medium"
+                            @if ($dataUTM != null) value="{{ $dataUTM['utm_medium'] }}" @else value="0" @endif>
+                        <input type="hidden" name="utm_campaign" id="utm_campaign"
+                            @if ($dataUTM != null) value="{{ $dataUTM['utm_campaign'] }}" @else value="0" @endif>
+                        <input type="hidden" name="utm_term" id="utm_term"
+                            @if ($dataUTM != null) value="{{ $dataUTM['utm_term'] }}" @else value="0" @endif>
+                        <input type="hidden" name="utm_content" id="utm_content"
+                            @if ($dataUTM != null) value="{{ $dataUTM['utm_content'] }}" @else value="0" @endif>
                         <div class="col-12">
                             <button id="validarCorreo" type="submit" class="btn btn-primary mt-3">
                                 <i class="bi bi-box-arrow-right"></i>

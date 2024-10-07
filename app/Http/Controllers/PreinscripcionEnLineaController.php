@@ -13,7 +13,11 @@ class PreinscripcionEnLineaController extends Controller
 
     public function index()
     {
-        return view('preinscripcionEnLinea.inicio');
+
+        $utm_recurso = new UtmController();
+        $dataUTM = $utm_recurso->iniciarUtmSource();
+
+        return view('preinscripcionEnLinea.inicio', ["dataUTM" => $dataUTM]);
     }
 
     /**
