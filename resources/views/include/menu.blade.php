@@ -75,7 +75,7 @@
                         title="Servicios para nuestos Alumnos y Egresados">Alumnos Y Egresados</a>
                 </li>
                 <li>
-                    <a id="contactoHeader" href="javascript:redirigirContactoHeader()" title="Informes">Informes</a>
+                    <a id="contactoHeader" href="javascript:redirectContactoHeader()" title="Informes">Informes</a>
                 </li>
             </ul>
         </div>

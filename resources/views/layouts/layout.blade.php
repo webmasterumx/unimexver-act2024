@@ -189,7 +189,7 @@
          *   -> formularioTrabajaUnimex
          * 
          */
-        function redirectContactHeader() {
+        function redirectContactoHeader() {
             console.log("entra al formulario desde la parte de contacto");
             let elementForm = "formularioContactanos";
 
