@@ -102,6 +102,7 @@ function correccionDatos() {
     $('#corregirDatos').addClass('d-none');
     $("#respuestaSuccess").addClass('d-none');
     $('#calcularPromo').removeClass('d-none');
+    $("#respuestaError").addClass('d-none');
 }
 
 function setVariablesPrecargadas() {

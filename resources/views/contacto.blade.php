@@ -97,6 +97,9 @@
                 <div class="tab-content" id="myTabContent">
                     <div id="seccionFormContactanos" class="tab-pane {{ $claseModuloContactanos }} fade border"
                         role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        @php
+                            $origen = 'Info';
+                        @endphp
                         @include('include.contactoForm')
                     </div>
                     <div class="tab-pane fade px-5 py-3 border" id="service-pane" role="tabpanel"

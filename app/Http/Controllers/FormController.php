@@ -15,6 +15,8 @@ use Spatie\FlareClient\Api;
 class FormController extends Controller
 {
 
+    private $utm_recurso;
+
     public function contactoProspecto(Request $request)
     {
         /**
@@ -87,6 +89,49 @@ class FormController extends Controller
     /** nueva funcion de procesamiento de datos para formulario de contacto */
     public function procesaFormularioContacto(Request $request)
     {
+        $origen = $request->origen;
+        $abreviatura = $request->abreviatura;
+        $utmMedium = $request->utm_medium;
+        $urlEnvioForm = $request->urlVisitada;
+
+        $this->utm_recurso = new UtmController();
+
+        //! se conservan las variables de session
+
+        if ($utmMedium == "organico" || $utmMedium  == "ORGANICO" || $utmMedium == "Organico" || $utmMedium == null) { // la utm en session no es organica
+
+            if ($origen == "slider") { //! si osi vienen desde una oferta academica
+                $source = "Website Veracruz";
+                $campaign = "Home body";
+                $content = "Slider" . $abreviatura . " Oacademica form";
+            } else if ($origen == "menu") { //! si osi vienen desde una oferta academica
+                $source = "Website Veracruz";
+                $campaign = "Home header";
+                $content = "Oacademica " . $abreviatura . " body form";
+            } else if ($origen == "Home") { // viene desde la pagina home 
+                $source = "Website Veracruz";
+                $campaign = "Home body";
+                $content = "Form Informes";
+            } else if ($origen == "Info") { // viene desde la pagina contacto
+                $source = "Website Veracruz";
+                $campaign = "Home header";
+                $content = "Botón informes";
+            } else {
+                $source = "Fuente origen";
+                $campaign = " Fuente origen";
+                $content = "Form " . $abreviatura . " Informes";
+            }
+
+            $medium = "Organico";
+            $term = "Informes";
+        } else {
+            $source = session("utm_source");
+            $medium = session("utm_medium");
+            $content = session("utm_content");
+            $campaign = session("utm_campaign");
+            $term = session("utm_term");
+        }
+
 
         //! establecimiento de variables para utm
         $baseUrl = env('APP_URL');
@@ -115,7 +160,7 @@ class FormController extends Controller
             "campaignMedium" => $medium,
             "campaignTerm" => $term,
             "campaignContent" => $content,
-            "websiteURL" => $baseUrl,
+            "websiteURL" => $urlEnvioForm,
             "folioReferido" => "0"
         );
 

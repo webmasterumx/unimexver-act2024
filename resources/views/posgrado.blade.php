@@ -71,22 +71,14 @@
                 <div class="row">
                     <div class="col-12 col-md-6 mb-2 mb-md-0">
                         <div class="d-grid gap-2">
-                            <a id="redireccionCTCL" class="btn btn-outline-primary">
+                            <a id="redireccionCTCL" href="javascript:calculadoraHeader('{{ $posgrado->abreviatura }}')" class="btn btn-outline-primary">
                                 Calculadora de Cuotas
                             </a>
                         </div>
                     </div>
-                    {{--  <div class="col-4">
-                        <div class="d-grid gap-2">
-                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                                data-bs-target="#comoObtengoMiBecaModal">
-                                Más información
-                            </button>
-                        </div>
-                    </div> --}}
                     <div class="col-12 col-md-6 mb-2 mb-md-0">
                         <div class="d-grid gap-2">
-                            <a id="redireccionPELL" href="#" class="btn text-white"
+                            <a id="redireccionPELL" href="javascript:preinscripcionHeader('{{ $posgrado->abreviatura }}')" class="btn text-white"
                                 style="background-color: #de951b;">
                                 Preinscripción En Línea
                             </a>
@@ -250,6 +242,9 @@
     @include('include.folletoForm')
 
     <!-- Inicio de la Sección de Contacto -->
+    @php
+        $nivel = 'posgrado';
+    @endphp
     @include('include.contactoForm')
     <!-- Fin de la Sección de Contacto -->
 
@@ -441,41 +436,6 @@
             nextArrow: '<button type="button" class="slick-next-tema"><i class="bi bi-chevron-compact-right"></i></button>',
         });
 
-        const enlaceCalculadora = document.getElementById("redireccionCTCL");
-        enlaceCalculadora.addEventListener('click', function() {
-            let nivel = "Especialidad";
-            let carrera = "{{ $posgrado->titulo }}";
-            let carreraFinal = carrera.replace(/ /g, "_");
-
-            $.ajax({
-                method: "GET",
-                url: setUrlBase() + "set/variables/calculadora/" + nivel + "/" + carreraFinal,
-            }).done(function(data) {
-                console.log(data);
-
-            }).fail(function() {
-                console.log("Algo salió mal");
-            });
-            window.open("{{ route('calcula_tu_cuota') }}", '_blank');
-        });
-
-        const enlacePreinscripcion = document.getElementById("redireccionPELL");
-        enlacePreinscripcion.addEventListener('click', function() {
-            let nivel = "Especialidad";
-            let carrera = "{{ $posgrado->titulo }}";
-            let carreraFinal = carrera.replace(/ /g, "_");
-
-            $.ajax({
-                method: "GET",
-                url: setUrlBase() + "set/variables/preinscripcion/" + nivel + "/" + carreraFinal,
-            }).done(function(data) {
-                console.log(data);
-
-            }).fail(function() {
-                console.log("Algo salió mal");
-            });
-            window.open("{{ route('preinscripcion.linea') }}", '_blank');
-        });
 
         function getCarreraPosicion() {
             let carreraPosicionado = "{{ $posgrado->titulo }}";

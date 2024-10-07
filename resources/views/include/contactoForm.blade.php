@@ -94,17 +94,19 @@
                         <i class="bi bi-bookmark-fill color-unimex"></i> QUIERO ESTUDIAR EN:</label>
                     <div class="w-100 d-flex">
                         <div class="w-50">
-                            <select class="form-select rounded-0" id="plantelSelect" name="plantelSelect">
+                            <select class="form-select rounded-0" id="plantelSelect" name="plantelSelect"
+                                tabindex="1">
                                 <option value="" selected disabled> -Selecciona Plantel- </option>
 
                             </select>
-                            <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect">
+                            <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect"
+                                tabindex="3">
                                 <option value="" selected>Iniciar clases en: </option>
                             </select>
                         </div>
                         <div class="w-50">
-
-                            <select class="form-select rounded-0" id="nivelSelect" name="nivelSelect">
+                            <select class="form-select rounded-0" id="nivelSelect" name="nivelSelect" 
+                                tabindex="2">
                                 @isset($licenciatura)
                                     <option value="Licenciatura" selected>Licenciatura</option>
                                 @endisset
@@ -115,7 +117,8 @@
                                     <option value="Especialidad" selected>Especialidad</option>
                                 @endisset
                             </select>
-                            <select class="form-select rounded-0" id="carreraSelect" name="carreraSelect">
+                            <select class="form-select rounded-0" id="carreraSelect" name="carreraSelect"
+                                tabindex="4">
                                 @isset($licenciatura)
                                     <option value="{{ $licenciatura->subtitulo }}"> {{ $licenciatura->subtitulo }}
                                     </option>
@@ -134,7 +137,8 @@
                         </div>
                     </div>
                     <div class="w-100">
-                        <select class="form-select rounded-0" id="horarioSelect" name="horarioSelect">
+                        <select class="form-select rounded-0" id="horarioSelect" name="horarioSelect"
+                            tabindex="5">
                             <option value="" selected> Horario </option>
                         </select>
                     </div>
@@ -149,6 +153,58 @@
                             </a>
                         </label>
                     </div>
+                    @if (isset($origen))
+                        @php
+                            $origen = $origen;
+                        @endphp
+                    @else
+                        @php
+                            $origen = null;
+                        @endphp
+                    @endif
+                    @if (isset($abreviatura))
+                        @php
+                            $abreviatura = $abreviatura;
+                            $nivel = $nivel;
+                        @endphp
+                    @else
+                        @php
+                            $abreviatura = null;
+                            $nivel = null;
+                        @endphp
+                    @endif
+                    @if (isset($dataUTM))
+                        @php
+                            $dataUTM = $dataUTM;
+                        @endphp
+                    @else
+                        @php
+                            $dataUTM = null;
+                        @endphp
+                    @endif
+                    @if (isset($urlVisitada))
+                        @php
+                            $urlVisitada = $urlVisitada;
+                        @endphp
+                    @else
+                        @php
+                            $urlVisitada = null;
+                        @endphp
+                    @endif
+                    <input type="hidden" name="origen" id="origen" value="{{ $origen }}">
+                    <input type="hidden" name="nivel" id="nivel" value="{{ $nivel }}">
+                    <input type="hidden" name="urlVisitada" id="urlVisitada" value="{{ $urlVisitada }}">
+                    <input type="hidden" name="abreviatura" id="abreviatura" value="{{ $abreviatura }}">
+                    <input type="hidden" name="utm_source" id="utm_source"
+                        @if ($dataUTM != null) value="{{ $dataUTM['utm_source'] }}" @else value="0" @endif>
+                    <input type="hidden" name="utm_medium" id="utm_medium"
+                        @if ($dataUTM != null) value="{{ $dataUTM['utm_medium'] }}" @else value="0" @endif>
+                    <input type="hidden" name="utm_campaign" id="utm_campaign"
+                        @if ($dataUTM != null) value="{{ $dataUTM['utm_campaign'] }}" @else value="0" @endif>
+                    <input type="hidden" name="utm_term" id="utm_term"
+                        @if ($dataUTM != null) value="{{ $dataUTM['utm_term'] }}" @else value="0" @endif>
+                    <input type="hidden" name="utm_content" id="utm_content"
+                        @if ($dataUTM != null) value="{{ $dataUTM['utm_content'] }}" @else value="0" @endif>
                     <div class="w-100 text-center mt-4">
                         <button id="envio_contacto" type="submit" class="btn btn-primary">Enviar</button>
                     </div>

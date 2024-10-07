@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="d-grid gap-2">
-                            <a id="redireccionCTCL" href="#" class="btn mt-2 btn-outline-primary">
+                            <a id="redireccionCTCL" href="javascript:calculadoraHeader('{{$licenciatura->abreviatura}}')" class="btn mt-2 btn-outline-primary">
                                 Calculadora de Cuotas
                             </a>
                         </div>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="d-grid gap-2">
-                            <a id="redireccionPELL" href="#" class="btn text-white mt-2 mt-mb-0"
+                            <a id="redireccionPELL" href="javascript:preinscripcionHeader('{{$licenciatura->abreviatura}}')" class="btn text-white mt-2 mt-mb-0"
                                 style="background-color: #de951b;">
                                 Preinscripción En Línea
                             </a>
@@ -165,6 +165,9 @@
 
     @include('include.folletoForm')
 
+    @php
+        $nivel = 'licenciatura';
+    @endphp
     <!-- Inicio de la Sección de Contacto -->
     @include('include.contactoForm')
     <!-- Fin de la Sección de Contacto -->
@@ -387,41 +390,6 @@
             nextArrow: '<button type="button" class="slick-next-requisitos"><i class="bi bi-arrow-right-circle-fill"></i></button>',
         });
 
-        const enlaceCalculadora = document.getElementById("redireccionCTCL");
-        enlaceCalculadora.addEventListener('click', function() {
-            let nivel = "Licenciatura";
-            let carrera = "{{ $licenciatura->subtitulo }}";
-            let carreraFinal = carrera.replace(/ /g, "_");
-
-            $.ajax({
-                method: "GET",
-                url: setUrlBase() + "set/variables/calculadora/" + nivel + "/" + carreraFinal,
-            }).done(function(data) {
-                console.log(data);
-
-            }).fail(function() {
-                console.log("Algo salió mal");
-            });
-            window.open("{{ route('calcula_tu_cuota') }}", '_blank');
-        });
-
-        const enlacePreinscripcion = document.getElementById("redireccionPELL");
-        enlacePreinscripcion.addEventListener('click', function() {
-            let nivel = "Licenciatura";
-            let carrera = "{{ $licenciatura->subtitulo }}";
-            let carreraFinal = carrera.replace(/ /g, "_");
-
-            $.ajax({
-                method: "GET",
-                url: setUrlBase() + "set/variables/preinscripcion/" + nivel + "/" + carreraFinal,
-            }).done(function(data) {
-                console.log(data);
-
-            }).fail(function() {
-                console.log("Algo salió mal");
-            });
-            window.open("{{ route('preinscripcion.linea') }}", '_blank');
-        });
 
         function getCarreraPosicion() {
             let carreraPosicionado = "{{ $licenciatura->subtitulo }}";

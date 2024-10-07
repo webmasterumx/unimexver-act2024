@@ -19,30 +19,20 @@ use Illuminate\Http\Request;
 use Barryvdh\DomPDF\PDF as PDF;
 use Dompdf\Dompdf;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\URL;
 
 class UnimexController extends Controller
 {
 
+    private $utm_recurso;
+
     public function inicio(): View
     {
 
-        if (isset($_REQUEST['utm_source']) && isset($_REQUEST['utm_medium']) && isset($_REQUEST['utm_campaign']) && isset($_REQUEST['utm_term']) && isset($_REQUEST['utm_content']) && isset($_REQUEST['gad_source'])) {
-            ////dd($_REQUEST['utm_source']);
-            session(["utm_source" => $_REQUEST['utm_source']]);
-            session(["utm_medium" => $_REQUEST['utm_medium']]);
-            session(["utm_campaign" => $_REQUEST['utm_campaign']]);
-            session(["utm_term" => $_REQUEST['utm_term']]);
-            session(["utm_content" => $_REQUEST['utm_content']]);
-            session(["gad_source" => $_REQUEST['gad_source']]);
-        } else {
-            session(["utm_source" => "organico"]);
-            session(["utm_medium" => 0]);
-            session(["utm_campaign" => 0]);
-            session(["utm_term" => 0]);
-            session(["utm_content" => 0]);
-            session(["gad_source" => 0]);
-        }
-        
+        $this->utm_recurso = new UtmController();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
+
         $listaCarreras = CCarreras::all();
         $banners = Banner::where('ubicacion', 0)->orWhere('ubicacion', 2)->orderBy('orden', 'ASC')->get();
         $ventajas_unimex = VentajasUnimex::all();
@@ -51,6 +41,8 @@ class UnimexController extends Controller
             "listaCarreras" => $listaCarreras,
             "banners" => $banners,
             "ventajas_unimex" => $ventajas_unimex,
+            "dataUTM" => $dataUTM,
+            "urlVisitada" => $urlVisitada
         ]);
     }
 
@@ -89,6 +81,11 @@ class UnimexController extends Controller
 
     public function getLicenciatura($slug): View
     {
+        $this->utm_recurso = new UtmController();
+        $origen = $this->utm_recurso->comprovacionOrigen();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
+
         $licenciatura = CLicenciaturas::where('slug', $slug)->first();
 
         if ($licenciatura != null) {
@@ -97,12 +94,17 @@ class UnimexController extends Controller
             $temario  = $extras['extras']['temario'];
             $campo_laboral = $extras['extras']['campo_laboral'];
             $disponibilidad = $extras['extras']['disponibilidad'];
+            $abreviatura = $licenciatura->abreviatura;
 
             return view('licenciatura', [
                 "licenciatura" => $licenciatura,
                 "temario" => $temario,
                 "campo_laboral" => $campo_laboral,
                 "disponibilidad" => $disponibilidad,
+                "origen" => $origen,
+                "dataUTM" => $dataUTM,
+                "abreviatura" => $abreviatura,
+                "urlVisitada" => $urlVisitada
             ]);
         } else {
             return view('errors.404');
@@ -111,16 +113,26 @@ class UnimexController extends Controller
 
     public function getLicenciaturaSua($slug): View
     {
+        $this->utm_recurso = new UtmController();
+        $origen = $this->utm_recurso->comprovacionOrigen();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
+
         $licenciatura_sua = LicenciaturaSua::where('slug', $slug)->first();
         if ($licenciatura_sua != null) {
             $extras = json_decode($licenciatura_sua->extras, true);
             $temario = $extras['extras']['temario'];
             $campo_laboral = $extras['extras']['campo_laboral'];
+            $abreviatura = $licenciatura_sua->abreviatura;
 
             return view('licenciaturasua', [
                 "licenciatura_sua" => $licenciatura_sua,
                 "temario" => $temario,
-                "campo_laboral" => $campo_laboral
+                "campo_laboral" => $campo_laboral,
+                "dataUTM" => $dataUTM,
+                "origen" => $origen,
+                "abreviatura" => $abreviatura,
+                "urlVisitada" => $urlVisitada
             ]);
         } else {
             return view('errors.404');
@@ -129,6 +141,11 @@ class UnimexController extends Controller
 
     public function getPosgrado($slug): View
     {
+        $this->utm_recurso = new UtmController();
+        $origen = $this->utm_recurso->comprovacionOrigen();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
+
         $posgrado = Posgrado::where('slug', $slug)->first();
         if ($posgrado != null) {
             $extras = json_decode($posgrado->temario, true);
@@ -136,6 +153,7 @@ class UnimexController extends Controller
             $temario_maestria = $extras['extras']['temario_maestria'];
             $rvoe_especialidad = $extras['extras']['rvoe_especialidad'];
             $rvoe_maestria = $extras['extras']['rvoe_maestria'];
+            $abreviatura = $posgrado->abreviatura;
 
             return view('posgrado', [
                 "posgrado" => $posgrado,
@@ -143,6 +161,10 @@ class UnimexController extends Controller
                 "temario_maestria" => $temario_maestria,
                 "rvoe_especialidad" => $rvoe_especialidad,
                 "rvoe_maestria" => $rvoe_maestria,
+                "dataUTM" => $dataUTM,
+                "origen" => $origen,
+                "abreviatura" => $abreviatura,
+                "urlVisitada" => $urlVisitada
             ]);
         } else {
             return view('errors.404');
@@ -177,13 +199,27 @@ class UnimexController extends Controller
 
     public function calculaTuCuota(): View
     {
-        return view('calculaTuCuota');
+
+        $utm_recurso = new UtmController();
+        $dataUTM = $utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
+
+        return view('calculaTuCuota', [
+            "dataUTM" => $dataUTM,
+            "urlVisitada" => $urlVisitada
+        ]);
     }
 
     public function contacto(): View
     {
+        $this->utm_recurso = new UtmController();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
 
-        return view('contacto');
+        return view('contacto', [
+            "dataUTM" => $dataUTM,
+            "urlVisitada" => $urlVisitada
+        ]);
     }
 
     public function cartaResultados($matricula): View

@@ -23,11 +23,12 @@ class CalculadoraCuotasController extends Controller
     public function insertarProspecto(Request $request)
     {
 
-        $source = session("utm_source");
-        $medium = session("utm_medium");
-        $content = session("utm_content");
-        $campaign = session("utm_campaign");
-        $term = session("utm_term");
+        $source = $request->utm_source;
+        $medium = $request->utm_medium;
+        $campaign = $request->utm_campaign;
+        $term = $request->utm_term;
+        $content = $request->utm_content;
+
         session(['nombreNivel' => $request->nombreNivel]);
         session(['nombrePlantel' => $request->nombrePlantel]);
         session(['nombrePeriodo' => $request->nombrePeriodo]);
@@ -61,7 +62,7 @@ class CalculadoraCuotasController extends Controller
             "campaignMedium" => $medium,
             "campaignTerm" => $term,
             "campaignContent" => $content,
-            "websiteURL" => "https://unimex.edu.mx/calcula-tu-cuota",
+            "websiteURL" => env('APP_URL') . "calcula-tu-cuota?utm_source=" . $source . "&utm_medium=" . $medium . "&utm_campaign=" . $campaign . "&utm_term=" . $term . "&utm_content=" . $content,
             "folioReferido" => "0",
         );
 

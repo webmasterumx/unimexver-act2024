@@ -43,6 +43,31 @@
                             </a>
                         </label>
                     </div>
+                    @if ($origen)
+                        @php
+                            $origen = $origen;
+                        @endphp
+                    @else
+                        @php
+                            $origen = null;
+                        @endphp
+                    @endif
+                    @if ($abreviatura)
+                        @php
+                            $abreviatura = $abreviatura;
+                        @endphp
+                    @else
+                        @php
+                            $abreviatura = null;
+                        @endphp
+                    @endif
+                    <input type="hidden" name="origen" id="origen" value="{{ $origen }}">
+                    <input type="hidden" name="abreviatura" id="abreviatura" value="{{ $abreviatura }}">
+                    <input type="hidden" name="utm_source" id="utm_source" value="{{ $dataUTM['utm_source'] }}">
+                    <input type="hidden" name="utm_medium" id="utm_medium" value="{{ $dataUTM['utm_medium'] }}">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign" value="{{ $dataUTM['utm_campaign'] }}">
+                    <input type="hidden" name="utm_term" id="utm_term" value="{{ $dataUTM['utm_term'] }}">
+                    <input type="hidden" name="utm_content" id="utm_content" value="{{ $dataUTM['utm_content'] }}">
                     <button id="descargaFolleto" type="submit" class="btn btn-primary">¡DESCARGAR!</button>
                 </form>
             </div>

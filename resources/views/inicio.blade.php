@@ -24,7 +24,31 @@
         <div class="container-fluid p-0">
             <div id="bannerInicial">
                 @foreach ($banners as $banner)
-                    <a href="{{ route($banner->link) }}" target="_blank" class="itemBannerInit">
+                    @if (
+                        $dataUTM['utm_medium'] == 'organico' ||
+                            $dataUTM['utm_medium'] == 'ORGANICO' ||
+                            $dataUTM['utm_medium'] == 'Organico' ||
+                            $dataUTM['utm_medium'] == null)
+                        @php
+                            $ruta = $banner->link . $banner->utmOrganica;
+                        @endphp
+                    @else
+                        @php
+                            $ruta =
+                                $banner->link .
+                                '?utm_source=' .
+                                $dataUTM['utm_source'] .
+                                '&utm_medium=' .
+                                $dataUTM['utm_medium'] .
+                                '&utm_campaign=' .
+                                $dataUTM['utm_campaign'] .
+                                '&utm_term=' .
+                                $dataUTM['utm_term'] .
+                                '&utm_content=' .
+                                $dataUTM['utm_content'];
+                        @endphp
+                    @endif
+                    <a href="{{ $ruta }}" target="_blank" class="itemBannerInit">
                         <img src="{{ asset($banner->url) }}" class="d-block w-100 img-fluid" alt="{{ $banner->alt }}"
                             title="{{ $banner->alt }}">
                     </a>
@@ -52,7 +76,31 @@
                 @foreach ($ventajas_unimex as $ventaja_unimex)
                     <div class="col">
                         @if ($ventaja_unimex->click == true)
-                            <a href="{{ route($ventaja_unimex->link) }}" target="_blank" class="card border-0 h-100">
+                            @if (
+                                $dataUTM['utm_medium'] == 'organico' ||
+                                    $dataUTM['utm_medium'] == 'ORGANICO' ||
+                                    $dataUTM['utm_medium'] == 'Organico' ||
+                                    $dataUTM['utm_medium'] == null)
+                                @php
+                                    $ruta = $ventaja_unimex->link . $ventaja_unimex->utmOrganica; //! pendiente colocar complemento organico en la base de datos
+                                @endphp
+                            @else
+                                @php
+                                    $ruta =
+                                        $ventaja_unimex->link .
+                                        '?utm_source=' .
+                                        $dataUTM['utm_source'] .
+                                        '&utm_medium=' .
+                                        $dataUTM['utm_medium'] .
+                                        '&utm_campaign=' .
+                                        $dataUTM['utm_campaign'] .
+                                        '&utm_term=' .
+                                        $dataUTM['utm_term'] .
+                                        '&utm_content=' .
+                                        $dataUTM['utm_content'];
+                                @endphp
+                            @endif
+                            <a href="{{ $ruta }}" target="_blank" class="card border-0 h-100">
                                 <div class="card-body text-center">
                                     <img class="icono-Unimex" src="{{ asset($ventaja_unimex->url) }}"
                                         alt="{{ $ventaja_unimex->alt }}" title="{{ $ventaja_unimex->alt }}"
@@ -97,7 +145,33 @@
                     <div id="listCarreras">
                         @foreach ($listaCarreras as $carrera)
                             @if ($carrera->mostrar == true)
-                                <a href="{{env('APP_URL')}}licenciatura/{{$carrera->slug}}{{$carrera->urlUTM}}" class="card mx-2 h-100">
+                                @if (
+                                    $dataUTM['utm_medium'] == 'organico' ||
+                                        $dataUTM['utm_medium'] == 'ORGANICO' ||
+                                        $dataUTM['utm_medium'] == 'Organico' ||
+                                        $dataUTM['utm_medium'] == null)
+                                    @php
+                                        $ruta = env('APP_URL') . 'licenciatura/' . $carrera->slug . $carrera->urlUTM;
+                                    @endphp
+                                @else
+                                    @php
+                                        $ruta =
+                                            env('APP_URL') .
+                                            'licenciatura/' .
+                                            $carrera->slug .
+                                            '?utm_source=' .
+                                            $dataUTM['utm_source'] .
+                                            '&utm_medium=' .
+                                            $dataUTM['utm_medium'] .
+                                            '&utm_campaign=' .
+                                            $dataUTM['utm_campaign'] .
+                                            '&utm_term=' .
+                                            $dataUTM['utm_term'] .
+                                            '&utm_content=' .
+                                            $dataUTM['utm_content'];
+                                    @endphp
+                                @endif
+                                <a href="{{ $ruta }}" class="card mx-2 h-100">
                                     <div class="card-body p-3 p-md-2">
                                         <center>
                                             <img style="min-height: 80px !important;" src="{{ $carrera->icon }}"
@@ -197,6 +271,9 @@
         </div>
     </section>
 
+    @php
+        $origen = 'Home';
+    @endphp
     @include('include.contactoForm')
     @include('modales.modalCalculaTuCuota')
 @endsection
