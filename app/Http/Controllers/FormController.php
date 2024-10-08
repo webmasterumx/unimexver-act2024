@@ -91,6 +91,7 @@ class FormController extends Controller
     {
         $origen = $request->origen;
         $abreviatura = $request->abreviatura;
+        $abreviaturaFormateada = str_replace("+", " ", $abreviatura);
         $utmMedium = $request->utm_medium;
         $urlEnvioForm = $request->urlVisitada;
 
@@ -103,11 +104,11 @@ class FormController extends Controller
             if ($origen == "slider") { //! si osi vienen desde una oferta academica
                 $source = "Website Veracruz";
                 $campaign = "Home body";
-                $content = "Slider" . $abreviatura . " Oacademica form";
+                $content = "Slider" . $abreviaturaFormateada . " Oacademica form";
             } else if ($origen == "menu") { //! si osi vienen desde una oferta academica
                 $source = "Website Veracruz";
                 $campaign = "Home header";
-                $content = "Oacademica " . $abreviatura . " body form";
+                $content = "Oacademica " . $abreviaturaFormateada . " body form";
             } else if ($origen == "Home") { // viene desde la pagina home 
                 $source = "Website Veracruz";
                 $campaign = "Home body";
@@ -118,8 +119,8 @@ class FormController extends Controller
                 $content = "Botón informes";
             } else {
                 $source = "Fuente origen";
-                $campaign = " Fuente origen";
-                $content = "Form " . $abreviatura . " Informes";
+                $campaign = "Oacademica body";
+                $content = "Form " . $abreviaturaFormateada . " Informes";
             }
 
             $medium = "Organico";

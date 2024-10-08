@@ -10,7 +10,7 @@
         console.log(utmMediumFor);
 
         if (utmMediumFor == "Organico" || utmMediumFor == "organico" || utmMediumFor ==
-            "ORGANICO" || utmMediumFor == null || utmMediumFor == ""
+            "ORGANICO"
         ) { // las utm declaradas en la session no son organicas
             console.log("las utm declaradas en session son organicas se deben forzar");
 
@@ -34,6 +34,15 @@
 
             }
 
+
+        } else if (utmMediumFor == null || utmMediumFor == "") {
+            console.log("entro directamente a la carrera sin pasar por web site");
+
+            utm_source = "Fuente+origen";
+            utm_medium = "Organico";
+            utm_term = "Calculadora";
+            utm_campaign = "Oacademica+body";
+            utm_content = `${coplementoParaUtm}+boton+calculadora`;
 
         } else { // las utm declaradas en session son organicas se deben forzar
 
@@ -77,7 +86,7 @@
         console.log(utmMediumFor);
 
         if (utmMediumFor == "Organico" || utmMediumFor == "organico" || utmMediumFor ==
-            "ORGANICO" || utmMediumFor == null || utmMediumFor == ""
+            "ORGANICO"
         ) { // las utm declaradas en la session no son organicas
 
             console.log("utm de tipo organico");
@@ -103,6 +112,12 @@
 
             }
 
+        } else if (utmMediumFor == null || utmMediumFor == "") {
+            utm_source = "Fuente+origen";
+            utm_medium = "Organico";
+            utm_term = "Preinscrip";
+            utm_campaign = "Oacademica+body";
+            utm_content = `${coplementoParaUtm}+boton+preinscrip`;
         } else { // las utm declaradas en session son organicas se deben forzar
 
             utm_source = "{{ $dataUTM['utm_source'] }}";
@@ -127,7 +142,7 @@
         }).fail(function() {
             console.log("Algo salió mal");
         });
-        
+
         window.open(rutaRedireccionPreinscripcion, '_blank');
     }
 </script>
