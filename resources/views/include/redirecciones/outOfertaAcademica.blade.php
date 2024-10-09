@@ -6,7 +6,7 @@
         utm_term = "{{ session('utm_term') }}";
         utm_content = "{{ session('utm_content') }}";
 
-        if (utm_medium != null || utm_medium == "") {
+        if (utm_medium == null || utm_medium == "") {
             utm_source = "Website+Veracruz";
             utm_medium = "Organico";
             utm_campaign = "Home+header";
@@ -30,7 +30,7 @@
         utm_term = "{{ session('utm_term') }}";
         utm_content = "{{ session('utm_content') }}";
 
-        if (utm_medium != null || utm_medium == "") {
+        if (utm_medium == null || utm_medium == "") {
             utm_source = "Website+Veracruz";
             utm_medium = "Organico";
             utm_campaign = "Home+header";

@@ -83,7 +83,7 @@
 </nav>
 <nav class="navigation" style="padding: 10px 0">
     <div class="wrapper d-flex">
-        <a href="{{ route('inicio') }}" rel="noopener noreferrer">
+        <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">
             <img class="logo lazyload" src="{{ asset('assets/img/header/logo-2020.webp') }}" width="259"
                 height="80" alt="Logo Institucional de Universidad Mexicana"
                 title="Universidad Mexicana, educación que se adapta a ti.">

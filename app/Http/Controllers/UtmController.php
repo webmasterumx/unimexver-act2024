@@ -82,8 +82,10 @@ class UtmController extends Controller
         } else { //? decision si la variable no se encuentra en la cadena
             if (session()->has("utm_source") == true) {
                 $dataUTM['utm_source'] = null;
+                session(["utm_source" => null]);
             } else {
                 $dataUTM["utm_source"] = null;
+                session(["utm_source" => null]);
             }
         }
 
@@ -103,8 +105,10 @@ class UtmController extends Controller
         } else { //? decision si la variable no se encuentra en la cadena de la url
             if (session()->has("utm_medium") == true) {
                 $dataUTM['utm_medium'] = null;
+                session(["utm_medium" => null]);
             } else {
                 $dataUTM["utm_medium"] = null;
+                session(["utm_medium" => null]);
             }
         }
 
@@ -123,8 +127,10 @@ class UtmController extends Controller
         } else { //? decision si la variable no se encuentra en la cadena de la url
             if (session()->has("utm_campaign") == true) {
                 $dataUTM['utm_campaign'] = null;
+                session(["utm_campaign" => null]);
             } else {
                 $dataUTM["utm_campaign"] = null;
+                session(["utm_campaign" => null]);
             }
         }
 
@@ -143,8 +149,10 @@ class UtmController extends Controller
         } else { //? decision si la variable no se encuentra en la cadena de la url
             if (session()->has("utm_term") == true) {
                 $dataUTM['utm_term'] = null;
+                session(["utm_term" => null]);
             } else {
                 $dataUTM["utm_term"] = null;
+                session(["utm_term" => null]);
             }
         }
 
@@ -164,8 +172,10 @@ class UtmController extends Controller
         } else { //? decision si la variable no se encuentra en la cadena de la url
             if (session()->has("utm_content") == true) {
                 $dataUTM['utm_content'] = null;
+                session(["utm_content" => null]);
             } else {
                 $dataUTM["utm_content"] = null;
+                session(["utm_content" => null]);
             }
         }
 
@@ -185,8 +195,10 @@ class UtmController extends Controller
 
             if (session()->has("gad_source") == true) {
                 $dataUTM['gad_source'] = null;
+                session(["gad_source" => null]);
             } else {
                 $dataUTM["gad_source"] = null;
+                session(["gad_source" => null]);
             }
         }
 
@@ -225,16 +237,29 @@ class UtmController extends Controller
 
     public function comprovacionOrigen()
     {
-        if (isset($_REQUEST['origen'])) {
-            if (!empty($_REQUEST['origen'])) {
-                $origenObtenido = $_REQUEST['origen'];
+
+        if (isset($_REQUEST['utm_source'])) {
+            if (!empty($_REQUEST['utm_source'])) {
+                if (session()->has("utm_source") == true) {
+                    $utm_sourceRequestFormat1 = strtolower($_REQUEST['utm_source']);
+                    $utm_sourceRequestFormat2 = str_replace(" ", "", $utm_sourceRequestFormat1);
+
+                    $utm_sourceSessionFormat1 = strtolower(session('utm_source'));
+                    $utm_sourceSessionFormat2 = str_replace(" ", "", $utm_sourceSessionFormat1);
+
+                    if ($utm_sourceRequestFormat2 == $utm_sourceSessionFormat2) {
+                        dd("la utm_source de request es igual a la que se tiene guardada en session");
+                    } else {
+                        dd("la utm_source de request es diferente a la que se tiene guardada en session");
+                    }
+                } else {
+                    dd("no existe una utm_source en session guardada");
+                }
             } else {
-                $origenObtenido = null;
+                dd("la utm_source existe pero esta vacia");
             }
         } else {
-            $origenObtenido = null;
+            dd("la utm source no existe");
         }
-
-        return $origenObtenido;
     }
 }
