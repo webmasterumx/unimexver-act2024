@@ -38,7 +38,7 @@
         } else if (utmMediumFor == null || utmMediumFor == "") {
             console.log("entro directamente a la carrera sin pasar por web site");
 
-            utm_source = "Fuente+origen";
+            utm_source = "Website+Veracruz";
             utm_medium = "Organico";
             utm_term = "Calculadora";
             utm_campaign = "Oacademica+body";
@@ -113,7 +113,7 @@
             }
 
         } else if (utmMediumFor == null || utmMediumFor == "") {
-            utm_source = "Fuente+origen";
+            utm_source = "Website+Veracruz";
             utm_medium = "Organico";
             utm_term = "Preinscrip";
             utm_campaign = "Oacademica+body";
