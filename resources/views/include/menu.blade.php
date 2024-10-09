@@ -83,6 +83,7 @@
 </nav>
 <nav class="navigation" style="padding: 10px 0">
     <div class="wrapper d-flex">
+        <!-- https://unimex.edu.mx/calcula-tu-cuota/?utm_source=El+Gráfico+Universidades&utm_medium=GraficoUni&utm_campaign=2024+1&utm_term=universidad+mexicana&utm_content=metro -->
         <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">
             <img class="logo lazyload" src="{{ asset('assets/img/header/logo-2020.webp') }}" width="259"
                 height="80" alt="Logo Institucional de Universidad Mexicana"

@@ -235,7 +235,7 @@ class UtmController extends Controller
         }
     }
 
-    public function comprovacionOrigen()
+    /* public function comprovacionOrigen()
     {
 
         if (isset($_REQUEST['utm_source'])) {
@@ -261,5 +261,19 @@ class UtmController extends Controller
         } else {
             dd("la utm source no existe");
         }
+    } */
+
+    public function comprovacionOrigen()
+    {
+        if (isset($_REQUEST['origen'])) {
+            if (!empty($_REQUEST['origen'])) {
+                $origenObtenido = $_REQUEST['origen'];
+            } else {
+                $origenObtenido = null;
+            }
+        } else {
+            $origenObtenido = null;
+        }
+        return $origenObtenido;
     }
 }
