@@ -148,8 +148,6 @@
     <script src="{{ asset('assets/js/form.js') }}"></script>
 
     <script>
-        
-
         function setUrlBase() {
             let urlBase = "{{ env('APP_URL') }}";
             return urlBase;
@@ -199,7 +197,10 @@
             utm_term = "{{ session('utm_term') }}";
             utm_content = "{{ session('utm_content') }}";
 
-            if (utm_medium != null || utm_medium == "" || utm_medium == "organico" || utm_medium == "Organico" ||
+            console.log(utm_content);
+
+
+            if (utm_medium == null || utm_medium == "" || utm_medium == "organico" || utm_medium == "Organico" ||
                 utm_medium == "ORGANICO") {
                 utm_source = "Website+Veracruz";
                 utm_medium = "Organico";
@@ -223,7 +224,7 @@
             }).fail(function() {
                 console.log("Algo salió mal");
             });
-            
+
             window.open(ruta, '_self');
         }
 
@@ -263,7 +264,6 @@
         $('#nombre_prospecto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
         $('#apellidos_prospecto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
         $('#nombreFolleto').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiíoóuú');
-
     </script>
 
     @yield('scripts')

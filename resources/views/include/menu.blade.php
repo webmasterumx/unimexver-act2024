@@ -41,19 +41,19 @@
             $utmOrganico = true;
         } else {
             $utmOrganico = false;
-
-            $complemento =
-                '?utm_source=' .
-                $dataUTM['utm_source'] .
-                '&utm_medium=' .
-                $dataUTM['utm_medium'] .
-                '&utm_campaign=' .
-                $dataUTM['utm_campaign'] .
-                '&utm_term=' .
-                $dataUTM['utm_term'] .
-                '&utm_content=' .
-                $dataUTM['utm_content'];
         }
+
+        $complemento =
+            '?utm_source=' .
+            $dataUTM['utm_source'] .
+            '&utm_medium=' .
+            $dataUTM['utm_medium'] .
+            '&utm_campaign=' .
+            $dataUTM['utm_campaign'] .
+            '&utm_term=' .
+            $dataUTM['utm_term'] .
+            '&utm_content=' .
+            $dataUTM['utm_content'];
 
     @endphp
 @endif
@@ -61,7 +61,7 @@
 <noscript>Por favor habilita JavaScript para usar este sitio</noscript>
 <nav class="navigation" style="background-color: #013F7A !important; padding: 8px 0px !important;">
     <div class="wrapper d-flex">
-        <a href="{{ route('inicio') }}" rel="noopener noreferrer">
+        <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">
         </a>
         <div class="menu" id="navigation1">
             <a class="btn-close-nav" onclick="nav.hide()"></a>
@@ -84,7 +84,7 @@
 <nav class="navigation" style="padding: 10px 0">
     <div class="wrapper d-flex">
         <!-- https://unimex.edu.mx/calcula-tu-cuota/?utm_source=El+Gráfico+Universidades&utm_medium=GraficoUni&utm_campaign=2024+1&utm_term=universidad+mexicana&utm_content=metro -->
-        <a href="{{ route('inicio') }}" rel="noopener noreferrer">
+        <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">
             <img class="logo lazyload" src="{{ asset('assets/img/header/logo-2020.webp') }}" width="259"
                 height="80" alt="Logo Institucional de Universidad Mexicana"
                 title="Universidad Mexicana, educación que se adapta a ti.">
@@ -142,10 +142,11 @@
                 @foreach ($data['acercade'] as $acerca)
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 left-gray-border">
                         <h5 class="hide">
-                            <a href="{{ route('acercade', $acerca->slug) }}"> {{ $acerca->nombre }} </a>
+                            <a href="{{ env('APP_URL') . 'acerca-de-unimex/' . $acerca->slug . $complemento }}">
+                                {{ $acerca->nombre }} </a>
                         </h5>
                         <div class="card">
-                            <a href="{{ route('acercade', $acerca->slug) }}">
+                            <a href="{{ env('APP_URL') . 'acerca-de-unimex/' . $acerca->slug . $complemento }}">
                                 <div class="parent">
                                     <div class="child {{ $acerca->clase_img }}">
                                         <span class="linka"> {{ $acerca->nombre }} </span>
@@ -156,7 +157,8 @@
                                 <p class="card-text">
                                     {!! $acerca->descripcion !!}
                                 </p>
-                                <a href="{{ route('acercade', $acerca->slug) }}" class="btn btn-primary btn-arrow-go">
+                                <a href="{{ env('APP_URL') . 'acerca-de-unimex/' . $acerca->slug . $complemento }}"
+                                    class="btn btn-primary btn-arrow-go">
                                     {{ $acerca->nombre }} </a>
                             </div>
                         </div>
@@ -172,11 +174,11 @@
                 @foreach ($data['planteles'] as $plantel)
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 left-gray-border">
                         <h5 class="hide">
-                            <a href="{{ route('plantel', $plantel->nombre) }}">
+                            <a href="{{ env('APP_URL') . 'planteles/' . $plantel->nombre . $complemento }}">
                                 {{ $plantel->nombre }}</a>
                         </h5>
                         <div class="card" style="min-height: 1px;">
-                            <a href="{{ route('plantel', $plantel->nombre) }}">
+                            <a href="{{ env('APP_URL') . 'planteles/' . $plantel->nombre . $complemento }}">
                                 <div class="parent">
                                     <div class="child {{ $plantel->clase_img }}">
                                         <span class="linka text-capitalize">{{ $plantel->nombre }}</span>
@@ -187,7 +189,7 @@
                                 <p class="card-text">
                                     <br>
                                 </p>
-                                <a href="{{ route('plantel', $plantel->nombre) }}"
+                                <a href="{{ env('APP_URL') . 'planteles/' . $plantel->nombre . $complemento }}"
                                     class="btn btn-primary btn-arrow-go">Plantel {{ $plantel->nombre }} </a>
                             </div>
                         </div>
