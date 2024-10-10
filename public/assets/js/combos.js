@@ -14,13 +14,13 @@ $(document).ready(function () {
      */
 
     $("#nivelSelect").empty();
-    $("#nivelSelect").append(`<option value="" selected disabled>- Selecciona un nivel -</option>`);
+    $("#nivelSelect").append(`<option value="" selected disabled>- Seleccionar nivel -</option>`);
     $('#periodoSelect').empty();
-    $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo - </option>`);
+    $("#periodoSelect").append(`<option value="" selected disabled>- Seleccionar periodo - </option>`);
     $('#carreraSelect').empty();
-    $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
+    $("#carreraSelect").append(`<option value="" selected disabled>- Seleccionar carrera -</option>`);
     $('#horarioSelect').empty();
-    $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+    $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
     /*
      * obtiene los planteles para el formulario de contacto.
@@ -83,13 +83,13 @@ $(document).ready(function () {
         }).done(function (data) {
 
             $("#nivelSelect").empty();
-            $("#nivelSelect").append(`<option value="" selected disabled>- Selecciona un nivel -</option>`);
+            $("#nivelSelect").append(`<option value="" selected disabled>- Seleccionar nivel -</option>`);
             $('#periodoSelect').empty();
-            $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
+            $("#periodoSelect").append(`<option value="" selected disabled>- Seleccionar periodo -</option>`);
             $('#carreraSelect').empty();
-            $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera - </option>`);
+            $("#carreraSelect").append(`<option value="" selected disabled>- Seleccionar carrera - </option>`);
             $('#horarioSelect').empty();
-            $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+            $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
 
             console.log(data);
@@ -145,11 +145,11 @@ $(document).ready(function () {
         }).done(function (data) {
 
             $('#periodoSelect').empty();
-            $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
+            $("#periodoSelect").append(`<option value="" selected disabled>- Seleccionar periodo -</option>`);
             $('#carreraSelect').empty();
-            $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
+            $("#carreraSelect").append(`<option value="" selected disabled>- Seleccionar carrera -</option>`);
             $('#horarioSelect').empty();
-            $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+            $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
             console.log(data);
             if (data.clave == undefined || data.clave == null) {
@@ -198,9 +198,9 @@ $(document).ready(function () {
         }).done(function (data) {
 
             $('#carreraSelect').empty();
-            $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
+            $("#carreraSelect").append(`<option value="" selected disabled>- Seleccionar carrera -</option>`);
             $('#horarioSelect').empty();
-            $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+            $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
             console.log(data);
 
@@ -256,7 +256,7 @@ $(document).ready(function () {
             console.log(data);
 
             $('#horarioSelect').empty();
-            $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+            $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
             if (data.error == undefined || data.error == null) {
 

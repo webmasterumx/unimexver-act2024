@@ -89,24 +89,16 @@
                                 id="telefono_prospecto" minlength="10" maxlength="10" placeholder="Casa a 10 digitos">
                         </div>
                     </div>
-
                     <label class="border p-2 w-100 fw-light mt-3 mb-0" for="plantelSelect">
                         <i class="bi bi-bookmark-fill color-unimex"></i> QUIERO ESTUDIAR EN:</label>
-                    <div class="w-100 d-flex">
-                        <div class="w-50">
-                            <select class="form-select rounded-0" id="plantelSelect" name="plantelSelect"
-                                tabindex="1">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 pe-0">
+                            <select class="form-select rounded-0" id="plantelSelect" name="plantelSelect">
                                 <option value="" selected disabled> -Selecciona Plantel- </option>
-
-                            </select>
-                            <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect"
-                                tabindex="3">
-                                <option value="" selected>Iniciar clases en: </option>
                             </select>
                         </div>
-                        <div class="w-50">
-                            <select class="form-select rounded-0" id="nivelSelect" name="nivelSelect" 
-                                tabindex="2">
+                        <div class="col-12 col-md-6 col-lg-6 ps-0">
+                            <select class="form-select rounded-0" id="nivelSelect" name="nivelSelect">
                                 @isset($licenciatura)
                                     <option value="Licenciatura" selected>Licenciatura</option>
                                 @endisset
@@ -117,8 +109,14 @@
                                     <option value="Especialidad" selected>Especialidad</option>
                                 @endisset
                             </select>
-                            <select class="form-select rounded-0" id="carreraSelect" name="carreraSelect"
-                                tabindex="4">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 pe-0">
+                            <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect">
+                                <option value="" selected>Iniciar clases en: </option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 ps-0">
+                            <select class="form-select rounded-0" id="carreraSelect" name="carreraSelect">
                                 @isset($licenciatura)
                                     <option value="{{ $licenciatura->subtitulo }}"> {{ $licenciatura->subtitulo }}
                                     </option>
@@ -131,16 +129,13 @@
                                 @isset($posgrado)
                                     <option value="{{ $posgrado->titulo }}"> {{ $posgrado->titulo }} </option>
                                 @endisset
-
-
                             </select>
                         </div>
-                    </div>
-                    <div class="w-100">
-                        <select class="form-select rounded-0" id="horarioSelect" name="horarioSelect"
-                            tabindex="5">
-                            <option value="" selected> Horario </option>
-                        </select>
+                        <div class="col-12 col-md-12">
+                            <select class="form-select rounded-0" id="horarioSelect" name="horarioSelect">
+                                <option value="" selected> Horario </option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-check mt-3">
                         <input class="form-check-input" type="checkbox" id="aceptar_contacto"

@@ -62,9 +62,9 @@ $("select[name=plantelSelect]").change(function () {
         data: data
     }).done(function (data) {
         $('#periodoSelect').empty();
-        $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar? </option>`);
+        $("#periodoSelect").append(`<option value="" selected disabled>Seleccionar periodo </option>`);
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>Seleccionar horario</option>`);
 
         console.log(data);
 
@@ -131,11 +131,11 @@ $("select[name=periodoSelect]").change(function () {
             }).done(function (data) {
 
                 $('#nivelSelect').empty();
-                $("#nivelSelect").append(`<option value="" selected disabled>Selecciona el Nivel</option>`);
+                $("#nivelSelect").append(`<option value="" selected disabled>Seleccionar nivel</option>`);
                 $('#carreraSelect').empty();
-                $("#carreraSelect").append(`<option value="" selected disabled>Selecciona Carrera</option>`);
+                $("#carreraSelect").append(`<option value="" selected disabled>Seleccionar carrera</option>`);
                 $('#horarioSelect').empty();
-                $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+                $("#horarioSelect").append(`<option value="" selected disabled>Seleccionar horario</option>`);
 
                 console.log(data);
 
@@ -202,9 +202,9 @@ $("select[name=nivelSelect]").change(function () {
         data: data
     }).done(function (data) {
         $('#carreraSelect').empty();
-        $("#carreraSelect").append(`<option value="" selected disabled>Selecciona una carrera</option>`);
+        $("#carreraSelect").append(`<option value="" selected disabled>Seleccionar carrera</option>`);
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>Seleccionar horario</option>`);
 
         console.log(data);
 
@@ -261,7 +261,7 @@ $("select[name=carreraSelect]").change(function () {
     }).done(function (data) {
 
         $('#horarioSelect').empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>Seleccionar horario</option>`);
         
         console.log(data);
 
@@ -328,9 +328,9 @@ $("select[name=estadoInscripcion]").change(function () {
 function llenarComboPeriodosSinSeleccion() {
     setVariablesPrecargadas();
     $('#periodoSelect').empty();
-    $("#periodoSelect").append(`<option value="" selected disabled>¿Cuándo deseas iniciar? </option>`);
+    $("#periodoSelect").append(`<option value="" selected disabled>Seleccionar periodo</option>`);
     $('#horarioSelect').empty();
-    $("#horarioSelect").append(`<option value="" selected disabled>Selecciona un horario</option>`);
+    $("#horarioSelect").append(`<option value="" selected disabled>Seleccionar horario</option>`);
     let plantel = $('select[name=plantelSelect]').val();
     let ruta = setUrlBase() + "getPeriodos";
     let info = {

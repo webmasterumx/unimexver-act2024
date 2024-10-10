@@ -143,7 +143,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
     //! iniciamos los combos de nivel y carrera
 
     $('#nivelSelect').empty();
-    $("#nivelSelect").append(`<option value="" selected>Recalculando..</option>`);
+    $("#nivelSelect").append(`<option value="" selected disabled>Recalculando..</option>`);
     $('#carreraSelect').empty();
     $("#carreraSelect").append(`<option value="" selected disabled>${info.carrera_preinscripcion.replaceAll("_", " ")}</option>`);
 
@@ -160,7 +160,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
     }).done(function (data) {
         console.log(data);
         $('#nivelSelect').empty();
-        $("#nivelSelect").append(`<option value="" selected>Selecciona un nivel</option>`);
+        $("#nivelSelect").append(`<option value="" selected disabled>Selecciona un nivel</option>`);
         $.each(data, function (index, value) {
             if (info.nivel_preinscripcion == value.descrip) {
                 option = `<option value="${value.clave}" selected>${value.descrip}</option>`;
@@ -196,7 +196,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
             console.log(result);
 
             $('#carreraSelect').empty();
-            $("#carreraSelect").append(`<option value="" selected>Selecciona una carrera</option>`);
+            $("#carreraSelect").append(`<option value="" selected disabled>Selecciona una carrera</option>`);
 
             if (result.error == undefined || result.error == null) {
                 $.each(result, function (index, value) {

@@ -24,8 +24,8 @@ $(document).ready(function () {
     $("select[name=carreraSelect]").prop("disabled", true);
     $("select[name=horarioSelect]").prop("disabled", true);
 
-    $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
-    $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+    $("#periodoSelect").append(`<option value="" selected disabled>- Seleccionar periodo -</option>`);
+    $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
     getPlantelesContacto();
 
@@ -98,7 +98,7 @@ function getNivelesContacto() {
     }).done(function (data) {
 
         $("#nivelSelect").empty();
-        $("#nivelSelect").append(`<option value="" selected disabled>- Selecciona un nivel -</option>`);
+        $("#nivelSelect").append(`<option value="" selected disabled>- Seleccionar nivel -</option>`);
 
         console.log(data);
         $.each(data, function (index, value) {
@@ -139,7 +139,7 @@ function getPeriodosContacto() {
     }).done(function (data) {
 
         $("#periodoSelect").empty();
-        $("#periodoSelect").append(`<option value="" selected disabled>- Selecciona un periodo -</option>`);
+        $("#periodoSelect").append(`<option value="" selected disabled>- Seleccionar periodo -</option>`);
 
         console.log(data);
 
@@ -193,7 +193,7 @@ function getCarrerasContacto() {
     }).done(function (data) {
 
         $("#carreraSelect").empty();
-        $("#carreraSelect").append(`<option value="" selected disabled>- Selecciona una carrera -</option>`);
+        $("#carreraSelect").append(`<option value="" selected disabled>- Seleccionar carrera -</option>`);
 
         console.log(data.error);
 
@@ -258,7 +258,7 @@ function getHorariosContacto() {
     }).done(function (data) {
 
         $("#horarioSelect").empty();
-        $("#horarioSelect").append(`<option value="" selected disabled>- Selecciona un horario -</option>`);
+        $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
 
         console.log(data);
         if (data.error == undefined || data.error == null) {
