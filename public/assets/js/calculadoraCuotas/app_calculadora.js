@@ -671,6 +671,13 @@ function redireccionPreinscripcionEnLinea() {
     let formData = new FormData();
     formData.append("correo", $('#emailProspecto').val());
     formData.append("telefono", $("#telefonoProspecto").val());
+    
+    formData.append("utm_source",  $("#utm_source").val());
+    formData.append("utm_medium",  $("#utm_medium").val());
+    formData.append("utm_campaign",  $("#utm_campaign").val());
+    formData.append("utm_term",  $("#utm_term").val());
+    formData.append("utm_content",  $("#utm_content").val());
+
     let ruta = setUrlBase() + "validacion/preinscripcion";
 
     $.ajax({
