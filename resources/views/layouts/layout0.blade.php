@@ -152,12 +152,70 @@
 </head>
 
 <body>
+    @if (isset($dataUTM))
+        @if (
+            $dataUTM['utm_medium'] == 'organico' ||
+                $dataUTM['utm_medium'] == 'ORGANICO' ||
+                $dataUTM['utm_medium'] == 'Organico' ||
+                $dataUTM['utm_medium'] == null)
+            @php
+                $utmOrganico = true;
+                $complemento = '';
+            @endphp
+        @else
+            @php
+                $utmOrganico = false;
+                $complemento =
+                    '?utm_source=' .
+                    $dataUTM['utm_source'] .
+                    '&utm_medium=' .
+                    $dataUTM['utm_medium'] .
+                    '&utm_campaign=' .
+                    $dataUTM['utm_campaign'] .
+                    '&utm_term=' .
+                    $dataUTM['utm_term'] .
+                    '&utm_content=' .
+                    $dataUTM['utm_content'];
+            @endphp
+        @endif
+    @else
+        @php
+            $dataUTM['utm_source'] = session('utm_source');
+            $dataUTM['utm_medium'] = session('utm_medium');
+            $dataUTM['utm_campaign'] = session('utm_campaign');
+            $dataUTM['utm_term'] = session('utm_term');
+            $dataUTM['utm_content'] = session('utm_content');
 
+            if (
+                $dataUTM['utm_medium'] == 'organico' ||
+                $dataUTM['utm_medium'] == 'ORGANICO' ||
+                $dataUTM['utm_medium'] == 'Organico' ||
+                $dataUTM['utm_medium'] == null
+            ) {
+                $utmOrganico = true;
+            } else {
+                $utmOrganico = false;
+            }
+
+            $complemento =
+                '?utm_source=' .
+                $dataUTM['utm_source'] .
+                '&utm_medium=' .
+                $dataUTM['utm_medium'] .
+                '&utm_campaign=' .
+                $dataUTM['utm_campaign'] .
+                '&utm_term=' .
+                $dataUTM['utm_term'] .
+                '&utm_content=' .
+                $dataUTM['utm_content'];
+
+        @endphp
+    @endif
     <div class="container-fluid bg-unimex">
         <header class="border-bottom lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a href="{{ route('inicio') }}"><img class="ms-4"
+                    <a href="{{ env('APP_URL') . $complemento}}"><img class="ms-4"
                             src="{{ asset('assets/img/header/logo-2020.webp') }}" alt=""
                             style="width: 200px;"></a>
                 </div>

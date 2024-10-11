@@ -128,10 +128,10 @@ function setVariablesPrecargadas() {
         }
         else {
             $("#nivelSelect").empty();
-            $('#nivelSelect').append(`<option value="" selected disabled>Selecciona un nivel</option>`);
+            $('#nivelSelect').append(`<option value="" selected disabled>Seleccionar nivel</option>`);
 
             $("#carreraSelect").empty();
-            $('#carreraSelect').append(`<option value="" selected disabled>Selecciona una carrera</option>`);
+            $('#carreraSelect').append(`<option value="" selected disabled>Seleccionar carrera</option>`);
         }
 
     }).fail(function () {
@@ -160,7 +160,7 @@ function recalculoDeComboNivel(ruta, data, element, info) {
     }).done(function (data) {
         console.log(data);
         $('#nivelSelect').empty();
-        $("#nivelSelect").append(`<option value="" selected disabled>Selecciona un nivel</option>`);
+        $("#nivelSelect").append(`<option value="" selected disabled>Seleccionar nivel</option>`);
         $.each(data, function (index, value) {
             if (info.nivel_preinscripcion == value.descrip) {
                 option = `<option value="${value.clave}" selected>${value.descrip}</option>`;
