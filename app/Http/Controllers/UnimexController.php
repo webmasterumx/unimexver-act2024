@@ -7,10 +7,12 @@ use App\Models\Banner;
 use App\Models\CCarreras;
 use App\Models\CLicenciaturas;
 use App\Models\Investigacion;
+use App\Models\LicenciaturaDistancia;
 use App\Models\LicenciaturaSua;
 use App\Models\Menu;
 use App\Models\Plantel;
 use App\Models\Posgrado;
+use App\Models\PosgradoDistancia;
 use App\Models\PreguntasFrecuentes;
 use App\Models\Rvoe;
 use App\Models\VentajasUnimex;
@@ -139,6 +141,23 @@ class UnimexController extends Controller
         }
     }
 
+    public function getLicenciaturaDistancia($slug): View
+    {
+
+        $licenciatura_distancia = LicenciaturaDistancia::where('slug', $slug)->first();
+
+        $temario = json_decode($licenciatura_distancia->planEstudios, true);
+        $campo_laboral = json_decode($licenciatura_distancia->itemsCampoLaboral, true);
+
+        //dd($temario);
+
+        return view('licenciaturadistancia', [
+            "licenciatura_distancia" => $licenciatura_distancia,
+            "temario" => $temario["temario"],
+            "campo_laboral" => $campo_laboral["campoLaboral"]
+        ]);
+    }
+
     public function getPosgrado($slug): View
     {
         $this->utm_recurso = new UtmController();
@@ -156,6 +175,40 @@ class UnimexController extends Controller
             $abreviatura = $posgrado->abreviatura;
 
             return view('posgrado', [
+                "posgrado" => $posgrado,
+                "temario_especialidad" => $temario_especialidad,
+                "temario_maestria" => $temario_maestria,
+                "rvoe_especialidad" => $rvoe_especialidad,
+                "rvoe_maestria" => $rvoe_maestria,
+                "dataUTM" => $dataUTM,
+                "origen" => $origen,
+                "abreviatura" => $abreviatura,
+                "urlVisitada" => $urlVisitada
+            ]);
+        } else {
+            return view('errors.404');
+        }
+    }
+
+    public function getPosgradoDistancia($slug): View
+    {
+
+        $this->utm_recurso = new UtmController();
+        $origen = $this->utm_recurso->comprovacionOrigen();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
+
+        $posgrado = PosgradoDistancia::where('slug', $slug)->first();
+
+        if ($posgrado != null) {
+            $extras = json_decode($posgrado->temario, true);
+            $temario_especialidad = $extras['extras']['temario_especialidad'];
+            $temario_maestria = $extras['extras']['temario_maestria'];
+            $rvoe_especialidad = $extras['extras']['rvoe_especialidad'];
+            $rvoe_maestria = $extras['extras']['rvoe_maestria'];
+            $abreviatura = $posgrado->abreviatura;
+
+            return view('posgradosdistancia', [
                 "posgrado" => $posgrado,
                 "temario_especialidad" => $temario_especialidad,
                 "temario_maestria" => $temario_maestria,

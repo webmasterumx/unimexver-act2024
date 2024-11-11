@@ -26,7 +26,9 @@ Route::get('/planteles/{slug}', [UnimexController::class, 'getPlanteles'])->name
 Route::get('/acerca-de-unimex/{alug}', [UnimexController::class, 'getAcercade'])->name('acercade');
 Route::get('/licenciatura/{slug}', [UnimexController::class, 'getLicenciatura'])->name('licenciatura');
 Route::get('/licenciatura/sua/{slug}', [UnimexController::class, 'getLicenciaturaSua'])->name('licenciatura.sua');
+Route::get('/licenciatura/distancia/{slug}', [UnimexController::class, 'getLicenciaturaDistancia'])->name('licenciatura.distancia');
 Route::get('/posgrado/{slug}', [UnimexController::class, 'getPosgrado'])->name('posgrado');
+Route::get('/posgrado/distancia/{slug}', [UnimexController::class, 'getPosgradoDistancia'])->name('posgrado.distancia');
 Route::get('/contacto', [UnimexController::class, 'contacto'])->name('contacto');
 Route::get('/calcula-tu-cuota', [UnimexController::class, 'calculaTuCuota'])->name('calcula_tu_cuota');
 Route::get('/preinscripcion/ficha/pdf', [UnimexController::class, 'fichaPDFGenerar'])->name('preinscripcion.fichs.pdf');

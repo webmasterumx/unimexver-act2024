@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $planteles = Plantel::all();
         $acercade = Acercade::all();
-        $menus = Menu::all();
+        $menus = Menu::all()->sortBy('nombre');
 
         $data = array(
             "planteles" => $planteles,

@@ -449,7 +449,7 @@
                             <span class="txtpequeno">DISPONIBLE EN TODOS LOS PLANTELES</span>
                         </li>
                         @foreach ($data['menus'] as $menu)
-                            @if ($menu->estado == 1)
+                            @if ($menu->estado == 1 && $menu->mostrar == 1)
                                 <li>
                                     @if ($utmOrganico == true)
                                         @php
@@ -511,21 +511,26 @@
                     </ul>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-gray-border">
-                    <h5 onclick="subnav.list.toggle('SUA')" id="SUA">Licenciaturas abiertas SUA<br></h5>
+                    <h5 onclick="subnav.list.toggle('SUA')" id="SUA">Licenciaturas a distancia<br></h5>
                     <ul class="blue-bullet">
-                        <li style="background: none;">
+                        {{--  <li style="background: none;">
                             <span class="txtpequeno">DISPONIBLE EN TODOS LOS PLANTELES</span>
-                        </li>
+                        </li> --}}
                         @foreach ($data['menus'] as $menu)
-                            @if ($menu->estado == 4)
+                            @if ($menu->estado == 7)
                                 <li>
                                     @if ($utmOrganico == true)
                                         @php
-                                            $ruta = env('APP_URL') . 'licenciatura/sua/' . $menu->slug . $menu->urlUTM;
+                                            $ruta =
+                                                env('APP_URL') .
+                                                'licenciatura/distancia/' .
+                                                $menu->slug .
+                                                $menu->urlUTM;
                                         @endphp
                                     @else
                                         @php
-                                            $ruta = env('APP_URL') . 'licenciatura/sua/' . $menu->slug . $complemento;
+                                            $ruta =
+                                                env('APP_URL') . 'licenciatura/distancia/' . $menu->slug . $complemento;
                                         @endphp
                                     @endif
                                     <a href=" {{ $ruta }} ">
@@ -553,6 +558,27 @@
                                     @else
                                         @php
                                             $ruta = env('APP_URL') . 'posgrado/' . $menu->slug . $complemento;
+                                        @endphp
+                                    @endif
+                                    <a href="{{ $ruta }}">
+                                        {{ $menu->nombre }}
+                                    </a>
+                                </li>
+                            @endif
+                        @endforeach
+                        <br>
+                        <h5>Posgrados a distancia</h5>
+                        @foreach ($data['menus'] as $menu)
+                            @if ($menu->estado == 8 && $menu->mostrar == 1)
+                                <li>
+                                    @if ($utmOrganico == true)
+                                        @php
+                                            $ruta =
+                                                env('APP_URL') . 'posgrado/distancia/' . $menu->slug . $menu->urlUTM;
+                                        @endphp
+                                    @else
+                                        @php
+                                            $ruta = env('APP_URL') . 'posgrado/distancia/' . $menu->slug . $complemento;
                                         @endphp
                                     @endif
                                     <a href="{{ $ruta }}">
