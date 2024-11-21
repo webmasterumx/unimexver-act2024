@@ -10,6 +10,7 @@ use App\Models\Investigacion;
 use App\Models\LicenciaturaDistancia;
 use App\Models\LicenciaturaSua;
 use App\Models\Menu;
+use App\Models\OfertaAcademica;
 use App\Models\Plantel;
 use App\Models\Posgrado;
 use App\Models\PosgradoDistancia;
@@ -83,12 +84,16 @@ class UnimexController extends Controller
 
     public function getLicenciatura($slug): View
     {
+        $licenciatura = OfertaAcademica::where('slug', $slug)->where('id_tipo', 1)->first();
+
         $this->utm_recurso = new UtmController();
+        $extrasController = new ExtrasUnimexController();
         $origen = $this->utm_recurso->comprovacionOrigen();
         $dataUTM = $this->utm_recurso->iniciarUtmSource();
         $urlVisitada = URL::full();
+        $arrayContraportadas = $extrasController->getArrayVentajasImg();
 
-        $licenciatura = CLicenciaturas::where('slug', $slug)->first();
+        //dd($licenciatura);
 
         if ($licenciatura != null) {
 
@@ -106,7 +111,8 @@ class UnimexController extends Controller
                 "origen" => $origen,
                 "dataUTM" => $dataUTM,
                 "abreviatura" => $abreviatura,
-                "urlVisitada" => $urlVisitada
+                "urlVisitada" => $urlVisitada,
+                "contraportada" => $arrayContraportadas[random_int(0, 6)],
             ]);
         } else {
             return view('errors.404');
@@ -144,17 +150,33 @@ class UnimexController extends Controller
     public function getLicenciaturaDistancia($slug): View
     {
 
-        $licenciatura_distancia = LicenciaturaDistancia::where('slug', $slug)->first();
+        $this->utm_recurso = new UtmController();
+        $origen = $this->utm_recurso->comprovacionOrigen();
+        $dataUTM = $this->utm_recurso->iniciarUtmSource();
+        $urlVisitada = URL::full();
 
-        $temario = json_decode($licenciatura_distancia->planEstudios, true);
-        $campo_laboral = json_decode($licenciatura_distancia->itemsCampoLaboral, true);
+        $licenciatura_distancia = OfertaAcademica::where('slug', $slug)->where("id_tipo", 2)->first();
+
+        //dd($licenciatura_distancia);
+
+        $temario = json_decode($licenciatura_distancia->extras, true);
+        $campo_laboral = $temario["campoLaboral"];
+        $rvoe = $temario["RVOE"];
+        $abreviatura = $licenciatura_distancia->abreviatura;
 
         //dd($temario);
+        //dd($abreviatura);
+
 
         return view('licenciaturadistancia', [
             "licenciatura_distancia" => $licenciatura_distancia,
             "temario" => $temario["temario"],
-            "campo_laboral" => $campo_laboral["campoLaboral"]
+            "campo_laboral" => $campo_laboral,
+            "rvoe" => $rvoe,
+            "dataUTM" => $dataUTM,
+            "origen" => $origen,
+            "abreviatura" => $abreviatura,
+            "urlVisitada" => $urlVisitada
         ]);
     }
 

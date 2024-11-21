@@ -9,7 +9,7 @@
         #contraportada {
             background-position: center;
             background-size: cover;
-            background-image: url("{{ asset($licenciatura->contraportada) }}");
+            background-image: url("{{ asset($contraportada) }}");
         }
 
         .bg_campo_laboral {
@@ -41,7 +41,7 @@
     <!-- Inicio de portada -->
     <section id="portada" style="background-image: url({{ asset($licenciatura->portada) }}); position: relative;">
         <h1 class="etiqueta-titulo p-3 text-uppercase">
-            LICENCIATURA EN {{ $licenciatura->subtitulo }}
+            LICENCIATURA EN {{ $licenciatura->nombre }}
         </h1>
         @if ($licenciatura->statusVer == true)
             <button style="position: relative; bottom: 100%; left: 86%;" type="button" class="btn btn-primary">
@@ -102,7 +102,7 @@
             <div class="col-12 col-md-6 col-lg-6 bg-articule p-5">
                 <h2 style="font-size: 1.438rem;" class="underlined-head fw-normal">
                     Ventajas de estudiar la Licenciatura en <span class="text-capitalize">
-                        {{ $licenciatura->subtitulo }}</span>
+                        {{ $licenciatura->nombre }}</span>
                 </h2>
                 <ul class="text-justify">
                     <li>
@@ -177,7 +177,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <h1 style="font-size: 1.50rem;" class="underlined-head text-uppercase text-white">
-                    licenciatura en {{ $licenciatura->subtitulo }}
+                    licenciatura en {{ $licenciatura->nombre }}
                 </h1>
                 <p class="text-center">
                     Campo Laboral
@@ -392,7 +392,7 @@
 
 
         function getCarreraPosicion() {
-            let carreraPosicionado = "{{ $licenciatura->subtitulo }}";
+            let carreraPosicionado = "{{ $licenciatura->nombre }}";
 
             return carreraPosicionado;
         }
@@ -410,7 +410,7 @@
         }
 
         var nivelPosicionado = "Licenciatura";
-        var carreraPosicionado = "{{ $licenciatura->subtitulo }}";
+        var carreraPosicionado = "{{ $licenciatura->nombre }}";
 
         $('#aceptarAvisoPrivacidadFolleto').on('click', function() {
             if ($(this).is(':checked')) {

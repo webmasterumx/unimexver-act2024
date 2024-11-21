@@ -245,4 +245,42 @@ class ExtrasUnimexController extends Controller
         //return response()->json($respuesta);
     }
 
+    public function getArrayVentajasImg()
+    {
+        $arrayImg = [
+            "assets/img/licenciaturas/ventajas/BECA_ANUAL_RENOVABLE.png",
+            "assets/img/licenciaturas/ventajas/CARTA_DE_PASANTE.png",
+            "assets/img/licenciaturas/ventajas/CUOTAS_ACCESIBLES.png",
+            "assets/img/licenciaturas/ventajas/HORARIOS_FLEXIBLES.png",
+            "assets/img/licenciaturas/ventajas/PLAN_RENOVADO.png",
+            "assets/img/licenciaturas/ventajas/TERMINA_EN_3.png",
+            "assets/img/licenciaturas/ventajas/VALIDEZ_SEP.png"
+        ];
+
+        return $arrayImg;
+    }
+
+    public function getArrayVentajasPosgradosImg()
+    {
+        $arrayImg = [
+            "assets/img/posgrado/IMAGENES_VENTAJAS_POSGRADO_1.png",
+            "assets/img/posgrado/IMAGENES_VENTAJAS_POSGRADO_2.png",
+            "assets/img/posgrado/IMAGENES_VENTAJAS_POSGRADO_3.png",
+            "assets/img/posgrado/IMAGENES_VENTAJAS_POSGRADO_4.png",
+            "assets/img/posgrado/IMAGENES_VENTAJAS_POSGRADO_5.png",
+        ];
+
+        return $arrayImg;
+    }
+
+    public function getArrayVentajasPosDisImg()
+    {
+        $arrayImg = [
+            "assets/img/2024/ventajas/distancia_1.png",
+            "assets/img/2024/ventajas/distancia_2.png",
+            "assets/img/2024/ventajas/distancia_3.png"
+        ];
+
+        return $arrayImg;
+    }
 }
