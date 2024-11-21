@@ -106,7 +106,7 @@
                     @endphp
                 @elseif(isset($licenciatura_sua))
                     @php
-                        $abreviatura = $licenciatura_sua->abreviatura;
+                        $abreviatura = $licenciatura_distancia->abreviatura;
                     @endphp
                 @elseif(isset($posgrado))
                     @php
