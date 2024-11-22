@@ -1,39 +1,44 @@
 @switch($posgrado->id)
-    @case(1)
+    @case(28)
         @include('metas.posgrados.1')
     @break
 
-    @case(2)
+    @case(29)
         @include('metas.posgrados.2')
     @break
 
-    @case(3)
+    @case(30)
         @include('metas.posgrados.3')
     @break
 
-    @case(4)
+    @case(31)
         @include('metas.posgrados.4')
     @break
 
-    @case(5)
+    @case(32)
         @include('metas.posgrados.5')
     @break
 
-    @case(6)
+    @case(33)
+        @include('metas.posgrados.5')
+    @break
+
+    @case(34)
         @include('metas.posgrados.6')
     @break
 
-    @case(7)
-        @include('metas.posgrados.7')
-    @break
-
-    @case(8)
+    @case(35)
         @include('metas.posgrados.8')
     @break
 
-    @case(9)
+    @case(36)
         @include('metas.posgrados.9')
+    @break
+
+    @case(37)
+        @include('metas.posgrados.10')
     @break
 
     @default
 @endswitch
+

@@ -183,13 +183,18 @@ class UnimexController extends Controller
     public function getPosgrado($slug): View
     {
         $this->utm_recurso = new UtmController();
+        $extras = new ExtrasUnimexController();
         $origen = $this->utm_recurso->comprovacionOrigen();
         $dataUTM = $this->utm_recurso->iniciarUtmSource();
         $urlVisitada = URL::full();
+        $arrayContraportadas = $extras->getArrayVentajasPosgradosImg();
+        //dd($arrayContraportadas[random_int(0, 4)]);
 
-        $posgrado = Posgrado::where('slug', $slug)->first();
+        $posgrado = OfertaAcademica::where('slug', $slug)->where("id_tipo", 3)->first();
+        //dd($posgrado);
+
         if ($posgrado != null) {
-            $extras = json_decode($posgrado->temario, true);
+            $extras = json_decode($posgrado->extras, true);
             $temario_especialidad = $extras['extras']['temario_especialidad'];
             $temario_maestria = $extras['extras']['temario_maestria'];
             $rvoe_especialidad = $extras['extras']['rvoe_especialidad'];
@@ -205,7 +210,8 @@ class UnimexController extends Controller
                 "dataUTM" => $dataUTM,
                 "origen" => $origen,
                 "abreviatura" => $abreviatura,
-                "urlVisitada" => $urlVisitada
+                "urlVisitada" => $urlVisitada,
+                "contraportada" => $arrayContraportadas[random_int(0, 4)],
             ]);
         } else {
             return view('errors.404');
@@ -216,14 +222,16 @@ class UnimexController extends Controller
     {
 
         $this->utm_recurso = new UtmController();
+        $extras = new ExtrasUnimexController();
         $origen = $this->utm_recurso->comprovacionOrigen();
         $dataUTM = $this->utm_recurso->iniciarUtmSource();
         $urlVisitada = URL::full();
+        $arrayContraportadas = $extras->getArrayVentajasPosDisImg();
 
-        $posgrado = PosgradoDistancia::where('slug', $slug)->first();
+        $posgrado = OfertaAcademica::where('slug', $slug)->where("id_tipo", 4)->first();
 
         if ($posgrado != null) {
-            $extras = json_decode($posgrado->temario, true);
+            $extras = json_decode($posgrado->extras, true);
             $temario_especialidad = $extras['extras']['temario_especialidad'];
             $temario_maestria = $extras['extras']['temario_maestria'];
             $rvoe_especialidad = $extras['extras']['rvoe_especialidad'];
@@ -239,7 +247,8 @@ class UnimexController extends Controller
                 "dataUTM" => $dataUTM,
                 "origen" => $origen,
                 "abreviatura" => $abreviatura,
-                "urlVisitada" => $urlVisitada
+                "urlVisitada" => $urlVisitada,
+                "contraportada" => $arrayContraportadas[random_int(0, 2)],
             ]);
         } else {
             return view('errors.404');

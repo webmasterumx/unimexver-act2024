@@ -13,7 +13,7 @@
     #contraportada {
         background-position: center;
         background-size: cover;
-        background-image: url("{{ asset($posgrado->contraportada) }}");
+        background-image: url("{{ asset($contraportada) }}");
     }
 
     .bg_campo_laboral {
@@ -52,7 +52,7 @@
 @section('content')
     <!-- Inicio de portada -->
     <section id="portada" style="background-image: url({{ asset($posgrado->portada) }}); position: relative;">
-        <h1 class="etiqueta-titulo p-3 text-uppercase" style="font-size: 30px;"> {{ $posgrado->titulo }} </h1>
+        <h1 class="etiqueta-titulo p-3 text-uppercase" style="font-size: 30px;"> {{ $posgrado->nombre }} </h1>
     </section>
     <!-- Fin de portada -->
 
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="underlined_head_obj text-center text-uppercase fw-normal" style="font-size: 1.438rem;">
-                    especialidad y maestría en {{ $posgrado->titulo }}
+                    especialidad y maestría en {{ $posgrado->nombre }}
                 </h2>
             </div>
             <div class="col-12">
@@ -71,15 +71,16 @@
                 <div class="row">
                     <div class="col-12 col-md-6 mb-2 mb-md-0">
                         <div class="d-grid gap-2">
-                            <a id="redireccionCTCL" href="javascript:calculadoraHeader('{{ $posgrado->abreviatura }}')" class="btn btn-outline-primary">
+                            <a id="redireccionCTCL" href="javascript:calculadoraHeader('{{ $posgrado->abreviatura }}')"
+                                class="btn btn-outline-primary">
                                 Calculadora de Cuotas
                             </a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 mb-2 mb-md-0">
                         <div class="d-grid gap-2">
-                            <a id="redireccionPELL" href="javascript:preinscripcionHeader('{{ $posgrado->abreviatura }}')" class="btn text-white"
-                                style="background-color: #de951b;">
+                            <a id="redireccionPELL" href="javascript:preinscripcionHeader('{{ $posgrado->abreviatura }}')"
+                                class="btn text-white" style="background-color: #de951b;">
                                 Preinscripción En Línea
                             </a>
                         </div>
@@ -95,10 +96,10 @@
         <div class="row">
             <div id="contraportada" class="col-12 col-md-6 col-lg-6">
             </div>
-            @if ($posgrado->titulo == 'Docencia' || $posgrado->titulo == 'Impuestos')
+            @if ($posgrado->nombre == 'Docencia' || $posgrado->nombre == 'Impuestos')
                 <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
                     <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
-                        Ventajas de estudiar el posgrado en {{ $posgrado->titulo }}
+                        Ventajas de estudiar el posgrado en {{ $posgrado->nombre }}
                     </h1>
                     <p>
                         Obtienes un nivel de preparación profesional superior que te permitirá alcanzar mejores
@@ -116,7 +117,7 @@
             @else
                 <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
                     <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
-                        Ventajas de estudiar el posgrado en {{ $posgrado->titulo }}
+                        Ventajas de estudiar el posgrado en {{ $posgrado->nombre }}
                     </h1>
                     <p>
                         Obtienes un nivel de preparación profesional superior que puede facilitarte alcanzar las mejores
@@ -134,10 +135,12 @@
                             Maestría.</button>
                         <br><br>
                         Variedad de horarios que te permiten estudiar y trabajar.
-                        <br><br>
+                        <br>
                     <ul>
                         <li>Sabatino: sólo sábados de 8:00 a 13:00 h.</li>
-                        <li>Vespertino: sólo 2 tardes entre semana de 19:30 a 22:00 h.</li>
+                        @if ($posgrado->id != 37)
+                            <li>Vespertino: sólo 2 tardes entre semana de 19:30 a 22:00 h.</li>
+                        @endif
                     </ul>
                     Nota: La inscripción está sujeta a la apertura y cupo en el grupo seleccionado. La apertura de los
                     grupos está sujeta a la disponibilidad del programa en el plantel deseado y a un mínimo de 25 alumnos
@@ -341,10 +344,13 @@
                                 SABATINO <br>
                                 Sólo sábados de 8:00 a 13:00 h.
                             </td>
-                            <td class="text-center bg_planteles_dis text-white">
-                                VESPERTINO <br>
-                                Sólo 2 tardes entre semana de 19:30 a 22:00 h.
-                            </td>
+                            @if ($posgrado->id != 37)
+                                <td class="text-center bg_planteles_dis text-white">
+                                    VESPERTINO <br>
+                                    Sólo 2 tardes entre semana de 19:30 a 22:00 h.
+                                </td>
+                            @else
+                            @endif
                         </tr>
                     </tbody>
                 </table>
@@ -438,7 +444,7 @@
 
 
         function getCarreraPosicion() {
-            let carreraPosicionado = "{{ $posgrado->titulo }}";
+            let carreraPosicionado = "{{ $posgrado->nombre }}";
 
             return carreraPosicionado;
         }
@@ -456,7 +462,7 @@
         }
 
         var nivelPosicionado = "Especialidad";
-        var carreraPosicionado = "{{ $posgrado->titulo }}";
+        var carreraPosicionado = "{{ $posgrado->nombre }}";
 
         $('#aceptarAvisoPrivacidadFolleto').on('click', function() {
             if ($(this).is(':checked')) {

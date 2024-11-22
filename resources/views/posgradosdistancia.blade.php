@@ -2,7 +2,7 @@
 
 @section('metas')
     @include('metas.posgradosDistancia.condicional')
-@endsection 
+@endsection
 
 @section('styles')
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -13,7 +13,7 @@
     #contraportada {
         background-position: center;
         background-size: cover;
-        background-image: url("{{ asset($posgrado->contraportada) }}");
+        background-image: url("{{ asset($contraportada) }}");
     }
 
     .bg_campo_laboral {
@@ -71,7 +71,7 @@
 @section('content')
     <!-- Inicio de portada -->
     <section id="portada" style="background-image: url({{ asset($posgrado->portada) }}); position: relative;">
-        <h1 class="etiqueta-titulo p-3 text-uppercase" style="font-size: 30px;"> {{ $posgrado->titulo }} </h1>
+        <h1 class="etiqueta-titulo p-3 text-uppercase" style="font-size: 30px;"> {{ $posgrado->nombre }} a distancia </h1>
     </section>
     <!-- Fin de portada -->
 
@@ -80,10 +80,10 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="underlined_head_obj text-center text-uppercase fw-normal" style="font-size: 1.438rem;">
-                    @if ($posgrado->titulo == 'Docencia')
-                        especialidad en {{ $posgrado->titulo }}
+                    @if ($posgrado->nombre == 'Docencia')
+                        especialidad en {{ $posgrado->nombre }}
                     @else
-                        especialidad y maestría a distancia en {{ $posgrado->titulo }}
+                        especialidad y maestría a distancia en {{ $posgrado->nombre }}
                     @endif
                 </h2>
             </div>
@@ -121,7 +121,7 @@
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
                 <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
-                    Ventajas de estudiar el posgrado a distancia en {{ $posgrado->titulo }}
+                    Ventajas de estudiar el posgrado a distancia en {{ $posgrado->nombre }}
                 </h1>
                 <p>
                     <br>
@@ -183,7 +183,7 @@
                 @endfor
             </div>
 
-            @if ($posgrado->titulo != 'Docencia')
+            @if ($posgrado->nombre != 'Docencia')
                 <div class="col-12">
                     <p>
                         <b>
@@ -222,7 +222,13 @@
                     Duración de la Maestría: 6 ciclos (2 años) <br><br>
                     Nota: La duración mencionada está sujeta al curso continuo de los estudios; consulta la programación de
                     aperturas en el plantel de tu elección.
-
+                </p>
+                <br>
+                <p class="text-center">
+                    <button data-bs-toggle="modal" data-bs-target="#continuaConTuMaestria" type="button"
+                        class="btn btn-primary mb-2 mb-md-0">Continúa con tu maestría en UNIMEX</button>
+                    <button data-bs-toggle="modal" data-bs-target="#titulacionEstudiosPosgrado" type="button"
+                        class="btn btn-primary mb-2 mb-md-0">Titulación vía estudios de posgrados</button>
                 </p>
             </div>
         </div>
@@ -239,7 +245,7 @@
     <!-- Fin de la Sección de Contacto -->
 
     <!-- Inicio de Campo Laboral -->
-    <section class="bg_campo_laboral container-fluid px-5 py-5 text-white">
+ {{--    <section class="bg_campo_laboral container-fluid px-5 py-5 text-white">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <h1 style="font-size: 1.50rem;" class="underlined-head text-uppercase text-white">
@@ -260,7 +266,7 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Fin de Campo Laboral -->
 
     <!-- Inicio de la Sección de Requisitos -->
@@ -280,8 +286,8 @@
                                 <b>
                                     Si cuentas con Título de Licenciatura
                                 </b><br><br>
-                                Original y copia del Acta de Nacimiento. <br>
-                                Copia del Título o Cédula Profesional. <br>
+                                Original o copia certificada del Acta de Nacimiento y una fotocopia. <br><br>
+                                
                                 Original y una fotocopia del Certificado Total de Estudios de Licenciatura* <br><br>
                                 *En caso de no contar con este documento presentar una Constancia de Terminación con el 100%
                                 de las materias acreditadas. Si su título está en trámite en su Universidad de origen,
@@ -294,15 +300,15 @@
                         <div class="card-body" style="height: 410px">
                             <p>
                                 <b>Si deseas titularte de Licenciatura mediante estudios de Posgrado</b> <br><br>
-                                Original o copia certificada del Acta de Nacimiento y una fotocopia. <br>
-                                Original y una fotocopia del Certificado Total de Estudios de Licenciatura* <br>
+                                Original o copia certificada del Acta de Nacimiento y una fotocopia. <br><br>
+                                Original y una fotocopia del Certificado Total de Estudios de Licenciatura* <br><br>
                                 En caso de cursar el Posgrado como medio de Titulación, presentar una Carta de Autorización.
                                 <br>
                                 para Titularse vía créditos de Posgrado, emitida por tu Universidad de origen**, indicando
                                 el porcentaje de créditos necesarios.
                                 <br><br>
                                 * Legalizado, en caso de Universidades no incorporadas a la S.E.P. <br>
-                                ** únicamente para egresados de otras instituciones que desean estudiar un Posgrado en
+                                ** Únicamente para egresados de otras instituciones que desean estudiar un Posgrado en
                                 UNIMEX® como opción de titulación.
 
                             </p>
@@ -315,7 +321,7 @@
     <!-- Fin de la Sección de Requisitos -->
 
     <!-- Inicio de la Sección de disponibilidad -->
-    <section class="container-fluid px-5 py-5 bg_planteles_dis">
+   {{--  <section class="container-fluid px-5 py-5 bg_planteles_dis">
         <div class="row">
             <div class="col-12 text-center p-0 mb-3">
                 <h1 class="fw-light" style="font-size: 1.438rem; color: #ffff;">HORARIOS:</h1>
@@ -340,7 +346,7 @@
                 </table>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Fin de la Sección de disponibilidad -->
 
     @include('modales.continuaConTuMaestria')
@@ -428,7 +434,7 @@
         });
 
         function getCarreraPosicion() {
-            let carreraPosicionado = "{{ $posgrado->titulo }}";
+            let carreraPosicionado = "{{ $posgrado->nombre }}";
 
             return carreraPosicionado;
         }
@@ -446,7 +452,7 @@
         }
 
         var nivelPosicionado = "Especialidad";
-        var carreraPosicionado = "{{ $posgrado->titulo }}";
+        var carreraPosicionado = "{{ $posgrado->nombre }}";
 
         $('#aceptarAvisoPrivacidadFolleto').on('click', function() {
             if ($(this).is(':checked')) {
