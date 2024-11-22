@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('metas')
+    @include('metas.licenciaturasDistancia.condicional')
+@endsection
+
 @section('styles')
     <style>
         .bg_contacto {

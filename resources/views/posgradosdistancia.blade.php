@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('metas')
-    @include('metas.posgrados.condicional')
+    @include('metas.posgradosDistancia.condicional')
 @endsection
 
 @section('styles')
