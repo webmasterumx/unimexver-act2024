@@ -2,7 +2,7 @@
 
 @section('metas')
     @include('metas.posgradosDistancia.condicional')
-@endsection
+@endsection 
 
 @section('styles')
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
