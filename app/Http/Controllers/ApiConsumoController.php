@@ -245,4 +245,56 @@ class ApiConsumoController extends Controller
 
         return $response->json();
     }
+
+    //* Dia unimex
+
+    
+    public function getEscuelasDiaUnimex()
+    {
+        $response = Http::get($this->base_url . 'dia-unimex/escuelas');
+
+        return $response->json();
+    }
+
+    public function getCarrerasDiaUnimex($clavePlantel, $claveNivel)
+    {
+        $valores = array(
+            "clavePlantel" => $clavePlantel,
+            "claveNivel" => $claveNivel,
+        );
+
+        //var_dump($valores);
+        $response = Http::post($this->base_url . 'dia-unimex/carreras', $valores);
+
+
+        return $response->json();
+    }
+
+    public function getHorariosDiaUnimex($claveCarrera)
+    {
+
+        if ($claveCarrera == "1" || $claveCarrera == "14" || $claveCarrera == "15") {
+            $valores = array(
+                "clavePlantel" => 5,
+                "claveNivel" => 1,
+                "modalidad1"  => 1,
+                "modalidad2"  => 3,
+                "modalidad3"  => 2
+            );
+        } else {
+            $valores = array(
+                "clavePlantel" => 5,
+                "claveNivel" => 1,
+                "modalidad1"  => 1,
+                "modalidad2"  => 3,
+                "modalidad3"  => 1
+            );
+        }
+
+        //var_dump($valores);
+        $response = Http::post($this->base_url . 'dia-unimex/turnos', $valores);
+
+
+        return $response->json();
+    }
 }

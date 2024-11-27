@@ -1,0 +1,257 @@
+/* Este es el estilo del main */
+*{
+    padding: 0;
+    margin: 0;
+    /*overflow-x: hidden;*/
+}
+
+body,
+html{
+    background-color: #0e488a;
+}
+
+/*header*/
+.nav{
+    display: block !important;
+    text-align: left;
+    position: static;
+    max-width: 100%;
+    /*border: solid white 2px;*/
+    background-color: transparent;
+    height: auto;
+}
+#logo{
+    margin: 10px;
+    margin-left: 20px;
+    height: auto;
+}
+
+/*section*/
+section{
+    margin: 20px;
+    /*border: solid white 2px;*/
+    max-width: 100%;
+    height: auto;  
+    overflow: hidden;
+}
+
+/*contenedor formulario
+
+*/
+#contenedor{
+    margin: 10px auto 10px auto;
+    padding-top: 35%;
+}
+
+
+section > #formulario > #contenedor > div > *.form-label{
+    font-weight: bold;
+}
+
+
+section > #formulario > #contenedor > #pregunta{
+    text-align: center;
+}
+
+section > #formulario > #contenedor > *.form-label{
+    font-weight: bold;
+}
+
+section > #formulario > #contenedor > #div-check{
+    text-align: center;
+}
+
+.form-check-input:checked {
+    background-color: #040e51 !important;
+    border-color: #040e51 !important;
+}
+
+section > #formulario > #contenedor > #div-check > label > a{
+    text-decoration: none;
+    color: #212529;
+}
+
+section > #formulario > #contenedor > #div-check{
+    text-align: center;
+}
+
+section > #formulario > #contenedor > #div-btn{
+    text-align: center;
+    
+}
+
+section > #formulario > #contenedor > #div-btn > button{
+    background-color: #040e51;
+    border-color: #040e51;
+    font-weight: bold;
+}
+
+#frase1{
+    top: 11%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    position: sticky;
+}
+
+#frase2{
+    font-family: 'Lobster', 'cursive';
+    font-size: 1rem;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    height: auto;
+    /*border: 1px solid white;*/
+    color: white;
+    z-index: 1;
+    position: sticky;
+}
+
+
+/*footer*/
+footer{
+    position: static;
+    width: 100%;
+    height: 50px;
+    /*border: solid white 2px;*/
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    line-height: 46px;
+}
+
+#registro{
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    max-height: 100%;
+}
+  
+/*media queries*/
+@media (max-width: 575px) {
+    /*header*/
+    .nav{
+        text-align: center;
+    }
+
+    #formulario{
+        background-image: url(../../img/capa-mobile.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 576px){
+
+    /*header*/
+     .nav{
+        text-align: center;
+    }
+
+    #contenedor{
+        padding-top: 20%;
+    }
+
+    #formulario{
+        background-image: url(../../img/capa-mobile.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: auto;
+    }
+    #frase1{
+        font-size: 1.7rem;
+    }
+
+    #frase2{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /*header*/
+    .nav{
+        text-align: center;
+    }
+
+    /*Formulario*/
+    #formulario{
+        background-image: url(../../img/capa-web.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    #contenedor{
+        padding-top: 7%;
+    }
+
+    #frase1{
+        margin-left: 225px !important;
+        margin-right: 205px !important;
+        font-size: 1.25rem;
+        top: 50px;
+    }
+
+    #frase2{
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    
+    #frase1{
+        top: 12%;
+        font-size: 1.5rem;
+    }
+
+    #contenedor{
+        padding-top: 10%;
+    }
+    
+    section > #formulario > #contenedor > div > *.form-label{
+        font-size: 1.3rem;
+    }
+    
+    
+    section > #formulario > #contenedor > #div-check{
+        font-size: 1.2rem;
+    }
+    
+    section > #formulario > #contenedor > #div-check > label > a{
+        text-decoration: none;
+        color: #212529;
+    }   
+
+    section > #formulario > #contenedor > #div-btn > button{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #contenedor {
+        padding-top: 7%;
+    }
+    
+}

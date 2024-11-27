@@ -50,6 +50,9 @@ Route::view("/error_de_registro", "errorRegistro")->name("error.registro");
 Route::post('/procesa/datos/folleto', [FormController::class, 'procesaFormularioFolletos'])->name('procesa.datos.folleto');
 Route::post('/procesa/datos/form/contacto', [FormController::class, 'procesaFormularioContacto'])->name('procesa.datos.contacto.inicial');
 
+//* dia Unimex
+Route::view("dia-unimex", 'diaUnimex.index')->name('dia.unimex');
+
 //? variables de establecimiento para fomulario de contacto
 Route::get('/set/variables/contactForm/{elemento}', [ExtrasUnimexController::class, 'setVariablesFormContacto'])->name('set.variables.contactForm');
 Route::get('/get/variables/contactForm', [ExtrasUnimexController::class, 'getVariablesFormContacto'])->name('get.variables.contactForm');
@@ -88,6 +91,9 @@ Route::post('/preinscripcion/get/carreras', [ApiConsumoController::class, 'prein
 Route::post('/preinscripcion/get/horarios', [ApiConsumoController::class, 'preinscripcionGetHorarios'])->name('preinscripcion.get.horarios');
 Route::post('/guardar/bitacora/preinscripcion', [ApiConsumoController::class, 'guardarActividadBitacora'])->name('guardar.bitacora.preinscripcion');
 Route::post('/add/prospectacion', [ApiConsumoController::class, 'addProspectacion'])->name('add.prospectacion');
+Route::get('/get/escuelas/diaUnimex', [ApiConsumoController::class, 'getEscuelasDiaUnimex'])->name('get.escuelas.diaUnimex');
+Route::get('/get/carreras/diaUnimex/{clavePlantel}/{claveNivel}', [ApiConsumoController::class, 'getCarrerasDiaUnimex'])->name('get.carreras.diaUnimex');
+Route::get('/get/horarios/diaUnimex/{claveCarrera}', [ApiConsumoController::class, 'getHorariosDiaUnimex'])->name('get.horarios.diaUnimex');
 
 
 //* resultados de examen
