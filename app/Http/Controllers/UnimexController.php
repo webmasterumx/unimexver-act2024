@@ -5,17 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Acercade;
 use App\Models\Banner;
 use App\Models\CCarreras;
-use App\Models\CLicenciaturas;
 use App\Models\Investigacion;
-use App\Models\LicenciaturaDistancia;
 use App\Models\LicenciaturaSua;
-use App\Models\Menu;
 use App\Models\OfertaAcademica;
 use App\Models\Plantel;
-use App\Models\Posgrado;
-use App\Models\PosgradoDistancia;
 use App\Models\PreguntasFrecuentes;
-use App\Models\Rvoe;
 use App\Models\VentajasUnimex;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
@@ -284,13 +278,31 @@ class UnimexController extends Controller
     public function calculaTuCuota(): View
     {
 
+        if (isset($_REQUEST['carrera'])) {
+            if (!empty($_REQUEST['carrera'])) {
+                $carrera = $_REQUEST['carrera'];
+            }
+        } else { //? decision si la variable no se encuentra en la cadena
+            $carrera = null;
+        }
+
+        if (isset($_REQUEST['nivel'])) {
+            if (!empty($_REQUEST['nivel'])) {
+                $nivel = $_REQUEST['nivel'];
+            }
+        } else { //? decision si la variable no se encuentra en la cadena
+            $nivel = null;
+        }
+
         $utm_recurso = new UtmController();
         $dataUTM = $utm_recurso->iniciarUtmSource();
         $urlVisitada = URL::full();
 
         return view('calculaTuCuota', [
             "dataUTM" => $dataUTM,
-            "urlVisitada" => $urlVisitada
+            "urlVisitada" => $urlVisitada,
+            "carrera" => $carrera,
+            "nivel" => $nivel
         ]);
     }
 

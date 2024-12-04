@@ -18,7 +18,11 @@
                         <option value="" selected disabled>¿Cuándo deseas iniciar?</option>
                     </select>
                     <select class="form-select form-select-sm col-12 mb-2" name="selectNivel" id="selectNivel">
-                        <option value="" selected disabled>Selecciona el Nivel</option>
+                        @if ($nivel == null)
+                            <option value="" selected disabled>Selecciona el Nivel</option>
+                        @else
+                            <option value="" selected disabled>{{ $nivel }}</option>
+                        @endif
                     </select>
                     <div class="col-12 row mb-5 d-none" id="selectEgresado">
                         <div class="col-7 p-0">
@@ -286,23 +290,11 @@
         src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
     </script>
     <script>
-        $.ajax({
-            method: "GET",
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: setUrlBase() + "get/variables/calculadora",
-        }).done(function(data) {
-            console.log(data);
-            if (data.nivel_calculadora != null) {
-                console.log('hay variable de session para este modulo');
-                $("#selectNivel").empty();
-                $('#selectNivel').append("<option selected value=''>" + data.nivel_calculadora + "</option>");
-            }
+        function getCarreraPrecargada() {
+            let carrera = "{{ $carrera }}";
 
-        }).fail(function() {
-            console.log("Algo salió mal");
-        });
+            return carrera;
+        }
 
         function setUrlBase() {
             let urlBase = "{{ env('APP_URL') }}";
@@ -321,7 +313,7 @@
                 manuallyCopyFormValues: true,
                 deferred: $.Deferred(),
                 timeout: 750,
-                title: 'Resumen de tu selección en la Calculadora de Becas UNIMEX',
+                title: 'Resumen de tu selección en la Calculadora de Becas UNIMEX | VERACRUZ',
                 doctype: ' <!doctype html> '
             });
         }

@@ -64,35 +64,25 @@ function envioFormulario(form) {
         $('#nivelCrm').val(nivelProspecto);
         establecerTextoComboCarrera();
 
-        $.ajax({
-            method: "GET",
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: setUrlBase() + "get/variables/calculadora",
-        }).done(function (data) {
-            console.log(data);
-            if (data.carrera_calculadora != null) {
-                getCarrerasWithVariableEstablecida(data.carrera_calculadora);
-            }
-            else {
-                getCarreras();
-            }
+        let carrera_calculadora = getCarreraPrecargada();
 
-            $("#nombreProspecto").prop("disabled", true);
-            $("#apellidosProspecto").prop("disabled", true);
-            $("#telefonoProspecto").prop("disabled", true);
-            $("#emailProspecto").prop("disabled", true);
-            $("#telefono_celular").prop("disabled", true);
-            $("#telefono_fijo").prop("disabled", true);
+        if (carrera_calculadora != null) {
+            getCarrerasWithVariableEstablecida(carrera_calculadora);
+        }
+        else {
+            getCarreras();
+        }
 
-            $('#terminosCondicionesText').html(respuesta.legales);
-            $('#terminosCondiciones').removeClass('d-none');
-            $('#separacionTerminosCondiciones').removeClass('d-none');
+        $("#nombreProspecto").prop("disabled", true);
+        $("#apellidosProspecto").prop("disabled", true);
+        $("#telefonoProspecto").prop("disabled", true);
+        $("#emailProspecto").prop("disabled", true);
+        $("#telefono_celular").prop("disabled", true);
+        $("#telefono_fijo").prop("disabled", true);
 
-        }).fail(function () {
-            console.log("Algo salió mal");
-        });
+        $('#terminosCondicionesText').html(respuesta.legales);
+        $('#terminosCondiciones').removeClass('d-none');
+        $('#separacionTerminosCondiciones').removeClass('d-none');
 
         $('#envio_caluladora').html(`Calcular`);
 
@@ -304,23 +294,6 @@ function setVariablesCombosReguardadas(carrera, nombre) {
 }
 
 function getVariablesCombosResguardadas() {
-
-    /* let ruta = setUrlBase() + "get/variables/combos/calculadora/";
-
-    $.ajax({
-        method: "GET",
-        url: ruta,
-        dataType: "json",
-    }).done(function (data) {
-
-        console.log(data);
-
-        
-
-    }).fail(function () {
-        console.log("Algo salió mal");
-    }); */
-
 
     let carreraResguardo = 0;
     //let nombreCarreraRes = data.nombre;
@@ -671,12 +644,12 @@ function redireccionPreinscripcionEnLinea() {
     let formData = new FormData();
     formData.append("correo", $('#emailProspecto').val());
     formData.append("telefono", $("#telefonoProspecto").val());
-    
-    formData.append("utm_source",  $("#utm_source").val());
-    formData.append("utm_medium",  $("#utm_medium").val());
-    formData.append("utm_campaign",  $("#utm_campaign").val());
-    formData.append("utm_term",  $("#utm_term").val());
-    formData.append("utm_content",  $("#utm_content").val());
+
+    formData.append("utm_source", $("#utm_source").val());
+    formData.append("utm_medium", $("#utm_medium").val());
+    formData.append("utm_campaign", $("#utm_campaign").val());
+    formData.append("utm_term", $("#utm_term").val());
+    formData.append("utm_content", $("#utm_content").val());
 
     let ruta = setUrlBase() + "validacion/preinscripcion";
 

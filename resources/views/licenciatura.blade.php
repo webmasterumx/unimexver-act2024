@@ -61,7 +61,7 @@
                 </h2>
             </div>
             <div class="col-12 text-center mb-3">
-                {{ $licenciatura->objetivo }}
+                {!! $licenciatura->objetivo !!}
             </div>
             <div class="col-12">
                 <div class="row">

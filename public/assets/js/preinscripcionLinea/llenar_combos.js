@@ -183,13 +183,21 @@ function llenarComboHorarios(claveCampana, clavePlantel, claveNivel, claveCarrer
         const horarios = data;
         let option_default = `<option value="" disabled>Selecionar Horario</option>`;
         if (horarios != undefined) {
-            console.log('hay horarios');
+            console.log(horarios);
             $("#horarioSelect").append(option_default); //se establece la campaña por defecto
-            for (let index = 0; index < horarios.length; index++) { //recorrer el array de campañas
-                const element = horarios[index]; // se establece un elemento por campaña optenida
-                let option = `<option value="${element.clave}">${element.descrip}</option>`; //se establece la opcion por campaña
+
+            if (horarios.clave == undefined || horarios.clave == null) {
+                for (let index = 0; index < horarios.length; index++) { //recorrer el array de campañas
+                    const element = horarios[index]; // se establece un elemento por campaña optenida
+                    let option = `<option value="${element.clave}">${element.descrip}</option>`; //se establece la opcion por campaña
+                    $("#horarioSelect").append(option); // se inserta la campaña de cada elemen  to
+                }
+            } else {
+                let option = `<option value="${horarios.clave}">${horarios.descrip}</option>`; //se establece la opcion por campaña
                 $("#horarioSelect").append(option); // se inserta la campaña de cada elemen  to
             }
+
+
         }
         else {
             $("#horarioSelect").append(option_default);
