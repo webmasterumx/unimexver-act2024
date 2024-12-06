@@ -59,62 +59,52 @@ $("select[name=selectPeriodo]").change(function () {
     if ($('#folioCrm').val() == "" || $('#folioCrm').val() == null) {
         console.log('es el primer calculo, verificar si no hay variables de sesion para evitar perder la infirmacion');
 
-        $.ajax({
-            method: "GET",
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: setUrlBase() + "get/variables/calculadora",
-        }).done(function (data) {
-            console.log(data);
-            if (data.nivel_calculadora != null) {
+        nivel_calculadora = nivelSelect;
+
+        if (nivel_calculadora != null) {
+            $("#selectNivel").empty();
+            $("#selectNivel").append(`<option>Recalculado...</option>`);
+
+            let plantel = $('select[name=selectPlantel]').val();
+            $.ajax({
+                method: "POST",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: setUrlBase() + "getNiveles",
+                data: {
+                    plantel: plantel
+                }
+            }).done(function (info) {
+
                 $("#selectNivel").empty();
-                $("#selectNivel").append(`<option>Recalculado...</option>`);
+                $("#selectNivel").append(`<option value="" selected disabled>Selecciona el nivel</option>`);
 
-                let plantel = $('select[name=selectPlantel]').val();
-                $.ajax({
-                    method: "POST",
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    url: setUrlBase() + "getNiveles",
-                    data: {
-                        plantel: plantel
-                    }
-                }).done(function (info) {
-
-                    $("#selectNivel").empty();
-                    $("#selectNivel").append(`<option value="" selected disabled>Selecciona el nivel</option>`);
-
-                    console.log(info);
-                    $.each(info, function (index, value) {
-                        console.log(value.descrip);
-                        console.log(data.nivel_calculadora);
-                        if (value.descrip == data.nivel_calculadora) {
-                            estado = "selected";
-                            if (value.clave > 1) {
-                                if ($("#selectEgresado").hasClass("d-none") === true) {
-                                    $('#selectEgresado').removeClass('d-none');
-                                }
+                console.log(info);
+                $.each(info, function (index, value) {
+                    console.log(value.descrip);
+                    console.log(nivel_calculadora);
+                    if (value.descrip == nivel_calculadora) {
+                        estado = "selected";
+                        if (value.clave > 1) {
+                            if ($("#selectEgresado").hasClass("d-none") === true) {
+                                $('#selectEgresado').removeClass('d-none');
                             }
-                        } else {
-                            estado = "";
                         }
-                        $('#selectNivel').append("<option value='" + value.clave + "' " + estado + ">" + value
-                            .descrip + "</option>");
-                    });
-
-                }).fail(function () {
-                    console.log("Algo salió mal");
+                    } else {
+                        estado = "";
+                    }
+                    $('#selectNivel').append("<option value='" + value.clave + "' " + estado + ">" + value
+                        .descrip + "</option>");
                 });
-            }
-            else {
-                getNiveles();
-            }
 
-        }).fail(function () {
-            console.log("Algo salió mal");
-        });
+            }).fail(function () {
+                console.log("Algo salió mal");
+            });
+        }
+        else {
+            getNiveles();
+        }
     }
     else {
         $('#selectCarrera').empty();

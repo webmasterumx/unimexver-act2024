@@ -296,6 +296,9 @@
             return carrera;
         }
 
+        var carreraSelect = "{{ $carrera }}";
+        var nivelSelect = "{{ $nivel }}";
+
         function setUrlBase() {
             let urlBase = "{{ env('APP_URL') }}";
             return urlBase;
