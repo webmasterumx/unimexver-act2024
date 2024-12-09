@@ -100,8 +100,10 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/mediaQuery.css') }}">
     <style>
         .style_prevu_kit {
             -webkit-transition: all 200ms ease-in;
@@ -215,7 +217,7 @@
         <header class="border-bottom lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a href="{{ env('APP_URL') . $complemento}}"><img class="ms-4"
+                    <a href="{{ env('APP_URL') . $complemento }}"><img class="ms-4"
                             src="{{ asset('assets/img/header/logo-2020.webp') }}" alt=""
                             style="width: 200px;"></a>
                 </div>
@@ -240,6 +242,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="{{ asset('assets/js/JQuery.print.js') }}"></script>
     <script>
         function setUrlBase() {

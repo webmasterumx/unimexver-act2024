@@ -98,6 +98,39 @@ body {
     border: 0;
 }
 
+.slick-next-calculadora {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin: -20px -13px 0px 0px;
+    width: 40px;
+    color: white;
+    height: 100px;
+    font-size: 70px;
+    right: 5%;
+    background-color: transparent;
+    border: 0;
+}
+
+.slick-prev-calculadora {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin: -20px 0px 0px -55px;
+    width: 40px;
+    color: white;
+    height: 100px;
+    font-size: 70px;
+    left: 5%;
+    background-color: transparent;
+    border: 0;
+}
+
+.slick-slide{
+    height: 500px !important;
+}
+
+
 .slick-prev-banner {
     position: absolute;
     top: 40%;
@@ -488,4 +521,3 @@ body {
     /* Edge 12-18 */
     color: #004b93 !important;
 }
-
