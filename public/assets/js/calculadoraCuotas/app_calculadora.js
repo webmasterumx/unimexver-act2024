@@ -86,7 +86,7 @@ function envioFormulario(form) {
 
         $('#envio_caluladora').html(`Calcular`);
 
-        $('#carouselExampleIndicators').addClass('d-none');
+        $('#carrucelInit').addClass('d-none');
         $('#informacionCRM').removeClass('d-none');
 
 
