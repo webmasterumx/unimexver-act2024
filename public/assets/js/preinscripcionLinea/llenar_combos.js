@@ -30,6 +30,7 @@ function llenaComboPlantel(clavePlantel) {
 }
 
 function llenarComboCampañas(claveCampana, clavePlantel) {
+    $("#periodoSelect").empty();
     let ruta = setUrlBase() + 'getPeriodos';
 
     data = {
@@ -53,7 +54,6 @@ function llenarComboCampañas(claveCampana, clavePlantel) {
         if (campañas != undefined) {
 
             if (campañas.clave == undefined || campañas.clave == null) {
-                console.log(option_default);
                 $("#periodoSelect").append(option_default); //se establece la campaña por defecto
                 for (let index = 0; index < campañas.length; index++) { //recorrer el array de campañas
                     const element = campañas[index]; // se establece un elemento por campaña optenida
