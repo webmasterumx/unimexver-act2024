@@ -120,8 +120,8 @@
                             <div class="mb-3">
                                 <label style="color: #00539a !important;" for="calleInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span> Calle</label>
-                                <input type="text" class="form-control" id="calleInscripcion"
-                                    name="calleInscripcion" maxlength="50">
+                                <input type="text" class="form-control" id="calleInscripcion" name="calleInscripcion"
+                                    maxlength="50">
                             </div>
                         </div>
                         <div class="col-12 col-lg-1">
@@ -308,6 +308,7 @@
         </script>
         <script src="{{ asset('assets/js/preinscripcionLinea/llenar_combos.js') }}"></script>
     @else
+        <script src="{{ asset('assets/js/preinscripcionLinea/combos.js') }}"></script>
         <script>
             $(document).ready(function() {
                 //$('#modalCarga').modal('show');

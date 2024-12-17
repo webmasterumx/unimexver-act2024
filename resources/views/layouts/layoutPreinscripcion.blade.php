@@ -64,7 +64,6 @@
     </script>
     <script src="{{ asset('assets/js/preinscripcionLinea/app.js') }}"></script>
     <script src="{{ asset('assets/js/preinscripcionLinea/form.js') }}"></script>
-    <script src="{{ asset('assets/js/preinscripcionLinea/combos.js') }}"></script>
     @yield('scripts')
 </body>
 
