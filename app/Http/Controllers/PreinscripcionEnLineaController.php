@@ -17,17 +17,21 @@ class PreinscripcionEnLineaController extends Controller
         if (isset($_REQUEST['carrera'])) {
             if (!empty($_REQUEST['carrera'])) {
                 session(['carrera_preinscripcion' => $_REQUEST['carrera']]);
+                $carrera = $_REQUEST['carrera'];
             }
         } else { //? decision si la variable no se encuentra en la cadena
             session(['carrera_preinscripcion' => null]);
+            $carrera = null;
         }
 
         if (isset($_REQUEST['nivel'])) {
             if (!empty($_REQUEST['nivel'])) {
                 session(['nivel_preinscripcion' => $_REQUEST['nivel']]);
+                $nivel = $_REQUEST['nivel'];
             }
         } else { //? decision si la variable no se encuentra en la cadena
             session(['nivel_preinscripcion' => null]);
+            $nivel = null;
         }
 
         //dd(session("carrera_preinscripcion"));
@@ -35,7 +39,11 @@ class PreinscripcionEnLineaController extends Controller
         $utm_recurso = new UtmController();
         $dataUTM = $utm_recurso->iniciarUtmSource();
 
-        return view('preinscripcionEnLinea.inicio', ["dataUTM" => $dataUTM]);
+        return view('preinscripcionEnLinea.inicio', [
+            "dataUTM" => $dataUTM,
+            "carrera" => $carrera,
+            "nivel" => $nivel,
+        ]);
     }
 
     /**
@@ -58,6 +66,9 @@ class PreinscripcionEnLineaController extends Controller
         session(["preins_utm_campaign" => $request->utm_campaign]);
         session(["preins_utm_term" => $request->utm_term]);
         session(["preins_utm_content" => $request->utm_content]);
+
+        session(['carrera_preinscripcion' => $request->carreraPrecargado]);
+        session(['nivel_preinscripcion' => $request->nivelPrecargado]);
 
         $valores = array(
             "correoElectronico" => $request->correo,
@@ -118,12 +129,16 @@ class PreinscripcionEnLineaController extends Controller
 
     public function formDatosGenerales()
     {
-        $apiConsumo = new ApiConsumoController();
-        $estados = $apiConsumo->getEstados();
+        if (session()->has('email') == true) {
+            $apiConsumo = new ApiConsumoController();
+            $estados = $apiConsumo->getEstados();
 
-        return view('preinscripcionEnLinea.formularioDatosGenerales', [
-            "estados" => $estados
-        ]);
+            return view('preinscripcionEnLinea.formularioDatosGenerales', [
+                "estados" => $estados
+            ]);
+        } else {
+            redirect()->route('preinscripcion.linea');
+        }
     }
 
     public function obtenerPromocion(Request $request)

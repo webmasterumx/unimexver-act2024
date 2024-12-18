@@ -91,6 +91,8 @@
                             @if ($dataUTM != null) value="{{ $dataUTM['utm_term'] }}" @else value="0" @endif>
                         <input type="hidden" name="utm_content" id="utm_content"
                             @if ($dataUTM != null) value="{{ $dataUTM['utm_content'] }}" @else value="0" @endif>
+                        <input type="hidden" name="carreraPrecargado" id="carreraPrecargado" value="{{ $carrera }}">
+                        <input type="hidden" name="nivelPrecargado" id="nivelPrecargado" value="{{ $nivel }}">
                         <div class="col-12">
                             <button id="validarCorreo" type="submit" class="btn btn-primary mt-3">
                                 <i class="bi bi-box-arrow-right"></i>
