@@ -14,6 +14,24 @@ class PreinscripcionEnLineaController extends Controller
     public function index()
     {
 
+        if (isset($_REQUEST['carrera'])) {
+            if (!empty($_REQUEST['carrera'])) {
+                session(['carrera_preinscripcion' => $_REQUEST['carrera']]);
+            }
+        } else { //? decision si la variable no se encuentra en la cadena
+            session(['carrera_preinscripcion' => null]);
+        }
+
+        if (isset($_REQUEST['nivel'])) {
+            if (!empty($_REQUEST['nivel'])) {
+                session(['nivel_preinscripcion' => $_REQUEST['nivel']]);
+            }
+        } else { //? decision si la variable no se encuentra en la cadena
+            session(['nivel_preinscripcion' => null]);
+        }
+
+        //dd(session("carrera_preinscripcion"));
+
         $utm_recurso = new UtmController();
         $dataUTM = $utm_recurso->iniciarUtmSource();
 

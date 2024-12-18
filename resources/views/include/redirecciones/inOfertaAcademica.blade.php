@@ -133,7 +133,7 @@
 
         console.log(rutaRedireccionPreinscripcion);
 
-        $.ajax({
+        /* $.ajax({
             method: "GET",
             url: setUrlBase() + "set/variables/preinscripcion/" + nivel + "/" + carreraFinal,
         }).done(function(data) {
@@ -141,7 +141,7 @@
 
         }).fail(function() {
             console.log("Algo salió mal");
-        });
+        }); */
 
         window.open(rutaRedireccionPreinscripcion, '_blank');
     }
