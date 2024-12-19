@@ -225,13 +225,13 @@ $("#form_contacto").validate({
         },
         celular_prospecto: {
             required: "Teléfono celular obligatorio.",
-            minlength: "Numero celular de 10 dig.",
-            maxlength: "Numero celular de 10 dig."
+            minlength: "Número celular de 10 dig.",
+            maxlength: "Número celular de 10 dig."
         },
         telefono_prospecto: {
             required: "Teléfono de casa obligatorio.",
-            minlength: "Numero teléfonico de 10 dig.",
-            maxlength: "Numero teléfonico de 10 dig."
+            minlength: "Número teléfonico de 10 dig.",
+            maxlength: "Número teléfonico de 10 dig."
         },
         plantelSelect: {
             required: "",
