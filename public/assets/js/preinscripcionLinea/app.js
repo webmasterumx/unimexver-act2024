@@ -234,10 +234,15 @@ function recalculoDeComboNivel(ruta, data, element, info) {
                     data: dataCarrera
                 }).done(function (list) {
                     console.log(list);
-                    $.each(list, function (index, value) {
-                        let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                    if (list.descrip == undefined || list.descrip == null) {
+                        $.each(list, function (index, value) {
+                            let option = `<option value="${value.clave}">${value.descrip}</option>`;
+                            $(elementCarrera).append(option);
+                        });
+                    } else {
+                        let option = `<option value="${list.clave}">${list.descrip}</option>`;
                         $(elementCarrera).append(option);
-                    });
+                    }
 
                     $("select[name=horarioSelect]").prop("disabled", false);
                     $('#modalCarga').modal('hide');
