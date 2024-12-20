@@ -220,7 +220,7 @@ $("#form_contacto").validate({
         },
         mail_prospecto: {
             required: "Correo obligatorio.",
-            email: "Ingresa un formato valido de correo.",
+            email: "Ingresa un formato válido de correo.",
             maxlength: "El número de caracteres máximo es 50."
         },
         celular_prospecto: {
