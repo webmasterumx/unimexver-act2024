@@ -57,6 +57,8 @@ $("#form_calculadora").validate({
         },
     },
     submitHandler: function (form) {
+        console.log("envio de formulario");
+
 
         let nombreProspecto = $('#nombreProspecto').val().replace(/ /g, "");
         let apellidosProspecto = $('#apellidosProspecto').val().replace(/ /g, "");
@@ -158,33 +160,25 @@ $("#form_calculadora").validate({
                             $('#periodoCrm').val(periodoProspecto);
                             $('#nivelCrm').val(nivelProspecto);
 
-                            $.ajax({
-                                method: "GET",
-                                headers: {
-                                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                                },
-                                url: setUrlBase() + "get/variables/calculadora",
-                            }).done(function (data) {
-                                console.log(data);
-                                if (data.carrera_calculadora != null) {
-                                    getCarrerasWithVariableEstablecida(data.carrera_calculadora);
-                                }
-                                else {
-                                    getCarreras();
-                                }
+                            carrera_calculadora = getCarreraSelect();
+                            console.log(carrera_calculadora);
 
-                                $("#nombreProspecto").prop("disabled", true);
-                                $("#apellidosProspecto").prop("disabled", true);
-                                $("#telefonoProspecto").prop("disabled", true);
-                                $("#emailProspecto").prop("disabled", true);
 
-                                $('#terminosCondicionesText').html(respuesta.legales);
-                                $('#terminosCondiciones').removeClass('d-none');
-                                $('#separacionTerminosCondiciones').removeClass('d-none');
+                            if (carrera_calculadora != null) {
+                                getCarrerasWithVariableEstablecida(carrera_calculadora);
+                            }
+                            else {
+                                getCarreras();
+                            }
 
-                            }).fail(function () {
-                                console.log("Algo salió mal");
-                            });
+                            $("#nombreProspecto").prop("disabled", true);
+                            $("#apellidosProspecto").prop("disabled", true);
+                            $("#telefonoProspecto").prop("disabled", true);
+                            $("#emailProspecto").prop("disabled", true);
+
+                            $('#terminosCondicionesText').html(respuesta.legales);
+                            $('#terminosCondiciones').removeClass('d-none');
+                            $('#separacionTerminosCondiciones').removeClass('d-none');
 
                             $('#envio_caluladora').html(`Calcular`);
 
@@ -272,33 +266,24 @@ $("#form_calculadora").validate({
                         $('#periodoCrm').val(periodoProspecto);
                         $('#nivelCrm').val(nivelProspecto);
 
-                        $.ajax({
-                            method: "GET",
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            },
-                            url: setUrlBase() + "get/variables/calculadora",
-                        }).done(function (data) {
-                            console.log(data);
-                            if (data.carrera_calculadora != null) {
-                                getCarrerasWithVariableEstablecida(data.carrera_calculadora);
-                            }
-                            else {
-                                getCarreras();
-                            }
+                        carrera_calculadora = getCarreraSelect();
+                        console.log(carrera_calculadora);
 
-                            $("#nombreProspecto").prop("disabled", true);
-                            $("#apellidosProspecto").prop("disabled", true);
-                            $("#telefonoProspecto").prop("disabled", true);
-                            $("#emailProspecto").prop("disabled", true);
+                        if (carrera_calculadora != null) {
+                            getCarrerasWithVariableEstablecida(carrera_calculadora);
+                        }
+                        else {
+                            getCarreras();
+                        }
 
-                            $('#terminosCondicionesText').html(respuesta.legales);
-                            $('#terminosCondiciones').removeClass('d-none');
-                            $('#separacionTerminosCondiciones').removeClass('d-none');
+                        $("#nombreProspecto").prop("disabled", true);
+                        $("#apellidosProspecto").prop("disabled", true);
+                        $("#telefonoProspecto").prop("disabled", true);
+                        $("#emailProspecto").prop("disabled", true);
 
-                        }).fail(function () {
-                            console.log("Algo salió mal");
-                        });
+                        $('#terminosCondicionesText').html(respuesta.legales);
+                        $('#terminosCondiciones').removeClass('d-none');
+                        $('#separacionTerminosCondiciones').removeClass('d-none');
 
                         $('#envio_caluladora').html(`Calcular`);
 

@@ -284,7 +284,7 @@
         src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
     </script>
     <script>
-        function getCarreraPrecargada() {
+        function getCarreraSelect() {
             let carrera = "{{ $carrera }}";
 
             return carrera;
