@@ -81,7 +81,7 @@ $("#formPreincripcion").validate({
 
                 Swal.fire({
                     icon: "error",
-                    title: "Correo ya registrado",
+                    title: "Los datos ingresados ya fueron registrados.",
                 });
             }
 
