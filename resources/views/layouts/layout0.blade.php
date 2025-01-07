@@ -106,7 +106,7 @@
         $compCsCal = filemtime('assets/css/app.css');
         $rutaCssCal = 'assets/css/app.css?' . $compCsCal;
 
-        $compCsCal1 = filemtime('assets/css/mediaQuery.css.css');
+        $compCsCal1 = filemtime('assets/css/mediaQuery.css');
         $rutaCssCal1 = 'assets/css/mediaQuery.css?' . $compCsCal1;
     @endphp
 
