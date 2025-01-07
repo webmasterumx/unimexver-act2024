@@ -350,7 +350,19 @@
             nextArrow: '<button type="button" class="slick-next-calculadora"><i class="bi bi-chevron-compact-right"></i></button>',
         });
     </script>
-    <script src="{{ asset('assets/js/calculadoraCuotas/app_calculadora.js') }}"></script>
-    <script src="{{ asset('assets/js/calculadoraCuotas/combos_calculadora.js') }}"></script>
-    <script src="{{ asset('assets/js/calculadoraCuotas/validacion.js') }}"></script>
+
+    @php
+        $compCsCal = filemtime('assets/js/calculadoraCuotas/app_calculadora.js');
+        $rutaCssCal = 'assets/js/calculadoraCuotas/app_calculadora.js?' . $compCsCal;
+
+        $compCsCal1 = filemtime('assets/js/calculadoraCuotas/combos_calculadora.js');
+        $rutaCssCal1 = 'assets/js/calculadoraCuotas/combos_calculadora.js?' . $compCsCal1;
+
+        $compCsCal2 = filemtime('assets/js/calculadoraCuotas/validacion.js');
+        $rutaCssCal2 = 'assets/js/calculadoraCuotas/validacion.js?' . $compCsCal2;
+    @endphp
+
+    <script src="{{ asset($compCsCal) }}"></script>
+    <script src="{{ asset($compCsCal1) }}"></script>
+    <script src="{{ asset($compCsCal2) }}"></script>
 @endsection

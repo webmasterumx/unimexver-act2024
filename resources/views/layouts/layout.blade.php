@@ -35,10 +35,24 @@
     <!---  DateTable --->
     <link rel="stylesheet" href="//cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/mediaQuery.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/non-critical-styles10062022.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flotante.min.css') }}">
+    @php
+        $complemento = filemtime('assets/css/app.css');
+        $rutaCss = 'assets/css/app.css?' . $complemento;
+
+        $complemento1 = filemtime('assets/css/mediaQuery.css');
+        $rutaCss1 = 'assets/css/mediaQuery.css?' . $complemento1;
+
+        $complemento2 = filemtime('assets/css/non-critical-styles10062022.min.css');
+        $rutaCss2 = 'assets/css/non-critical-styles10062022.min.css?' . $complemento2;
+
+        $complemento3 = filemtime('assets/css/flotante.min.css');
+        $rutaCss3 = 'assets/css/flotante.min.css?' . $complemento3;
+    @endphp
+
+    <link rel="stylesheet" href="{{ asset($rutaCss) }}">
+    <link rel="stylesheet" href="{{ asset($rutaCss1) }}">
+    <link rel="stylesheet" href="{{ asset($rutaCss2) }}">
+    <link rel="stylesheet" href="{{ asset($rutaCss3) }}">
 
     @yield('styles')
 
@@ -67,9 +81,9 @@
             <div class="col-12 col-md-12 mb-4">
                 <a href="https://www.facebook.com/UnimexEnVeracruz/" target="_blank"><img
                         src="{{ asset('assets/img/social_media/facebook.png') }}" alt=""></a>
-                <a class="ms-2" href="https://www.instagram.com/universidadmexicana/"  target="_blank"><img
+                <a class="ms-2" href="https://www.instagram.com/universidadmexicana/" target="_blank"><img
                         src="{{ asset('assets/img/social_media/instagram.png') }}" alt=""></a>
-                <a class="ms-2" href="https://mx.linkedin.com/school/universidad-mexicana/"  target="_blank"><img
+                <a class="ms-2" href="https://mx.linkedin.com/school/universidad-mexicana/" target="_blank"><img
                         src="{{ asset('assets/img/social_media/linkedin.png') }}" alt=""></a>
                 <a class="ms-2" href="https://twitter.com/unimexver" target="_blank"><img
                         src="{{ asset('assets/img/social_media/twitter.png') }}" alt=""></a>
@@ -141,11 +155,26 @@
         src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
     </script>
 
+    @php
+        $comJsInit = filemtime('assets/js/app.js');
+        $rutaJsInit = 'assets/js/app.js?' . $comJsInit;
+
+        $comJsInit1 = filemtime('assets/js/main.js');
+        $rutaJsInit1 = 'assets/js/main.js?' . $comJsInit1;
+
+        $comJsInit2 = filemtime('assets/js/custom.js');
+        $rutaJsInit2 = 'assets/js/custom.js?' . $comJsInit2;
+
+        $comJsInit3 = filemtime('assets/js/form.js');
+        $rutaJsInit3 = 'assets/js/form.js?' . $comJsInit3;
+    @endphp
+
+
     <!-- Template Main JS File -->
-    <script src="{{ asset('assets/js/app.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
-    <script src="{{ asset('assets/js/form.js') }}"></script>
+    <script src="{{ asset($rutaJsInit) }}"></script>
+    <script src="{{ asset($rutaJsInit1) }}"></script>
+    <script src="{{ asset($rutaJsInit2) }}"></script>
+    <script src="{{ asset($rutaJsInit3) }}"></script>
 
     <script>
         function setUrlBase() {

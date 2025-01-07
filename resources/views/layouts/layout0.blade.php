@@ -102,8 +102,16 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/mediaQuery.css') }}">
+    @php
+        $compCsCal = filemtime('assets/css/app.css');
+        $rutaCssCal = 'assets/css/app.css?' . $compCsCal;
+
+        $compCsCal1 = filemtime('assets/css/mediaQuery.css.css');
+        $rutaCssCal1 = 'assets/css/mediaQuery.css?' . $compCsCal1;
+    @endphp
+
+    <link rel="stylesheet" href="{{ asset($rutaCssCal) }}">
+    <link rel="stylesheet" href="{{ asset($rutaCssCal1) }}">
     <style>
         .style_prevu_kit {
             -webkit-transition: all 200ms ease-in;

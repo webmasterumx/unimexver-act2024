@@ -279,7 +279,12 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('assets/js/combos.js') }}"></script>
+    @php
+        $compCsCal = filemtime('assets/js/combos.js');
+        $rutaCssCal = 'assets/js/combos.js?' . $compCsCal;
+    @endphp
+
+    <script src="{{ asset('') }}"></script>
     <script>
         $(document).ready(function() {
             $('#listCarreras').slick({

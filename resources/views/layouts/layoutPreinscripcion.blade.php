@@ -62,8 +62,16 @@
             return urlBase;
         }
     </script>
-    <script src="{{ asset('assets/js/preinscripcionLinea/app.js') }}"></script>
-    <script src="{{ asset('assets/js/preinscripcionLinea/form.js') }}"></script>
+    @php
+        $compCsCal = filemtime('assets/js/preinscripcionLinea/app.js');
+        $rutaCssCal = 'assets/js/preinscripcionLinea/app.js?' . $compCsCal;
+
+        $compCsCal1 = filemtime('assets/js/preinscripcionLinea/form.js');
+        $rutaCssCal1 = 'assets/js/preinscripcionLinea/form.js?' . $compCsCal1;
+    @endphp
+
+    <script src="{{ asset($rutaCssCal) }}"></script>
+    <script src="{{ asset($rutaCssCal1) }}"></script>
     @yield('scripts')
 </body>
 
