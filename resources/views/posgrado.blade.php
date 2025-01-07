@@ -477,6 +477,17 @@
         });
     </script>
 
+    @php
+        $complementoJsOferta = filemtime('assets/js/combosCarrerasNew.js');
+        $rutaJsOferta = 'assets/js/combosCarrerasNew.js?' . $complementoJsOferta;
+
+        $complementoJsOferta1 = filemtime('assets/js/folletoUnimex/combos.js');
+        $rutaJsOferta1 = 'assets/js/folletoUnimex/combos.js?' . $complementoJsOferta1;
+
+        $complementoJsOferta2 = filemtime('assets/js/folletoUnimex/form.js');
+        $rutaJsOferta2 = 'assets/js/folletoUnimex/form.js?' . $complementoJsOferta2;
+    @endphp
+
     <script src="{{ asset('assets/js/combosCarrerasNew.js') }}"></script>
     <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
     <script src="{{ asset('assets/js/folletoUnimex/form.js') }}"></script>

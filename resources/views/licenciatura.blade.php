@@ -382,9 +382,21 @@
             }
         });
     </script>
-    <script src="{{ asset('assets/js/combosCarrerasNew.js') }}"></script>
-    <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
-    <script src="{{ asset('assets/js/folletoUnimex/form.js') }}"></script>
+
+    @php
+        $complementoJsOferta = filemtime('assets/js/combosCarrerasNew.js');
+        $rutaJSLicEs = 'assets/js/combosCarrerasNew.js?' . $complementoJsOferta;
+
+        $complementoJsOferta1 = filemtime('assets/js/folletoUnimex/combos.js');
+        $rutaJSLicEs1 = 'assets/js/folletoUnimex/combos.js?' . $complementoJsOferta1;
+
+        $complementoJsOferta2 = filemtime('assets/js/folletoUnimex/form.js');
+        $rutaJSLicEs2 = 'assets/js/folletoUnimex/form.js?' . $complementoJsOferta2;
+    @endphp
+
+    <script src="{{ asset($rutaJSLicEs) }}"></script>
+    <script src="{{ asset($rutaJSLicEs1) }}"></script>
+    <script src="{{ asset($rutaJSLicEs2) }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection

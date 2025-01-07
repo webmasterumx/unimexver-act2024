@@ -245,7 +245,7 @@
     <!-- Fin de la Sección de Contacto -->
 
     <!-- Inicio de Campo Laboral -->
- {{--    <section class="bg_campo_laboral container-fluid px-5 py-5 text-white">
+    {{--    <section class="bg_campo_laboral container-fluid px-5 py-5 text-white">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <h1 style="font-size: 1.50rem;" class="underlined-head text-uppercase text-white">
@@ -287,7 +287,7 @@
                                     Si cuentas con Título de Licenciatura
                                 </b><br><br>
                                 Original o copia certificada del Acta de Nacimiento y una fotocopia. <br><br>
-                                
+
                                 Original y una fotocopia del Certificado Total de Estudios de Licenciatura* <br><br>
                                 *En caso de no contar con este documento presentar una Constancia de Terminación con el 100%
                                 de las materias acreditadas. Si su título está en trámite en su Universidad de origen,
@@ -321,7 +321,7 @@
     <!-- Fin de la Sección de Requisitos -->
 
     <!-- Inicio de la Sección de disponibilidad -->
-   {{--  <section class="container-fluid px-5 py-5 bg_planteles_dis">
+    {{--  <section class="container-fluid px-5 py-5 bg_planteles_dis">
         <div class="row">
             <div class="col-12 text-center p-0 mb-3">
                 <h1 class="fw-light" style="font-size: 1.438rem; color: #ffff;">HORARIOS:</h1>
@@ -467,8 +467,16 @@
         });
     </script>
 
-    <script src="{{ asset('assets/js/folletoUnimex/combos.js') }}"></script>
-    <script src="{{ asset('assets/js/folletoUnimex/form.js') }}"></script>
+    @php
+        $complementoJsOferta = filemtime('assets/js/folletoUnimex/combos.js');
+        $rutaJsOferta = 'assets/js/combosCarrerasNew.js?' . $complementoJsOferta;
+
+        $complementoJsOferta1 = filemtime('assets/js/folletoUnimex/form.js');
+        $rutaJsOferta1 = 'assets/js/folletoUnimex/combos.js?' . $complementoJsOferta1;
+    @endphp
+
+    <script src="{{ asset($rutaJsOferta) }}"></script>
+    <script src="{{ asset($rutaJsOferta1) }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection

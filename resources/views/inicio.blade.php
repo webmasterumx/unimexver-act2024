@@ -284,7 +284,7 @@
         $rutaCssCal = 'assets/js/combos.js?' . $compCsCal;
     @endphp
 
-    <script src="{{ asset('') }}"></script>
+    <script src="{{ asset($rutaCssCal) }}"></script>
     <script>
         $(document).ready(function() {
             $('#listCarreras').slick({

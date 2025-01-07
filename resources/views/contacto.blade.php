@@ -155,7 +155,14 @@
     <script
         src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
     </script>
-    <script src="{{ asset('assets/js/combos.js') }}"></script>
+
+
+    @php
+        $complementoJsOferta = filemtime('assets/js/combos.js');
+        $rutaJsOferta = 'assets/js/combos.js?' . $complementoJsOferta;
+    @endphp
+
+    <script src="{{ asset($rutaJsOferta) }}"></script>
     <script>
         $(document).ready(function() {
 
