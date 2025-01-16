@@ -362,7 +362,7 @@
         $rutaCssCal2 = 'assets/js/calculadoraCuotas/validacion.js?' . $compCsCal2;
     @endphp
 
-    <script src="{{ asset($compCsCal) }}"></script>
-    <script src="{{ asset($compCsCal1) }}"></script>
-    <script src="{{ asset($compCsCal2) }}"></script>
+    <script src="{{ asset($rutaCssCal) }}"></script>
+    <script src="{{ asset($rutaCssCal1) }}"></script>
+    <script src="{{ asset($rutaCssCal2) }}"></script>
 @endsection
