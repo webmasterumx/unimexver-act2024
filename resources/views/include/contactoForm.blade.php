@@ -112,7 +112,7 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 pe-0">
                             <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect">
-                                <option value="" selected>Iniciar clases en: </option>
+                                <option value="" selected> - Seleccionar periodo - </option>
                             </select>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 ps-0">
@@ -133,8 +133,12 @@
                         </div>
                         <div class="col-12 col-md-12">
                             <select class="form-select rounded-0" id="horarioSelect" name="horarioSelect">
-                                <option value="" selected> Horario </option>
+                                <option value="" selected> - Seleccionar horario - </option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="row d-none" id="contenedorAlerta">
+                        <div id="alertasErrorCombos" class="col-12">
                         </div>
                     </div>
                     <div class="form-check mt-3">

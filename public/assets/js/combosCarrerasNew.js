@@ -71,16 +71,22 @@ function getPlantelesContacto() {
 
         $("select[name=nivelSelect]").prop("disabled", false);
 
-    }).fail(function (error) {
+    }).fail(function (jqXHR, textStatus, errorThrown) {
 
-        console.log("Algo salió mal");
-        console.log(error);
+        mensajesErrorCombos(jqXHR, textStatus);
 
     });
 
 }
 
 function getNivelesContacto() {
+    $("select[name=nivelSelect]").prop("disabled", true);
+    $("select[name=periodoSelect]").prop("disabled", true);
+    $("select[name=carreraSelect]").prop("disabled", true);
+    $("select[name=horarioSelect]").prop("disabled", true);
+    $("#nivelSelect").empty();
+    $("#nivelSelect").append(`<option value="" selected disabled>Recalculando..</option>`);
+
 
     let nivelInicalSelect = getNivelPosicion();
 
@@ -96,7 +102,7 @@ function getNivelesContacto() {
             plantel: plantel
         }
     }).done(function (data) {
-
+        $("select[name=nivelSelect]").prop("disabled", false);
         $("#nivelSelect").empty();
         $("#nivelSelect").append(`<option value="" selected disabled>- Seleccionar nivel -</option>`);
 
@@ -117,13 +123,20 @@ function getNivelesContacto() {
 
         getPeriodosContacto();
 
-    }).fail(function () {
-        console.log("Algo salió mal");
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+
+        mensajesErrorCombos(jqXHR, textStatus);
+
     });
 }
 
 function getPeriodosContacto() {
     $("select[name=periodoSelect]").prop("disabled", false);
+    $("#periodoSelect").empty();
+    $("#periodoSelect").append(`<option value="" selected disabled>Recalculando..</option>`);
+
+    $("select[name=carreraSelect]").prop("disabled", true);
+    $("select[name=horarioSelect]").prop("disabled", true);
 
 
     let plantel = $('select[name=plantelSelect]').val();
@@ -159,14 +172,22 @@ function getPeriodosContacto() {
 
 
 
-    }).fail(function () {
-        console.log("Algo salió mal");
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+
+        mensajesErrorCombos(jqXHR, textStatus);
+
     });
 }
 
 function getCarrerasContacto() {
 
     $("select[name=carreraSelect]").prop("disabled", false);
+    $("#carreraSelect").empty();
+    $("#carreraSelect").append(`<option value="" selected disabled>Recalculando..</option>`);
+
+    $("select[name=horarioSelect]").prop("disabled", true);
+
+
 
     let clavePlantel = $('select[name=plantelSelect]').val();
     let clavePeriodo = $('select[name=periodoSelect]').val();
@@ -206,14 +227,27 @@ function getCarrerasContacto() {
                 //console.log(carreraInicialSelect);
                 //console.log(value);
 
+                var continuaRecalculo = true;
 
                 if (carreraInicialSelect == value.descrip) {
+
                     option = `<option selected value="${value.clave}">${value.descrip}</option>`;
                 } else {
                     option = `<option value="${value.clave}">${value.descrip}</option>`;
+                    continuaRecalculo = false;
                 }
 
                 $('#carreraSelect').append(option);
+
+
+                if (continuaRecalculo == true) {
+
+                    getHorariosContacto();
+                }
+                else {
+                    $("#horarioSelect").empty();
+                    $("#horarioSelect").append(`<option value="" selected disabled>- Seleccionar horario -</option>`);
+                }
             });
 
 
@@ -224,10 +258,10 @@ function getCarrerasContacto() {
         }
 
 
-        getHorariosContacto();
+    }).fail(function (jqXHR, textStatus, errorThrown) {
 
-    }).fail(function () {
-        console.log("Algo salió mal");
+        mensajesErrorCombos(jqXHR, textStatus);
+
     });
 }
 
@@ -277,7 +311,93 @@ function getHorariosContacto() {
         }
 
 
-    }).fail(function () {
-        console.log("Algo salió mal");
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+
+        mensajesErrorCombos(jqXHR, textStatus);
+
     });
 }
+
+function mensajesErrorCombos(jqXHR, textStatus) {
+    let mensaje = "";
+    let typeAlert = "";
+
+    if (jqXHR.status === 0) {
+
+        mensaje = `No tienes conexión a internet.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "warning";
+
+    } else if (jqXHR.status == 404) {
+
+        mensaje = `Ups! <br> Ocurrio un error en el servidor! <br> Intenta de nuevo recargando la pagina.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "danger";
+
+    } else if (jqXHR.status == 500) {
+
+        mensaje = `Ups! <br> Ocurrio un error en el servidor! <br> Intenta de nuevo recargando la pagina.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "danger";
+
+    }
+    else if (jqXHR.status == 503) {
+
+        mensaje = `Sitio en mantenimiento intenta mas tarde.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "info";
+
+    }
+    else if (textStatus === 'parsererror') {
+
+        console.log('Requested JSON parse failed.');
+
+        mensaje = `Ups! <br> Ocurrio un error en el servidor! <br> Intenta de nuevo recargando la pagina.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "danger";
+
+    } else if (textStatus === 'timeout') {
+
+        console.log('Time out error.');
+
+        mensaje = `Ups! <br> Ocurrio un error en el servidor! <br> Intenta de nuevo recargando la pagina.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "danger";
+
+    } else if (textStatus === 'abort') {
+
+        console.log('Ajax request aborted.');
+
+        mensaje = `Ups! <br> Ocurrio un error en el servidor! <br> Intenta de nuevo recargando la pagina.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "danger";
+
+    } else {
+
+        console.log('Uncaught Error: ' + jqXHR.responseText);
+
+        mensaje = `Ups! <br> Ocurrio un error en el servidor! <br> Intenta de nuevo recargando la pagina.
+        <br>
+        Codigo: ${jqXHR.status}`;
+        typeAlert = "danger";
+
+    }
+
+    let alerta = `
+        <div class="alert alert-${typeAlert} alert-dismissible fade show mt-2" role="alert">
+            ${mensaje}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                aria-label="Close"></button>
+        </div>
+    `;
+
+    $("#alertasErrorCombos").append(alerta);
+    $("#contenedorAlerta").removeClass("d-none");
+} 
