@@ -68,14 +68,10 @@
 
         $compCsCal1 = filemtime('assets/js/preinscripcionLinea/form.js');
         $rutaCssCal1 = 'assets/js/preinscripcionLinea/form.js?' . $compCsCal1;
-
-        $complemento2 = filemtime('assets/js/preinscripcionLinea/combos.js');
-        $rutaCss2 = 'assets/js/preinscripcionLinea/combos.js?' . $complemento2;
     @endphp
 
     <script src="{{ asset($rutaCssCal) }}"></script>
     <script src="{{ asset($rutaCssCal1) }}"></script>
-    <script src="{{ asset($rutaCss2) }}"></script>
     @yield('scripts')
 </body>
 

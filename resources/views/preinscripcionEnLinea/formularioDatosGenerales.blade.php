@@ -258,6 +258,12 @@
 
         $complemento1 = filemtime('assets/js/preinscripcionLinea/llenar_combos.js');
         $rutaCss1 = 'assets/js/preinscripcionLinea/llenar_combos.js?' . $complemento1;
+
+        $complemento2 = filemtime('assets/js/preinscripcionLinea/combos.js');
+        $rutaCss2 = 'assets/js/preinscripcionLinea/combos.js?' . $complemento2;
+
+        $complemento3 = filemtime('assets/js/preinscripcionLinea/combosParaPrecargados.js');
+        $rutaCss3 = 'assets/js/preinscripcionLinea/combosParaPrecargados.js?' . $complemento3;
     @endphp
     <script type="text/javascript"
         src="https://rawcdn.githack.com/franz1628/validacionKeyCampo/bce0e442ee71a4cf8e5954c27b44bc88ff0a8eeb/validCampoFranz.js">
@@ -314,7 +320,9 @@
             });
         </script>
         <script src="{{ asset($rutaCss1) }}"></script>
+        <script src="{{ asset($rutaCss3) }}"></script>
     @else
+        <script src="{{ asset($rutaCss2) }}"></script>
         <script>
             $(document).ready(function() {
                 //$('#modalCarga').modal('show');
