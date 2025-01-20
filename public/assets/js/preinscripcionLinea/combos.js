@@ -349,7 +349,7 @@ function llenarComboPeriodosSinSeleccion() {
         data: info
     }).done(function (result) {
         console.log(result);
-
+        $("#plantelSelect").empty();
         if (result.clave == undefined || result.clave == null) {
             $.each(result, function (index, value) {
                 let option = `<option value="${value.clave}">${value.descrip}</option>`;
