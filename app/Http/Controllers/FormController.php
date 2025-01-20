@@ -166,7 +166,7 @@ class FormController extends Controller
          *! Si el folio es 0 ocurrio un error y se redirigira a la vista de error 
          *? Si es diferente a 0 se enviara un correo y redireccionara a la vista de exito
          */
-       if ($respuesta['FolioCRM'] != 0) {
+        if ($respuesta['FolioCRM'] != 0) {
 
             //? se intenta enviar el correo
             try {
@@ -212,7 +212,7 @@ class FormController extends Controller
             $respuestaFinal['ruta'] = "error_de_registro";
         }
 
-        return response()->json($respuestaFinal); 
+        return response()->json($respuestaFinal);
     }
 
     public function servicioAlumnos(Request $request)
@@ -352,7 +352,7 @@ class FormController extends Controller
      * esto se hace a travez de una busqeda por medio del correo 
      * con esto se optiene su detalle de informacion
      */
-    public function validarMatriculacion($correo)
+   /*  public function validarMatriculacion($correo)
     {
         $valores = array(
             "tipoBusqueda" => 4,
@@ -363,7 +363,7 @@ class FormController extends Controller
         $busqueda = app(ApiConsumoController::class)->buscarProspectoPorCorreo($valores);
 
         return response()->json($busqueda);
-    }
+    } */
 
     public function getResultadosExamen(Request $request)
     {
@@ -378,6 +378,13 @@ class FormController extends Controller
 
     public function procesaFormularioFolletos(Request $request)
     {
+
+        $utm_source = $request->utm_source;
+        $utm_medium = $request->utm_medium;
+        $utm_campaign = $request->utm_campaign;
+        $utm_term = $request->utm_term;
+        $utm_content = $request->utm_content;
+        $urlVisitada = $request->urlVisitada;
 
         $licenciatura = $request->carreraPosicion;
         $plantel = $request->plantelSelectFolleto;
@@ -403,10 +410,10 @@ class FormController extends Controller
         //var_dump($rutaArchivo);
 
         $valores = array(
-            "campaingContent" => "",
-            "campaignMedium" => "",
-            "campaignTerm" => "",
-            "descripPublicidad" => "",
+            "campaingContent" => $utm_content,
+            "campaignMedium" => $utm_medium,
+            "campaignTerm" => $utm_term,
+            "descripPublicidad" => $utm_campaign,
             "folioReferido" => "0",
             "pApMaterno" => "",
             "pApPaterno" => "",
@@ -420,8 +427,8 @@ class FormController extends Controller
             "pPeriodoEscolar" => $request->peridoSelectFolleto,
             "pPlantel" => $request->plantelSelectFolleto,
             "pTelefono" => "",
-            "utpsource" => "",
-            "websiteURL" => "https://unimex.edu.mx/",
+            "utpsource" => $utm_source,
+            "websiteURL" => $urlVisitada,
         );
 
         $agregarProspecto = app(ApiConsumoController::class)->agregarProspectoCRM($valores);

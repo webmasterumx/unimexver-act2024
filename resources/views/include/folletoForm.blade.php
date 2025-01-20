@@ -61,8 +61,18 @@
                             $abreviatura = null;
                         @endphp
                     @endif
+                    @if ($urlVisitada)
+                        @php
+                            $urlVisitada = $urlVisitada;
+                        @endphp
+                    @else
+                        @php
+                            $urlVisitada = null;
+                        @endphp
+                    @endif
                     <input type="hidden" name="origen" id="origen" value="{{ $origen }}">
                     <input type="hidden" name="abreviatura" id="abreviatura" value="{{ $abreviatura }}">
+                    <input type="hidden" name="urlVisitada" id="urlVisitada" value="{{ $urlVisitada }}">
                     <input type="hidden" name="utm_source" id="utm_source" value="{{ $dataUTM['utm_source'] }}">
                     <input type="hidden" name="utm_medium" id="utm_medium" value="{{ $dataUTM['utm_medium'] }}">
                     <input type="hidden" name="utm_campaign" id="utm_campaign" value="{{ $dataUTM['utm_campaign'] }}">

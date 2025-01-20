@@ -19,6 +19,7 @@ $(document).ready(function () {
         url: setUrlBase() + "getPlanteles",
     }).done(function (data) {
         $.each(data, function (index, value) {
+            $("#plantelSelect").empty();
             if (value.clave == 5) {
                 estatus = "selected";
             }
