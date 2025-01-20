@@ -350,6 +350,7 @@ function llenarComboPeriodosSinSeleccion() {
     }).done(function (result) {
         console.log(result);
         $("#periodoSelect").empty();
+        $("#periodoSelect").append(`<option value="" selected disabled>Seleccionar periodo</option>`);
         if (result.clave == undefined || result.clave == null) {
             $.each(result, function (index, value) {
                 let option = `<option value="${value.clave}">${value.descrip}</option>`;
