@@ -37,6 +37,8 @@ function llenarComboCampañas(claveCampana, clavePlantel) {
         plantel: clavePlantel
     }
 
+    $("#periodoSelect").empty();
+
     $.ajax({
         url: ruta,
         method: "POST",
