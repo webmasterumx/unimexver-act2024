@@ -264,6 +264,7 @@
     </script>
     <script src="{{ asset($rutaCss) }}"></script>
     @if (session('estadoCRM') == 1 || session()->has('foliocrm') == true)
+        <script src="{{ asset($rutaCss1) }}"></script>
         <script>
             $(document).ready(function() {
 
@@ -313,7 +314,6 @@
 
             });
         </script>
-        <script src="{{ asset($rutaCss1) }}"></script>
     @else
         <script>
             $(document).ready(function() {
