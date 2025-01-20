@@ -19,7 +19,6 @@ $(document).ready(function () {
         url: setUrlBase() + "getPlanteles",
     }).done(function (data) {
         $.each(data, function (index, value) {
-            $("#plantelSelect").empty();
             if (value.clave == 5) {
                 estatus = "selected";
             }
@@ -263,7 +262,7 @@ $("select[name=carreraSelect]").change(function () {
 
         $('#horarioSelect').empty();
         $("#horarioSelect").append(`<option value="" selected disabled>Seleccionar horario</option>`);
-
+        
         console.log(data);
 
         if (data.error == undefined || data.error == null) {
@@ -349,8 +348,7 @@ function llenarComboPeriodosSinSeleccion() {
         data: info
     }).done(function (result) {
         console.log(result);
-        $("#periodoSelect").empty();
-        $("#periodoSelect").append(`<option value="" selected disabled>Seleccionar periodo</option>`);
+
         if (result.clave == undefined || result.clave == null) {
             $.each(result, function (index, value) {
                 let option = `<option value="${value.clave}">${value.descrip}</option>`;
