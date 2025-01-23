@@ -8,7 +8,7 @@
         <label class="form-label badge text-bg-primary">
             <a target="_blank" class="text-white"
                 href="https://www.occ.com.mx/empleos-en-mexico-y-el-mundo/para-trabajar-en-Universidad-Mexicana"> Conoce
-                nuestras vacantes: Aqui
+                nuestras vacantes: Aquí
             </a>
         </label>
     </div>

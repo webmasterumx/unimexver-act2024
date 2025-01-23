@@ -109,7 +109,7 @@
                     <div class="tab-pane fade px-5 py-3 border" id="contrata-pane" role="tabpanel"
                         aria-labelledby="contrata-tab" tabindex="0">
                         <h4 class="fw-normal">
-                            Contrata Alumnos y Egresados UNIMEX
+                            Contrata Alumnos y Egresados UNIMEX®
                         </h4>
                         <p>
                             UNIMEX® concentra las ofertas laborales para alumnos y egresados en una sección dedicada a

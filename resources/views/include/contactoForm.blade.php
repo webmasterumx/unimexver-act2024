@@ -42,7 +42,7 @@
                     </a> <br><br>
                     <a href="{{ route('plantel', 'polanco') }}" style="color: #ffff;">
                         Polanco <br>
-                        Emilio Castelar #63 esquina Eugenio Sue, Col. Polanco-Chapultepec, México D.F.
+                        Emilio Castelar #63 esquina Eugenio Sue, Col. Polanco-Chapultepec, México CDMX.
                     </a> <br><br>
                     <a href="{{ route('plantel', 'veracruz') }}" style="color: #ffff;">
                         Veracruz <br>
@@ -82,11 +82,11 @@
                     <div class="w-100 d-flex">
                         <div class="w-50">
                             <input class="rounded-0 form-control" type="text" name="celular_prospecto"
-                                id="celular_prospecto" minlength="10" maxlength="10" placeholder="Celular a 10 digitos">
+                                id="celular_prospecto" minlength="10" maxlength="10" placeholder="Celular a 10 dígitos">
                         </div>
                         <div class="w-50">
                             <input class="rounded-0 form-control" type="text" name="telefono_prospecto"
-                                id="telefono_prospecto" minlength="10" maxlength="10" placeholder="Casa a 10 digitos">
+                                id="telefono_prospecto" minlength="10" maxlength="10" placeholder="Casa a 10 dígitos">
                         </div>
                     </div>
                     <label class="border p-2 w-100 fw-light mt-3 mb-0" for="plantelSelect">
