@@ -361,6 +361,10 @@
 
     @include('modales.continuaConTuMaestria')
     @include('modales.titulacionViaEstudiosPosgrado')
+
+    <!-- del Modal de errores de Folleto-->
+    @include('modales.folleto.ModalMensajeFolleto')
+    <!-- del Modal de errores de Folleto-->
 @endsection
 
 @section('scripts')

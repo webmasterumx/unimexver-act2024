@@ -352,7 +352,7 @@ class FormController extends Controller
      * esto se hace a travez de una busqeda por medio del correo 
      * con esto se optiene su detalle de informacion
      */
-   /*  public function validarMatriculacion($correo)
+    /*  public function validarMatriculacion($correo)
     {
         $valores = array(
             "tipoBusqueda" => 4,
@@ -398,6 +398,7 @@ class FormController extends Controller
         if ($claveCarrera == 0) {
 
             $respuesta['estado'] = false;
+            $respuesta["mensaje"] = "";
             $respuesta['ruta'] = "";
         } else {
 

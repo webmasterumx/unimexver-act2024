@@ -109,14 +109,22 @@ $("#form_folleto").validate({
                 console.log(data);
                 let respuesta = JSON.parse(data);
                 console.log(respuesta);
-
-                if (respuesta.ruta == " " || respuesta.ruta == "") {
-                    Swal.fire({
-                        icon: "error",
-                        title: "¡Lo sentimos!",
-                        text: "Folleto no disponible",
-                    });
-                } else {
+                
+                if (respuesta.estado == false) { // no se encontro la oferta academica en la configuracion
+                    $("#iconContentModalFolleto").addClass("bi bi-exclamation-circle text-warning");
+                    $("#contenidoModalMensajeFolleto").html(`
+                        Actualmente, la carrera no está disponible en el plantel seleccionado.
+                    `);
+                    $("#warningMensajeFolleto").modal("show");
+                }
+                else if (respuesta.url == "" || respuesta.url == " ") {
+                    $("#iconContentModalFolleto").addClass("bi bi-x-circle-fill text-danger");
+                    $("#contenidoModalWarningMensajeFo").html(`
+                        Lo sentimos, pero por el momento el folleto no está disponible. <br> Agradecemos tu comprensión.
+                    `);
+                    $("#warningMensajeFolleto").modal("show");
+                }
+                else {
                     window.open(respuesta.ruta, '_blank');
                 }
 

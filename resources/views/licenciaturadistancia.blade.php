@@ -300,6 +300,10 @@
     </section>
     <!-- Fin de Campo Laboral -->
 
+    <!-- del Modal de errores de Folleto-->
+    @include('modales.folleto.ModalMensajeFolleto')
+    <!-- del Modal de errores de Folleto-->
+
 @endsection
 
 

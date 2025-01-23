@@ -267,6 +267,10 @@
     <!-- Inicio del Modal Como Obtengo Mi Beca -->
     @include('modales.comoObtengoMiBeca')
     <!-- Fin del Modal Como Obtengo Mi Beca --->
+
+    <!-- del Modal de errores de Folleto-->
+    @include('modales.folleto.ModalMensajeFolleto')
+    <!-- del Modal de errores de Folleto-->
 @endsection
 
 @section('scripts')
