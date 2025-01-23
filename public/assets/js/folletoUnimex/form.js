@@ -109,7 +109,7 @@ $("#form_folleto").validate({
                 console.log(data);
                 let respuesta = JSON.parse(data);
                 console.log(respuesta);
-                
+
                 if (respuesta.estado == false) { // no se encontro la oferta academica en la configuracion
                     $("#iconContentModalFolleto").addClass("bi bi-exclamation-circle text-warning");
                     $("#contenidoModalMensajeFolleto").html(`
@@ -117,7 +117,7 @@ $("#form_folleto").validate({
                     `);
                     $("#warningMensajeFolleto").modal("show");
                 }
-                else if (respuesta.url == "" || respuesta.url == " ") {
+                else if (respuesta.ruta == "" || respuesta.ruta == " ") {
                     $("#iconContentModalFolleto").addClass("bi bi-x-circle-fill text-danger");
                     $("#contenidoModalWarningMensajeFo").html(`
                         Lo sentimos, pero por el momento el folleto no está disponible. <br> Agradecemos tu comprensión.
