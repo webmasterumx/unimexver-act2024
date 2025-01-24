@@ -32,8 +32,8 @@
                 </ul>
                 <h6>Convocatoria</h6>
                 <ol type="1">
-                    <li>Periodo de inscripciones: <b>del 13 de mayo al 29 de junio de 2019.</b></li>
-                    <li>Fecha de aplicación del examen: <b> 05 de julio de 2019.</b></li>
+                    <li>Periodo de inscripciones: <b>por confirmar</b></li>
+                    <li>Fecha de aplicación del examen: <b> por confirmar</b></li>
                 </ol>
                 <p>
                     <b>Lugar de Aplicación: </b> Planteles UNIMEX®
