@@ -77,13 +77,18 @@ $("#form_folleto").validate({
                         turnoPosicionado = 5;
                     }
                     break;
-                case 2: //! licenciatura sua
-                    matriz = ["", "", "53", "48", "58", "1"];
+                case 2: //! licenciatura online
+                    matriz = ["", "", "54", "49", "59", "50"];
                     turnoPosicionado = matriz[plantelSelectFolleto];
 
                     break;
                 case 3: //? posgrado
                     matriz = ["", "", "31", "20", "30", "27"];
+                    turnoPosicionado = matriz[plantelSelectFolleto];
+
+                    break;
+                case 4: //? posgrado
+                    matriz = ["", "", "55", "50", "60", "51"];
                     turnoPosicionado = matriz[plantelSelectFolleto];
 
                     break;

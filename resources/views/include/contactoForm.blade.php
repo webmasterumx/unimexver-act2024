@@ -42,7 +42,7 @@
                     </a> <br><br>
                     <a href="{{ route('plantel', 'polanco') }}" style="color: #ffff;">
                         Polanco <br>
-                        Emilio Castelar #63 esquina Eugenio Sue, Col. Polanco-Chapultepec, México CDMX.
+                        Emilio Castelar #63 esquina Eugenio Sue, Col. Polanco-Chapultepec, Ciudad de México.
                     </a> <br><br>
                     <a href="{{ route('plantel', 'veracruz') }}" style="color: #ffff;">
                         Veracruz <br>
