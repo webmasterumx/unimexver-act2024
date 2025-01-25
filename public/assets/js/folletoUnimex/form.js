@@ -46,7 +46,7 @@ $("#form_folleto").validate({
     submitHandler: function (form) {
         console.log(form);
 
-        /*let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
+        let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
 
         if (nombreFolleto == "") {
             Swal.fire({
@@ -54,7 +54,7 @@ $("#form_folleto").validate({
                 text: "El campo de nombre no puede estar vacío",
             });
         } else {
-           $("#descargaFolleto").prop("disabled", true);
+            $("#descargaFolleto").prop("disabled", true);
             $('#descargaFolleto').html(`
                   <div style="width: 20px !important; height: 20px !important;"
                       class="spinner-border" role="status">
@@ -62,9 +62,9 @@ $("#form_folleto").validate({
                   </div>
                   Cargando Archivo
               `);
- */
+
             //let formData = new FormData(form);
-            /* let nivel = getNivelPosicion();
+            let nivel = getNivelPosicion();
             let carrera = getCarreraPosicion();
             let nivelPagina = getNivelPagina();
             var plantelSelectFolleto = $('select[name=plantelSelectFolleto]').val();
@@ -146,12 +146,12 @@ $("#form_folleto").validate({
                      ¡DESCARGAR!
                  `);
 
-               
+
 
             }).fail(function (error) {
 
-            }); 
-        }*/
+            });
+        }
 
     }
 });
