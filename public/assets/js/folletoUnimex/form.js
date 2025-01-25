@@ -63,7 +63,7 @@ $("#form_folleto").validate({
                   Cargando Archivo
               `);
 
-            //let formData = new FormData(form);
+            let formData = new FormData(form);
             let nivel = getNivelPosicion();
             let carrera = getCarreraPosicion();
             let nivelPagina = getNivelPagina();
