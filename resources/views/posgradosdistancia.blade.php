@@ -478,13 +478,13 @@
         $complementoJsOferta1 = filemtime('assets/js/folletoUnimex/form.js');
         $rutaJsOferta1 = 'assets/js/folletoUnimex/combos.js?' . $complementoJsOferta1;
 
-        $compCalJs3 = filemtime('assets/js/folletoUnimex/form.js');
-        $rutaCalJs3 = 'assets/js/folletoUnimex/errores.js?' . $compCalJs3;
+        $complementoJsOferta2 = filemtime('assets/js/folletoUnimex/form.js');
+        $rutaJsOferta2 = 'assets/js/folletoUnimex/errores.js?' . $complementoJsOferta2;
     @endphp
 
     <script src="{{ asset($rutaJsOferta) }}"></script>
     <script src="{{ asset($rutaJsOferta1) }}"></script>
-    <script src="{{ asset($rutaCalJs3) }}"></script>
+    <script src="{{ asset($rutaJsOferta2) }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection
