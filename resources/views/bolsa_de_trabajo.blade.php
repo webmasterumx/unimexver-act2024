@@ -19,7 +19,7 @@
             <div class="col-12 col-md-8">
                 <div class="row">
                     <div class="col-12 p-0">
-                        <img src="{{ asset('assets/img/extras/BannerBolsadeTrabajo.webp') }}" class="w-100" alt="">
+                        <img src="{{ asset('assets/img/Banner_Bolsa_De_Trabajo_2025.jpeg') }}" class="w-100" alt="">
                     </div>
                     <div class="col-9 p-0">
                         <img src="{{ asset('assets/img/extras/BannerWebBolsadeTrabajo.webp') }}" class="w-100"
