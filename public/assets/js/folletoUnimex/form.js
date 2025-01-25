@@ -46,7 +46,7 @@ $("#form_folleto").validate({
     submitHandler: function (form) {
         console.log(form);
 
-        let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
+      /*   let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
 
         if (nombreFolleto == "") {
             Swal.fire({
@@ -151,7 +151,7 @@ $("#form_folleto").validate({
             }).fail(function (error) {
 
             });
-        }
+        } */
 
     }
 });
