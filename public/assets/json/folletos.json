@@ -1,0 +1,1234 @@
+[
+    {
+        "clave_carrera": "1",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20ADM%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20ADM-SUA%20-%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "2",
+        "clave_nivel": "3",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20ADM%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20ADM-SUA%20-%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "3",
+        "clave_nivel": "3",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20ADM%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20ADM-SUA%20-%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-ADM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/veracruz/FlyerVeracruz-ADM-SUA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "1",
+        "id_empresa": "5",
+        "clave_nivel": "3",
+        "descrip_ofi": "Administración",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_EAD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "42",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic_ADE_Izcalli_En%20Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "42",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic_ADE_Satelite_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "42",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic_ADE_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "42",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/Lic_ADE_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "2",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas Turísticas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_AET.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "2",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas Turísticas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_AET.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "2",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas Turísticas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_AET.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "2",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Administración de Empresas Turísticas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_AET.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "8",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Ciencias de la Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_CED.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "10",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comercio Internacional y Aduanas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_CIA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "10",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comercio Internacional y Aduanas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_CIA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "10",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comercio Internacional y Aduanas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_CIA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "11",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comunicación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_COM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "11",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comunicación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_COM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "11",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comunicación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_COM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "11",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Comunicación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_COM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/MAE_en_Comunicaci%C3%B3n_Visual_Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ECV.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "3",
+        "clave_nivel": "3",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ECV.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ECV.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ECV.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_ECV.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "12",
+        "id_empresa": "5",
+        "clave_nivel": "3",
+        "descrip_ofi": "Comunicación Visual",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_ECV.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "13",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_CTA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20CPU%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20CPU-SUA%20-%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20CPU%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20CPU-SUA%20-%20SAT%C3%89LITE.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20CONTA%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20CPU-SUA%20-%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-CPU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "14",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría Pública",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/veracruz/FlyerVeracruz-CPU-SUA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic_CTF_Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic_CTF_Izcalli_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic_CTF_Satelite_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic_CTF_Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic_CTF_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/Lic_CTF_Veracruz.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/Lic_CTF_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20DER%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20DER-SUA%20-%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic_DER_Izcalli_En%20Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20DER%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20DER-SUA%20-%20SAT%C3%89LITE.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic_DER_%20Satelite_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20DER%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20DER-SUA%20-%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic_DER_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-DER.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/veracruz/FlyerVeracruz-DER-SUA.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "15",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Derecho",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/Lic_DER_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "2",
+        "clave_nivel": "3",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "3",
+        "clave_nivel": "3",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "18",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Derecho Penal",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_EDP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "20",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Diseño Gráfico",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20DGR%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "20",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Diseño Gráfico",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20DGR%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "20",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Diseño Gráfico",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20DGR%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "20",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Diseño Gráfico",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-DGR.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "21",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Docencia",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_DOC.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/MAE_en_EDU_Izcalli_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "2",
+        "clave_nivel": "3",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/MAE_en_EDU_Satelite_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "3",
+        "clave_nivel": "3",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/MAE_en_EDU_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "22",
+        "id_empresa": "5",
+        "clave_nivel": "3",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_EDU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "24",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Gastronomía Internacional",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_GTI.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/MAE_en_HDR_Izcalli_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "2",
+        "clave_nivel": "3",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/MAE_en_HDR_Satelite_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "3",
+        "clave_nivel": "3",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/MAE_en_HDR_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/MAE_en_HDR_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "25",
+        "id_empresa": "5",
+        "clave_nivel": "3",
+        "descrip_ofi": "Habilidades Directivas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_HD.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "26",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Idiomas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20IDI%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "26",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Idiomas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20IDI%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "26",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Idiomas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20IDI%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "26",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Idiomas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_IDI.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "27",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Impuestos",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EIM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "27",
+        "id_empresa": "2",
+        "clave_nivel": "3",
+        "descrip_ofi": "Impuestos",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EIM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "27",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Impuestos",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EIM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "27",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Impuestos",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EIM.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "43",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Marketing",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic_MKT_Izcalli_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "43",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Marketing",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/MAE_en_MKTD_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "43",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Marketing",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/Lic_MKT_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/MAE_en_MKTD_Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/MAE_en_MKTD_Izcalli_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/MAE%20en%20MKTD%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/MAE_en_MKTD_Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/MAE_en_MKTD_Polanco_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/MAE_en_MKTD_Veracruz.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "44",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/MAE_en_MKTD_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "29",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Mercadotecnia",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EMK.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "29",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Mercadotecnia",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_EMK.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "30",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Mercadotecnia y Publicidad",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20MPU%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "30",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Mercadotecnia y Publicidad",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20MPU%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "30",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Mercadotecnia y Publicidad",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20MPU%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "30",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Mercadotecnia y Publicidad",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-MPU.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "32",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Pedagogía",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20PED%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "32",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Pedagogía",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20PED%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "32",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Pedagogía",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20PED%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "33",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Psicología Social",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20PSO%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "33",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Psicología Social",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20PSO%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "33",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Psicología Social",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20PSO%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "33",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Psicología Social",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-PSO.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "34",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Relaciones Internacionales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_RIN.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "35",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Relaciones Internacionales y Comercio Exterior",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20RICE%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "35",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Relaciones Internacionales y Comercio Exterior",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20RICE%20Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "35",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Relaciones Internacionales y Comercio Exterior",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20RICE%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "35",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Relaciones Internacionales y Comercio Exterior",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-RICE.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "36",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Sistemas Computacionales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic%20SCO%20Izcalli.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "36",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Sistemas Computacionales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic%20SCO%20Satelite_bj.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "36",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Sistemas Computacionales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic%20SCO%20Polanco.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "36",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Sistemas Computacionales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/FlyerVeracruz-SCO.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "2",
+        "clave_nivel": "2",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "2",
+        "clave_nivel": "3",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "3",
+        "clave_nivel": "3",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "4",
+        "clave_nivel": "2",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "4",
+        "clave_nivel": "3",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "38",
+        "id_empresa": "5",
+        "clave_nivel": "3",
+        "descrip_ofi": "Terapias Psicosociales",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Posgrado_ETP.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "39",
+        "id_empresa": "2",
+        "clave_nivel": "1",
+        "descrip_ofi": "Turismo",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_TUR.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "39",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Turismo",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_TUR.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "39",
+        "id_empresa": "4",
+        "clave_nivel": "1",
+        "descrip_ofi": "Turismo",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Metro_Lic_TUR.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "39",
+        "id_empresa": "5",
+        "clave_nivel": "1",
+        "descrip_ofi": "Turismo",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folleto_Ver_Lic_TUR.pdf",
+        "identificadorEsp": "0"
+    }
+]

@@ -396,11 +396,15 @@
 
         $complementoJsOferta2 = filemtime('assets/js/folletoUnimex/form.js');
         $rutaJSLicEs2 = 'assets/js/folletoUnimex/form.js?' . $complementoJsOferta2;
+
+        $compCalJs3 = filemtime('assets/js/folletoUnimex/form.js');
+        $rutaCalJs3 = 'assets/js/folletoUnimex/errores.js?' . $compCalJs3;
     @endphp
 
     <script src="{{ asset($rutaJSLicEs) }}"></script>
     <script src="{{ asset($rutaJSLicEs1) }}"></script>
     <script src="{{ asset($rutaJSLicEs2) }}"></script>
+    <script src="{{ asset($rutaCalJs3) }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection

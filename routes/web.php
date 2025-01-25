@@ -47,7 +47,7 @@ Route::view('/aviso-de-privacidad', 'aviso-privacidad')->name('aviso_de_privacid
 Route::view('/datos/pago/preinscripcion', 'preinscripcionEnLinea.datosPago')->name('datos.pago');
 Route::view("/registro_exitoso", "registroExitoso")->name('registro.exitoso');
 Route::view("/error_de_registro", "errorRegistro")->name("error.registro");
-Route::post('/procesa/datos/folleto', [FormController::class, 'procesaFormularioFolletos'])->name('procesa.datos.folleto');
+Route::post('/procesa/datos/folleto', [FormController::class, 'procesarFormularioFolleto'])->name('procesa.datos.folleto');
 Route::post('/procesa/datos/form/contacto', [FormController::class, 'procesaFormularioContacto'])->name('procesa.datos.contacto.inicial');
 
 //* dia Unimex

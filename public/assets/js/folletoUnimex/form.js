@@ -44,8 +44,9 @@ $("#form_folleto").validate({
         }
     },
     submitHandler: function (form) {
+        console.log(form);
 
-        let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
+        /*let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
 
         if (nombreFolleto == "") {
             Swal.fire({
@@ -53,7 +54,7 @@ $("#form_folleto").validate({
                 text: "El campo de nombre no puede estar vacío",
             });
         } else {
-            $("#descargaFolleto").prop("disabled", true);
+           $("#descargaFolleto").prop("disabled", true);
             $('#descargaFolleto').html(`
                   <div style="width: 20px !important; height: 20px !important;"
                       class="spinner-border" role="status">
@@ -61,13 +62,13 @@ $("#form_folleto").validate({
                   </div>
                   Cargando Archivo
               `);
-
-            let formData = new FormData(form);
-            let nivel = getNivelPosicion();
+ */
+            //let formData = new FormData(form);
+            /* let nivel = getNivelPosicion();
             let carrera = getCarreraPosicion();
             let nivelPagina = getNivelPagina();
             var plantelSelectFolleto = $('select[name=plantelSelectFolleto]').val();
-            console.log(plantelSelectFolleto);
+            console.log(carrera);
 
             switch (nivelPagina) {
                 case 1: //licenciatura
@@ -76,31 +77,38 @@ $("#form_folleto").validate({
                     } else {
                         turnoPosicionado = 5;
                     }
+
+
+                    indentificadorEs = 0;
                     break;
                 case 2: //! licenciatura online
                     matriz = ["", "", "54", "49", "59", "50"];
                     turnoPosicionado = matriz[plantelSelectFolleto];
 
+                    indentificadorEs = 1;
                     break;
                 case 3: //? posgrado
                     matriz = ["", "", "31", "20", "30", "27"];
                     turnoPosicionado = matriz[plantelSelectFolleto];
 
+                    indentificadorEs = 0;
                     break;
-                case 4: //? posgrado
+                case 4: //? posgrado en linea
                     matriz = ["", "", "55", "50", "60", "51"];
                     turnoPosicionado = matriz[plantelSelectFolleto];
 
+                    indentificadorEs = 1;
                     break;
                 default:
                     break;
             }
 
-            console.log(turnoPosicionado);
+            console.log(indentificadorEs);
 
             formData.append("nivelPosicion", nivel);
             formData.append("carreraPosicion", carrera);
             formData.append("turnoPosicionado", turnoPosicionado);
+            formData.append("identificadorEsp", indentificadorEs);
 
             $.ajax({
                 method: "POST",
@@ -112,39 +120,38 @@ $("#form_folleto").validate({
                 processData: false,
             }).done(function (data) {
                 console.log(data);
-                let respuesta = JSON.parse(data);
-                console.log(respuesta);
 
-                if (respuesta.estado == false) { // no se encontro la oferta academica en la configuracion
-                    $("#iconContentModalFolleto").addClass("bi bi-exclamation-circle text-warning");
-                    $("#contenidoModalMensajeFolleto").html(`
-                        Actualmente, la carrera no está disponible en el plantel seleccionado.
-                    `);
-                    $("#warningMensajeFolleto").modal("show");
-                }
-                else if (respuesta.ruta == "" || respuesta.ruta == " ") {
+                if (data == false) { // no se encontro la oferta academica en la configuracion
+
+
                     $("#iconContentModalFolleto").addClass("bi bi-x-circle-fill text-danger");
                     $("#contenidoModalMensajeFolleto").html(`
                         Lo sentimos, pero por el momento el folleto no está disponible. <br> Agradecemos tu comprensión.
                     `);
                     $("#warningMensajeFolleto").modal("show");
                 }
+                else if (data == "" || data == " ") {
+                    $("#iconContentModalFolleto").addClass("bi bi-exclamation-circle text-warning");
+                    $("#contenidoModalMensajeFolleto").html(`
+                        Actualmente, la carrera no está disponible en el plantel seleccionado.
+                    `);
+                    $("#warningMensajeFolleto").modal("show");
+                }
                 else {
-                    window.open(respuesta.ruta, '_blank');
+                    window.open(data, '_blank');
                 }
 
                 $("#descargaFolleto").prop("disabled", false);
                 $('#descargaFolleto').html(`
-                       ¡DESCARGAR!
-                   `);
+                     ¡DESCARGAR!
+                 `);
+
+               
 
             }).fail(function (error) {
-                console.log(error);
-                console.log("Algo salió mal");
-            });
 
-        }
-
+            }); 
+        }*/
 
     }
 });

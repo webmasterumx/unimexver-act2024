@@ -437,6 +437,51 @@ class FormController extends Controller
         return response()->json($respuesta);
     }
 
+    //? nueva funcion de procesamiento de folleto
+    public function procesarFormularioFolleto(Request $request)
+    {
+        $licenciatura = $request->carreraPosicion;
+        $plantel = $request->plantelSelectFolleto;
+        $periodo = $request->peridoSelectFolleto;
+        $nivel  = $request->nivelPosicion;
+        $indentificadorEs = $request->identificadorEsp;
+
+        /*  var_dump([
+             $plantel,
+             $nivel,
+             $licenciatura,
+             $indentificadorEs,
+         ]); */
+
+        $ruta = app(FolletoController::class)->leerExcelFolletos($plantel, $nivel, $licenciatura, $indentificadorEs);
+
+        $valores = array(
+            "campaingContent" => "",
+            "campaignMedium" => "",
+            "campaignTerm" => "",
+            "descripPublicidad" => "",
+            "folioReferido" => "0",
+            "pApMaterno" => "",
+            "pApPaterno" => "",
+            "pCarrera" => 0,
+            "pCelular" => $request->celularFolleto,
+            "pCorreo" => $request->correoFolleto,
+            "pHorario" => 0,
+            "pNivel_Estudio" => $nivel,
+            "pNombre" => $request->nombreFolleto,
+            "pOrigen" => 11,
+            "pPeriodoEscolar" => $request->peridoSelectFolleto,
+            "pPlantel" => $request->plantelSelectFolleto,
+            "pTelefono" => "",
+            "utpsource" => "",
+            "websiteURL" => "",
+        );
+
+        $agregarProspecto = app(ApiConsumoController::class)->agregarProspectoCRM($valores);
+
+        return $ruta;
+    }
+
     public function getIdentificarCarrera($licenciatura, $plantel, $periodo, $nivel)
     {
 
