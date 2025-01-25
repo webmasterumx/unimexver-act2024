@@ -358,7 +358,6 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('assets/js/combosCarrera.js') }}"></script>
     <script>
         $('#temario_especialidad').slick({
             infinite: false,
@@ -472,19 +471,23 @@
     </script>
 
     @php
-        $complementoJsOferta = filemtime('assets/js/folletoUnimex/combos.js');
+        $complementoJsOferta = filemtime('assets/js/combosCarrerasNew.js');
         $rutaJsOferta = 'assets/js/combosCarrerasNew.js?' . $complementoJsOferta;
 
-        $complementoJsOferta1 = filemtime('assets/js/folletoUnimex/form.js');
+        $complementoJsOferta1 = filemtime('assets/js/folletoUnimex/combos.js');
         $rutaJsOferta1 = 'assets/js/folletoUnimex/combos.js?' . $complementoJsOferta1;
 
         $complementoJsOferta2 = filemtime('assets/js/folletoUnimex/form.js');
-        $rutaJsOferta2 = 'assets/js/folletoUnimex/errores.js?' . $complementoJsOferta2;
+        $rutaJsOferta2 = 'assets/js/folletoUnimex/form.js?' . $complementoJsOferta2;
+
+        $compCalJs3 = filemtime('assets/js/folletoUnimex/errores.js');
+        $rutaCalJs3 = 'assets/js/folletoUnimex/errores.js?' . $compCalJs3;
     @endphp
 
     <script src="{{ asset($rutaJsOferta) }}"></script>
     <script src="{{ asset($rutaJsOferta1) }}"></script>
     <script src="{{ asset($rutaJsOferta2) }}"></script>
+    <script src="{{ asset($rutaCalJs3) }}"></script>
 
     @include('include.redirecciones.inOfertaAcademica')
 @endsection
