@@ -404,6 +404,14 @@
         "id_empresa": "3",
         "clave_nivel": "1",
         "descrip_ofi": "Contaduría y Finanzas",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic_CTF_Satelite.pdf",
+        "identificadorEsp": "0"
+    },
+    {
+        "clave_carrera": "40",
+        "id_empresa": "3",
+        "clave_nivel": "1",
+        "descrip_ofi": "Contaduría y Finanzas",
         "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic_CTF_Satelite_En_Linea.pdf",
         "identificadorEsp": "1"
     },
@@ -929,6 +937,14 @@
     },
     {
         "clave_carrera": "44",
+        "id_empresa": "3",
+        "clave_nivel": "2",
+        "descrip_ofi": "Marketing Digital",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/MAE_en_MKTD_Satelite_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
+        "clave_carrera": "44",
         "id_empresa": "4",
         "clave_nivel": "2",
         "descrip_ofi": "Marketing Digital",
@@ -1235,7 +1251,7 @@
         "clave_carrera": "0",
         "id_empresa": "2",
         "clave_nivel": "1",
-        "descrip_ofi": "Criminología",
+        "descrip_ofi": "Criminologia",
         "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Izcalli/Lic_CRI_Izcalli.pdf",
         "identificadorEsp": "0"
     },
@@ -1243,7 +1259,7 @@
         "clave_carrera": "0",
         "id_empresa": "3",
         "clave_nivel": "1",
-        "descrip_ofi": "Criminología",
+        "descrip_ofi": "Criminologia",
         "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Satelite/Lic_CRI_Satelite.pdf",
         "identificadorEsp": "0"
     },
@@ -1251,7 +1267,7 @@
         "clave_carrera": "0",
         "id_empresa": "4",
         "clave_nivel": "1",
-        "descrip_ofi": "Criminología",
+        "descrip_ofi": "Criminologia",
         "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Polanco/Lic_CRI_Polanco.pdf",
         "identificadorEsp": "0"
     },
@@ -1259,7 +1275,7 @@
         "clave_carrera": "0",
         "id_empresa": "5",
         "clave_nivel": "1",
-        "descrip_ofi": "Criminología",
+        "descrip_ofi": "Criminologia",
         "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/Lic_CRI_Veracruz.pdf",
         "identificadorEsp": "0"
     }
