@@ -277,7 +277,7 @@
             </div>
             <div class="col-12 col-md-8 col-lg-9">
                 <h2 class="underlined-head fw-normal" style="font-size: 1.438rem;">
-                    REQUISITOS
+                    REQUISITOS 
                 </h2>
                 <div id="requisitos" style="height: 410px;">
                     <div class="card border-0">

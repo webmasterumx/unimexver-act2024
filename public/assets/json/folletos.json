@@ -720,6 +720,14 @@
         "identificadorEsp": "0"
     },
     {
+        "clave_carrera": "22",
+        "id_empresa": "5",
+        "clave_nivel": "2",
+        "descrip_ofi": "Educación",
+        "ruta_archivo": "https://kontux.unimex.edu.mx/archivos/Folletos/Veracruz/MAE_en_EDU_Veracruz_En_Linea.pdf",
+        "identificadorEsp": "1"
+    },
+    {
         "clave_carrera": "24",
         "id_empresa": "5",
         "clave_nivel": "1",
