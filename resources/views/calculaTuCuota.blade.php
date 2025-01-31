@@ -106,24 +106,24 @@
             </div>
             <div
                 class="col-12 col-md-9 col-lg-9 mt-2 mt-md-0 p-0 px-md-3 order-1 order-sm-1 order-md-1 order-lg-2 oirder-xl-2 mt-md-0 p-0 px-md-3">
-                <div id="carrucelInit">
-                    <div class="contenedorBannerCal">
+                <div id="carrucelInit" style="height: 90vh !important;">
+                    <div class="contenedorBannerCal"  style="height: 90vh !important;">
                         <img src="{{ asset('assets/img/calculadora_de_cuotas/2025/calculadora2025_1.png') }}"
                             class="d-block w-100" alt="...">
                     </div>
-                    <div class="contenedorBannerCal">
+                    <div class="contenedorBannerCal"  style="height: 90vh !important;">
                         <img src="{{ asset('assets/img/calculadora_de_cuotas/2025/calculadora2025_2.png') }}"
                             class="d-block w-100" alt="...">
                     </div>
-                    <div class="contenedorBannerCal">
+                    <div class="contenedorBannerCal"  style="height: 90vh !important;">
                         <img src="{{ asset('assets/img/calculadora_de_cuotas/2025/calculadora2025_3.png') }}"
                             class="d-block w-100" alt="...">
                     </div>
-                    <div class="contenedorBannerCal">
+                    <div class="contenedorBannerCal"  style="height: 90vh !important;">
                         <img src="{{ asset('assets/img/calculadora_de_cuotas/2025/calculadora2025_4.png') }}"
                             class="d-block w-100" alt="...">
                     </div>
-                    <div class="contenedorBannerCal">
+                    <div class="contenedorBannerCal"  style="height: 90vh !important;">
                         <img src="{{ asset('assets/img/calculadora_de_cuotas/2025/calculadora2025_5.png') }}"
                             class="d-block w-100" alt="...">
                     </div>

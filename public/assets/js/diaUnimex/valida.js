@@ -47,7 +47,7 @@ $("#formulario").validate({
     },
     submitHandler: function (form) {
 
-        let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
+        let nombreFolleto = $('#nombre').val().replace(/ /g, "");
 
         if (nombreFolleto == "") {
             Swal.fire({
@@ -55,53 +55,21 @@ $("#formulario").validate({
                 text: "El campo de nombre no puede estar vacío",
             });
         } else {
-            $("#descargaFolleto").prop("disabled", true);
-            $('#descargaFolleto').html(`
-                  <div style="width: 20px !important; height: 20px !important;"
-                      class="spinner-border" role="status">
-                      <span class="visually-hidden">Loading...</span>
-                  </div>
-                  Cargando Archivo
-              `);
 
+            $("#guardarDiaUnimex").prop("disabled", true);
+            $('#guardarDiaUnimex').html(`
+                <div style="width: 20px !important; height: 20px !important;"
+                    class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                Guardando Datos
+            `);
+            
             let formData = new FormData(form);
-            let nivel = getNivelPosicion();
-            let carrera = getCarreraPosicion();
-            let nivelPagina = getNivelPagina();
-            var plantelSelectFolleto = $('select[name=plantelSelectFolleto]').val();
-            console.log(plantelSelectFolleto);
-
-            switch (nivelPagina) {
-                case 1: //licenciatura
-                    if (plantelSelectFolleto > 2) {
-                        turnoPosicionado = 1;
-                    } else {
-                        turnoPosicionado = 5;
-                    }
-                    break;
-                case 2: //! licenciatura sua
-                    matriz = ["", "", "53", "48", "58", "1"];
-                    turnoPosicionado = matriz[plantelSelectFolleto];
-
-                    break;
-                case 3: //? posgrado
-                    matriz = ["", "", "31", "20", "30", "27"];
-                    turnoPosicionado = matriz[plantelSelectFolleto];
-
-                    break;
-                default:
-                    break;
-            }
-
-            console.log(turnoPosicionado);
-
-            formData.append("nivelPosicion", nivel);
-            formData.append("carreraPosicion", carrera);
-            formData.append("turnoPosicionado", turnoPosicionado);
 
             $.ajax({
                 method: "POST",
-                url: setUrlBase() + "procesa/datos/folleto",
+                url: setUrlBase() + "diaUnimex/enviar/datos",
                 data: formData,
                 dataType: "html",
                 cache: false,
@@ -112,24 +80,43 @@ $("#formulario").validate({
                 let respuesta = JSON.parse(data);
                 console.log(respuesta);
 
-                if (respuesta.ruta == " " || respuesta.ruta == "") {
+                if (respuesta.estado == true) {
+                    Swal.fire({
+                        html: `
+                            <p class="text-center">
+                            <img style="width: 175px;" src="https://unimexver.edu.mx/img/header/logo-2020.webp" alt=""> 
+                            </p>
+                            <hr style="border-color: #0e488a; border: 2px dashed;">
+                            <h1 class="text-center" style="color: #0e488a; font-family: 'Lobster', 'cursive';">
+                            Bienvenido! <br> UNIMEX te esta esperando.
+                            </h1>
+                            <hr style="border-color: #0e488a; border: 2px dashed;">
+                            <p class="m-0 text-center fw-bold text-dark">Folio: <span style="color: #0e488a;">${respuesta.FolioCRM}</span></p>
+                            <p class="m-0 text-center fw-bold text-dark">Nombre: <span style="color: #0e488a;">${respuesta.Nombre}</span></p>
+                            <p class="m-0 text-center fw-bold text-dark">Correo: <span style="color: #0e488a;">${respuesta.Email}</span></p>
+                            <hr style="border-color: #0e488a; border: 2px dashed;">
+                            <p class="text-center" style="color: #de951b; font-size: 26px;"><b><i class="bi bi-camera-fill"></i> Captura tu pase de acceso</b></p>
+                        `,
+                        confirmButtonText: "OK",
+                    }).then((result) => {
+                        /* Read more about isConfirmed, isDenied below */
+                        if (result.isConfirmed) {
+                            window.location.reload();
+                        } else if (result.isDenied) {
+
+                        }
+                    });
+                }
+                else {
                     Swal.fire({
                         icon: "error",
-                        title: "¡Lo sentimos!",
-                        text: "Folleto no disponible",
+                        text: respuesta.mensaje,
                     });
-                } else {
-                    window.open(respuesta.ruta, '_blank');
                 }
 
-                $("#descargaFolleto").prop("disabled", false);
-                $('#descargaFolleto').html(`
-                       ¡DESCARGAR!
-                   `);
 
-            }).fail(function (error) {
-                console.log(error);
-                console.log("Algo salió mal");
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                erroresAlEnviarFormulario(jqXHR, textStatus);
             });
 
         }

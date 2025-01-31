@@ -22,7 +22,7 @@
     <!-- Inicio de Banner Inicial -->
     <section class="pb-2">
         <div class="container-fluid p-0">
-            <div id="bannerInicial">
+            <div id="bannerInicial" style="height: 90vh !important;">
                 @foreach ($banners as $banner)
                     @if (
                         $dataUTM['utm_medium'] == 'organico' ||
@@ -48,7 +48,7 @@
                                 $dataUTM['utm_content'];
                         @endphp
                     @endif
-                    <a href="{{ $ruta }}" target="_blank" class="itemBannerInit">
+                    <a href="{{ $ruta }}" target="_blank" class="itemBannerInit" style="height: auto !important;">
                         <img src="{{ asset($banner->url) }}" class="d-block w-100 img-fluid" alt="{{ $banner->alt }}"
                             title="{{ $banner->alt }}">
                     </a>
@@ -321,8 +321,8 @@
             });
 
             $('#bannerInicial').slick({
-                infinite: true,
-                autoplay: true,
+                infinite: false,
+                autoplay: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,

@@ -527,4 +527,57 @@ class FormController extends Controller
     {
         $matHorarios = [""];
     }
+
+    public function añadirProspectoDiaUnimex(Request $request)
+    {
+        $nombre = $request->nombre;
+        $celular = $request->celular;
+        $email = $request->email;
+        $periodos = $request->periodo;
+        $carrera = $request->carrera;
+        $horario = $request->horario;
+        $escuela = $request->escuela;
+
+        $valores = array(
+            "pNombre" => $nombre,
+            "pApPaterno" => "",
+            "pApMaterno" => "",
+            "pTelefono" => $celular,
+            "pCelular" => $celular,
+            "pCorreo" => $email,
+            "pPeriodoEscolar" => $periodos,
+            "pPlantel" => 5,
+            "pNivel_Estudio" => 1,
+            "pCarrera" => $carrera,
+            "pHorario" => $horario,
+            "pOrigen" => 28,
+            "utpsource" => "",
+            "descripPublicidad" => "",
+            "campaignMedium" => "",
+            "campaignTerm" => "",
+            "campaignContent" => "",
+            "websiteURL" => "https://unimexver.edu.mx/dia-unimex",
+            "folioReferido" => "0",
+        );
+
+        $envio = app(ApiConsumoController::class)->addDiaUnimex($valores);
+
+        if ($envio == null) {
+            $respuesta['estado'] = false;
+            $respuesta["mensaje"] = "Ocurrió un error. Inténtalo más tarde.";
+        } else {
+            if ($envio['FolioCRM'] != 0) {
+                $respuesta['estado'] = true;
+                $respuesta['FolioCRM'] = $envio['FolioCRM'];
+                $respuesta['Nombre'] = $envio['Nombre'];
+                $respuesta['Email'] = $envio['Email'];
+                $respuesta["mensaje"] = "Registro exitoso";
+            } else {
+                $respuesta['estado'] = false;
+                $respuesta["mensaje"] = "Ocurrió un error. Inténtalo más tarde.";
+            }
+        }
+
+        return response()->json($respuesta);
+    }
 }

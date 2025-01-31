@@ -248,7 +248,7 @@ class ApiConsumoController extends Controller
 
     //* Dia unimex
 
-    
+
     public function getEscuelasDiaUnimex()
     {
         $response = Http::get($this->base_url . 'dia-unimex/escuelas');
@@ -293,6 +293,14 @@ class ApiConsumoController extends Controller
 
         //var_dump($valores);
         $response = Http::post($this->base_url . 'dia-unimex/turnos', $valores);
+
+
+        return $response->json();
+    }
+
+    public function addDiaUnimex($valores)
+    {
+        $response = Http::post($this->base_url . 'dia-unimex', $valores);
 
 
         return $response->json();

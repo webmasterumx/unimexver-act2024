@@ -24,7 +24,7 @@
     <!-- Inicio de portada -->
     <section id="portada" style="background-image: url({{ asset($licenciatura_distancia->portada) }}); position: relative;">
         <h1 class="etiqueta-titulo p-3 text-uppercase">
-            licenciatura a distancia {{ $licenciatura_distancia->nombre }}
+            licenciatura ONLINE {{ $licenciatura_distancia->nombre }}
         </h1>
     </section>
     <!-- Fin de portada -->
@@ -39,13 +39,13 @@
             </div>
             <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
                 <div class="row">
-                    <div class="col-12 col-md-4 mb-3" style="font-size: 15px !important; color: #014B94 !important;">
-                        SISTEMA UNIVERSITARIO A DISTANCIA
+                    <div class="col-12 col-md-3 mb-3" style="font-size: 15px !important; color: #014B94 !important;">
+                        SISTEMA UNIVERSITARIO ONLINE
                     </div>
-                    <div class="col-12 col-md-2 mb-3" style="font-size: 15px !important; color: #014B94 !important;">
+                    {{-- <div class="col-12 col-md-2 mb-3" style="font-size: 15px !important; color: #014B94 !important;">
                         NO ESCOLARIZADO
-                    </div>
-                    <div class="col-12 col-md-6 mb-3" style="font-size: 15px !important; color: #014B94 !important;">
+                    </div> --}}
+                    <div class="col-12 col-md-9 mb-3" style="font-size: 15px !important; color: #014B94 !important;">
                         {!! $rvoe !!}
                     </div>
                     <div class="col-12">
@@ -120,7 +120,7 @@
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule px-4">
                 <h2 style="font-size: 1.438rem;" class="underlined-head text-uppercase fw-normal mt-4">
-                    VENTAJAS DE ESTUDIAR LA LICENCIATURA A DISTANCIA EN {{ $licenciatura_distancia->nombre }}
+                    VENTAJAS DE ESTUDIAR LA LICENCIATURA ONLINE EN {{ $licenciatura_distancia->nombre }}
                 </h2>
                 <p>
                     <b>
@@ -162,7 +162,7 @@
             </div>
             <div class="col-12 col-md-10 col-lg-10">
                 <p>
-                    Debido a nuestro excelente <b>Programa Académico en la modalidad “A distancia”</b> el cupo es limitado,
+                    Debido a nuestro excelente <b>Programa Académico en la modalidad “ONLINE”</b> el cupo es limitado,
                     así que
                     te recomendamos completar tu inscripción en el ciclo deseado para asegurar tu lugar.
                 </p>
@@ -270,7 +270,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <h2 style="font-size: 1.50rem;" class="underlined-head text-uppercase text-white">
-                    LICENCIATURA A DISTANCIA EN {{ $licenciatura_distancia->nombre }}
+                    LICENCIATURA ONLINE EN {{ $licenciatura_distancia->nombre }}
                 </h2>
                 <p>
                     Campo Laboral

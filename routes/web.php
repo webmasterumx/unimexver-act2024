@@ -47,11 +47,13 @@ Route::view('/aviso-de-privacidad', 'aviso-privacidad')->name('aviso_de_privacid
 Route::view('/datos/pago/preinscripcion', 'preinscripcionEnLinea.datosPago')->name('datos.pago');
 Route::view("/registro_exitoso", "registroExitoso")->name('registro.exitoso');
 Route::view("/error_de_registro", "errorRegistro")->name("error.registro");
+Route::view("/prospectacion", "prospectacion.index")->name("prospectacion");
 Route::post('/procesa/datos/folleto', [FormController::class, 'procesarFormularioFolleto'])->name('procesa.datos.folleto');
 Route::post('/procesa/datos/form/contacto', [FormController::class, 'procesaFormularioContacto'])->name('procesa.datos.contacto.inicial');
 
 //* dia Unimex
 Route::view("dia-unimex", 'diaUnimex.index')->name('dia.unimex');
+Route::post("diaUnimex/enviar/datos", [FormController::class, "añadirProspectoDiaUnimex"])->name("add.prospecto.diaUnimex");
 
 //? variables de establecimiento para fomulario de contacto
 Route::get('/set/variables/contactForm/{elemento}', [ExtrasUnimexController::class, 'setVariablesFormContacto'])->name('set.variables.contactForm');

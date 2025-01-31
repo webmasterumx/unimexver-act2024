@@ -517,7 +517,7 @@
                         </ul>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-gray-border">
-                        <h5 onclick="subnav.list.toggle('SUA')" id="SUA">Licenciaturas a distancia<br></h5>
+                        <h5 onclick="subnav.list.toggle('SUA')" id="SUA">Licenciaturas ONLINE<br></h5>
                         <ul class="blue-bullet">
                             {{--  <li style="background: none;">
                                 <span class="txtpequeno">DISPONIBLE EN TODOS LOS PLANTELES</span>
@@ -576,7 +576,7 @@
                                 @endif
                             @endforeach
                             <br>
-                            <h5>Posgrados a distancia</h5>
+                            <h5>Posgrados ONLINE</h5>
                             @foreach ($data['menus'] as $menu)
                                 @if ($menu->estado == 8 && $menu->mostrar == 1)
                                     <li>

@@ -71,7 +71,7 @@
 @section('content')
     <!-- Inicio de portada -->
     <section id="portada" style="background-image: url({{ asset($posgrado->portada) }}); position: relative;">
-        <h1 class="etiqueta-titulo p-3 text-uppercase" style="font-size: 30px;"> {{ $posgrado->nombre }} a distancia </h1>
+        <h1 class="etiqueta-titulo p-3 text-uppercase" style="font-size: 30px;"> {{ $posgrado->nombre }} ONLINE </h1>
     </section>
     <!-- Fin de portada -->
 
@@ -83,7 +83,7 @@
                     @if ($posgrado->nombre == 'Docencia')
                         especialidad en {{ $posgrado->nombre }}
                     @else
-                        especialidad y maestría a distancia en {{ $posgrado->nombre }}
+                        especialidad y maestría ONLINE en {{ $posgrado->nombre }}
                     @endif
                 </h2>
             </div>
@@ -121,7 +121,7 @@
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
                 <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
-                    Ventajas de estudiar el posgrado a distancia en {{ $posgrado->nombre }}
+                    Ventajas de estudiar el posgrado ONLINE en {{ $posgrado->nombre }}
                 </h1>
                 <p>
                     <br>
