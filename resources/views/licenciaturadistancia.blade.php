@@ -59,7 +59,7 @@
                                 Duración total: 3 años (9 cuatrimestres).
                             </li>
                             <li>
-                                Modalidad: No escolarizada.
+                                Modalidad: Online.
                             </li>
                         </ul>
                     </div>
