@@ -60,7 +60,7 @@
             <div class="col-12 col-md-4">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title fw-normal">A DISTANCIA</h3>
+                        <h3 class="card-title fw-normal">ONLINE</h3>
                     </div>
                     <div class="card-body">
                         <a target="_blank"
