@@ -51,7 +51,7 @@
                 </p>
             </div>
             <div class="col-12 col-md-6 p-0"> <!-- form_contacto -->
-                <form id="form_contacto" method="POST" class="bg-white p-4 p-md-5">
+                <form id="form_contacto" method="POST" class="bg-white p-4 p-md-5" style="height: 100%;">
                     @csrf
                     <p style="color: #004b93; font-size: 1.5em;" class="text-center">
                         ¡Estamos para ayudarte! <br>
