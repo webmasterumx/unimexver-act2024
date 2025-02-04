@@ -117,7 +117,7 @@
     <!-- Inicio de la sección de ventajas -->
     <section class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6 p-0">
                 <img src="{{ asset($contraportada) }}" alt="" style="width: 100%; height:100%;">
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
