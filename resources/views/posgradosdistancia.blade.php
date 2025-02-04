@@ -115,7 +115,7 @@
     <!-- Fin de la sección de objetivo -->
 
     <!-- Inicio de la sección de ventajas -->
-    <section class="container-fluid">
+    <section class="container-fluid  bg-articule">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6 p-0">
                 <img src="{{ asset($contraportada) }}" alt="" style="width: 100%; height:100%;">
