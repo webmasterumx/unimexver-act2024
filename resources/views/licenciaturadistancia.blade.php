@@ -24,7 +24,7 @@
     <!-- Inicio de portada -->
     <section id="portada" style="background-image: url({{ asset($licenciatura_distancia->portada) }}); position: relative;">
         <h1 class="etiqueta-titulo p-3 text-uppercase">
-            licenciatura ONLINE {{ $licenciatura_distancia->nombre }}
+            licenciatura ONLINE en {{ $licenciatura_distancia->nombre }}
         </h1>
     </section>
     <!-- Fin de portada -->
@@ -119,10 +119,10 @@
                 </div>
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule px-4">
-                <h2 style="font-size: 1.438rem;" class="underlined-head text-uppercase fw-normal mt-4">
+                <h3 style="font-size: 1.438rem;" class="underlined-head text-uppercase fw-normal mt-4">
                     VENTAJAS DE ESTUDIAR LA LICENCIATURA ONLINE EN {{ $licenciatura_distancia->nombre }}
-                </h2>
-                <p>
+                </h3>
+                <p style="font-size: 120% !important;">
                     <b>
                         Enfoque
                     </b>
