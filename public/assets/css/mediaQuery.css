@@ -684,6 +684,10 @@
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
 
+    #textoVentajasDistancia{
+        font-size: 120%;
+    }
+
     #bannerInicial {
         height: 34rem;
     }
@@ -771,6 +775,10 @@
 }
 
 @media (min-width: 1399.98px) {
+
+    #textoVentajasDistancia{
+        font-size: 1.6rem;
+    }
 
     #bannerInicial {
         height: 32rem;

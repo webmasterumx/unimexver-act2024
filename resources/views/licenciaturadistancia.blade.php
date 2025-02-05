@@ -122,7 +122,7 @@
                 <h3 class="underlined-head text-uppercase fw-normal mt-4">
                     VENTAJAS DE ESTUDIAR LA LICENCIATURA ONLINE EN {{ $licenciatura_distancia->nombre }}
                 </h3>
-                <p style="font-size: 120% !important;">
+                <p id="textoVentajasDistancia">
                     <b>
                         Enfoque
                     </b>
