@@ -20,7 +20,7 @@
                             <label for="nombre_empresaOCC" class="form-label">
                                 <i class="bi bi-bank2" style="color: #004b93;"></i> Nombre de la Empresa
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="nombre_empresaOCC" name="nombre_empresaOCC">
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <label for="contacto_empresaOCC" class="form-label">
                                 <i class="bi bi-person-fill" style="color: #004b93;"></i> Nombre del Contacto
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="contacto_empresaOCC" name="contacto_empresaOCC">
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                             <label for="email_empresaOCC" class="form-label">
                                 <i class="bi bi-person-fill" style="color: #004b93;"></i> Correo Electrónico
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="email_empresaOCC" name="email_empresaOCC">
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                             <label for="telefono_empresaOCC" class="form-label">
                                 <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Teléfono de Casa
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="telefono_empresaOCC" name="telefono_empresaOCC" maxlength="10" minlength="10">
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <label for="celular_empresaOCC" class="form-label">
                                 <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono Celular
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="celular_empresaOCC" name="celular_empresaOCC" maxlength="10" minlength="10">
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                             <label for="razon_empresaOCC" class="form-label">
                                 <i class="bi bi-file-earmark-fill" style="color: #004b93;"></i> Razón Social
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="razon_empresaOCC" name="razon_empresaOCC">
                             <label for="razon_empresaOCC">Evita usar caracteres especiales.</label>
                         </div>
@@ -75,7 +75,7 @@
                             <label for="rfc_empresaOCC" class="form-label">
                                 <i class="bi bi-file-earmark-fill" style="color: #004b93;"></i> RFC
                             </label>
-                            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+                            <input  type="text" class="form-control form-control-sm"
                                 id="rfc_empresaOCC" name="rfc_empresaOCC" maxlength="13">
                             <label for="rfc_empresaOCC">Evita usar caracteres especiales.</label>
                         </div>

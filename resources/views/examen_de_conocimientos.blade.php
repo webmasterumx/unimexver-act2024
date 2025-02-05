@@ -50,7 +50,7 @@
                     </li>
                     <li>
                         La calificación del examen será ACREDITADO o NO ACREDITADO (no hay revisión de examen) el resultado
-                        es inapelable e irrevocable y se publicarán el 05 de agosto de 2019.
+                        es inapelable e irrevocable.
                     </li>
                     <li>
                         Si el examen es aprobado, se procede a iniciar los trámites de titulación, en caso contrario se

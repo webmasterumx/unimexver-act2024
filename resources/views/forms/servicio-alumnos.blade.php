@@ -8,7 +8,7 @@
             <label for="name_service" class="form-label">
                 <i class="bi bi-person-fill" style="color: #004b93;"></i> Nombre Completo
             </label>
-            <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+            <input  type="text" class="form-control form-control-sm"
                 id="name_service" name="name_service">
         </div>
     </div>
@@ -17,7 +17,7 @@
             <label for="email_service" class="form-label">
                 <i class="bi bi-envelope-fill" style="color: #004b93;"></i> Correo Electrónico
             </label>
-            <input style="height: 32px !important;" type="text" class="form-control" id="email_service"
+            <input  type="text" class="form-control" id="email_service"
                 name="email_service">
         </div>
     </div>
@@ -26,7 +26,7 @@
             <label for="phone_casa_service" class="form-label">
                 <i class="bi bi-telephone-fill" style="color: #004b93;"></i>Teléfono de Casa
             </label>
-            <input style="height: 32px !important;" type="text" class="form-control" id="phone_casa_service"
+            <input  type="text" class="form-control" id="phone_casa_service"
                 name="phone_casa_service" maxlength="10" minlength="10">
         </div>
     </div>
@@ -35,7 +35,7 @@
             <label for="movil_service" class="form-label">
                 <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono celular
             </label>
-            <input style="height: 32px !important;" type="text" class="form-control" id="movil_service"
+            <input  type="text" class="form-control" id="movil_service"
                 name="movil_service" maxlength="10" minlength="10">
         </div>
     </div>
@@ -43,7 +43,7 @@
         <label for="select_plantel">
             <i class="bi bi-bank" style="color: #004b93;"></i> Plantel
         </label>
-        <select class="form-select" style="height: 32px !important;" id="select_plantel" name="select_plantel">
+        <select class="form-select"  id="select_plantel" name="select_plantel">
             <option value="" selected>Selecciona tu Plantel</option>
             <option value="IZCALLI">IZCALLI</option>
             <option value="SATÉLITE">SATÉLITE</option>
@@ -56,7 +56,7 @@
             <label for="asunto_service" class="form-label">
                 <i class="bi bi-bookmark-check-fill" style="color: #004b93;"></i> Asunto
             </label>
-            <input style="height: 32px !important;" type="text" class="form-control" id="asunto_service"
+            <input  type="text" class="form-control" id="asunto_service"
                 name="asunto_service">
             <label for="asunto_service">Evita usar caracteres especiales.</label>
         </div>
@@ -66,7 +66,7 @@
             <label for="matricula_service" class="form-label">
                 <i class="bi bi-credit-card-fill" style="color: #004b93;"></i> Matrícula
             </label>
-            <input style="height: 32px !important;" type="text" class="form-control" id="matricula_service"
+            <input  type="text" class="form-control" id="matricula_service"
                 name="matricula_service" maxlength="11" minlength="11">
             <label for="matricula_service">Ingresa el formato correcto de tu matrícula. ej:(12345678-90)</label>
         </div>

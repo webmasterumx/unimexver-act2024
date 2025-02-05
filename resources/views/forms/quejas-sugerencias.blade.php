@@ -7,35 +7,35 @@
         <label for="nombre_qys" class="form-label">
             <i class="bi bi-person-fill" style="color: #004b93;"></i> Nombre Completo
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm" id="nombre_qys"
+        <input  type="text" class="form-control form-control-sm" id="nombre_qys"
             name="nombre_qys">
     </div>
     <div class="mb-3 col-12 col-md-6">
         <label for="mail_qys" class="form-label">
             <i class="bi bi-envelope-fill" style="color: #004b93;"></i> Correo Electrónico
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm" id="mail_qys"
+        <input  type="text" class="form-control form-control-sm" id="mail_qys"
             name="mail_qys">
     </div>
     <div class="mb-3 col-12 col-md-4">
         <label for="telefono_casa_qys" class="form-label">
             <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Teléfono de Casa
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+        <input  type="text" class="form-control form-control-sm"
             id="telefono_casa_qys" name="telefono_casa_qys" maxlength="10" minlength="10">
     </div>
     <div class="mb-3 col-12 col-md-4">
         <label for="telefono_movil_qys" class="form-label">
             <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono celular
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm"
+        <input  type="text" class="form-control form-control-sm"
             id="telefono_movil_qys" name="telefono_movil_qys" maxlength="10" minlength="10">
     </div>
     <div class="mb-3 col-12 col-md-4">
         <label for="matricula_qys" class="form-label">
             <i class="bi bi-credit-card-fill" style="color: #004b93;"></i> Matrícula
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm" id="matricula_qys"
+        <input  type="text" class="form-control form-control-sm" id="matricula_qys"
             name="matricula_qys" minlength="11" maxlength="11">
         <label for="matricula_qys">Ingresa el formato correcto de tu matrícula. ej:(12345678-90)</label>
     </div>
@@ -43,7 +43,7 @@
         <label for="asunto_qys" class="form-label">
             <i class="bi bi-bookmark-check-fill" style="color: #004b93;"></i> Asunto
         </label>
-        <input style="height: 32px !important;" type="text" class="form-control form-control-sm" id="asunto_qys"
+        <input  type="text" class="form-control form-control-sm" id="asunto_qys"
             name="asunto_qys">
         <label for="asunto_qys">Evita usar caracteres especiales.</label>
     </div>
