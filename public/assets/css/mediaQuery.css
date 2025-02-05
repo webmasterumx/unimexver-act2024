@@ -684,7 +684,7 @@
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
 
-    #textoVentajasDistancia{
+    #textoVentajasDistancia {
         font-size: 120%;
     }
 
@@ -776,7 +776,12 @@
 
 @media (min-width: 1399.98px) {
 
-    #textoVentajasDistancia{
+
+    body {
+        font-size: 140% !important;
+    }
+
+    #textoVentajasDistancia {
         font-size: 1.6rem;
     }
 
