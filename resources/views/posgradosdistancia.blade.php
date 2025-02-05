@@ -34,32 +34,8 @@
         background-size: cover;
     }
 
-    #text_ventajas {
-        height: 550px;
-        overflow-y: scroll;
-    }
-
     .slick-list {
         max-height: 290px !important;
-    }
-
-    .text_ventajas::-webkit-scrollbar {
-        width: 12px;
-        /* width of the entire scrollbar */
-    }
-
-    .text_ventajas::-webkit-scrollbar-track {
-        background: orange;
-        /* color of the tracking area */
-    }
-
-    .text_ventajas::-webkit-scrollbar-thumb {
-        background-color: blue;
-        /* color of the scroll thumb */
-        border-radius: 20px;
-        /* roundness of the scroll thumb */
-        border: 3px solid orange;
-        /* creates padding around scroll thumb */
     }
 
     #peridoSelectFolleto-error,

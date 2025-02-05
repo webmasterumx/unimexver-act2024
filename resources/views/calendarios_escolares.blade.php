@@ -8,7 +8,7 @@
                 <h1><i class="bi bi-calendar-check-fill"></i> Calendarios Escolares UNIMEX®</h1>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header">
                         <h3 class="fw-normal">PLANTELES METROPOLITANOS</h3>
                     </div>
@@ -19,6 +19,9 @@
                         </a><br>
                         <a target="_blank" href="{{ asset('assets/calendarios/2025-2/CALENDARIO_2025-2_MIX_METRO.pdf') }}">
                             <i class="bi bi-eye-fill"></i> Calendario Sabatino
+                        </a><br>
+                        <a target="_blank" href="{{ asset('assets/calendarios/2025-2/CALENDARIO_2025-2_SUA_METRO.pdf') }}">
+                            <i class="bi bi-eye-fill"></i> Calendario SUA
                         </a>
                         <hr style="border-top: 1px solid;">
                         <h5 class="card-title">Posgrados</h5>
@@ -30,7 +33,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header">
                         <h3 class="card-title fw-normal">PLANTEL VERACRUZ</h3>
                     </div>
@@ -58,7 +61,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header">
                         <h3 class="card-title fw-normal">ONLINE</h3>
                     </div>

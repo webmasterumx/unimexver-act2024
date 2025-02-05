@@ -647,6 +647,12 @@
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
 
+    #cardTemarioLicenciatura,
+    #cardTemarioBodyLicenciatura {
+        min-height: 400px;
+        max-height: 400px;
+    }
+
     #bannerInicial {
         height: 26rem;
     }
@@ -683,6 +689,12 @@
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
+    #cardTemarioLicenciatura,
+    #cardTemarioBodyLicenciatura {
+        min-height: 320px;
+        max-height: 320px;
+    }
 
     #textoVentajasDistancia {
         font-size: 120%;
@@ -776,6 +788,11 @@
 
 @media (min-width: 1399.98px) {
 
+    #cardTemarioLicenciatura,
+    #cardTemarioBodyLicenciatura {
+        min-height: 400px;
+        max-height: 400px;
+    }
 
     body {
         font-size: 140% !important;

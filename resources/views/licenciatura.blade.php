@@ -147,10 +147,10 @@
             </div>
             <div id="temario" class="col-12 mt-5">
                 @for ($i = 0; $i < sizeof($temario); $i++)
-                    <div class="card border-0 mx-3 h-100" style="max-height: 300px;">
+                    <div id="cardTemarioLicenciatura" class="card border-0 mx-3 h-100">
                         <h5 class="card-header bg-unimex text-white text-center">
                             {{ $temario[$i]['nombrecuatrimestre'] }}</h5>
-                        <div class="card-body bg-articule" style="min-height: 300px;">
+                        <div id="cardTemarioBodyLicenciatura" class="card-body bg-articule">
                             <ul>
                                 @for ($j = 0; $j < sizeof($temario[$i]['temas']); $j++)
                                     <li class="py-1">
@@ -349,8 +349,8 @@
             slidesToScroll: 1,
             arrows: true,
             autoplaySpeed: 2000,
-            prevArrow: '<button type="button" class="slick-prev-requisitos"><i class="bi bi-arrow-left-circle-fill"></i></button>',
-            nextArrow: '<button type="button" class="slick-next-requisitos"><i class="bi bi-arrow-right-circle-fill"></i></button>',
+            prevArrow: '<button type="button" class="slick-prev-tema"><i class="bi bi-chevron-compact-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next-tema"><i class="bi bi-chevron-compact-right"></i></button>',
         });
 
 
