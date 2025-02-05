@@ -254,8 +254,8 @@
                                         Mixto {{ $disponibilidad[$d]['mixto'] }} <br>
                                     @endif
                                 @endif
-                                <a style="color: #fff !important;" href=" {{ $disponibilidad[$d]['link'] }}"
-                                    target="_blank">{{ $disponibilidad[$d]['url'] }}</a>
+                                <a style="color: #fff !important;" href="https://sirvoes.sep.gob.mx/sirvoes"
+                                    target="_blank">https://sirvoes.sep.gob.mx/sirvoes</a>
                             </p>
                         </div>
                     </div>
