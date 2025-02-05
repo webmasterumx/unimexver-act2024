@@ -35,7 +35,7 @@
     }
 
     .slick-list {
-        max-height: 350px !important;
+        max-height: 480px !important;
     }
 
     #peridoSelectFolleto-error,
@@ -282,7 +282,7 @@
                 <h2 class="underlined-head fw-normal" style="font-size: 1.438rem;">
                     REQUISITOS
                 </h2>
-                <div id="requisitos" style="height: 390px;">
+                <div id="requisitos" style="height: 480px;">
                     <div class="card border-0">
                         <div class="card-body">
                             <p>

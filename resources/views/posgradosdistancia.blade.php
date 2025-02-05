@@ -35,7 +35,7 @@
     }
 
     .slick-list {
-        max-height: 350px !important;
+        max-height: 480px !important;
     }
 
     #peridoSelectFolleto-error,
@@ -256,9 +256,9 @@
                 <h2 class="underlined-head fw-normal" style="font-size: 1.438rem;">
                     REQUISITOS 
                 </h2>
-                <div id="requisitos" style="height: 410px;">
+                <div id="requisitos" style="height: 480px;">
                     <div class="card border-0">
-                        <div class="card-body" style="height: 410px">
+                        <div class="card-body" style="height: 480px">
                             <p>
                                 <b>
                                     Si cuentas con Título de Licenciatura
@@ -274,7 +274,7 @@
                         </div>
                     </div>
                     <div class="card border-0">
-                        <div class="card-body" style="height: 410px">
+                        <div class="card-body" style="height: 480px">
                             <p>
                                 <b>Si deseas titularte de Licenciatura mediante estudios de Posgrado</b> <br><br>
                                 Original o copia certificada del Acta de Nacimiento y una fotocopia. <br><br>
