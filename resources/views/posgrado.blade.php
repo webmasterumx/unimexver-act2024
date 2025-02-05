@@ -41,7 +41,7 @@
     }
 
     .slick-list {
-        max-height: 290px !important;
+        max-height: 350px !important;
     }
 
     #peridoSelectFolleto-error,
