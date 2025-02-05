@@ -1,5 +1,10 @@
 @media (min-width: 200px) and (max-width: 400px) {
 
+    #text_ventajas {
+        height: 350px;
+        overflow-y: scroll;
+    }
+
     /*
         ==========> PAGINA INICIAL <============
 
@@ -185,6 +190,11 @@
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
 
+    #text_ventajas {
+        height: 350px;
+        overflow-y: scroll;
+    }
+
     /*
         ==========> PAGINA INICIAL <============
 
@@ -363,6 +373,12 @@
 }
 
 @media (min-width: 500px) and (max-width: 600.98px) {
+
+    #text_ventajas {
+        height: 450px;
+        overflow-y: scroll;
+    }
+
     #bannerInicial {
         height: 11rem;
     }
@@ -646,6 +662,10 @@
 }
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
+    #text_ventajas {
+        height: 550px;
+        overflow-y: scroll;
+    }
 
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
@@ -689,6 +709,11 @@
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
+    #text_ventajas {
+        height: 550px;
+        overflow-y: scroll;
+    }
 
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
@@ -787,6 +812,11 @@
 }
 
 @media (min-width: 1399.98px) {
+
+    #text_ventajas {
+        height: 720px;
+        overflow-y: scroll;
+    }
 
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {

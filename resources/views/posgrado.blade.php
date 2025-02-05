@@ -34,12 +34,6 @@
         background-size: cover;
     }
 
-    #text_ventajas {
-        height: 550px;
-        overflow-y: scroll;
-        margin: auto;
-    }
-
     .slick-list {
         max-height: 350px !important;
     }
