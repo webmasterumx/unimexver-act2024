@@ -61,7 +61,7 @@
 
     <!-- Inicio de Ventajas de Estudiar en UNIMEX  -->
     <section>
-        <div class="container pb-3">
+        <div class="container-fluid pb-3">
             <div class="row">
                 <div class="col-12">
                     <h2 class="color-unimex text-center fw-light">
