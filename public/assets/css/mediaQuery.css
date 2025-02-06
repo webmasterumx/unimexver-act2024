@@ -1,4 +1,29 @@
+/* #bannerInicial,
+#carrucelInit {
+    height: auto !important;
+}
+
+.itemBannerInit,
+.contenedorBannerCal {
+    height: auto !important;
+} */
+
 @media (min-width: 200px) and (max-width: 400px) {
+
+    #requesitos_licenciatura {
+        height: 750px !important;
+    }
+
+
+    #temario_distancia {
+        height: 450px !important;
+    }
+
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 410px !important;
+        max-height: 410px !important;
+    }
 
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
@@ -6,22 +31,8 @@
         max-height: 360px;
     }
 
-    #listCarreras,
-    .itemsCarrucelCarreras {
-        height: 450px !important;
-    }
-
-    #carrucelVentajas>.slick-list {
-        height: 290px !important;
-    }
-
     #tituloVentajasLicDistancia {
         font-size: 1.438rem !important;
-    }
-
-    #carrucelCalBeca,
-    #carrucelCalBeca>.slick-list {
-        height: 10rem;
     }
 
     #text_ventajas {
@@ -36,6 +47,11 @@
         Estilos de banner inicial
     */
     #bannerInicial {
+        height: 10rem;
+    }
+
+    #carrucelCalBeca,
+    #carrucelCalBeca>.slick-list {
         height: 10rem;
     }
 
@@ -66,8 +82,8 @@
     */
     #closeModalCalculadora {
         position: relative;
-        top: 13%;
-        left: 46%;
+        top: 12%;
+        left: 49%;
     }
 
     /*
@@ -118,16 +134,12 @@
     }
 
     #contraportada {
-        height: 18rem;
+        height: 16rem;
     }
 
     .etiqueta-titulo {
         font-size: 16px !important;
         text-align: center;
-    }
-
-    #requisitos {
-        height: 60rem;
     }
 
     /*
@@ -136,9 +148,8 @@
 
     */
 
-    #carrucelVentajas,
-    .itemsCarrucelVentajas {
-        height: 290px !important;
+    #carrucelVentajas>.slick-list {
+        height: 25rem;
     }
 
     #campo_laboral {
@@ -191,6 +202,7 @@
         width: 100%;
     }
 
+
     .slick-prev-calculadora {
         top: 29%;
         left: 16%;
@@ -202,6 +214,22 @@
         right: 4%;
         font-size: 38px;
     }
+
+    #listCarreras>.slick-list,
+    #temario>.slick-list {
+        height: 24rem !important;
+    }
+
+    #campo_laboral>.slick-list {
+        height: 16rem;
+    }
+
+    #requisitos,
+    #requesito2>.slick-list>.slick-active {
+        height: 45rem;
+    }
+
+
 }
 
 /*
@@ -209,14 +237,26 @@
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
 
+    #requesitos_licenciatura {
+        height: 680px !important;
+    }
+
+
+    #temario_distancia {
+        height: 450px !important;
+    }
+
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 410px !important;
+        max-height: 410px !important;
+    }
+
+
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
         min-height: 360px;
         max-height: 360px;
-    }
-
-    .itemsCarrucelCarreras {
-        height: 450px !important;
     }
 
     #text_ventajas {
@@ -234,6 +274,11 @@
         height: 12rem;
     }
 
+    #carrucelCalBeca,
+    #carrucelCalBeca>.slick-list {
+        height: 12rem;
+    }
+
     /*
         Estilos de flechas para carrucel de carreras en pagina de incio
     */
@@ -245,6 +290,17 @@
     .slick-next {
         top: 50%;
         right: 2%;
+    }
+
+
+    .slick-prev-calculadora {
+        top: 40%;
+        left: 9%;
+    }
+
+    .slick-next-calculadora {
+        top: 44%;
+        right: 8%;
     }
 
     /*
@@ -312,32 +368,12 @@
     }
 
     #contraportada {
-        height: 26rem;
+        height: 24rem;
     }
 
     .etiqueta-titulo {
         font-size: 16px !important;
         text-align: center;
-    }
-
-    #requisitos {
-        height: 50rem;
-    }
-
-    #carrucelInit,
-    .slick-slide,
-    .slick-list {
-        height: 200px !important;
-    }
-
-    .slick-prev-calculadora {
-        top: 24%;
-        left: 14%;
-    }
-
-    .slick-next-calculadora {
-        top: 50%;
-        right: 5%;
     }
 
     /*
@@ -346,8 +382,8 @@
 
     */
 
-    #carrucelVentajas {
-        height: 290px;
+    #carrucelVentajas>.slick-list {
+        height: 25rem;
     }
 
     #campo_laboral {
@@ -399,9 +435,41 @@
         width: 100%;
     }
 
+    #listCarreras>.slick-list,
+    #temario>.slick-list {
+        height: 24rem !important;
+    }
+
+    #campo_laboral>.slick-list {
+        height: 16rem !important;
+    }
+
+    #requisitos,
+    #requesito2>.slick-list>.slick-active {
+        height: 40rem;
+    }
+
 }
 
 @media (min-width: 500px) and (max-width: 600.98px) {
+    #requesitos_licenciatura {
+        height: 600px !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 450px !important;
+    }
+
+    #temario_distancia {
+        height: 310px !important;
+    }
+
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 410px !important;
+        max-height: 410px !important;
+    }
+
 
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
@@ -465,7 +533,6 @@
         font-size: 50px;
     }
 
-
     /*
 
         ================> PAGINA ACERCA DE <=================
@@ -515,20 +582,31 @@
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
+
+    #requesitos_licenciatura {
+        height: 600px !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 420px !important;
+    }
+
+
+    #temario_distancia {
+        height: 330px !important;
+    }
+
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 410px !important;
+        max-height: 410px !important;
+    }
+
+
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
         min-height: 390px;
         max-height: 390px;
-    }
-
-    .itemsCarrucelCarreras {
-        height: 450px !important;
-    }
-
-    #requisitos,
-    #requisitos>.slick-list {
-        height: 320px !important;
-        max-height: 320px !important;
     }
 
     #bannerInicial {
@@ -537,18 +615,8 @@
 
     #closeModalCalculadora {
         position: relative;
-        top: 13%;
-        left: 46%;
-    }
-
-    .etiqueta-titulo-acercade {
-        top: 38%;
-        font-size: 44px;
-        width: 34%;
-    }
-
-    #historia {
-        height: 28vh;
+        top: 9%;
+        left: 49%;
     }
 
     .slick-prev {
@@ -583,8 +651,6 @@
         font-size: 60px;
     }
 
-
-
     /*
 
         ================> PAGINA ACERCA DE <=================
@@ -592,14 +658,21 @@
         Estilos de la portada de esta pagina
     */
     #historia {
-        height: 70vh;
+        height: 40vh;
     }
 
     .etiqueta-titulo-acercade-mensaje {
         top: 38%;
         font-size: 32px;
-        width: 58%;
+        width: 70%;
     }
+
+    .etiqueta-titulo-acercade {
+        top: 38%;
+        font-size: 36px;
+        width: 36%;
+    }
+
 
     /*
 
@@ -615,24 +688,65 @@
 
     */
     #portada {
-        height: 78vh;
+        height: 35vh;
     }
 
     .navigation {
         padding: 1px 0 !important;
     }
 
+    #contraportada {
+        height: 30rem;
+    }
+
+    #requisitos {
+        height: 30rem;
+    }
+
+    #carrucelVentajas>.slick-list {
+        height: 30rem;
+    }
+
+    #campo_laboral {
+        height: 10rem;
+    }
+
+    #requisitosSUA {
+        height: 28rem;
+    }
+
+    #fondoServiciosSm {
+        display: block;
+        height: 200px;
+    }
+
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
+
+    #requesitos_licenciatura {
+        height: 600px !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 420px !important;
+    }
+
+    #temario_distancia {
+        height: 450px !important;
+    }
+
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 410px !important;
+        max-height: 410px !important;
+    }
+
+
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
         min-height: 390px;
         max-height: 390px;
-    }
-
-    .itemsCarrucelCarreras {
-        height: 450px !important;
     }
 
     #temario_especialidad>.slick-list,
@@ -640,11 +754,6 @@
         height: 300px !important;
     }
 
-    #requisitos,
-    #requisitos>.slick-list {
-        height: 320px !important;
-        max-height: 320px !important;
-    }
 
     #bannerInicial {
         height: 24rem;
@@ -657,12 +766,12 @@
     }
 
     #historia {
-        height: 28vh;
+        height: 40vh;
     }
 
     .etiqueta-titulo-acercade {
-        top: 38%;
-        font-size: 44px;
+        top: 40%;
+        font-size: 42px;
         width: 34%;
     }
 
@@ -704,9 +813,6 @@
 
         Estilos de la portada de esta pagina
     */
-    #historia {
-        height: 70vh;
-    }
 
     .etiqueta-titulo-acercade-mensaje {
         top: 38%;
@@ -730,24 +836,35 @@
     #portada {
         height: 78vh;
     }
+
+    #contraportada {
+        height: 28rem;
+    }
 }
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
+    #requesitos_licenciatura {
+        height: 590px !important;
+    }
 
-    .itemsCarrucelCarreras {
+    #requisitos>.slick-list {
         height: 420px !important;
     }
+
+    #temario_distancia {
+        height: 330px !important;
+    }
+
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 260px !important;
+        max-height: 260px !important;
+    }
+
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
         height: 300px !important;
-    }
-
-
-    #requisitos,
-    #requisitos>.slick-list {
-        height: 320px !important;
-        max-height: 320px !important;
     }
 
     #text_ventajas {
@@ -761,8 +878,8 @@
         max-height: 400px;
     }
 
-    #bannerInicial {
-        height: 90vh;
+    #contraportada {
+        height: 30rem;
     }
 
     #closeModalCalculadora {
@@ -786,13 +903,25 @@
     }
 
     #historia {
-        height: 28vh;
+        height: 80vh;
     }
 
     .etiqueta-titulo-acercade {
         top: 38%;
         font-size: 44px;
         width: 34%;
+    }
+
+    /*
+        ================> Paginas de oferta academica <===================
+
+    */
+    #portada {
+        height: 50vh;
+    }
+
+    #text_ventajas {
+        height: 23.3rem !important;
     }
 
     #carrucelVentajas {
@@ -802,27 +931,47 @@
     .itemImgCarrucelVentajasDis {
         height: 90vh !important;
     }
+
+
+    #campo_laboral {
+        height: 5rem !important;
+    }
+
+    .slick-prev-campo {
+        left: -20px !important;
+    }
+
+    .slick-next-campo {
+        right: -28px !important;
+    }
+
+    #requisitos {
+        height: 30rem !important;
+    }
+
+    .etiqueta-titulo-acercade-mensaje {
+        top: 30%;
+        font-size: 32px;
+        width: 60%;
+    }
+
+    .fondoServiciosSm {
+        display: none;
+    }
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
 
-    #carrucelCalBeca,
-    .contenedorBannerCal{
-        height: 100vh !important;
+    #temario_distancia {
+        height: 300px !important;
     }
 
-    #carrucelCalBeca>.slick-list{
-        height: 92vh;
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 250px !important;
+        max-height: 250px !important;
     }
 
-    #carrucelVentajas {
-        height: 92vh;
-    }
-
-    .itemImgCarrucelVentajasDis {
-        height: 92vh !important;
-    }
-   
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
@@ -846,18 +995,22 @@
         max-height: 320px;
     }
 
-    #textoVentajasDistancia {
-        font-size: 120%;
+    #carrucelVentajas {
+        height: 90vh;
     }
 
-    #bannerInicial {
-        height: 34rem;
+    .itemImgCarrucelVentajasDis {
+        height: 90vh !important;
+    }
+
+    #contraportada {
+        height: 89vh !important;
     }
 
     #closeModalCalculadora {
         position: relative;
-        top: -42%;
-        left: 73%;
+        top: -46%;
+        left: 71%;
     }
 
     .slick-prev {
@@ -935,30 +1088,29 @@
         width: 40%;
     }
 
-    .itemsCarrucelCarreras {
-        height: 400px !important;
+    #carrucelInit,
+    .contenedorBannerCal {
+        height: auto !important;
     }
 }
 
 @media (min-width: 1399.98px) {
 
-    #carrucelVentajas {
-        height: 90vh;
+    #temario_distancia {
+        height: 450px !important;
     }
 
-    .itemImgCarrucelVentajasDis {
-        height: 90vh !important;
+    .cardTemarioLicdistant,
+    .cardBodyTemarioLicdistant {
+        min-height: 410px !important;
+        max-height: 410px !important;
     }
 
-    #carrucelCalBeca>.slick-list{
-        height: 92vh;
-    }
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
         height: 300px !important;
     }
-
 
     #requisitos,
     #requisitos>.slick-list {
@@ -977,20 +1129,17 @@
         max-height: 420px;
     }
 
+    #carrucelVentajas {
+        height: 90vh;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 90vh !important;
+    }
+
+
     body {
         font-size: 140% !important;
-    }
-
-    #textoVentajasDistancia {
-        font-size: 1.6rem;
-    }
-
-    #bannerInicial {
-        height: 87vh;
-    }
-
-    .itemsCarrucelCarreras {
-        height: 512px !important;
     }
 
     #closeModalCalculadora {
@@ -1010,7 +1159,8 @@
     }
 
     .itemBannerInit {
-        height: 32rem !important;
+        /* height: 36rem !important; */
+        height: auto;
     }
 
     #historia {
@@ -1061,4 +1211,14 @@
     #number8 {
         width: 40%;
     }
+
+    #carrucelInit,
+    .contenedorBannerCal {
+        height: auto !important;
+    }
+
+    #contraportada {
+        height: 89vh !important;
+    }
+
 }

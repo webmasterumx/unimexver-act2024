@@ -273,6 +273,44 @@
             window.open("{{ route('contacto') }}", '_blank');
         });
 
+        function redirigirContactoHeader() {
+            console.log("entra al formulario desde la parte de contacto");
+            let elementForm = "formularioContactanos";
+
+            utm_source = "{{ session('utm_source') }}";
+            utm_medium = "{{ session('utm_medium') }}";
+            utm_campaign = "{{ session('utm_campaign') }}";
+            utm_term = "{{ session('utm_term') }}";
+            utm_content = "{{ session('utm_content') }}";
+
+            if (utm_medium == null || utm_medium == "" || utm_medium == "organico" || utm_medium == "Organico" ||
+                utm_medium == "ORGANICO") {
+                utm_source = "Website+Metro";
+                utm_medium = "Organico";
+                utm_campaign = "Home+header";
+                utm_term = "Botón+informes";
+                utm_content = "Informes";
+            }
+
+
+            let ruta = setUrlBase() +
+                `contacto?utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}&utm_term=${utm_term}&utm_content=${utm_content}`
+
+            console.log(ruta);
+
+
+            $.ajax({
+                method: "GET",
+                url: setUrlBase() + "set/variables/contactForm/" + elementForm,
+            }).done(function(data) {
+                console.log(data);
+
+            }).fail(function() {
+                console.log("Algo salió mal");
+            });
+            window.open(ruta, '_self');
+        }
+
         function redirectContactBolsaTrabajo() {
             console.log("entra al formulario desde la parte de bolsa de trabajo");
 

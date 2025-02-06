@@ -601,7 +601,35 @@
                                 @endif
                             @endforeach
                             <br>
-                            <h5>Posgrados ONLINE</h5>
+                            <h5 class="d-none d-md-none d-lg-block d-xl-block">Posgrados ONLINE</h5>
+                            @foreach ($data['menus'] as $menu)
+                                @if ($menu->estado == 8 && $menu->mostrar == 1)
+                                    <li>
+                                        @if ($utmOrganico == true)
+                                            @php
+                                                $ruta =
+                                                    env('APP_URL') .
+                                                    'posgrado/distancia/' .
+                                                    $menu->slug .
+                                                    $menu->urlUTM;
+                                            @endphp
+                                        @else
+                                            @php
+                                                $ruta =
+                                                    env('APP_URL') . 'posgrado/distancia/' . $menu->slug . $complemento;
+                                            @endphp
+                                        @endif
+                                        <a class="d-none d-md-none d-lg-block d-xl-block" href="{{ $ruta }}">
+                                            {{ $menu->nombre }}
+                                        </a>
+                                    </li>
+                                @endif
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-gray-border d-bloc d-md-block d-lg-none d-xl-none">
+                        <h5 onclick="subnav.list.toggle('posgradoDistancia')" id="posgradoDistancia">Posgrados ONLINE</h5>
+                        <ul>
                             @foreach ($data['menus'] as $menu)
                                 @if ($menu->estado == 8 && $menu->mostrar == 1)
                                     <li>

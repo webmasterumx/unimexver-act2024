@@ -237,10 +237,10 @@
             </div>
             <div id="temario" class="col-12 mt-5">
                 @for ($i = 0; $i < sizeof($temario); $i++)
-                    <div class="card border-0 mx-3 h-100" style="max-height: 400px;">
+                    <div class="cardTemarioLicdistant card border-0 mx-3" style="max-height: 400px;">
                         <h5 class="card-header bg-unimex text-white text-center">
                             {{ $temario[$i]['nombrecuatrimestre'] }}</h5>
-                        <div class="card-body bg-articule" style="min-height: 400px;">
+                        <div class="cardBodyTemarioLicdistant card-body bg-articule" style="min-height: 400px;">
                             <ul>
                                 @for ($j = 0; $j < sizeof($temario[$i]['temas']); $j++)
                                     <li class="py-1">
