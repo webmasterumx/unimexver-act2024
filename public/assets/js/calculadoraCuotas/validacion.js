@@ -182,7 +182,7 @@ $("#form_calculadora").validate({
 
                             $('#envio_caluladora').html(`Calcular`);
 
-                            $('#carrucelInit').addClass('d-none');
+                            $('#carrucelCalBeca').addClass('d-none');
                             $('#informacionCRM').removeClass('d-none');
 
 
@@ -287,7 +287,7 @@ $("#form_calculadora").validate({
 
                         $('#envio_caluladora').html(`Calcular`);
 
-                        $('#carrucelInit').addClass('d-none');
+                        $('#carrucelCalBeca').addClass('d-none');
                         $('#informacionCRM').removeClass('d-none');
 
 

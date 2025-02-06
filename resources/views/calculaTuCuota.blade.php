@@ -273,6 +273,26 @@
                     </div>
                 </div>
             </div>
+            <hr id="separacionTerminosCondiciones" class="mt-3 d-none order-3"
+                style="border-top: 1px solid #DC9A00; opacity: 1;">
+            <div id="terminosCondiciones" class="col-12 d-none  order-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button
+                                style="background-color: #ffffff !important; color: #004b93 !important; font-size: 1.1rem;"
+                                class="btn w-100 text-center" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <b>Términos y Condiciones</b>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div style="color: #004b93 !important;" id="terminosCondicionesText" class="accordion-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
