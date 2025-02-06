@@ -171,7 +171,7 @@
                                             $dataUTM['utm_content'];
                                     @endphp
                                 @endif
-                                <a href="{{ $ruta }}" class="card mx-2 itemsCarrucelCarreras">
+                                <a href="{{ $ruta }}" class="card mx-2 h-100 itemsCarrucelCarreras">
                                     <div class="card-body p-3 p-md-2">
                                         <center>
                                             <img style="min-height: 80px !important;" src="{{ $carrera->icon }}"
