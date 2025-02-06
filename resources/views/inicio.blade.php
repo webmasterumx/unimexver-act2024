@@ -22,7 +22,7 @@
     <!-- Inicio de Banner Inicial -->
     <section class="pb-2">
         <div class="container-fluid p-0">
-            <div id="bannerInicial" style="height: 90vh !important;">
+            <div id="bannerInicial">
                 @foreach ($banners as $banner)
                     @if (
                         $dataUTM['utm_medium'] == 'organico' ||
@@ -171,7 +171,7 @@
                                             $dataUTM['utm_content'];
                                     @endphp
                                 @endif
-                                <a href="{{ $ruta }}" class="card mx-2 h-100">
+                                <a href="{{ $ruta }}" class="card mx-2 itemsCarrucelCarreras">
                                     <div class="card-body p-3 p-md-2">
                                         <center>
                                             <img style="min-height: 80px !important;" src="{{ $carrera->icon }}"

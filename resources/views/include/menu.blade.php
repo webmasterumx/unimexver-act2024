@@ -60,7 +60,8 @@
 
 <noscript>Por favor habilita JavaScript para usar este sitio</noscript>
 <header class="sticky-top">
-    <nav class="navigation" style="background-color: #013F7A !important; padding: 8px 0px !important;">
+    <nav class="navigation d-none d-md-none d-lg-block d-xl-block"
+        style="background-color: #013F7A !important; padding: 8px 0px !important;">
         <div class="wrapper d-flex">
             <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">
             </a>
@@ -94,6 +95,15 @@
             <div class="menu" id="navigation">
                 <a class="btn-close-nav" onclick="nav.hide()"></a>
                 <ul>
+                    <li class="d-block d-md-block d-lg-none d-xl-none text-center">
+                        <a onclick="subnav.show('subnavAbout')"
+                            title="Conoce la hisotria de Universidad Mexicana">Acerca
+                            de UNIMEX </a>
+                    </li>
+                    <li class="d-block d-md-block d-lg-none d-xl-none text-center">
+                        <a onclick="subnav.show('alumnosegresados')"
+                            title="Servicios para nuestos Alumnos y Egresados">Alumnos Y Egresados</a>
+                    </li>
                     <li class="text-center">
                         <a class="mt-1" style="display: inline-block" onclick="subnav.show('subnavAcademicOffer')"
                             title="Conoce nuestras Licenciaturas, Maestrías y Posgrados">Oferta Académica</a>
@@ -119,17 +129,32 @@
                             $abreviatura = '';
                         @endphp
                     @endif
-                    <li>
+                    <li class="d-none d-md-none d-lg-block">
                         <button onclick="calculadoraHeader('{{ $abreviatura }}')" id="linkCalculaTuBeca"
                             class="btn btn-outline-warning text-uppercase" rel="noopener"
                             title="Calcula tu Cuota">Calculadora de becas</button>
                     </li>
-                    <li>
+                    <li class="d-none d-md-none d-lg-block">
                         <button id="linkPreinscripcionEnLinea" class="btn btn-outline-warning text-uppercase"
                             onclick="preinscripcionHeader('{{ $abreviatura }}')" rel="noopener"
                             title="Preinscripción
                             en línea">Preinscripción
                             en línea</button>
+                    </li>
+                    <li class="d-block d-md-block d-lg-none text-center">
+                        <a class="mt-1" style="display: inline-block" href="javascript:redirigirContactoHeader()"
+                            title="">Contacto</a>
+                    </li>
+
+                    <li class="d-block d-md-block d-lg-none text-center">
+                        <a class="mt-1" style="display: inline-block"
+                            href="javascript:calculadoraHeader('{{ $abreviatura }}')" title="">Calculadora de
+                            becas</a>
+                    </li>
+                    <li class="d-block d-md-block d-lg-none text-center">
+                        <a class="mt-1" style="display: inline-block"
+                            href="javascript:preinscripcionHeader('{{ $abreviatura }}')" title="">Preinscripción
+                            en línea </a>
                     </li>
                 </ul>
             </div>

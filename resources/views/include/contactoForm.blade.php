@@ -92,12 +92,12 @@
                     <label class="border p-2 w-100 fw-light mt-3 mb-0" for="plantelSelect">
                         <i class="bi bi-bookmark-fill color-unimex"></i> QUIERO ESTUDIAR EN:</label>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6 pe-0">
+                        <div class="col-12 col-md-6 col-lg-6 pe-md-0 pe-lg-o">
                             <select class="form-select rounded-0" id="plantelSelect" name="plantelSelect">
                                 <option value="" selected disabled> -Selecciona Plantel- </option>
                             </select>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 ps-0">
+                        <div class="col-12 col-md-6 col-lg-6 ps-md-0 ps-lg-o">
                             <select class="form-select rounded-0" id="nivelSelect" name="nivelSelect">
                                 @isset($licenciatura)
                                     <option value="Licenciatura" selected>Licenciatura</option>
@@ -110,12 +110,12 @@
                                 @endisset
                             </select>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 pe-0">
+                        <div class="col-12 col-md-6 col-lg-6 pe-md-0 pe-lg-o">
                             <select class="form-select rounded-0" id="periodoSelect" name="periodoSelect">
                                 <option value="" selected> - Seleccionar periodo - </option>
                             </select>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-6 ps-0">
+                        <div class="col-12 col-md-6 col-lg-6 ps-md-0 ps-lg-o">
                             <select class="form-select rounded-0" id="carreraSelect" name="carreraSelect">
                                 @isset($licenciatura)
                                     <option value="{{ $licenciatura->nombre }}"> {{ $licenciatura->nombre }}

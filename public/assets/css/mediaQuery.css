@@ -1,5 +1,23 @@
 @media (min-width: 200px) and (max-width: 400px) {
 
+    #listCarreras,
+    .itemsCarrucelCarreras{
+        height: 450px !important;
+    }
+
+    #carrucelVentajas>.slick-list{
+        height: 290px !important;
+    }
+
+    #tituloVentajasLicDistancia {
+        font-size: 1.438rem !important;
+    }
+
+    #carrucelCalBeca,
+    #carrucelCalBeca>.slick-list {
+        height: 10rem;
+    }
+
     #text_ventajas {
         height: 350px;
         overflow-y: scroll;
@@ -112,8 +130,9 @@
 
     */
 
-    #carrucelVentajas {
-        height: 290px;
+    #carrucelVentajas,
+    .itemsCarrucelVentajas {
+        height: 290px !important;
     }
 
     #campo_laboral {
@@ -166,12 +185,6 @@
         width: 100%;
     }
 
-    #carrucelInit,
-    .slick-slide,
-    .slick-list {
-        height: 150px !important;
-    }
-
     .slick-prev-calculadora {
         top: 29%;
         left: 16%;
@@ -189,6 +202,9 @@
     Pendientes --------- =P
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
+    .itemsCarrucelCarreras{
+        height: 450px !important;
+    }
 
     #text_ventajas {
         height: 350px;
@@ -480,8 +496,12 @@
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
+    .itemsCarrucelCarreras{
+        height: 450px !important;
+    }
+
     #requisitos,
-    #requisitos>.slick-list{
+    #requisitos>.slick-list {
         height: 320px !important;
         max-height: 320px !important;
     }
@@ -580,14 +600,17 @@
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
+    .itemsCarrucelCarreras{
+        height: 450px !important;
+    }
 
     #temario_especialidad>.slick-list,
-    #temario_maestria>.slick-list{
+    #temario_maestria>.slick-list {
         height: 300px !important;
     }
 
     #requisitos,
-    #requisitos>.slick-list{
+    #requisitos>.slick-list {
         height: 320px !important;
         max-height: 320px !important;
     }
@@ -680,14 +703,18 @@
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
 
+    .itemsCarrucelCarreras{
+        height: 420px !important;
+    }
+
     #temario_especialidad>.slick-list,
-    #temario_maestria>.slick-list{
+    #temario_maestria>.slick-list {
         height: 300px !important;
     }
 
 
     #requisitos,
-    #requisitos>.slick-list{
+    #requisitos>.slick-list {
         height: 320px !important;
         max-height: 320px !important;
     }
@@ -704,7 +731,7 @@
     }
 
     #bannerInicial {
-        height: 26rem;
+        height: 90vh;
     }
 
     #closeModalCalculadora {
@@ -739,13 +766,14 @@
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
     #temario_especialidad>.slick-list,
-    #temario_maestria>.slick-list{
+    #temario_maestria>.slick-list {
         height: 300px !important;
     }
 
     #requisitos,
-    #requisitos>.slick-list{
+    #requisitos>.slick-list {
         height: 320px !important;
         max-height: 320px !important;
     }
@@ -849,17 +877,22 @@
     #number8 {
         width: 40%;
     }
+
+    .itemsCarrucelCarreras{
+        height: 400px !important;
+    }
 }
 
 @media (min-width: 1399.98px) {
+
     #temario_especialidad>.slick-list,
-    #temario_maestria>.slick-list{
+    #temario_maestria>.slick-list {
         height: 300px !important;
     }
 
 
     #requisitos,
-    #requisitos>.slick-list{
+    #requisitos>.slick-list {
         height: 480px !important;
         max-height: 480px !important;
     }
@@ -884,7 +917,11 @@
     }
 
     #bannerInicial {
-        height: 32rem;
+        height: 87vh;
+    }
+
+    .itemsCarrucelCarreras{
+        height: 512px !important;
     }
 
     #closeModalCalculadora {

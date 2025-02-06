@@ -96,22 +96,22 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6 p-0">
                 <div id="carrucelVentajas">
-                    <div style="width: 100%; height: 90vh;">
+                    <div class="itemsCarrucelVentajas">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_1.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
                     </div>
-                    <div style="width: 100%; height: 90vh;">
+                    <div class="itemsCarrucelVentajas">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_2.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
                     </div>
-                    <div style="width: 100%; height: 90vh;">
+                    <div class="itemsCarrucelVentajas">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_3.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
                     </div>
-                    <div style="width: 100%; height: 90vh;">
+                    <div class="itemsCarrucelVentajas">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_4.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
@@ -119,7 +119,7 @@
                 </div>
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule px-4">
-                <h3 class="underlined-head text-uppercase fw-normal mt-4">
+                <h3 id="tituloVentajasLicDistancia" class="underlined-head text-uppercase fw-normal mt-4">
                     VENTAJAS DE ESTUDIAR LA LICENCIATURA ONLINE EN {{ $licenciatura_distancia->nombre }}
                 </h3>
                 <p id="textoVentajasDistancia">
@@ -356,7 +356,7 @@
         });
 
         $('#carrucelVentajas').slick({
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 1000,
             dots: false,
             arrows: false,
