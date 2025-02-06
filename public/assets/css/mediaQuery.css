@@ -1,11 +1,11 @@
 @media (min-width: 200px) and (max-width: 400px) {
 
     #listCarreras,
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 450px !important;
     }
 
-    #carrucelVentajas>.slick-list{
+    #carrucelVentajas>.slick-list {
         height: 290px !important;
     }
 
@@ -202,7 +202,7 @@
     Pendientes --------- =P
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 450px !important;
     }
 
@@ -496,7 +496,7 @@
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 450px !important;
     }
 
@@ -600,7 +600,7 @@
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 450px !important;
     }
 
@@ -703,7 +703,7 @@
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
 
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 420px !important;
     }
 
@@ -763,9 +763,35 @@
         font-size: 44px;
         width: 34%;
     }
+
+    #carrucelVentajas {
+        height: 90vh;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 90vh !important;
+    }
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
+    #carrucelCalBeca,
+    .contenedorBannerCal{
+        height: 100vh !important;
+    }
+
+    #carrucelCalBeca>.slick-list{
+        height: 92vh;
+    }
+
+    #carrucelVentajas {
+        height: 92vh;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 92vh !important;
+    }
+   
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
@@ -878,12 +904,24 @@
         width: 40%;
     }
 
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 400px !important;
     }
 }
 
 @media (min-width: 1399.98px) {
+
+    #carrucelVentajas {
+        height: 90vh;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 90vh !important;
+    }
+
+    #carrucelCalBeca>.slick-list{
+        height: 92vh;
+    }
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
@@ -920,7 +958,7 @@
         height: 87vh;
     }
 
-    .itemsCarrucelCarreras{
+    .itemsCarrucelCarreras {
         height: 512px !important;
     }
 

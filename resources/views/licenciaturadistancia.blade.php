@@ -92,26 +92,26 @@
     <!-- Fin de la sección de objetivo -->
 
     <!-- Inicio de la sección de ventajas height: 500px !important; -->
-    <section class="container-fluid">
+    <section class="container-fluid bg-articule">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6 p-0">
                 <div id="carrucelVentajas">
-                    <div class="itemsCarrucelVentajas">
+                    <div class="itemImgCarrucelVentajasDis">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_1.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
                     </div>
-                    <div class="itemsCarrucelVentajas">
+                    <div class="itemImgCarrucelVentajasDis">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_2.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
                     </div>
-                    <div class="itemsCarrucelVentajas">
+                    <div class="itemImgCarrucelVentajasDis">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_3.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
                     </div>
-                    <div class="itemsCarrucelVentajas">
+                    <div class="itemImgCarrucelVentajasDis">
                         <img style="width: 100%; height: 100%;"
                             src="{{ asset('assets/img/2024/ventajas/distancia_4.png') }}" class="lazyload"
                             alt="Licenciatura UNIMEX" />
