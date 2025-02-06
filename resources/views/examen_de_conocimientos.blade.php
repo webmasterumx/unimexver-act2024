@@ -20,9 +20,9 @@
                     regular” y que el expediente se encuentre con la documentación completa; después deberás llenar la
                     solicitud y pagar el costo en el banco.
                 </p>
-                <h6>
+                <h3>
                     Requisitos
-                </h6>
+                </h3>
                 <ul>
                     <li>Tener acreditados el 100 % de los créditos de la licenciatura.</li>
                     <li>Certificado Total de Estudios de Licenciatura o realizar el trámite del mismo.</li>
@@ -30,7 +30,7 @@
                     <li>Pagar el costo completo del Examen de Conocimientos una semana antes de la fecha de aplicación.</li>
                     <li>Firmar contrato de aplicación de Examen de Conocimientos.</li>
                 </ul>
-                <h6>Convocatoria</h6>
+                <h3>Convocatoria</h3>
                 <ol type="1">
                     <li>Periodo de inscripciones: <b>por confirmar</b></li>
                     <li>Fecha de aplicación del examen: <b> por confirmar</b></li>
@@ -38,9 +38,9 @@
                 <p>
                     <b>Lugar de Aplicación: </b> Planteles UNIMEX®
                 </p>
-                <h6>
+                <h3>
                     Publicación de Resultados.
-                </h6>
+                </h3>
                 <small>
                     Términos.
                 </small>

@@ -102,7 +102,7 @@
                         oportunidades.
                         <br><br>
                         Estudia la Especialidad en Docencia en 1 año. <br><br>
-                        Válido para <button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
+                        Válido para <button style="font-size: 100%;" type="button" class="btn btn-link p-0" data-bs-toggle="modal"
                             data-bs-target="#titulacionEstudiosPosgrado">Titulación de Licenciatura vía
                             estudios de
                             Posgrado.</button> <br><br>
@@ -126,7 +126,7 @@
                         terminar los 3 ciclos escolares de la Especialidad, puedes solicitar tu equivalencia de materias
                         para
                         continuar con la Maestría cursando únicamente los últimos dos ciclos del programa equivalente. <br>
-                        Nota: Para más información consulta la sección <button type="button" class="btn btn-link p-0"
+                        Nota: Para más información consulta la sección <button style="font-size: 100%;" type="button" class="btn btn-link p-0"
                             data-bs-toggle="modal" data-bs-target="#continuaConTuMaestria">Continúa con tu
                             Maestría.</button>
                         <br><br>
@@ -146,7 +146,7 @@
                     Válido para titulación de Licenciatura vía estudios de Posgrado.
                     Si concluiste al 100% los créditos de tu Licenciatura y tienes disponible la opción de Titulación vía
                     Estudios de Posgrado, regístrate, llámanos o ven al plantel para brindarte mayor información. <br><br>
-                    Consulta los requisitos en la sección <button type="button" class="btn btn-link p-0"
+                    Consulta los requisitos en la sección <button style="font-size: 100%;" type="button" class="btn btn-link p-0"
                         data-bs-toggle="modal" data-bs-target="#titulacionEstudiosPosgrado">Titulación de Licenciatura vía
                         estudios de
                         Posgrado.</button>

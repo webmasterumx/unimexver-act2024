@@ -1322,6 +1322,7 @@
                 paging: true,
                 ordering: true,
                 info: true,
+                responsive: true,
                 language: {
                     "decimal": "",
                     "emptyTable": "No hay información",
