@@ -1,16 +1,20 @@
 @media (min-width: 200px) and (max-width: 400px) {
 
+    .cardTemarioPosDistancia {
+        height: 20rem !important;
+    }
+
+    #listCarreras>.slick-list {
+        height: 28rem !important;
+    }
+
     #listCarreras,
     .itemsCarrucelCarreras {
         height: 450px !important;
     }
 
-    #requisitos {
-        height: 550px !important;
-    }
-
     #requesitos_licenciatura {
-        height: 550px !important;
+        height: 750px !important;
     }
 
 
@@ -148,11 +152,7 @@
     */
 
     #carrucelVentajas>.slick-list {
-        height: 21rem;
-    }
-
-    .itemImgCarrucelVentajasDis {
-        height: 339px !important;
+        height: 25rem;
     }
 
     #campo_laboral {
@@ -218,15 +218,15 @@
         font-size: 38px;
     }
 
-    #listCarreras>.slick-list,
     #temario>.slick-list {
-        height: 27rem !important;
+        height: 24rem !important;
     }
 
     #campo_laboral>.slick-list {
         height: 16rem;
     }
 
+    #requisitos,
     #requesito2>.slick-list>.slick-active {
         height: 45rem;
     }
@@ -239,13 +239,18 @@
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
 
+    .cardTemarioPosDistancia {
+        height: 16rem !important;
+    }
+
+    #listCarreras>.slick-list {
+        height: 25rem !important;
+    }
+
     .itemsCarrucelCarreras {
         height: 450px !important;
     }
 
-    #requisitos{
-        height: 680px !important;
-    }
     #requesitos_licenciatura {
         height: 680px !important;
     }
@@ -392,11 +397,7 @@
     */
 
     #carrucelVentajas>.slick-list {
-        height: 22rem;
-    }
-
-    .itemImgCarrucelVentajasDis {
-        height: 360px !important;
+        height: 25rem;
     }
 
     #campo_laboral {
@@ -448,7 +449,7 @@
         width: 100%;
     }
 
-    #listCarreras>.slick-list,
+
     #temario>.slick-list {
         height: 24rem !important;
     }
@@ -457,6 +458,7 @@
         height: 16rem !important;
     }
 
+    #requisitos,
     #requesito2>.slick-list>.slick-active {
         height: 40rem;
     }
@@ -464,6 +466,24 @@
 }
 
 @media (min-width: 500px) and (max-width: 600.98px) {
+
+    #temario_especialidad>.slick-list,
+    #temario_maestria>.slick-list {
+        height: 16rem !important;
+    }
+
+    .cardTemarioPosDistancia {
+        height: 16rem !important;
+    }
+
+    #listCarreras>.slick-list {
+        height: 25rem !important;
+    }
+
+    #listCarreras,
+    .itemsCarrucelCarreras {
+        height: 400px !important;
+    }
 
     .itemsCarrucelCarreras {
         height: 450px !important;
@@ -532,6 +552,7 @@
         height: 15rem;
     }
 
+
     .slick-prev-calculadora {
         top: 33%;
         left: 10%;
@@ -590,17 +611,18 @@
     .navigation {
         padding: 1px 0 !important;
     }
-
-    #carrucelVentajas>.slick-list {
-        height: 25rem;
-    }
-
-    .itemImgCarrucelVentajasDis {
-        height: 400px !important;
-    }
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
+
+    .cardTemarioPosDistancia {
+        height: 24rem !important;
+    }
+
+    #temario_especialidad>.slick-list,
+    #temario_maestria>.slick-list {
+        height: 24rem !important;
+    }
 
     .itemsCarrucelCarreras {
         height: 450px !important;
@@ -655,6 +677,7 @@
     .itemBannerInit {
         height: 20rem;
     }
+
 
     .slick-prev-calculadora {
         top: 40%;
@@ -721,11 +744,7 @@
     }
 
     #carrucelVentajas>.slick-list {
-        height: 28rem;
-    }
-
-    .itemImgCarrucelVentajasDis {
-        height: 450px !important;
+        height: 30rem;
     }
 
     #campo_laboral {
@@ -744,6 +763,11 @@
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
+
+    .cardTemarioPosDistancia {
+        height: 300px !important;
+    }
+
 
     .itemsCarrucelCarreras {
         height: 420px !important;
@@ -859,17 +883,13 @@
     #contraportada {
         height: 28rem;
     }
-
-    #carrucelVentajas>.slick-list {
-        height: 28rem;
-    }
-
-    .itemImgCarrucelVentajasDis {
-        height: 450px !important;
-    }
 }
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
+    .itemsCarrucelCarreras {
+        height: 430px !important;
+    }
+
     #requesitos_licenciatura {
         height: 590px !important;
     }
@@ -893,6 +913,11 @@
     #temario_maestria>.slick-list {
         height: 300px !important;
     }
+
+    .cardTemarioPosDistancia {
+        height: 300px !important;
+    }
+
 
     #text_ventajas {
         height: 550px;
@@ -988,6 +1013,10 @@
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+    .cardTemarioPosDistancia {
+        height: 300px !important;
+    }
+
 
     .itemsCarrucelCarreras {
         height: 400px !important;
@@ -1011,8 +1040,8 @@
 
     #requisitos,
     #requisitos>.slick-list {
-        height: 320px !important;
-        max-height: 320px !important;
+        height: 325px !important;
+        max-height: 325px !important;
     }
 
     #text_ventajas {
@@ -1126,6 +1155,11 @@
 }
 
 @media (min-width: 1399.98px) {
+
+    .cardTemarioPosDistancia {
+        height: 300px !important;
+    }
+
 
     .itemsCarrucelCarreras {
         height: 512px !important;
