@@ -99,10 +99,10 @@
     <!-- Inicio de la sección de ventajas -->
     <section class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 p-0">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 p-0">
                 <img src="{{ asset($contraportada) }}" alt="" style="width: 100%; height:100%;">
             </div>
-            <div class="col-12 col-md-6 col-lg-6 bg-articule p-5">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 bg-articule p-5">
                 <h2 style="font-size: 1.438rem;" class="underlined-head fw-normal">
                     Ventajas de estudiar la Licenciatura en <span class="text-capitalize">
                         {{ $licenciatura->nombre }}</span>
@@ -211,7 +211,7 @@
     <!-- Fin de Campo Laboral -->
 
     <!-- Inicio de la Sección de Requisitos -->
-    <section class="container-fluid px-5 py-5">
+    <section id="requesitos_licenciatura" class="container-fluid px-5 py-5">
         <div class="row">
             <div class="col-12 col-md-4 col-lg-3 bg_requisitos">
 

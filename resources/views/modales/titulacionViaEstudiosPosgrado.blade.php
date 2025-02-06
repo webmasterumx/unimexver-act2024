@@ -4,6 +4,13 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
+                <div class="row mb-1">
+                    <div class="col-10"></div>
+                    <div class="col-2">
+                        <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-11 text-center">
                         <h1 style="color: #004b93; font-size: 1.5em;">
@@ -11,10 +18,7 @@
                             POSGRADO
                         </h1>
                     </div>
-                    <div class="col-12 col-md-1">
-                        <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
+
                     <div class="col-12">
                         <h4>
                             Proceso de Titulación

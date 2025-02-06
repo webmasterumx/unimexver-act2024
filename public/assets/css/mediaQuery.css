@@ -1,17 +1,16 @@
-/* #bannerInicial,
-#carrucelInit {
-    height: auto !important;
-}
-
-.itemBannerInit,
-.contenedorBannerCal {
-    height: auto !important;
-} */
-
 @media (min-width: 200px) and (max-width: 400px) {
 
+    #listCarreras,
+    .itemsCarrucelCarreras {
+        height: 450px !important;
+    }
+
+    #requisitos {
+        height: 550px !important;
+    }
+
     #requesitos_licenciatura {
-        height: 750px !important;
+        height: 550px !important;
     }
 
 
@@ -149,7 +148,11 @@
     */
 
     #carrucelVentajas>.slick-list {
-        height: 25rem;
+        height: 21rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 339px !important;
     }
 
     #campo_laboral {
@@ -217,14 +220,13 @@
 
     #listCarreras>.slick-list,
     #temario>.slick-list {
-        height: 24rem !important;
+        height: 27rem !important;
     }
 
     #campo_laboral>.slick-list {
         height: 16rem;
     }
 
-    #requisitos,
     #requesito2>.slick-list>.slick-active {
         height: 45rem;
     }
@@ -237,6 +239,13 @@
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
 
+    .itemsCarrucelCarreras {
+        height: 450px !important;
+    }
+
+    #requisitos{
+        height: 680px !important;
+    }
     #requesitos_licenciatura {
         height: 680px !important;
     }
@@ -383,7 +392,11 @@
     */
 
     #carrucelVentajas>.slick-list {
-        height: 25rem;
+        height: 22rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 360px !important;
     }
 
     #campo_laboral {
@@ -444,7 +457,6 @@
         height: 16rem !important;
     }
 
-    #requisitos,
     #requesito2>.slick-list>.slick-active {
         height: 40rem;
     }
@@ -452,6 +464,11 @@
 }
 
 @media (min-width: 500px) and (max-width: 600.98px) {
+
+    .itemsCarrucelCarreras {
+        height: 450px !important;
+    }
+
     #requesitos_licenciatura {
         height: 600px !important;
     }
@@ -483,7 +500,7 @@
     }
 
     #bannerInicial {
-        height: 11rem;
+        height: 14rem;
     }
 
     .slick-prev {
@@ -513,12 +530,6 @@
 
     .itemBannerInit {
         height: 15rem;
-    }
-
-    #carrucelInit,
-    .slick-slide,
-    .slick-list {
-        height: 280px !important;
     }
 
     .slick-prev-calculadora {
@@ -579,9 +590,21 @@
     .navigation {
         padding: 1px 0 !important;
     }
+
+    #carrucelVentajas>.slick-list {
+        height: 25rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 400px !important;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
+
+    .itemsCarrucelCarreras {
+        height: 450px !important;
+    }
 
     #requesitos_licenciatura {
         height: 600px !important;
@@ -610,7 +633,7 @@
     }
 
     #bannerInicial {
-        height: 20rem;
+        height: 17rem;
     }
 
     #closeModalCalculadora {
@@ -631,12 +654,6 @@
 
     .itemBannerInit {
         height: 20rem;
-    }
-
-    #carrucelInit,
-    .slick-slide,
-    .slick-list {
-        height: 320px !important;
     }
 
     .slick-prev-calculadora {
@@ -704,7 +721,11 @@
     }
 
     #carrucelVentajas>.slick-list {
-        height: 30rem;
+        height: 28rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 450px !important;
     }
 
     #campo_laboral {
@@ -723,6 +744,10 @@
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
+
+    .itemsCarrucelCarreras {
+        height: 420px !important;
+    }
 
     #requesitos_licenciatura {
         height: 600px !important;
@@ -756,7 +781,7 @@
 
 
     #bannerInicial {
-        height: 24rem;
+        height: 22rem;
     }
 
     #closeModalCalculadora {
@@ -787,12 +812,6 @@
 
     .itemBannerInit {
         height: 24rem;
-    }
-
-    #carrucelInit,
-    .slick-slide,
-    .slick-list {
-        height: 400px !important;
     }
 
     .slick-prev-calculadora {
@@ -839,6 +858,14 @@
 
     #contraportada {
         height: 28rem;
+    }
+
+    #carrucelVentajas>.slick-list {
+        height: 28rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 450px !important;
     }
 }
 
@@ -961,6 +988,10 @@
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
+    .itemsCarrucelCarreras {
+        height: 400px !important;
+    }
 
     #temario_distancia {
         height: 300px !important;
@@ -1095,6 +1126,10 @@
 }
 
 @media (min-width: 1399.98px) {
+
+    .itemsCarrucelCarreras {
+        height: 512px !important;
+    }
 
     #temario_distancia {
         height: 450px !important;

@@ -94,7 +94,7 @@
     <!-- Inicio de la sección de ventajas height: 500px !important; -->
     <section class="container-fluid bg-articule">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 p-0">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 p-0">
                 <div id="carrucelVentajas">
                     <div class="itemImgCarrucelVentajasDis">
                         <img style="width: 100%; height: 100%;"
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule px-4">
+            <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 col-xl-6 bg-articule px-4">
                 <h3 id="tituloVentajasLicDistancia" class="underlined-head text-uppercase fw-normal mt-4">
                     VENTAJAS DE ESTUDIAR LA LICENCIATURA ONLINE EN {{ $licenciatura_distancia->nombre }}
                 </h3>
@@ -356,7 +356,7 @@
         });
 
         $('#carrucelVentajas').slick({
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 1000,
             dots: false,
             arrows: false,
@@ -416,13 +416,6 @@
 
         var nivelPosicionado = "Licenciatura";
         var carreraPosicionado = "{{ $licenciatura_distancia->nombre }}";
-
-        $('#carrucelVentajas').slick({
-            autoplay: true,
-            autoplaySpeed: 1000,
-            dots: false,
-            arrows: false,
-        });
 
         $('#aceptarAvisoPrivacidadFolleto').on('click', function() {
             if ($(this).is(':checked')) {
