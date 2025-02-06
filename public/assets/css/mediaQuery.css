@@ -1,4 +1,8 @@
 @media (min-width: 200px) and (max-width: 400px) {
+    #temario_especialidad>.slick-list,
+    #temario_maestria>.slick-list {
+        height: 16rem !important;
+    }
 
     .cardTemarioPosDistancia {
         height: 20rem !important;
@@ -239,6 +243,11 @@
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
 
+    #temario_especialidad>.slick-list,
+    #temario_maestria>.slick-list {
+        height: 16rem !important;
+    }
+    
     .cardTemarioPosDistancia {
         height: 16rem !important;
     }
