@@ -630,7 +630,7 @@
         min-height: 390px;
         max-height: 390px;
     }
-    
+
     .itemsCarrucelCarreras {
         height: 450px !important;
     }
@@ -973,8 +973,8 @@
 
     #cardTemarioLicenciatura,
     #cardTemarioBodyLicenciatura {
-        min-height: 400px;
-        max-height: 400px;
+        min-height: 420px;
+        max-height: 420px;
     }
 
     body {
