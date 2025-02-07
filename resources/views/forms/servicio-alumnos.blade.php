@@ -26,7 +26,7 @@
             <label for="phone_casa_service" class="form-label">
                 <i class="bi bi-telephone-fill" style="color: #004b93;"></i>Teléfono de Casa
             </label>
-            <input  type="text" class="form-control" id="phone_casa_service"
+            <input  type="tel" class="form-control" id="phone_casa_service"
                 name="phone_casa_service" maxlength="10" minlength="10">
         </div>
     </div>
@@ -35,7 +35,7 @@
             <label for="movil_service" class="form-label">
                 <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono celular
             </label>
-            <input  type="text" class="form-control" id="movil_service"
+            <input  type="tel" class="form-control" id="movil_service"
                 name="movil_service" maxlength="10" minlength="10">
         </div>
     </div>

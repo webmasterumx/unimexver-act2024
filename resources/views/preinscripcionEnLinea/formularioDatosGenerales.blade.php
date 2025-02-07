@@ -101,7 +101,7 @@
                             <div class="mb-3">
                                 <label style="color: #00539a !important;" for="telefonoInscripcion" class="form-label">
                                     <span style="color: red !important;">*</span> Teléfono ej. 5512345674</label>
-                                <input type="text" class="form-control" id="telefonoInscripcion"
+                                <input type="tel" class="form-control" id="telefonoInscripcion"
                                     name="telefonoInscripcion" minlength="10" maxlength="10">
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                                     class="form-label">
                                     <span style="color: red !important;">*</span> Teléfono cel. ej 5512345674
                                 </label>
-                                <input type="text" class="form-control" id="telefonoCelInscripcion"
+                                <input type="tel" class="form-control" id="telefonoCelInscripcion"
                                     name="telefonoCelInscripcion" minlength="10" maxlength="10">
                             </div>
                         </div>

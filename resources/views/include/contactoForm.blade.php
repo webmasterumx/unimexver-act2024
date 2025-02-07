@@ -81,11 +81,11 @@
                         <i class="bi bi-telephone-fill color-unimex"></i> TELÉFONOS DE CONTACTO *</label>
                     <div class="w-100 d-flex">
                         <div class="w-50">
-                            <input class="rounded-0 form-control" type="text" name="celular_prospecto"
+                            <input class="rounded-0 form-control" type="tel" name="celular_prospecto"
                                 id="celular_prospecto" minlength="10" maxlength="10" placeholder="Celular a 10 dígitos">
                         </div>
                         <div class="w-50">
-                            <input class="rounded-0 form-control" type="text" name="telefono_prospecto"
+                            <input class="rounded-0 form-control" type="tel" name="telefono_prospecto"
                                 id="telefono_prospecto" minlength="10" maxlength="10" placeholder="Casa a 10 dígitos">
                         </div>
                     </div>

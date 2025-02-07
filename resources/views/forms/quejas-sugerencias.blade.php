@@ -21,14 +21,14 @@
         <label for="telefono_casa_qys" class="form-label">
             <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Teléfono de Casa
         </label>
-        <input  type="text" class="form-control form-control-sm"
+        <input  type="tel" class="form-control form-control-sm"
             id="telefono_casa_qys" name="telefono_casa_qys" maxlength="10" minlength="10">
     </div>
     <div class="mb-3 col-12 col-md-4">
         <label for="telefono_movil_qys" class="form-label">
             <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono celular
         </label>
-        <input  type="text" class="form-control form-control-sm"
+        <input  type="tel" class="form-control form-control-sm"
             id="telefono_movil_qys" name="telefono_movil_qys" maxlength="10" minlength="10">
     </div>
     <div class="mb-3 col-12 col-md-4">

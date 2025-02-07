@@ -29,7 +29,7 @@
                             placeholder="Email *" maxlength="50">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="celularFolleto" name="celularFolleto"
+                        <input type="tel" class="form-control" id="celularFolleto" name="celularFolleto"
                             minlength="10" maxlength="10" placeholder="Celular *">
                     </div>
                     <div class="form-check my-3">

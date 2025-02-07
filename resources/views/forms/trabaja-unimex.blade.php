@@ -30,14 +30,14 @@
         <label for="telefono_casa_trabaja" class="form-label">
             <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Teléfono de Casa
         </label>
-        <input  type="text" class="form-control form-control-sm"
+        <input  type="tel" class="form-control form-control-sm"
             id="telefono_casa_trabaja" name="telefono_casa_trabaja" minlength="8" maxlength="10">
     </div>
     <div class="mb-3 col-12 col-md-3">
         <label for="telefono_movil_trabaja" class="form-label">
             <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono celular
         </label>
-        <input  type="text" class="form-control form-control-sm"
+        <input  type="tel" class="form-control form-control-sm"
             id="telefono_movil_trabaja" name="telefono_movil_trabaja" minlength="8" maxlength="10">
     </div>
     <div class="mb-3 co-12 col-md-3">
