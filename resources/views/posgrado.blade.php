@@ -282,7 +282,7 @@
                 <h2 class="underlined-head fw-normal" style="font-size: 1.438rem;">
                     REQUISITOS
                 </h2>
-                <div id="requisitos" style="height: 480px;">
+                <div id="requisitos">
                     <div class="card border-0">
                         <div class="card-body">
                             <p>
