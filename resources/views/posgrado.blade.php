@@ -177,10 +177,10 @@
             </div>
             <div id="temario_especialidad" class="col-12 mt-1">
                 @for ($i = 0; $i < sizeof($temario_especialidad); $i++)
-                    <div class="card border-0 mx-3 h-100" style="max-height: 200px;">
+                    <div class="card border-0 mx-3 h-100">
                         <h5 class="card-header bg-unimex text-white text-center">
                             {{ $temario_especialidad[$i]['nombrecuatrimestre'] }}</h5>
-                        <div class="card-body bg-articule" style="min-height: 200px;">
+                        <div class="card-body bg-articule cardBodyPosgradosMet">
                             <ul>
                                 @for ($j = 0; $j < sizeof($temario_especialidad[$i]['temas']); $j++)
                                     <li class="py-1">
@@ -205,10 +205,10 @@
             </div>
             <div id="temario_maestria" class="col-12 mt-1">
                 @for ($i = 0; $i < sizeof($temario_maestria); $i++)
-                    <div class="card border-0 mx-3 h-100" style="max-height: 200px;">
+                    <div class="card border-0 mx-3 h-100">
                         <h5 class="card-header bg-unimex text-white text-center">
                             {{ $temario_maestria[$i]['nombrecuatrimestre'] }}</h5>
-                        <div class="card-body bg-articule" style="min-height: 200px;">
+                        <div class="card-body bg-articule cardBodyPosgradosMet">
                             <ul>
                                 @for ($j = 0; $j < sizeof($temario_maestria[$i]['temas']); $j++)
                                     <li class="py-1">

@@ -21,6 +21,10 @@
         height: 18rem !important;
     }
 
+    .cardBodyPosgradosMet {
+        height: 20rem !important;
+    }
+
     .cardTemarioPosDistancia {
         height: 20rem !important;
     }
@@ -240,7 +244,7 @@
     }
 
     #temario>.slick-list {
-        height: 24rem !important;
+        height: 26rem !important;
     }
 
     #campo_laboral>.slick-list {
@@ -259,7 +263,11 @@
     Pendientes --------- =P
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
-    
+
+    .cardBodyPosgradosMet {
+        height: 20rem !important;
+    }
+
     #formularioContactanos,
     #formularioServicioAlumnos,
     #formularioContrataAlumnos,
@@ -493,7 +501,7 @@
 
 
     #temario>.slick-list {
-        height: 24rem !important;
+        height: 25rem !important;
     }
 
     #campo_laboral>.slick-list {
@@ -509,6 +517,14 @@
 
 @media (min-width: 500px) and (max-width: 600.98px) {
 
+    #temario>.slick-list {
+        height: 25rem !important;
+    }
+
+    .cardBodyPosgradosMet {
+        height: 20rem !important;
+    }
+
     #carrucelCalBeca,
     #carrucelCalBeca>.slick-list {
         height: 17.5rem;
@@ -516,7 +532,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 16rem !important;
+        height: 13rem !important;
     }
 
     .cardTemarioPosDistancia {
@@ -661,6 +677,9 @@
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
+    .cardBodyPosgradosMet {
+        height: 20rem !important;
+    }
 
     #carrucelCalBeca,
     #carrucelCalBeca>.slick-list {
@@ -673,7 +692,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 24rem !important;
+        height: 22rem !important;
     }
 
     .itemsCarrucelCarreras {
@@ -812,9 +831,17 @@
         height: 200px;
     }
 
+    #temario>.slick-list {
+        height: 29rem !important;
+    }
+
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
+
+    .cardBodyPosgradosMet {
+        height: 20rem !important;
+    }
 
     .cardTemarioPosDistancia {
         height: 300px !important;
@@ -1087,7 +1114,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 300px !important;
+        height: 14rem !important;
     }
 
     #requisitos,
@@ -1230,7 +1257,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 300px !important;
+        height: 15rem !important;
     }
 
     #requisitos,
