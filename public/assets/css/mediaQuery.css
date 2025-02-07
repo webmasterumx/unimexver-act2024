@@ -18,7 +18,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 16rem !important;
+        height: 18rem !important;
     }
 
     .cardTemarioPosDistancia {
