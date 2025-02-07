@@ -143,7 +143,7 @@
                     </li>
                     <li class="d-block d-md-block d-lg-none text-center">
                         <a class="mt-1" style="display: inline-block" href="javascript:redirigirContactoHeader()"
-                            title="">Contacto</a>
+                            title="">Informes</a>
                     </li>
 
                     <li class="d-block d-md-block d-lg-none text-center">
