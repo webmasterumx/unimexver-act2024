@@ -47,7 +47,7 @@
                             <label for="telefono_empresaOCC" class="form-label">
                                 <i class="bi bi-telephone-fill" style="color: #004b93;"></i> Teléfono de Casa
                             </label>
-                            <input  type="text" class="form-control form-control-sm"
+                            <input  type="tel" class="form-control form-control-sm"
                                 id="telefono_empresaOCC" name="telefono_empresaOCC" maxlength="10" minlength="10">
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                             <label for="celular_empresaOCC" class="form-label">
                                 <i class="bi bi-phone-fill" style="color: #004b93;"></i> Teléfono Celular
                             </label>
-                            <input  type="text" class="form-control form-control-sm"
+                            <input  type="tel" class="form-control form-control-sm"
                                 id="celular_empresaOCC" name="celular_empresaOCC" maxlength="10" minlength="10">
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                             <input disabled type="text" class="text-center" id="number8" name="number8">
                         </div>
                         <div class="col-12 col-md-5">
-                            <input type="text" class="form-control" id="operacion_empresaOCC"
+                            <input type="tel" class="form-control" id="operacion_empresaOCC"
                                 name="operacion_empresaOCC" placeholder="Introduce el resultado aquí"
                                 maxlength="2">
                         </div>

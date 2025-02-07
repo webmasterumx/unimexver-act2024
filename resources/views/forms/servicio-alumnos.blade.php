@@ -66,7 +66,7 @@
             <label for="matricula_service" class="form-label">
                 <i class="bi bi-credit-card-fill" style="color: #004b93;"></i> Matrícula
             </label>
-            <input  type="text" class="form-control" id="matricula_service"
+            <input  type="tel" class="form-control" id="matricula_service"
                 name="matricula_service" maxlength="11" minlength="11">
             <label for="matricula_service">Ingresa el formato correcto de tu matrícula. ej:(12345678-90)</label>
         </div>
@@ -85,7 +85,7 @@
             <div class="col-12 col-md-2 d-flex">
                 <input disabled type="text" class="text-center" id="number1" name="number1">
                 <div class="d-flex" style="width: 20% !important; align-items: center;">&nbsp;+</div>
-                <input disabled type="text" class="text-center" id="number2" name="number2">
+                <input disabled type="tel" class="text-center" id="number2" name="number2">
             </div>
             <div class="col-12 col-md-4">
                 <input type="text" maxlength="2" class="form-control" id="operacion_service" name="operacion_service"

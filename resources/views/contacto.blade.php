@@ -66,30 +66,30 @@
             </div>
             <div class="col-12 col-md-12 col-lg-12">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item" role="presentation" id="seccionFormContactanosForm">
                         <button id="formularioContactanos" class="nav-link {{ $claseFormContactanos }}" id="home-tab"
                             data-bs-toggle="tab" data-bs-target="#seccionFormContactanos" type="button" role="tab"
                             aria-controls="seccionFormContactanos" aria-selected="true">Contáctanos</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#service-pane"
+                    <li class="nav-item" role="presentation" id="seccionServiciosAlumnos">
+                        <button class="nav-link" id="formularioServicioAlumnos" data-bs-toggle="tab" data-bs-target="#service-pane"
                             type="button" role="tab" aria-controls="service-pane" aria-selected="false">Servicio
                             para Alumnos</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contrata-pane"
+                    <li class="nav-item" role="presentation" id="seccionContrataAlumnos">
+                        <button class="nav-link" id="formularioContrataAlumnos" data-bs-toggle="tab" data-bs-target="#contrata-pane"
                             type="button" role="tab" aria-controls="contrata-pane" aria-selected="false">
                             Contrata Alumnos y Egresados UNIMEX®
                         </button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item" role="presentation" id="seccionTrabajaUnimex">
                         <button id="formularioTrabajaUnimex" class="nav-link {{ $claseFormBolsaTrabajo }}" id="disabled-tab"
                             data-bs-toggle="tab" data-bs-target="#seccionFormTrabajaUnimex" type="button" role="tab"
                             aria-controls="seccionFormTrabajaUnimex" aria-selected="false">Trabaja en
                             UNIMEX®</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#sugerencia-pane"
+                    <li class="nav-item" role="presentation" id="seccionQuejasySugerencias">
+                        <button class="nav-link" id="formularioQuejasYSugerencias" data-bs-toggle="tab" data-bs-target="#sugerencia-pane"
                             type="button" role="tab" aria-controls="sugerencia-pane" aria-selected="false">Quejas y
                             Sugerencias</button>
                     </li>
@@ -126,7 +126,7 @@
                                     SÍ, YA TENEMOS UNA <br> CUENTA EN OCC
                                 </button>
                             </div>
-                            <div class="col-12 col-md-6" text-center>
+                            <div class="col-12 col-md-6 text-center mt-3">
                                 <button onclick="establecerTipoDeEmpresaOCC(0)" type="button" class="btn btn-primary"
                                     data-bs-toggle="modal" data-bs-target="#empresasOCC">
                                     AÚN NO, QUEREMOS OBTENER <br> UNA CUENTA GRATUITA PARA <br> PUBLICAR VACANTES PARA <br>

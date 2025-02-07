@@ -35,7 +35,7 @@
         <label for="matricula_qys" class="form-label">
             <i class="bi bi-credit-card-fill" style="color: #004b93;"></i> Matrícula
         </label>
-        <input  type="text" class="form-control form-control-sm" id="matricula_qys"
+        <input  type="tel" class="form-control form-control-sm" id="matricula_qys"
             name="matricula_qys" minlength="11" maxlength="11">
         <label for="matricula_qys">Ingresa el formato correcto de tu matrícula. ej:(12345678-90)</label>
     </div>
@@ -62,7 +62,7 @@
                 <input disabled type="text" class="text-center" id="number6" name="number6">
             </div>
             <div class="col-12 col-md-4">
-                <input type="text" class="form-control" id="operacion_qys" name="operacion_qys"
+                <input type="tel" class="form-control" id="operacion_qys" name="operacion_qys"
                     placeholder="Introduce el resultado aquí" maxlength="2">
             </div>
         </div>

@@ -1,5 +1,21 @@
 @media (min-width: 200px) and (max-width: 400px) {
 
+    #formularioContactanos,
+    #formularioServicioAlumnos,
+    #formularioContrataAlumnos,
+    #formularioTrabajaUnimex,
+    #formularioQuejasYSugerencias {
+        width: 100% !important;
+    }
+
+    #seccionFormContactanosForm,
+    #seccionServiciosAlumnos,
+    #seccionContrataAlumnos,
+    #seccionTrabajaUnimex,
+    #seccionQuejasySugerencias {
+        width: 100% !important;
+    }
+
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
         height: 16rem !important;
@@ -243,6 +259,22 @@
     Pendientes --------- =P
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
+    
+    #formularioContactanos,
+    #formularioServicioAlumnos,
+    #formularioContrataAlumnos,
+    #formularioTrabajaUnimex,
+    #formularioQuejasYSugerencias {
+        width: 100% !important;
+    }
+
+    #seccionFormContactanosForm,
+    #seccionServiciosAlumnos,
+    #seccionContrataAlumnos,
+    #seccionTrabajaUnimex,
+    #seccionQuejasySugerencias {
+        width: 100% !important;
+    }
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
