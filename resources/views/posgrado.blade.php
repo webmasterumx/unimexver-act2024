@@ -300,8 +300,8 @@
                         <div class="card-body cardBodyPosgrado">
                             <p>
                                 <b>Si deseas titularte de Licenciatura mediante estudios de Posgrado</b> <br><br>
-                                Original o copia certificada del Acta de Nacimiento y una fotocopia. <br>
-                                Original y una fotocopia del Certificado Total de Estudios de Licenciatura* <br>
+                                Original o copia certificada del Acta de Nacimiento y una fotocopia. <br><br>
+                                Original y una fotocopia del Certificado Total de Estudios de Licenciatura* <br><br>
                                 En caso de cursar el Posgrado como medio de Titulación, presentar una Carta de Autorización.
                                 <br>
                                 para Titularse vía créditos de Posgrado, emitida por tu Universidad de origen**, indicando
