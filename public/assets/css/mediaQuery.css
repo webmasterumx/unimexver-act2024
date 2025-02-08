@@ -256,11 +256,11 @@
     }
 
     #requisitos {
-        height: 45rem !important;
+        height: 46rem !important;
     }
 
     #requisitos>.slick-list {
-        height: 45rem !important;
+        height: 46rem !important;
     }
 
     #requesito2>.slick-list>.slick-active {
@@ -533,11 +533,11 @@
     }
 
     #requisitos {
-        height: 35rem !important;
+        height: 37rem !important;
     }
 
     #requisitos>.slick-list {
-        height: 35rem !important;
+        height: 37rem !important;
     }
 
 }
