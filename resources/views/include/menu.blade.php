@@ -132,7 +132,7 @@
                     <li class="d-none d-md-none d-lg-block">
                         <button onclick="calculadoraHeader('{{ $abreviatura }}')" id="linkCalculaTuBeca"
                             class="btn btn-outline-warning text-uppercase" rel="noopener"
-                            title="Calcula tu Cuota">Calculadora de becas</button>
+                            title="Calcula tu Cuota">Calculadora de Cuotas</button>
                     </li>
                     <li class="d-none d-md-none d-lg-block">
                         <button id="linkPreinscripcionEnLinea" class="btn btn-outline-warning text-uppercase"
@@ -148,8 +148,7 @@
 
                     <li class="d-block d-md-block d-lg-none text-center">
                         <a class="mt-1" style="display: inline-block"
-                            href="javascript:calculadoraHeader('{{ $abreviatura }}')" title="">Calculadora de
-                            becas</a>
+                            href="javascript:calculadoraHeader('{{ $abreviatura }}')" title="">Calculadora de Cuotas</a>
                     </li>
                     <li class="d-block d-md-block d-lg-none text-center">
                         <a class="mt-1" style="display: inline-block"
