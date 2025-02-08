@@ -224,12 +224,12 @@
     <div class="container-fluid bg-unimex">
         <header class="border-bottom lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
+                <div class="col-12 col-md-12 col-lg-3 col-xl-3 pt-1 text-center text-md-start text-xl-start">
                     <a href="{{ env('APP_URL') . $complemento }}"><img class="ms-4"
                             src="{{ asset('assets/img/header/logo-2020.webp') }}" alt=""
                             style="width: 200px;"></a>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-12 col-lg-9 col-xl-9 text-center">
                     <a class="blog-header-logo text-decoration-none" href="#">
                         <h1 class="text-white fw-normal d-none d-md-block d-lg-block">
                             Calculadora de Cuotas
