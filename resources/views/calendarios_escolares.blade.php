@@ -16,10 +16,12 @@
                         <h3 class="card-title">Licenciaturas</h3>
                         <a target="_blank" href="{{ asset('assets/calendarios/2025-2/CALENDARIO_2025-2_ESC_METRO.pdf') }}">
                             <i class="bi bi-eye-fill"></i> Calendario Escolarizado
-                        </a><br>
+                        </a>
+                        <hr style="border-top: 1px solid;">
                         <a target="_blank" href="{{ asset('assets/calendarios/2025-2/CALENDARIO_2025-2_MIX_METRO.pdf') }}">
                             <i class="bi bi-eye-fill"></i> Calendario Sabatino
-                        </a><br>
+                        </a>
+                        <hr style="border-top: 1px solid;">
                         <a target="_blank" href="{{ asset('assets/calendarios/2025-2/CALENDARIO_2025-2_SUA_METRO.pdf') }}">
                             <i class="bi bi-eye-fill"></i> Calendario SUA
                         </a>
