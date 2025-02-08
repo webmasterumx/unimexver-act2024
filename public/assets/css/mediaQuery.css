@@ -1000,7 +1000,7 @@
 
     #contenedorTexto {
         padding: 10%;
-        font-size: 120%;
+        font-size: 124%;
     }
 
     .itemsCarrucelCarreras {
@@ -1137,8 +1137,8 @@
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
 
     #contenedorTexto {
-        padding: 10%;
-        font-size: 120%;
+        padding: 10% !important;
+        font-size: 139% !important;
     }
 
     .cardTemarioPosDistancia {
