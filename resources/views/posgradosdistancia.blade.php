@@ -34,10 +34,6 @@
         background-size: cover;
     }
 
-    .slick-list {
-        max-height: 480px !important;
-    }
-
     #peridoSelectFolleto-error,
     #plantelSelectFolleto-error {
         display: none !important;

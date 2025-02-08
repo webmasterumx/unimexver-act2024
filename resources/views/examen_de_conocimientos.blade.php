@@ -41,9 +41,7 @@
                 <h3>
                     Publicación de Resultados.
                 </h3>
-                <small>
-                    Términos.
-                </small>
+                Términos.
                 <ul>
                     <li>
                         Este examen se puede aplicar indistintamente en cualquier plantel UNIMEX®.
