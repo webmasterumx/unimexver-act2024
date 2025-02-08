@@ -356,7 +356,7 @@
         });
 
         $('#carrucelVentajas').slick({
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 1000,
             dots: false,
             arrows: false,

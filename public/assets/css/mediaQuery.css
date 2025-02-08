@@ -1,4 +1,9 @@
 @media (min-width: 200px) and (max-width: 400px) {
+
+    .itemImgCarrucelVentajasDis {
+        height: 20rem !important;
+    }
+
     #contenedorTexto {
         padding: 10%;
         font-size: 120%;
@@ -181,7 +186,7 @@
     */
 
     #carrucelVentajas>.slick-list {
-        height: 25rem;
+        height: 20rem;
     }
 
     #campo_laboral {
@@ -467,7 +472,11 @@
     */
 
     #carrucelVentajas>.slick-list {
-        height: 25rem;
+        height: 21rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 21rem !important;
     }
 
     #campo_laboral {
@@ -543,6 +552,14 @@
 }
 
 @media (min-width: 500px) and (max-width: 600.98px) {
+
+    #carrucelVentajas>.slick-list {
+        height: 25rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 25rem !important;
+    }
 
     #contenedorTexto {
         padding: 10%;
@@ -860,7 +877,11 @@
     }
 
     #carrucelVentajas>.slick-list {
-        height: 30rem;
+        height: 27rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 27rem !important;
     }
 
     #campo_laboral {
@@ -1028,6 +1049,20 @@
     #requisitos>.slick-list {
         height: 29rem !important;
     }
+
+    #carrucelVentajas>.slick-list {
+        height: 25rem;
+    }
+
+    .itemImgCarrucelVentajasDis {
+        height: 25rem !important;
+    }
+
+    #text_ventajas {
+        height: 25rem !important;
+        overflow-y: scroll;
+    }
+
 }
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
@@ -1132,12 +1167,17 @@
         height: 23.3rem !important;
     }
 
-    #carrucelVentajas {
-        height: 90vh;
+    #carrucelVentajas>.slick-list {
+        height: 25rem;
     }
 
     .itemImgCarrucelVentajasDis {
-        height: 90vh !important;
+        height: 25rem !important;
+    }
+
+    #text_ventajas {
+        height: 25rem !important;
+        overflow-y: scroll;
     }
 
 
