@@ -255,11 +255,14 @@
         height: 16rem;
     }
 
-    #requsitos {
-        height: 40rem !important;
+    #requisitos {
+        height: 44rem !important;
     }
 
-    #requisitos,
+    #requisitos>.slick-list {
+        height: 44rem !important;
+    }
+
     #requesito2>.slick-list>.slick-active {
         height: 47rem;
     }
@@ -525,9 +528,16 @@
         height: 16rem !important;
     }
 
-    #requisitos,
     #requesito2>.slick-list>.slick-active {
         height: 40rem;
+    }
+
+    #requisitos {
+        height: 34rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 34rem !important;
     }
 
 }
@@ -696,6 +706,14 @@
     .navigation {
         padding: 1px 0 !important;
     }
+
+    #requisitos {
+        height: 29rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 29rem !important;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
@@ -862,6 +880,14 @@
         height: 29rem !important;
     }
 
+    #requisitos {
+        height: 23rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 23rem !important;
+    }
+
 }
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
@@ -993,6 +1019,14 @@
 
     #contraportada {
         height: 28rem;
+    }
+
+    #requisitos {
+        height: 29rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 29rem !important;
     }
 }
 
@@ -1131,6 +1165,14 @@
 
     .fondoServiciosSm {
         display: none;
+    }
+
+    #requisitos {
+        height: 30rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 30rem !important;
     }
 }
 
@@ -1284,6 +1326,14 @@
     .cardBodyPosgradosMet {
         height: 14rem !important;
     }
+
+    #requisitos {
+        height: 30rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 30rem !important;
+    }
 }
 
 @media (min-width: 1399.98px) {
@@ -1428,6 +1478,14 @@
 
     #contraportada {
         height: 89vh !important;
+    }
+
+    #requisitos {
+        height: 30rem !important;
+    }
+
+    #requisitos>.slick-list {
+        height: 30rem !important;
     }
 
 }
