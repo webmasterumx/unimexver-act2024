@@ -143,7 +143,7 @@
                     <div class="card border-0 mx-3 h-100" style="max-height: 240px;">
                         <h5 class="card-header bg-unimex text-white text-center">
                             {{ $temario_especialidad[$i]['nombrecuatrimestre'] }}</h5>
-                        <div class="card-body bg-articule" style="min-height: 240px;">
+                        <div class="card-body bg-articule cardBodyPosgradosMet">
                             <ul>
                                 @for ($j = 0; $j < sizeof($temario_especialidad[$i]['temas']); $j++)
                                     <li class="py-1">
@@ -173,7 +173,7 @@
                         <div class="card border-0 mx-3 h-100" style="max-height: 240px;">
                             <h5 class="card-header bg-unimex text-white text-center">
                                 {{ $temario_maestria[$i]['nombrecuatrimestre'] }}</h5>
-                            <div class="card-body bg-articule" style="min-height: 240px;">
+                            <div class="card-body bg-articule cardBodyPosgradosMet">
                                 <ul>
                                     @for ($j = 0; $j < sizeof($temario_maestria[$i]['temas']); $j++)
                                         <li class="py-1">
