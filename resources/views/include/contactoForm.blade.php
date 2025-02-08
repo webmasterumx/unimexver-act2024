@@ -12,43 +12,45 @@
     <div class="container p-2">
         <div class="row">
             <div class="col-12 col-md-6 bg_contacto">
-                <h3 class="text-center fw-normal" style="color: #de951b;">
-                    ¿Quieres hablar
-                    con un asesor o agendar cita para inscripción?
-                </h3>
-                <p class="text-center">
-                    <i class="bi bi-telephone-fill" style="color: #ffff;"></i>
-                    <a href="tel:+525511020290" target="_blank" style="color: #ffff;">
-                        +52 1 55 1102 0290
-                    </a>
-                    <br>
-                    <img src="{{ asset('assets/img/flotante/whats-2.png') }}" alt="">
-                    <a href="https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0"
-                        target="_blank" style="color: #ffff;">
-                        +52 1 55 1102 0290
-                    </a>
-                </p>
-                <p class="text-center" style="color: #de951b;">
-                    Visítanos en:
-                </p>
-                <p class="text-center">
-                    <a href="{{ route('plantel', 'izcalli') }}" style="color: #ffff;">
-                        Izcalli <br>
-                        Av. Del Vidrio #15, Col. Plaza Dorada, Centro Urbano, Cuautitlán Izcalli, Estado de México.
-                    </a> <br><br>
-                    <a href="{{ route('plantel', 'satelite') }}" style="color: #ffff;">
-                        Satélite <br>
-                        Circuito Poetas #37, Cd. Satélite, Naucalpan de Juárez, Estado de México.
-                    </a> <br><br>
-                    <a href="{{ route('plantel', 'polanco') }}" style="color: #ffff;">
-                        Polanco <br>
-                        Emilio Castelar #63 esquina Eugenio Sue, Col. Polanco-Chapultepec, Ciudad de México.
-                    </a> <br><br>
-                    <a href="{{ route('plantel', 'veracruz') }}" style="color: #ffff;">
-                        Veracruz <br>
-                        Av. 20 de noviembre esq. Juan Enríquez No. 1004 Veracruz, Ver.
-                    </a>
-                </p>
+                <div id="contenedorTexto">
+                    <h3 class="text-center fw-normal" style="color: #de951b;">
+                        ¿Quieres hablar
+                        con un asesor o agendar cita para inscripción?
+                    </h3>
+                    <p class="text-center">
+                        <i class="bi bi-telephone-fill" style="color: #ffff;"></i>
+                        <a href="tel:+525511020290" target="_blank" style="color: #ffff;">
+                            +52 1 55 1102 0290
+                        </a>
+                        <br>
+                        <img src="{{ asset('assets/img/flotante/whats-2.png') }}" alt="">
+                        <a href="https://api.whatsapp.com/send/?phone=525511020290&text=Hola%21+Me+gustaría+recibir+más+información+sobre+los+programas%2C+cuotas+y+promociones+de+UNIMEX%3B+me+interesó+lo+que+vi+en+Página+Web+Veracruz+sobre+contacto+en+WhatsApp+%28botón%29.+¡Gracias%21&type=phone_number&app_absent=0"
+                            target="_blank" style="color: #ffff;">
+                            +52 1 55 1102 0290
+                        </a>
+                    </p>
+                    <p class="text-center" style="color: #de951b;">
+                        Visítanos en:
+                    </p>
+                    <p class="text-center">
+                        <a href="{{ route('plantel', 'izcalli') }}" style="color: #ffff;">
+                            Izcalli <br>
+                            Av. Del Vidrio #15, Col. Plaza Dorada, Centro Urbano, Cuautitlán Izcalli, Estado de México.
+                        </a> <br><br>
+                        <a href="{{ route('plantel', 'satelite') }}" style="color: #ffff;">
+                            Satélite <br>
+                            Circuito Poetas #37, Cd. Satélite, Naucalpan de Juárez, Estado de México.
+                        </a> <br><br>
+                        <a href="{{ route('plantel', 'polanco') }}" style="color: #ffff;">
+                            Polanco <br>
+                            Emilio Castelar #63 esquina Eugenio Sue, Col. Polanco-Chapultepec, Ciudad de México.
+                        </a> <br><br>
+                        <a href="{{ route('plantel', 'veracruz') }}" style="color: #ffff;">
+                            Veracruz <br>
+                            Av. 20 de noviembre esq. Juan Enríquez No. 1004 Veracruz, Ver.
+                        </a>
+                    </p>
+                </div>
             </div>
             <div class="col-12 col-md-6 p-0"> <!-- form_contacto -->
                 <form id="form_contacto" method="POST" class="bg-white p-4 p-md-5" style="height: 100%;">

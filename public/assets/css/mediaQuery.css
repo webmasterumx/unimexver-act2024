@@ -1,4 +1,8 @@
 @media (min-width: 200px) and (max-width: 400px) {
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
 
     #formularioContactanos,
     #formularioServicioAlumnos,
@@ -18,7 +22,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 18rem !important;
+        height: 22rem !important;
     }
 
     .cardBodyPosgradosMet {
@@ -251,11 +255,19 @@
         height: 16rem;
     }
 
-    #requisitos,
-    #requesito2>.slick-list>.slick-active {
-        height: 40rem;
+    #requsitos {
+        height: 40rem !important;
     }
 
+    #requisitos,
+    #requesito2>.slick-list>.slick-active {
+        height: 44rem;
+    }
+
+
+    .cardBodyPosgrado {
+        height: 40rem !important;
+    }
 
 }
 
@@ -263,6 +275,11 @@
     Pendientes --------- =P
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
+
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
 
     .cardBodyPosgradosMet {
         height: 20rem !important;
@@ -286,7 +303,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 16rem !important;
+        height: 20rem !important;
     }
 
     .cardTemarioPosDistancia {
@@ -517,6 +534,11 @@
 
 @media (min-width: 500px) and (max-width: 600.98px) {
 
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
+
     #temario>.slick-list {
         height: 25rem !important;
     }
@@ -532,7 +554,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 13rem !important;
+        height: 17rem !important;
     }
 
     .cardTemarioPosDistancia {
@@ -677,6 +699,11 @@
 }
 
 @media (min-width: 600px) and (max-width: 800.98px) {
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
+
     .cardBodyPosgradosMet {
         height: 20rem !important;
     }
@@ -839,6 +866,11 @@
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
 
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
+
     .cardBodyPosgradosMet {
         height: 20rem !important;
     }
@@ -879,7 +911,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 300px !important;
+        height: 16rem !important;
     }
 
 
@@ -965,6 +997,12 @@
 }
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
+
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
+
     .itemsCarrucelCarreras {
         height: 430px !important;
     }
@@ -991,6 +1029,11 @@
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
         height: 300px !important;
+    }
+
+
+    .cardBodyPosgradosMet {
+        height: 14rem !important;
     }
 
     .cardTemarioPosDistancia {
@@ -1092,6 +1135,12 @@
 }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
+    #contenedorTexto {
+        padding: 10%;
+        font-size: 120%;
+    }
+
     .cardTemarioPosDistancia {
         height: 300px !important;
     }
@@ -1114,7 +1163,7 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 14rem !important;
+        height: 16rem !important;
     }
 
     #requisitos,
@@ -1231,9 +1280,17 @@
     .contenedorBannerCal {
         height: auto !important;
     }
+
+    .cardBodyPosgradosMet {
+        height: 14rem !important;
+    }
 }
 
 @media (min-width: 1399.98px) {
+
+    #contenedorTexto {
+        padding: 10%;
+    }
 
     .cardTemarioPosDistancia {
         height: 300px !important;
@@ -1257,7 +1314,11 @@
 
     #temario_especialidad>.slick-list,
     #temario_maestria>.slick-list {
-        height: 15rem !important;
+        height: 20rem !important;
+    }
+
+    .cardBodyPosgradosMet {
+        height: 18rem !important;
     }
 
     #requisitos,
