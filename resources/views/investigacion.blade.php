@@ -5,7 +5,7 @@
         style="background-image: url({{ asset('assets/img/extras/investigacion_unimex.jpg') }}); position: relative;">
         <h1 class="etiqueta-titulo p-3 text-uppercase"> INVESTIGACIÓN </h1>
     </section>
-    <section class="container py-5">
+    <section class="container-fluid py-5">
         <div class="row">
             <div class="col-12 col-md-3">
                 <h3 class="underlined-head fw-normal">
