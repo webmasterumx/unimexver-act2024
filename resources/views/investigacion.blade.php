@@ -29,7 +29,7 @@
             <div style="background-image: url({{ asset('assets/img/extras/publicaciones_unimex.webp') }});"
                 class="col-12 col-md-6">
             </div>
-            <div class="col-12 col-md-6 px-2">
+            <div class="col-12 col-md-6">
                 <h5 class="underlined-head">
                     PUBLICACIONES.
                 </h5>
