@@ -59,7 +59,7 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="matriculaResultado" class="form-label"><b>Matricula</b></label>
-                                <input type="text" class="form-control form-control-sm text-center"
+                                <input type="tel" class="form-control form-control-sm text-center"
                                     id="matriculaResultado" name="matriculaResultado">
                             </div>
                             <button type="submit" id="consultarData" class="btn btn-primary mt-2">Aceptar</button>
