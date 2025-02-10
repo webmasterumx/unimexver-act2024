@@ -16,7 +16,7 @@
     <section class="container py-4">
         <div class="row">
             <div class="col-12 col-md-4 col-lg-4 mx-auto">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="{{ asset('assets/img/kiosko.jpg') }}" class="card-img-top" alt="...">
                 </div>
             </div>
@@ -25,7 +25,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12 col-md-4 text-end">
-                                <h1 class="mt-3 fw-normal" style="color: rgba(241,145,29,1.00);">RESULTADOS DEL EXAMEN DE
+                                <h1 class="mt-3 fw-normal" style="color: rgba(241,145,29,1.00); text-align:center;">RESULTADOS DEL EXAMEN DE
                                     CONOCIMIENTOS</h1>
                             </div>
                             <div class="col-12 col-md-8">

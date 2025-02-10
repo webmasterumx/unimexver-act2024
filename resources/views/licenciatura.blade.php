@@ -107,7 +107,7 @@
                     Ventajas de estudiar la Licenciatura en {{ $licenciatura->nombre }}
                 </h2>
                 <ul class="text-justify">
-                    @if ($licenciatura->id == 5 || $licenciatura->id == 6 || $licenciatura->id == 11 || $licenciatura->id == 14)
+                    @if ($licenciatura->id == 5 || $licenciatura->id == 6 || $licenciatura->id == 11 || $licenciatura->id == 14 || $licenciatura->id == 7)
                         <li>
                             <b>Plan de estudios renovado que cumple con las necesidades del mercado laboral y las nuevas
                                 tendencias.</b>
