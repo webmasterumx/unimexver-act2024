@@ -107,10 +107,25 @@
                     Ventajas de estudiar la Licenciatura en {{ $licenciatura->nombre }}
                 </h2>
                 <ul class="text-justify">
-                    @if ($licenciatura->id == 5 || $licenciatura->id == 6 || $licenciatura->id == 11 || $licenciatura->id == 14 || $licenciatura->id == 7) 
+                    @if (
+                        $licenciatura->id == 5 ||
+                            $licenciatura->id == 6 ||
+                            $licenciatura->id == 11 ||
+                            $licenciatura->id == 14 ||
+                            $licenciatura->id == 7)
                         <li>
                             <b>Plan de estudios renovado que cumple con las necesidades del mercado laboral y las nuevas
                                 tendencias.</b>
+                        </li>
+                    @endif
+                    @if ($licenciatura->id == 22 || $licenciatura->id == 21)
+                        <li>
+                            <b>Beca anual renovable hasta del 60%.</b> en licenciaturas matutinas. Obtén una beca durante el primer año de estudios.
+                        </li>
+                    @else
+                        <li>
+                            <b>Beca anual renovable hasta del 60%.</b> Sin importar tu promedio, obtén una beca durante el
+                            primer año de estudios.
                         </li>
                     @endif
                     <li>
