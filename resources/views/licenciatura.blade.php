@@ -104,10 +104,15 @@
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 bg-articule p-5">
                 <h2 style="font-size: 1.438rem;" class="underlined-head fw-normal">
-                    Ventajas de estudiar la Licenciatura en <span class="text-capitalize">
-                        {{ $licenciatura->nombre }}</span>
+                    Ventajas de estudiar la Licenciatura en {{ $licenciatura->nombre }}
                 </h2>
                 <ul class="text-justify">
+                    @if ($licenciatura->id == 5 || $licenciatura->id == 6 || $licenciatura->id == 11 || $licenciatura->id == 14)
+                        <li>
+                            <b>Plan de estudios renovado que cumple con las necesidades del mercado laboral y las nuevas
+                                tendencias.</b>
+                        </li>
+                    @endif
                     <li>
                         <b>Beca anual renovable hasta del 60%.</b> Sin importar tu promedio, obtén una beca durante el
                         primer año de estudios.

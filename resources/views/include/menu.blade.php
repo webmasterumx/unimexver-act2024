@@ -61,7 +61,7 @@
 <noscript>Por favor habilita JavaScript para usar este sitio</noscript>
 <header class="sticky-top">
     <nav class="navigation d-none d-md-none d-lg-block d-xl-block"
-        style="background-color: #013F7A !important; padding: 8px 0px !important;">
+        style="background-color: #013F7A !important; padding: 4px 0px !important;">
         <div class="wrapper d-flex">
             <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">
             </a>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navigation" style="padding: 10px 0">
+    <nav class="navigation" style="padding: 4px 0">
         <div class="wrapper d-flex">
             <!-- https://unimex.edu.mx/calcula-tu-cuota/?utm_source=El+Gráfico+Universidades&utm_medium=GraficoUni&utm_campaign=2024+1&utm_term=universidad+mexicana&utm_content=metro -->
             <a href="{{ env('APP_URL') . $complemento }}" rel="noopener noreferrer">

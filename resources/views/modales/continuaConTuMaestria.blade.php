@@ -3,22 +3,12 @@
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="color: #004b93;" class="modal-title">PROGRAMA
+                    “Continúa con tu maestría en UNIMEX®”</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-body">
-                <div class="row mb-1">
-                    <div class="col-10"></div>
-                    <div class="col-2">
-                        <button type="button" class="btn-close text-end" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-11">
-                        <h1 style="color: #004b93;" class="modal-title fs-5 text-center" id="continuaConTuMaestriaLabel">
-                            PROGRAMA <br>
-                            “Continúa con tu maestría en UNIMEX®”
-                        </h1>
-                    </div>
-                </div>
                 En Universidad Mexicana puedes estudiar tu Maestría como continuación de tu Especialidad UNIMEX®. Al
                 terminar los 3 ciclos escolares de la Especialidad, puedes solicitar tu equivalencia de materias para
                 continuar con la Maestría cursando únicamente los últimos dos ciclos del programa equivalente.
@@ -67,28 +57,28 @@
                                 Administración
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                         </tr>
                         <tr>
@@ -96,20 +86,20 @@
                                 Comunicación Visual
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
                                 <i class="bi bi-check-lg"></i>
@@ -123,28 +113,28 @@
                                 Derecho Penal
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                         </tr>
                         <tr>
@@ -152,28 +142,28 @@
                                 Educación
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                         </tr>
                         <tr>
@@ -181,28 +171,28 @@
                                 Habilidades Directivas
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                         </tr>
                         <tr>
@@ -210,26 +200,26 @@
                                 Impuestos
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
+
+
                             </td>
                             <td class="text-center">
                                 <i class="bi bi-check-lg"></i>
                             </td>
                             <td class="text-center">
-                                
-                                    
+                                <i class="bi bi-check-lg"></i>
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
+                            </td>
+                            <td class="text-center">
+
+
                             </td>
                         </tr>
                         <tr>
@@ -237,26 +227,26 @@
                                 Mercadotecnia
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
+
+
                             </td>
                             <td class="text-center">
                                 <i class="bi bi-check-lg"></i>
                             </td>
                             <td class="text-center">
-                                
-                                    
+                                <i class="bi bi-check-lg"></i>
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
+                            </td>
+                            <td class="text-center">
+
+
                             </td>
                         </tr>
                         <tr>
@@ -264,33 +254,33 @@
                                 Terapias Psicosociales
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                             <td class="text-center">
-                                
-                                    
+
+
                             </td>
                         </tr>
                     </tbody>
                 </table>
-               {{--  <p>
+                {{--  <p>
                     La Especialidad en Docencia no aplica para Continuar a Maestría. Consulta en el plantel la
                     disponibilidad del programa en el ciclo escolar de tu interés.
                 </p> --}}
