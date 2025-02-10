@@ -120,7 +120,7 @@
                     @endif
                     @if ($licenciatura->id == 22 || $licenciatura->id == 21)
                         <li>
-                            <b>Beca anual renovable hasta del 60%.</b> en licenciaturas matutinas. Obtén una beca durante el primer año de estudios.
+                            <b>Beca anual renovable hasta del 60%</b> en licenciaturas matutinas. Obtén una beca durante el primer año de estudios.
                         </li>
                     @else
                         <li>
@@ -128,10 +128,6 @@
                             primer año de estudios.
                         </li>
                     @endif
-                    <li>
-                        <b>Beca anual renovable hasta del 60%.</b> Sin importar tu promedio, obtén una beca durante el
-                        primer año de estudios.
-                    </li>
                     <li>
                         <b>Cuotas muy accesibles.</b>
                     </li>
