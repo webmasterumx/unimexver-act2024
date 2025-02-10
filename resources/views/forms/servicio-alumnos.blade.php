@@ -85,10 +85,10 @@
             <div class="col-12 col-md-2 d-flex">
                 <input disabled type="text" class="text-center" id="number1" name="number1">
                 <div class="d-flex" style="width: 20% !important; align-items: center;">&nbsp;+</div>
-                <input disabled type="tel" class="text-center" id="number2" name="number2">
+                <input disabled type="text" class="text-center" id="number2" name="number2">
             </div>
             <div class="col-12 col-md-4">
-                <input type="text" maxlength="2" class="form-control" id="operacion_service" name="operacion_service"
+                <input type="tel" maxlength="2" class="form-control" id="operacion_service" name="operacion_service"
                     placeholder="Introduce el resultado aquí">
             </div>
         </div>
