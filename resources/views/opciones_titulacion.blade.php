@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('titulo')
+    Opciones de Titulación | UNIMEX
+@endsection
+
 @section('content')
     <!-- Inicio de Opciones para Titularse -->
     <section class="container-fluid py-3">

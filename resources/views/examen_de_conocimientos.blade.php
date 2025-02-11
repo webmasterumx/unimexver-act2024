@@ -1,5 +1,10 @@
 @extends('layouts.layout')
 
+@section('titulo')
+    Examen de Conocimientos | UNIMEX
+@endsection
+
+
 @section('content')
     <!-- Inicio de Examen de conocimientos -->
     <section class="container-fluid py-3">

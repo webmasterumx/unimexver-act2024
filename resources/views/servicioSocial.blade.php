@@ -1,5 +1,9 @@
 @extends('layouts.layout')
 
+@section('titulo')
+    Servicio Social | UNIMEX
+@endsection
+
 @section('content')
     <section class="container-fluid py-4">
         <div class="row">

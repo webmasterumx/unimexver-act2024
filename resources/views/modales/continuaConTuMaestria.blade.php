@@ -29,257 +29,259 @@
                 <b>
                     2. Programas de Especialidad UNIMEX® que aplican para equivalencia de materias para Maestría:
                 </b>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th style="width: 40%; background: #004b93; color: #ffff;">
-                                Programas que
-                                aplican para Equivalencia en Maestría
-                            </th>
-                            <th class="text-center" style=" background: #004b93; color: #ffff;" colspan="2">Polanco
-                            </th>
-                            <th class="text-center" style=" background: #004b93; color: #ffff;" colspan="2">Satélite
-                            </th>
-                            <th class="text-center" style=" background: #004b93; color: #ffff;" colspan="2">Izcalli
-                            </th>
-                        </tr>
-                        <tr>
-                            <td width="10%"></td>
-                            <td width="10%">Especialidad</td>
-                            <td width="10%">Maestría</td>
-                            <td width="10%">Especialidad</td>
-                            <td width="10%">Maestría</td>
-                            <td width="10%">Especialidad</td>
-                            <td width="10%">Maestría</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Administración
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Comunicación Visual
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Derecho Penal
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Educación
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Habilidades Directivas
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Impuestos
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Mercadotecnia
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
-                            </td>
-                            <td class="text-center">
-                                <i class="bi bi-check-lg"></i>
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Terapias Psicosociales
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                            <td class="text-center">
-
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th style="width: 40%; background: #004b93; color: #ffff;">
+                                    Programas que
+                                    aplican para Equivalencia en Maestría
+                                </th>
+                                <th class="text-center" style=" background: #004b93; color: #ffff;" colspan="2">Polanco
+                                </th>
+                                <th class="text-center" style=" background: #004b93; color: #ffff;" colspan="2">Satélite
+                                </th>
+                                <th class="text-center" style=" background: #004b93; color: #ffff;" colspan="2">Izcalli
+                                </th>
+                            </tr>
+                            <tr>
+                                <td width="10%"></td>
+                                <td width="10%">Especialidad</td>
+                                <td width="10%">Maestría</td>
+                                <td width="10%">Especialidad</td>
+                                <td width="10%">Maestría</td>
+                                <td width="10%">Especialidad</td>
+                                <td width="10%">Maestría</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Administración
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Comunicación Visual
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+                                    <i class="bi bi-check-lg"></i>
+                                </td>
+                                <td class="text-center">
+                                    <i class="bi bi-check-lg"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Derecho Penal
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Educación
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Habilidades Directivas
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Impuestos
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+                                    <i class="bi bi-check-lg"></i>
+                                </td>
+                                <td class="text-center">
+                                    <i class="bi bi-check-lg"></i>
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Mercadotecnia
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+                                    <i class="bi bi-check-lg"></i>
+                                </td>
+                                <td class="text-center">
+                                    <i class="bi bi-check-lg"></i>
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Terapias Psicosociales
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                                <td class="text-center">
+    
+    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 {{--  <p>
                     La Especialidad en Docencia no aplica para Continuar a Maestría. Consulta en el plantel la
                     disponibilidad del programa en el ciclo escolar de tu interés.
