@@ -1,14 +1,14 @@
 @extends('layouts.layout')
 
 @section('content')
-    <section class="container py-4">
+    <section class="container-fluid py-4">
         <div class="row">
-            <div class="col-12 col-md-3">
-                <h2 class="underlined-head">
+            <div class="col-12 col-md-3 col-lg-2">
+                <h2 class="underlined-head text-uppercase fw-normal">
                     SERVICIO SOCIAL
                 </h2>
             </div>
-            <div class="col-12 col-md-9 fs-5">
+            <div class="col-12 col-md-9 col-lg-10">
                 <h4>
                     Objetivo
                 </h4>

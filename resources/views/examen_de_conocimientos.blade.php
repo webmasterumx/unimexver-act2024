@@ -5,7 +5,7 @@
     <section class="container-fluid px-5 py-3">
         <div class="row">
             <div class="col-12 col-md-3 col-lg-2">
-                <h2 class="underlined-head fw-normal" style="font-size: 1.438rem;">
+                <h2 class="underlined-head fw-normal">
                     EXAMEN DE <br>
                     CONOCIMIENTOS
                 </h2>

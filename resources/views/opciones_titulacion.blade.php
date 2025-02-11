@@ -5,9 +5,9 @@
     <section class="container-fluid px-5 py-3">
         <div class="row">
             <div class="col-12 col-md-3 col-lg-2">
-                <h1 style="font-size: 1.428em;" class="underlined-head">
+                <h2 class="underlined-head text-uppercase fw-normal">
                     OPCIONES DE <br> TITULACIÓN
-                </h1>
+                </h2>
             </div>
             <div class="col-12 col-md-9 col-lg-10">
                 <p>
