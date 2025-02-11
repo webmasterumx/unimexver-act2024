@@ -9,7 +9,7 @@
                     OPCIONES DE <br> TITULACIÓN
                 </h2>
             </div>
-            <div class="col-12 col-md-9 col-lg-10">
+            <div class="col-12 col-md-9 col-lg-10" style="text-align: justify;">
                 <p>
                     En UNIMEX sabemos lo importante que es la obtención de tu Título Universitario, por lo que al término de
                     la licenciatura podrás elegir entre estas cuatro modalidades de titulación. <br><br>

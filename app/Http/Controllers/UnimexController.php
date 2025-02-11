@@ -261,9 +261,10 @@ class UnimexController extends Controller
 
     public function rvoe(): View
     {
-        /* $rvoes = Rvoe::all(); */
+        $apiConsumoUnimex = new ApiConsumoUnimex();
+        $listaRvoes = $apiConsumoUnimex->getRvoes();
 
-        return view('rvoes');
+        return view('rvoes',["lista" => $listaRvoes]);
     }
 
     public function investigacion(): View

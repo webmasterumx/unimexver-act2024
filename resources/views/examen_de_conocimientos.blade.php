@@ -10,7 +10,7 @@
                     CONOCIMIENTOS
                 </h2>
             </div>
-            <div class="col-12 col-md-7 col-lg-10">
+            <div class="col-12 col-md-7 col-lg-10" style="text-align: justify;">
                 <p>
                     Examen escrito de reactivos de opción múltiple, que se fundamenta en los conocimientos básicos
                     indispensables que se deben tener en la Licenciatura. <br>
