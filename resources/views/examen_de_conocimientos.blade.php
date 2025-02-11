@@ -2,15 +2,15 @@
 
 @section('content')
     <!-- Inicio de Examen de conocimientos -->
-    <section class="container-fluid px-5 py-3">
+    <section class="container-fluid py-3">
         <div class="row">
-            <div class="col-12 col-md-3 col-lg-2">
+            <div class="col-12 col-md-3 col-lg-3">
                 <h2 class="underlined-head fw-normal">
                     EXAMEN DE <br>
                     CONOCIMIENTOS
                 </h2>
             </div>
-            <div class="col-12 col-md-7 col-lg-10" style="text-align: justify;">
+            <div class="col-12 col-md-7 col-lg-9" style="text-align: justify;">
                 <p>
                     Examen escrito de reactivos de opción múltiple, que se fundamenta en los conocimientos básicos
                     indispensables que se deben tener en la Licenciatura. <br>

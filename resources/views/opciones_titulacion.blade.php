@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Inicio de Opciones para Titularse -->
-    <section class="container-fluid px-5 py-3">
+    <section class="container-fluid py-3">
         <div class="row">
             <div class="col-12 col-md-3 col-lg-2">
                 <h2 class="underlined-head text-uppercase fw-normal">
