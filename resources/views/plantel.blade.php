@@ -51,7 +51,7 @@
             </div>
             <div class="col-12 col-md-7 col-lg-8">
                 <p>
-                    {{ $plantel->descripcion_larga }}
+                    {!! $plantel->descripcion_larga !!}
                 </p>
             </div>
         </div>
