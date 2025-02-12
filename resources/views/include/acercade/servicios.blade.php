@@ -119,7 +119,7 @@
                 Está prohibido introducir alimentos y bebidas <br>
                 Se prohíbe introducir teléfonos celulares y radiolocalizadores encendidos <br>
                 Prohibido fumar y subir los pies al mobiliario en general <br>
-                Se tienen convenios para que usuarios externos utilicen el acervo cultural que se tiene en UNIMEX. <br>
+                Se tienen convenios para que usuarios externos utilicen el acervo cultural que se tiene en UNIMEX<sup>®</sup>. <br>
                 Horario de Atención Lunes a viernes: de 7:00 a 22:00 h, sábados: de 7:00 a 16:00 h.
             </p>
         </div>
