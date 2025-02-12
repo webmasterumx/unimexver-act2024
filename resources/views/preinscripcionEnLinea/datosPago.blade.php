@@ -28,7 +28,7 @@
                         <img style="max-width: 250px;"
                             src="{{ asset('assets/img/preinscripcion_linea/Unimex_Izcalli.jpg') }}" alt="">
                         <br>
-                        Forma parte de UNIMEX®
+                        Forma parte de UNIMEX<sup>®</sup>
                     </p>
                 </div>
                 <div class="col-12 col-md-12 col-lg-7 py-4">

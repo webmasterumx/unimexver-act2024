@@ -1,5 +1,10 @@
 @media (min-width: 200px) and (max-width: 400px) {
 
+    #text_ventajasPosDistancia {
+        height: 350px;
+        overflow-y: scroll;
+    }
+
     .itemImgCarrucelVentajasDis {
         height: 20rem !important;
     }
@@ -284,6 +289,11 @@
 */
 @media (min-width: 400px) and (max-width: 500.98px) {
 
+    #text_ventajasPosDistancia {
+        height: 350px;
+        overflow-y: scroll;
+    }
+
     #contenedorTexto {
         padding: 10%;
         font-size: 120%;
@@ -552,6 +562,11 @@
 }
 
 @media (min-width: 500px) and (max-width: 600.98px) {
+
+    #text_ventajasPosDistancia {
+        height: 450px;
+        overflow-y: scroll;
+    }
 
     #carrucelVentajas>.slick-list {
         height: 25rem;
@@ -913,6 +928,11 @@
 
 @media (min-width: 800.98px) and (max-width: 900.98px) {
 
+    #text_ventajasPosDistancia {
+        height: 25rem !important;
+        overflow-y: scroll;
+    }
+
     #contenedorTexto {
         padding: 10%;
         font-size: 120%;
@@ -1067,6 +1087,11 @@
 
 @media (min-width: 900.98px) and (max-width: 1199.98px) {
 
+    #text_ventajasPosDistancia {
+        height: 30rem !important;
+        overflow-y: scroll;
+    }
+
     #contenedorTexto {
         padding: 10%;
         font-size: 120%;
@@ -1218,6 +1243,11 @@
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
 
+    #text_ventajasPosDistancia {
+        height: 32rem !important;
+        overflow-y: scroll;
+    }
+
     #contenedorTexto {
         padding: 10% !important;
         font-size: 120% !important;
@@ -1255,8 +1285,8 @@
     }
 
     #text_ventajas {
-        height: 550px;
-        overflow-y: scroll;
+        height: 32rem !important;
+        padding: 2rem !important;
     }
 
     #cardTemarioLicenciatura,
@@ -1266,11 +1296,11 @@
     }
 
     #carrucelVentajas {
-        height: 90vh;
+        height: 32rem;
     }
 
     .itemImgCarrucelVentajasDis {
-        height: 90vh !important;
+        height: 32rem !important;
     }
 
     #contraportada {
@@ -1378,6 +1408,15 @@
 
 @media (min-width: 1399.98px) {
 
+    #subportadaPosDis {
+        height: 43rem !important;
+    }
+
+    #text_ventajasPosDistancia {
+        height: 43rem;
+        overflow-y: scroll;
+    }
+
     #contenedorTexto {
         padding: 10%;
     }
@@ -1418,8 +1457,8 @@
     }
 
     #text_ventajas {
-        height: 720px;
-        overflow-y: scroll;
+        height: 41rem;
+        padding: 3rem !important;
     }
 
     #cardTemarioLicenciatura,
@@ -1428,12 +1467,12 @@
         max-height: 420px;
     }
 
-    #carrucelVentajas {
-        height: 90vh;
+    #carrucelVentajas>.slick-list {
+        height: 41rem !;
     }
 
     .itemImgCarrucelVentajasDis {
-        height: 90vh !important;
+        height: 41rem !important;
     }
 
 

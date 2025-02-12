@@ -41,7 +41,7 @@
                     <li style="text-align: justify;">Fecha de aplicación del examen: <b> por confirmar</b></li>
                 </ol>
                 <p style="text-align: justify;">
-                    <b>Lugar de Aplicación: </b> Planteles UNIMEX®
+                    <b>Lugar de Aplicación: </b> Planteles UNIMEX<sup>®</sup>
                 </p>
                 <h3>
                     Publicación de Resultados.
@@ -49,7 +49,7 @@
                 Términos.
                 <ul>
                     <li style="text-align: justify;">
-                        Este examen se puede aplicar indistintamente en cualquier plantel UNIMEX®.
+                        Este examen se puede aplicar indistintamente en cualquier plantel UNIMEX<sup>®</sup>.
                     </li>
                     <li style="text-align: justify;">
                         La calificación del examen será ACREDITADO o NO ACREDITADO (no hay revisión de examen) el resultado

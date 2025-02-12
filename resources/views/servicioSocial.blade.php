@@ -46,7 +46,7 @@
                     </li>
                     <li>
                         Presentar en Ventanilla Única una solicitud de autorización para ejercer esta opción, anexando la
-                        documentación oficial de la Institución donde se cursará el Posgrado. Una vez validada por Unimex®,
+                        documentación oficial de la Institución donde se cursará el Posgrado. Una vez validada por Unimex<sup>®</sup>,
                         se expedirá la carta de autorización.
                     </li>
                 </ul>

@@ -15,7 +15,7 @@
                         alt="">
                     <br>
                     <p style="color: #00539B !important;">
-                        <b>Forma parte de UNIMEX®</b>
+                        <b>Forma parte de UNIMEX<sup>®</sup></b>
                     </p>
                 </div>
                 <div class="col-12 col-md-12 col-lg-7">

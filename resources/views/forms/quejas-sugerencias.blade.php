@@ -70,7 +70,7 @@
     <div class="mb-5 col-12 form-check">
         <input class="form-check-input" type="checkbox" id="aceptar_qys" name="aceptar_qys" checked>
         <label class="form-check-label ms-4 mt-2" for="aceptar_qys">
-            Estoy de acuerdo en ser contactado por UNIMEX® y acepto el <a href="javascript:void(0);"
+            Estoy de acuerdo en ser contactado por UNIMEX<sup>®</sup> y acepto el <a href="javascript:void(0);"
                 onclick="window.open('{{ route('aviso_de_privacidad') }}','Privacidad','scrollbars=yes,width=1000,height=700')">
                 aviso de privacidad.
             </a>

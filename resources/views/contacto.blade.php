@@ -79,14 +79,14 @@
                     <li class="nav-item" role="presentation" id="seccionContrataAlumnos">
                         <button class="nav-link" id="formularioContrataAlumnos" data-bs-toggle="tab" data-bs-target="#contrata-pane"
                             type="button" role="tab" aria-controls="contrata-pane" aria-selected="false">
-                            Contrata Alumnos y Egresados UNIMEX®
+                            Contrata Alumnos y Egresados UNIMEX<sup>®</sup>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation" id="seccionTrabajaUnimex">
                         <button id="formularioTrabajaUnimex" class="nav-link {{ $claseFormBolsaTrabajo }}" id="disabled-tab"
                             data-bs-toggle="tab" data-bs-target="#seccionFormTrabajaUnimex" type="button" role="tab"
                             aria-controls="seccionFormTrabajaUnimex" aria-selected="false">Trabaja en
-                            UNIMEX®</button>
+                            UNIMEX<sup>®</sup></button>
                     </li>
                     <li class="nav-item" role="presentation" id="seccionQuejasySugerencias">
                         <button class="nav-link" id="formularioQuejasYSugerencias" data-bs-toggle="tab" data-bs-target="#sugerencia-pane"
@@ -109,10 +109,10 @@
                     <div class="tab-pane fade px-5 py-3 border" id="contrata-pane" role="tabpanel"
                         aria-labelledby="contrata-tab" tabindex="0">
                         <h4 class="fw-normal">
-                            Contrata Alumnos y Egresados UNIMEX®
+                            Contrata Alumnos y Egresados UNIMEX<sup>®</sup>
                         </h4>
                         <p>
-                            UNIMEX® concentra las ofertas laborales para alumnos y egresados en una sección dedicada a
+                            UNIMEX<sup>®</sup> concentra las ofertas laborales para alumnos y egresados en una sección dedicada a
                             Universidad Mexicana en la Red Universitaria de Empleo de OCC.
                         </p>
                         <p class="text-center">

@@ -201,13 +201,13 @@
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 left-gray-border">
                             <h5 class="hide">
                                 <a href="{{ env('APP_URL') . 'planteles/' . $plantel->nombre . $complemento }}">
-                                    {{ $plantel->nombre }}</a>
+                                    {{ $plantel->titulo }}</a>
                             </h5>
                             <div class="card" style="min-height: 1px;">
                                 <a href="{{ env('APP_URL') . 'planteles/' . $plantel->nombre . $complemento }}">
                                     <div class="parent">
                                         <div class="child {{ $plantel->clase_img }}">
-                                            <span class="linka text-capitalize">{{ $plantel->nombre }}</span>
+                                            <span class="linka text-capitalize">{{ $plantel->titulo }}</span>
                                         </div>
                                     </div>
                                 </a>
@@ -216,7 +216,7 @@
                                         <br>
                                     </p>
                                     <a href="{{ env('APP_URL') . 'planteles/' . $plantel->nombre . $complemento }}"
-                                        class="btn btn-primary btn-arrow-go">Plantel {{ $plantel->nombre }} </a>
+                                        class="btn btn-primary btn-arrow-go">Plantel {{ $plantel->titulo }} </a>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +348,7 @@
                         <h5 class="hide">
                             <a href="javascript:void(0);"
                                 onClick="window.open('http://www.facebook.com/sharer.php?u=http://www.unimex.edu.mx','Compartir','scrollbars=no,width=600,height=450')">Recomienda
-                                UNIMEX®</a>
+                                UNIMEX<sup>®</sup></a>
                         </h5>
                         <div class="card" style="min-height: 150px;">
                             <a href="javascript:void(0);"
@@ -363,7 +363,7 @@
                                 <p class="card-text" style="text-align: center;">
                                     <a href="javascript:void(0);"
                                         onClick="window.open('http://www.facebook.com/sharer.php?u=http://www.unimex.edu.mx','Compartir','scrollbars=no,width=600,height=450')"><span
-                                            class="blue-text">Recomienda UNIMEX®</span></a>
+                                            class="blue-text">Recomienda UNIMEX<sup>®</sup></span></a>
 
                                 </p>
 
@@ -417,7 +417,7 @@
                         <h5 class="hide">
                             <a href="javascript:void(0);"
                                 onClick="window.open('{{ asset('assets/pdf/reglamentoum.pdf') }}','Reglamento UNIMEX','scrollbars=no,width=580,height=600')">Reglamento
-                                UNIMEX®</a>
+                                UNIMEX<sup>®</sup></a>
                         </h5>
                         <div class="card" style="min-height: 150px;">
                             <a href="javascript:void(0);"
@@ -432,7 +432,7 @@
                                 <p class="card-text" style="text-align: center;">
                                     <a href="javascript:void(0);"
                                         onClick="window.open('{{ asset('assets/pdf/reglamentoum.pdf') }}','Reglamento UNIMEX','scrollbars=no,width=580,height=600')"><span
-                                            class="blue-text">Reglamento UNIMEX®</span></a>
+                                            class="blue-text">Reglamento UNIMEX<sup>®</sup></span></a>
 
                                 </p>
 

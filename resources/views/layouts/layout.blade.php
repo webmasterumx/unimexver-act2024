@@ -113,7 +113,7 @@
             </div>
             <hr class="my-3">
             <div class="col-12 mb-3">
-                UNIVERSIDAD MEXICANA {{ date('Y') }}®
+                UNIVERSIDAD MEXICANA {{ date('Y') }}<sup>®</sup>
             </div>
         </div>
     </footer>

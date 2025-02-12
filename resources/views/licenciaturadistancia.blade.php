@@ -168,7 +168,7 @@
                 </p>
                 <ol class="ms-3">
                     <li>
-                        <b>Solicita tu Beca y tu Matrícula UNIMEX® con tu asesor.</b>
+                        <b>Solicita tu Beca y tu Matrícula UNIMEX<sup>®</sup> con tu asesor.</b>
                         <ol class="ms-4" type="a">
                             <li>
                                 Llama o envía mensaje de WhatsApp al <a target="_blank" style="color: #de951b"
@@ -356,7 +356,7 @@
         });
 
         $('#carrucelVentajas').slick({
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 1000,
             dots: false,
             arrows: false,

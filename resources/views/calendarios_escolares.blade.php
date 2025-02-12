@@ -5,7 +5,7 @@
     <section class="container py-5">
         <div class="row">
             <div class="col-12 mb-4">
-                <h1><i class="bi bi-calendar-check-fill"></i> Calendarios Escolares UNIMEX®</h1>
+                <h1><i class="bi bi-calendar-check-fill"></i> Calendarios Escolares UNIMEX<sup>®</sup></h1>
             </div>
             <div class="col-12 col-md-4">
                 <div class="card h-100">

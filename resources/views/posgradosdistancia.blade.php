@@ -89,13 +89,13 @@
     <!-- Inicio de la sección de ventajas -->
     <section class="container-fluid  bg-articule">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 p-0">
+            <div id="subportadaPosDis" class="col-12 col-md-6 col-lg-6 p-0">
                 <img src="{{ asset($contraportada) }}" alt="" style="width: 100%; height:100%;">
             </div>
             <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
-                <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
+                <h3 class="underlined-head text-uppercase fw-normal">
                     Ventajas de estudiar el posgrado ONLINE en {{ $posgrado->nombre }}
-                </h1>
+                </h3>
                 <p>
                     <br>
                     <b>
@@ -265,7 +265,7 @@
                                 *En caso de no contar con este documento presentar una Constancia de Terminación con el 100%
                                 de las materias acreditadas. Si su título está en trámite en su Universidad de origen,
                                 presentar la constancia del trámite de Titulación y/o Cédula Profesional, especificando la
-                                fecha de obtención del mismo (deberá presentarlo dentro del plazo señalado por UNIMEX®).
+                                fecha de obtención del mismo (deberá presentarlo dentro del plazo señalado por UNIMEX<sup>®</sup>).
                             </p>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                                 <br><br>
                                 * Legalizado, en caso de Universidades no incorporadas a la S.E.P. <br>
                                 ** Únicamente para egresados de otras instituciones que desean estudiar un Posgrado en
-                                UNIMEX® como opción de titulación.
+                                UNIMEX<sup>®</sup> como opción de titulación.
 
                             </p>
                         </div>

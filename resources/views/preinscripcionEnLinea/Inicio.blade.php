@@ -14,7 +14,7 @@
                     <img class="mt-5" src="{{ asset('assets/img/preinscripcion_linea/preinscripcion.png') }}" alt="">
                     <br>
                     <p class="fs-3" style="color: #00539a !important;">
-                        Forma parte de UNIMEX®
+                        Forma parte de UNIMEX<sup>®</sup>
                     </p>
                 </div>
                 <div class="col-12 col-md-12 col-lg-8" style="color: #00539a !important;">

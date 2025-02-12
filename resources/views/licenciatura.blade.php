@@ -103,9 +103,9 @@
                 <img src="{{ asset($contraportada) }}" alt="" style="width: 100%; height:100%;">
             </div>
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 bg-articule p-5">
-                <h2 style="font-size: 1.438rem;" class="underlined-head fw-normal">
+                <h3 class="underlined-head fw-normal">
                     Ventajas de estudiar la Licenciatura en {{ $licenciatura->nombre }}
-                </h2>
+                </h3>
                 <ul class="text-justify">
                     @if (
                         $licenciatura->id == 5 ||

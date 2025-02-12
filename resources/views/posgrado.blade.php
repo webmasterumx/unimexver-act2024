@@ -90,10 +90,10 @@
                 <img src="{{ asset($contraportada) }}" alt="" style="width: 100%; height:100%;">
             </div>
             @if ($posgrado->nombre == 'Docencia' || $posgrado->nombre == 'Impuestos')
-                <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
-                    <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
+                <div id="text_ventajasPosDistancia" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
+                    <h3 class="underlined-head text-uppercase fw-normal">
                         Ventajas de estudiar el posgrado en {{ $posgrado->nombre }}
-                    </h1>
+                    </h3>
                     <p>
                         Obtienes un nivel de preparación profesional superior que te permitirá alcanzar mejores
                         oportunidades.
@@ -104,22 +104,22 @@
                             estudios de
                             Posgrado.</button> <br><br>
                         Horarios accesibles que te permiten estudiar y trabajar. <br><br>
-                        Beca especial para egresados de Licenciatura UNIMEX®.
+                        Beca especial para egresados de Licenciatura UNIMEX<sup>®</sup>.
                     </p>
                 </div>
             @else
-                <div id="text_ventajas" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
-                    <h1 style="font-size: 1.25rem;" class="underlined-head text-uppercase fw-normal">
+                <div id="text_ventajasPosDistancia" class="col-12 col-md-6 col-lg-6 bg-articule p-5">
+                    <h3 class="underlined-head text-uppercase fw-normal">
                         Ventajas de estudiar el posgrado en {{ $posgrado->nombre }}
-                    </h1>
+                    </h3>
                     <p>
                         Obtienes un nivel de preparación profesional superior que puede facilitarte alcanzar las mejores
                         oportunidades.
                         <br><br>
                         Beca UNIMEX para Especialidades hasta del 35% y para Maestrías hasta del 20%.
                         <br><br>
-                        Puedes aplicar el Programa “Continúa con tu Maestría en UNIMEX®”:
-                        En Universidad Mexicana puedes estudiar tu Maestría como continuación de tu Especialidad UNIMEX®. Al
+                        Puedes aplicar el Programa “Continúa con tu Maestría en UNIMEX<sup>®</sup>”:
+                        En Universidad Mexicana puedes estudiar tu Maestría como continuación de tu Especialidad UNIMEX<sup>®</sup>. Al
                         terminar los 3 ciclos escolares de la Especialidad, puedes solicitar tu equivalencia de materias
                         para
                         continuar con la Maestría cursando únicamente los últimos dos ciclos del programa equivalente. <br>
@@ -292,7 +292,7 @@
                                 *En caso de no contar con este documento presentar una Constancia de Terminación con el 100%
                                 de las materias acreditadas. Si su título está en trámite en su Universidad de origen,
                                 presentar la constancia del trámite de Titulación y/o Cédula Profesional, especificando la
-                                fecha de obtención del mismo (deberá presentarlo dentro del plazo señalado por UNIMEX®).
+                                fecha de obtención del mismo (deberá presentarlo dentro del plazo señalado por UNIMEX<sup>®</sup>).
                             </p>
                         </div>
                     </div>
@@ -309,7 +309,7 @@
                                 <br><br>
                                 * Legalizado, en caso de Universidades no incorporadas a la S.E.P. <br>
                                 ** únicamente para egresados de otras instituciones que desean estudiar un Posgrado en
-                                UNIMEX® como opción de titulación.
+                                UNIMEX<sup>®</sup> como opción de titulación.
 
                             </p>
                         </div>
