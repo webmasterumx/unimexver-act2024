@@ -18,7 +18,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse{{ $con }}" aria-expanded="false"
                                 aria-controls="collapse{{ $con }}">
-                                {{ $preguntaFrecuente->pregunta }}
+                                {!! $preguntaFrecuente->pregunta !!}
                             </button>
                         </h2>
                         <div id="collapse{{ $con }}" class="accordion-collapse collapse"
