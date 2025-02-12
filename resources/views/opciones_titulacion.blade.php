@@ -15,12 +15,12 @@
             </div>
             <div class="col-12 col-md-9 col-lg-10" style="text-align: justify;">
                 <p>
-                    En UNIMEX sabemos lo importante que es la obtención de tu Título Universitario, por lo que al término de
+                    En UNIMEX<sup>®</sup> sabemos lo importante que es la obtención de tu Título Universitario, por lo que al término de
                     la licenciatura podrás elegir entre estas cuatro modalidades de titulación. <br><br>
 
                     I. Titulación por créditos <br>
                     II. Estudios de Grado <br>
-                    III. Examen de Conocimientos UNIMEX <br>
+                    III. Examen de Conocimientos UNIMEX<sup>®</sup> <br>
                     IV. Examen General de Egreso (EGEL) <br><br>
 
                     <b>I. Titulación por créditos.</b><br><br>
@@ -28,13 +28,13 @@
                     un trabajo escrito en el que señales qué esperas de tu ejercicio profesional. <br><br>
 
                     <b>II. Estudios de Grado.</b><br><br>
-                    Con esta opción podrás seguir preparándote cursando un Posgrado en UNIMEX o en una institución externa
+                    Con esta opción podrás seguir preparándote cursando un Posgrado en UNIMEX<sup>®</sup> o en una institución externa
                     para acceder a los mejores puestos de trabajo al mismo tiempo que cumples los requisitos para tu
                     titulación de licenciatura. <br><br>
 
-                    1. Estudios de Grado en UNIMEX. <br><br>
+                    1. Estudios de Grado en UNIMEX<sup>®</sup>. <br><br>
 
-                    Al cursar y aprobar tres cuatrimestres (45 créditos) del Posgrado UNIMEX de tu elección (con afinidad a
+                    Al cursar y aprobar tres cuatrimestres (45 créditos) del Posgrado UNIMEX<sup>®</sup> de tu elección (con afinidad a
                     tu licenciatura) obtendrás de manera automática tu Título de la Licenciatura además de obtener los
                     siguientes beneficios:
                 </p>
@@ -42,16 +42,16 @@
                     <li>Podrás tramitar el Diploma de Especialidad correspondiente a tus estudios de grado.</li>
                     <li>Al cursar dos cuatrimestres adicionales, conseguirás el Grado de Maestría adquiriendo así tres
                         niveles académicos en corto tiempo (Licenciatura, Especialidad y Maestría).</li>
-                    <li>Becas especiales para egresados UNIMEX.</li>
+                    <li>Becas especiales para egresados UNIMEX<sup>®</sup>.</li>
                 </ul>
                 <p>
                     2. Estudios de Grado en Institución Externa. <br><br>
 
                     Podrás obtener tu Título al cursar una Especialidad o Maestría, afín a tu licenciatura, en una
-                    institución diferente a UNIMEX siempre y cuando cuente con Reconocimiento de Validez Oficial de Estudios
+                    institución diferente a UNIMEX<sup>®</sup> siempre y cuando cuente con Reconocimiento de Validez Oficial de Estudios
                     (RVOE) y acredites en ésta, por lo menos, las materias equivalentes a 45 créditos. <br><br>
 
-                    <b>III. Examen de Conocimientos UNIMEX.</b><br><br>
+                    <b>III. Examen de Conocimientos UNIMEX<sup>®</sup>.</b><br><br>
                     Universidad Mexicana diseña y aplica una evaluación escrita que se elabora apegada a los planes de
                     estudios de cada licenciatura. Al aprobarlo, obtendrás una constancia para iniciar con ella tus trámites
                     de Titulación. <br><br>
@@ -62,7 +62,7 @@
                     competencias. El Examen General de Egreso (EGEL) es una prueba escrita con los conocimientos y
                     habilidades necesarios para ejercer cada Licenciatura profesionalmente, elaborada y aplicada por Ceneval
                     a los egresados de todas las Instituciones de Educación Superior que así lo soliciten. <br>
-                    Para obtener tu Título por esta opción es necesario revisar las licenciaturas autorizadas por UNIMEX
+                    Para obtener tu Título por esta opción es necesario revisar las licenciaturas autorizadas por UNIMEX<sup>®</sup>
                     para aplicar EGEL. Una vez presentado el examen deberás conseguir un resultado “Satisfactorio o
                     Sobresaliente” en esta prueba. <br><br>
 

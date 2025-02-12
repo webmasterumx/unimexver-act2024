@@ -199,7 +199,7 @@
                 <br>
                 <p class="text-center">
                     <button data-bs-toggle="modal" data-bs-target="#continuaConTuMaestria" type="button"
-                        class="btn btn-primary mb-2 mb-md-0">Continúa con tu maestría en UNIMEX</button>
+                        class="btn btn-primary mb-2 mb-md-0">Continúa con tu maestría en UNIMEX<sup>®</sup></button>
                     <button data-bs-toggle="modal" data-bs-target="#titulacionEstudiosPosgrado" type="button"
                         class="btn btn-primary mb-2 mb-md-0">Titulación vía estudios de posgrados</button>
                 </p>

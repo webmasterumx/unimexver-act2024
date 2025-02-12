@@ -138,7 +138,7 @@
                         Licenciaturas Universidad Mexicana
                     </h2>
                     <p class="fs-unimex1 text-center">
-                        Estudia con nosotros tu #LicenciaturaUNIMEX en:
+                        Estudia con nosotros tu #LicenciaturaUNIMEX<sup>®</sup> en:
                     </p>
                 </div>
                 <div class="col-12">
@@ -213,7 +213,7 @@
                         aria-labelledby="pills-profile-tab" tabindex="0">
                         <img class="mb-3" src="{{ asset('assets/img/extras/quote.png') }}" alt="" srcset="">
                         <p class="text-center" style="color: #666666; font-size: 20px;">
-                            La mejor decisión para mi vida profesional, fue estudiar una maestría en UNIMEX.
+                            La mejor decisión para mi vida profesional, fue estudiar una maestría en UNIMEX<sup>®</sup>.
                         </p>
                         <p class="text-center" style="color: #f8981d; font-size: 20px;">
                             Arturo Fregoso
@@ -223,7 +223,7 @@
                         aria-labelledby="pills-contact-tab" tabindex="0">
                         <img class="mb-3" src="{{ asset('assets/img/extras/quote.png') }}" alt="" srcset="">
                         <p class="text-center" style="color: #666666; font-size: 20px;">
-                            Conocí a mi socio en UNIMEX y ahora juntos tenemos una empresa exitosa.
+                            Conocí a mi socio en UNIMEX<sup>®</sup> y ahora juntos tenemos una empresa exitosa.
                         </p>
                         <p class="text-center" style="color: #f8981d; font-size: 20px;">
                             Irlanda Torres

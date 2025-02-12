@@ -130,7 +130,7 @@
                                 <button onclick="establecerTipoDeEmpresaOCC(0)" type="button" class="btn btn-primary"
                                     data-bs-toggle="modal" data-bs-target="#empresasOCC">
                                     AÚN NO, QUEREMOS OBTENER <br> UNA CUENTA GRATUITA PARA <br> PUBLICAR VACANTES PARA <br>
-                                    UNIMEX
+                                    UNIMEX<sup>®</sup>
                                 </button>
                             </div>
                         </div>
