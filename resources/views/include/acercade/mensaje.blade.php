@@ -10,7 +10,7 @@
                 importantes es la elección de la carrera universitaria, es decir, la profesión que nos proveerá de un
                 futuro lleno de satisfacciones.
                 <br><br>
-                En UNIMEX® como Institución Educativa tenemos como principal objetivo ser la mejor alternativa, seria y
+                En UNIMEX<sup>®</sup> como Institución Educativa tenemos como principal objetivo ser la mejor alternativa, seria y
                 competitiva en el desarrollo profesional de los jóvenes. Ofrecemos un conocimiento práctico que sirva al
                 egresado para canalizar sus habilidades a favor de sus propias ideas y metas.
                 <br><br>

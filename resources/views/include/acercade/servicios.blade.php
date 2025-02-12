@@ -10,7 +10,7 @@
                 catedráticos pueden realizar algunas de sus actividades extra clase.
                 <br><br>
 
-                <b>El SUM</b> es un apoyo básico en la realización de los eventos que se lleven a cabo en UNIMEX®.
+                <b>El SUM</b> es un apoyo básico en la realización de los eventos que se lleven a cabo en UNIMEX<sup>®</sup>.
                 <br><br>
 
                 <b>El SUM</b> está bajo la Coordinación del Área Académica, donde se deberá revisar la disponibilidad
@@ -32,7 +32,7 @@
                 Centro de Cómputo
             </h2>
             <p class="text-justify">
-                Existen <b>dos tipos</b> de centros de cómputo en <b>UNIMEX®</b>. El académico, donde se desarrollan las
+                Existen <b>dos tipos</b> de centros de cómputo en <b>UNIMEX<sup>®</sup></b>. El académico, donde se desarrollan las
                 actividades
                 que los planes académicos requieren de manera oficial o extraoficial, este espacio sirve para que
                 mientras el catedrático expone su clase los alumnos tengan la posibilidad de realizar sus prácticas, ya
@@ -66,7 +66,7 @@
                 software
                 siempre actualizado: Microsoft Office, Visual Studio y SQL Server. <br><br>
 
-                <b>Equipamiento audiovisual en aulas.</b> Todas las aulas UNIMEX® cuentan con pantallas LCD y equipo
+                <b>Equipamiento audiovisual en aulas.</b> Todas las aulas UNIMEX<sup>®</sup> cuentan con pantallas LCD y equipo
                 multimedia para presentaciones y materiales didácticos que complementen las clases.
             </p>
         </div>
@@ -84,8 +84,8 @@
             </h2>
             <p class="text-justify">
                 Tu <b>espacio de esparcimiento</b> en la universidad. Más que un expendio de alimentos, queremos que la
-                cafetería de UNIMEX®, sea un lugar donde los estudiantes realicen actividades como foros, círculos de
-                lectura u otros eventos que tú mismo sugieras. Recuerda, el estilo de vida universitaria en UNIMEX®, lo
+                cafetería de UNIMEX<sup>®</sup>, sea un lugar donde los estudiantes realicen actividades como foros, círculos de
+                lectura u otros eventos que tú mismo sugieras. Recuerda, el estilo de vida universitaria en UNIMEX<sup>®</sup>, lo
                 haces tú.
             </p>
         </div>
@@ -93,12 +93,12 @@
             style="background-image: url({{ asset('assets/img/extras/acercade/cafeteria.jpg') }})"></div>
         <div class="col-12 col-md-6 p-5">
             <h2 class="underlined-head mt-5 fw-normal" style="font-size: 1.438rem;">
-                Biblioteca UNIMEX®
+                Biblioteca UNIMEX<sup>®</sup>
             </h2>
             <p class="text-justify">
-                La biblioteca UNIMEX® es un apoyo académico que tiene como finalidad conservar y difundir la cultura. Su
+                La biblioteca UNIMEX<sup>®</sup> es un apoyo académico que tiene como finalidad conservar y difundir la cultura. Su
                 principal objetivo es adquirir, organizar y fomentar el uso del material bibliográfico entre la
-                comunidad universitaria. UNIMEX® actualmente cuenta con EL SISTEMA SIABUC (Sistema de Control de libros
+                comunidad universitaria. UNIMEX<sup>®</sup> actualmente cuenta con EL SISTEMA SIABUC (Sistema de Control de libros
                 de La Universidad de Colima) para agilizar la consulta del acervo bibliográfico, agilizando la
                 verificación de disponibilidad del material en la Biblioteca.
                 <br><br>
@@ -110,10 +110,10 @@
                 <b>
                     Normas Generales
                 </b>
-                Se considera usuario en pleno derecho para el uso de Biblioteca de UNIMEX® y con credencial vigente a
+                Se considera usuario en pleno derecho para el uso de Biblioteca de UNIMEX<sup>®</sup> y con credencial vigente a
                 los siguientes usuarios:
                 <br><br>
-                Estudiantes y egresados de UNIMEX® <br>
+                Estudiantes y egresados de UNIMEX<sup>®</sup> <br>
                 Catedráticos <br>
                 Personal Administrativo <br>
                 Está prohibido introducir alimentos y bebidas <br>
