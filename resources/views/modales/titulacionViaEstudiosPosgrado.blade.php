@@ -2,12 +2,13 @@
 <div class="modal fade" id="titulacionEstudiosPosgrado" tabindex="-1" aria-labelledby="titulacionEstudiosPosgradoLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
-        <div class="modal-header">
-            <h5 style="color: #004b93;" class="modal-title"> TITULACIÓN VÍA ESTUDIOS DE
-                POSGRADO</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+
         <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="color: #004b93;" class="modal-title"> TITULACIÓN VÍA ESTUDIOS DE
+                    POSGRADO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-12">
@@ -25,7 +26,8 @@
                                 I. Titulación de Licenciatura vía Estudios de Posgrado.
                             </b>
                             Si elegiste esta opción de Titulación podrás inscribirte en uno de los programas de Posgrado
-                            de UNIMEX<sup>®</sup> y al terminar el 100% de los créditos podrás completar el trámite para obtener tu
+                            de UNIMEX<sup>®</sup> y al terminar el 100% de los créditos podrás completar el trámite para
+                            obtener tu
                             Título de Licenciatura.
                         </p>
                         <ol>
@@ -100,12 +102,14 @@
                         <p>
                             Examen de Conocimientos Ceneval
                             <br><br>
-                            UNIMEX<sup>®</sup>, considera 1050 puntos, como puntaje mínimo para titularse vía Examen General para
+                            UNIMEX<sup>®</sup>, considera 1050 puntos, como puntaje mínimo para titularse vía Examen
+                            General para
                             el Egreso de Licenciatura a través del CENEVAL.
                             <br><br>
                             Cada Institución tiene diferentes planes de estudio, según su enfoque y modelo educativo,
                             por lo que es imposible que cubra todas las áreas del Examen General de Conocimientos del
-                            CENEVAL, sin embargo con los conocimientos adquiridos en UNIMEX<sup>®</sup>, se cubre un gran
+                            CENEVAL, sin embargo con los conocimientos adquiridos en UNIMEX<sup>®</sup>, se cubre un
+                            gran
                             porcentaje de las áreas que examina el CENEVAL.
                             <br><br>
                             El Examen General de Conocimientos aplicado por CENEVAL; es válido si se obtiene como
