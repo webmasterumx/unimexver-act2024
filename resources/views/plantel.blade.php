@@ -111,7 +111,7 @@
                                 alt="{{ $plantelInNot->nombre }}">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title underlined-head text-uppercase"> plantel {{ $plantelInNot->titulo }}
+                            <h5 class="card-title underlined-head text-uppercase"> plantel {!! $plantelInNot->titulo !!}
                             </h5>
                             <p class="card-text"> {{ $plantelInNot->descripcion_corta }} </p>
                             <center>
