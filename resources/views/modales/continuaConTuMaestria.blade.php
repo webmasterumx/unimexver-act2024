@@ -5,20 +5,20 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 style="color: #004b93;" class="modal-title">PROGRAMA
-                    “Continúa con tu maestría en UNIMEX®”</h5>
+                    “Continúa con tu maestría en UNIMEX<sup>®</sup>”</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                En Universidad Mexicana puedes estudiar tu Maestría como continuación de tu Especialidad UNIMEX®. Al
+                En Universidad Mexicana puedes estudiar tu Maestría como continuación de tu Especialidad UNIMEX<sup>®</sup>. Al
                 terminar los 3 ciclos escolares de la Especialidad, puedes solicitar tu equivalencia de materias para
                 continuar con la Maestría cursando únicamente los últimos dos ciclos del programa equivalente.
                 <br><br>
                 <b>
-                    1. Requisitos para aplicar en el Programa “Continúa con tu Maestría en UNIMEX®”:
+                    1. Requisitos para aplicar en el Programa “Continúa con tu Maestría en UNIMEX<sup>®</sup>”:
                 </b>
                 <ol type="a">
                     <li>
-                        Haber cursado una Especialidad UNIMEX® con Maestría equivalente disponible y haber
+                        Haber cursado una Especialidad UNIMEX<sup>®</sup> con Maestría equivalente disponible y haber
                         aprobado todas las materias de los 3 ciclos escolares de la Especialidad.
                     </li>
                     <li>
@@ -27,7 +27,7 @@
                     </li>
                 </ol>
                 <b>
-                    2. Programas de Especialidad UNIMEX® que aplican para equivalencia de materias para Maestría:
+                    2. Programas de Especialidad UNIMEX<sup>®</sup> que aplican para equivalencia de materias para Maestría:
                 </b>
                 <div class="table-responsive">
                     <table class="table">
@@ -322,7 +322,7 @@
                         Si el programa que solicitas no se imparte en tu plantel para el ciclo escolar deseado, podrás:
                         <ul>
                             <li>
-                                Solicitar tu cambio a otro plantel UNIMEX® que cuente con disponibilidad en el grupo
+                                Solicitar tu cambio a otro plantel UNIMEX<sup>®</sup> que cuente con disponibilidad en el grupo
                                 deseado.
                             </li>
                             <li>

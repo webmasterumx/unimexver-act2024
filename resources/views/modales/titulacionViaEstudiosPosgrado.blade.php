@@ -25,7 +25,7 @@
                                 I. Titulación de Licenciatura vía Estudios de Posgrado.
                             </b>
                             Si elegiste esta opción de Titulación podrás inscribirte en uno de los programas de Posgrado
-                            de UNIMEX® y al terminar el 100% de los créditos podrás completar el trámite para obtener tu
+                            de UNIMEX<sup>®</sup> y al terminar el 100% de los créditos podrás completar el trámite para obtener tu
                             Título de Licenciatura.
                         </p>
                         <ol>
@@ -33,7 +33,7 @@
                                 Requisitos para Titulación vía Estudios de Posgrados:
                                 <ol type="a">
                                     <li>
-                                        Egresados de Licenciatura UNIMEX®.
+                                        Egresados de Licenciatura UNIMEX<sup>®</sup>.
                                         <ul>
                                             <li>Original y copia del Acta de Nacimiento.</li>
                                             <li>Original y copia del Certificado Total de Estudios de Licenciatura.</li>
@@ -88,7 +88,7 @@
                             <li>
                                 Presentar en Ventanilla Única una solicitud de autorización para ejercer esta opción,
                                 anexando la documentación oficial de la Institución donde se cursará el Posgrado. Una
-                                vez validada por UNIMEX®, se expedirá la carta de autorización.
+                                vez validada por UNIMEX<sup>®</sup>, se expedirá la carta de autorización.
                             </li>
                             <li>
                                 Hacer el pago total de la cuota administrativa para ejercer esta opción de Titulación.
@@ -100,12 +100,12 @@
                         <p>
                             Examen de Conocimientos Ceneval
                             <br><br>
-                            UNIMEX®, considera 1050 puntos, como puntaje mínimo para titularse vía Examen General para
+                            UNIMEX<sup>®</sup>, considera 1050 puntos, como puntaje mínimo para titularse vía Examen General para
                             el Egreso de Licenciatura a través del CENEVAL.
                             <br><br>
                             Cada Institución tiene diferentes planes de estudio, según su enfoque y modelo educativo,
                             por lo que es imposible que cubra todas las áreas del Examen General de Conocimientos del
-                            CENEVAL, sin embargo con los conocimientos adquiridos en UNIMEX®, se cubre un gran
+                            CENEVAL, sin embargo con los conocimientos adquiridos en UNIMEX<sup>®</sup>, se cubre un gran
                             porcentaje de las áreas que examina el CENEVAL.
                             <br><br>
                             El Examen General de Conocimientos aplicado por CENEVAL; es válido si se obtiene como
