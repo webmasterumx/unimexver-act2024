@@ -113,7 +113,7 @@
                         <div class="card-body">
                             <h5 class="card-title underlined-head text-uppercase"> plantel {!! $plantelInNot->titulo !!}
                             </h5>
-                            <p class="card-text"> {{ $plantelInNot->descripcion_corta }} </p>
+                            <p class="card-text"> {!! $plantelInNot->descripcion_corta !!} </p>
                             <center>
                                 <a href="{{ route('plantel', $plantelInNot->nombre) }}" class="btn btn-primary">VER MÁS</a>
                             </center>
