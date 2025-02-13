@@ -98,7 +98,7 @@
                     <br> PROFESIONISTAS</a>
             </div>
             <div class="col-12 col-md-2 col-lg-2 mt-2">
-                <a class="text-white" href="https://unimex.edu.mx/soyUNIMEX/" target="_blank">BLOG SOY UNIMEX</a>
+                <a class="text-white" href="https://unimex.edu.mx/soyUNIMEX/" target="_blank">BLOG SOY UNIMEX<sup>®</sup></a>
             </div>
             <div class="col-12 col-md-2 col-lg-2 mt-2">
                 <a class="text-white" href="{{ route('aviso_de_privacidad') }}" target="_blank">AVISO DE <br>
