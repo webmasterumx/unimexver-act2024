@@ -150,7 +150,7 @@
                     <li>
                         <b>Matrícula:</b> Al llenar este formulario quedas Pre-inscrito y generamos una matrícula que
                         usarás
-                        durante toda tu trayectoria académica en UNIMEX.
+                        durante toda tu trayectoria académica en UNIMEX<sup>®</sup>.
                     </li>
                     <li>
                         <b>Modalidades de Pago:</b> Contempla 3 alternativas para cubrir el monto de la Inscripción.
@@ -205,7 +205,7 @@
                         el
                         proceso de Inscripción. Al llenarlo te comprometes a proporcionar información verdadera. Tus
                         datos serán utilizados para tu trámite de ingreso a la institución y mantener contacto para
-                        orientarte e informarte sobre el status de tu proceso de Inscripción, noticias sobre UNIMEX y
+                        orientarte e informarte sobre el status de tu proceso de Inscripción, noticias sobre UNIMEX<sup>®</sup> y
                         promociones o eventos futuros. Por ningún motivo serán compartidos con otras Instituciones, o
                         utilizados con fines diferentes a los aquí establecidos. La información solicitada es:
                         <ol type="a">
@@ -279,7 +279,7 @@
                         sobre el importe del mismo.
                     </li>
                     <li>
-                        Al ser pre-inscrito eres responsable de la confirmación y cálculo del importe a pagar. UNIMEX te
+                        Al ser pre-inscrito eres responsable de la confirmación y cálculo del importe a pagar. UNIMEX<sup>®</sup> te
                         entrega los datos necesarios para el pago total y/o abonos.
                     </li>
                     <li>
