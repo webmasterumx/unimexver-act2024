@@ -105,7 +105,7 @@
                             <input class="form-check-input" type="checkbox" id="aceptar_empresasocc"
                                 name="aceptar_empresasocc" checked>
                             <label class="form-check-label ms-4 mt-3" for="aceptar_empresasocc">
-                                Estoy de acuerdo en ser contactado por UNIMEX® y acepto el <a
+                                Estoy de acuerdo en ser contactado por UNIMEX<sup>®</sup> y acepto el <a
                                     href="javascript:void(0);"
                                     onclick="window.open('{{ route('aviso_de_privacidad') }}','Privacidad','scrollbars=yes,width=1000,height=700')">
                                     aviso de privacidad.
