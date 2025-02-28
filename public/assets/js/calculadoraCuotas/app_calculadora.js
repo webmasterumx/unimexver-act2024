@@ -176,9 +176,19 @@ function establecerValoresCosto(data) {
 
     //datos de informacion
     $('#carreraInfo').html(`<b>${nombreNivel} en ${nombreCarrera}</b>`);
-    $('#plantelInfo').html(`<b>${nombrePlantel}</b>`);
-    $('#turnoInfo').html(`<b>${data.Turno}</b>`);
-    $('#horarioInfo').html(`<b>${data.Horario}</b>`);
+
+
+    if (nombrePlantel == "ONLINE") {
+        $('#plantelInfo').html(`<b>${nombrePlantel}</b>`);
+        $("#parte1").addClass("d-none");
+        $("#parte2").addClass("d-none");
+    } else {
+        $('#plantelInfo').html(`<b>${nombrePlantel}</b>`);
+        $('#turnoInfo').html(`<b>${data.Turno}</b>`);
+        $('#horarioInfo').html(`<b>${data.Horario}</b>`);
+    }
+
+
     $('#incioInfo').html(`<b>${data.DescripPer}</b>`);
     $('#vigenciaInfo').html(`<b>${data.Vigencia}</b>`);
 
