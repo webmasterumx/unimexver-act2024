@@ -123,6 +123,12 @@
                                 @endphp
                             @break
 
+                            @case(6)
+                                @php
+                                    $nombrePlantel = 'IZCALLI';
+                                @endphp
+                            @break
+
                             @default
                         @endswitch
                         <div class="col-12 col-md-12 col-lg-4">

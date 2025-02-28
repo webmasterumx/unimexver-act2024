@@ -435,6 +435,13 @@ class PreinscripcionEnLineaController extends Controller
                 $this->plantelInfo['ns'] = "3376";
                 $this->plantelInfo["referencia"] = "04855288945";
                 break;
+            case 6:
+                $this->plantelInfo['nombre'] = "IZCALLI";
+                $this->plantelInfo['direccion'] = "Av. Del Vidrio 15  <br> Col. Plaza Dorada <br>  Cuautitlán Izcalli <br>  Edo. Méx. C.P. 54760 <br>  R.F.C. UME-901015-M13";
+                $this->plantelInfo['empresa'] = "UNIVERSIDAD MEXICANA, S.C.";
+                $this->plantelInfo['ns'] = "3171";
+                $this->plantelInfo["referencia"] = "08700071031";
+                break;
 
             default:
                 # code...
