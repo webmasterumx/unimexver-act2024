@@ -48,6 +48,7 @@ Route::view('/datos/pago/preinscripcion', 'preinscripcionEnLinea.datosPago')->na
 Route::view("/registro_exitoso", "registroExitoso")->name('registro.exitoso');
 Route::view("/error_de_registro", "errorRegistro")->name("error.registro");
 Route::view("/prospectacion", "prospectacion.index")->name("prospectacion");
+Route::view("/reglamento", "reglamentoUnimex")->name("reglamentoUnimex");
 Route::post('/procesa/datos/folleto', [FormController::class, 'procesarFormularioFolleto'])->name('procesa.datos.folleto');
 Route::post('/procesa/datos/form/contacto', [FormController::class, 'procesaFormularioContacto'])->name('procesa.datos.contacto.inicial');
 

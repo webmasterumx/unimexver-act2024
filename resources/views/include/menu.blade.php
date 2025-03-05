@@ -148,7 +148,8 @@
 
                     <li class="d-block d-md-block d-lg-none text-center">
                         <a class="mt-1" style="display: inline-block"
-                            href="javascript:calculadoraHeader('{{ $abreviatura }}')" title="">Calculadora de Cuotas</a>
+                            href="javascript:calculadoraHeader('{{ $abreviatura }}')" title="">Calculadora de
+                            Cuotas</a>
                     </li>
                     <li class="d-block d-md-block d-lg-none text-center">
                         <a class="mt-1" style="display: inline-block"
@@ -346,12 +347,12 @@
 
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 left-gray-border">
                         <h5 class="hide">
-                            <a href="javascript:void(0);"
+                            <a href="{{ route('reglamentoUnimex') }}"
                                 onClick="window.open('http://www.facebook.com/sharer.php?u=http://www.unimex.edu.mx','Compartir','scrollbars=no,width=600,height=450')">Recomienda
                                 UNIMEX<sup>®</sup></a>
                         </h5>
                         <div class="card" style="min-height: 150px;">
-                            <a href="javascript:void(0);"
+                            <a href="{{ route('reglamentoUnimex') }}"
                                 onClick="window.open('http://www.facebook.com/sharer.php?u=http://www.unimex.edu.mx','Compartir','scrollbars=no,width=600,height=450')">
                                 <div class="parent" style="width: 150px;">
                                     <div class="children bg-recomienda">
@@ -361,7 +362,7 @@
                             </a>
                             <div class="card-body">
                                 <p class="card-text" style="text-align: center;">
-                                    <a href="javascript:void(0);"
+                                    <a href="{{ route('reglamentoUnimex') }}"
                                         onClick="window.open('http://www.facebook.com/sharer.php?u=http://www.unimex.edu.mx','Compartir','scrollbars=no,width=600,height=450')"><span
                                             class="blue-text">Recomienda UNIMEX<sup>®</sup></span></a>
 
@@ -415,13 +416,11 @@
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 left-gray-border">
                         <h5 class="hide">
-                            <a href="javascript:void(0);"
-                                onClick="window.open('{{ asset('assets/pdf/reglamentoum.pdf') }}','Reglamento UNIMEX','scrollbars=no,width=580,height=600')">Reglamento
+                            <a href="{{ route('reglamentoUnimex') }}">Reglamento
                                 UNIMEX<sup>®</sup></a>
                         </h5>
                         <div class="card" style="min-height: 150px;">
-                            <a href="javascript:void(0);"
-                                onClick="window.open('{{ asset('assets/pdf/reglamentoum.pdf') }}','Reglamento UNIMEX','scrollbars=no,width=580,height=600')">
+                            <a href="{{ route('reglamentoUnimex') }}">
                                 <div class="parent" style="width: 150px;">
                                     <div class="children bg-reglamento">
                                         <span class="linka">Ver Más</span>
@@ -430,9 +429,8 @@
                             </a>
                             <div class="card-body">
                                 <p class="card-text" style="text-align: center;">
-                                    <a href="javascript:void(0);"
-                                        onClick="window.open('{{ asset('assets/pdf/reglamentoum.pdf') }}','Reglamento UNIMEX','scrollbars=no,width=580,height=600')"><span
-                                            class="blue-text">Reglamento UNIMEX<sup>®</sup></span></a>
+                                    <a href="{{ route('reglamentoUnimex') }}"><span class="blue-text">Reglamento
+                                            UNIMEX<sup>®</sup></span></a>
 
                                 </p>
 
@@ -626,8 +624,10 @@
                             @endforeach
                         </ul>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-gray-border d-bloc d-md-block d-lg-none d-xl-none">
-                        <h5 onclick="subnav.list.toggle('posgradoDistancia')" id="posgradoDistancia">Posgrados ONLINE</h5>
+                    <div
+                        class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-gray-border d-bloc d-md-block d-lg-none d-xl-none">
+                        <h5 onclick="subnav.list.toggle('posgradoDistancia')" id="posgradoDistancia">Posgrados ONLINE
+                        </h5>
                         <ul>
                             @foreach ($data['menus'] as $menu)
                                 @if ($menu->estado == 8 && $menu->mostrar == 1)
