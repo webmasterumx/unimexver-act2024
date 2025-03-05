@@ -121,7 +121,7 @@
                     <li>Aportar la documentación que sustente su petición.</li>
                 </ol>
                 Importante: Cualquier modificación a este Aviso de Privacidad podrá consultarlo en
-                <a href="#">unimex.edu.mx</a> o <a href="#">unimexver.edu.mx</a>
+                <a href="https://testing.nuevo.unimex.edu.mx/">unimex.edu.mx</a> o <a href="https://testing.nuevo.unimexver.edu.mx/">unimexver.edu.mx</a>
                 </p>
             </div>
         </div>

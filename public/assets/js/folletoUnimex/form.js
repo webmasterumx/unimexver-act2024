@@ -46,7 +46,7 @@ $("#form_folleto").validate({
     submitHandler: function (form) {
         console.log(form);
 
-         let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
+        let nombreFolleto = $('#nombreFolleto').val().replace(/ /g, "");
 
         if (nombreFolleto == "") {
             Swal.fire({
@@ -141,6 +141,8 @@ $("#form_folleto").validate({
                     window.open(data, '_blank');
                 }
 
+                document.getElementById("form_folleto").reset();
+
                 $("#descargaFolleto").prop("disabled", false);
                 $('#descargaFolleto').html(`
                      ¡DESCARGAR!
@@ -151,7 +153,7 @@ $("#form_folleto").validate({
             }).fail(function (error) {
 
             });
-        } 
+        }
 
     }
 });
