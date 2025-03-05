@@ -250,10 +250,10 @@
                                         Tu selección ha sido: <span id="carreraInfo" style="color: #004b93;"><b>
                                                 LICENCIATURA EN DISEÑO
                                                 GRAFICO</b></span> <br>
-                                        Plantel: <span id="plantelInfo" style="color: #004b93;"><b></b></span> 
+                                        Plantel: <span class="fw-bold" id="plantelInfo" style="color: #004b93;"><b></b></span> 
                                         <span id="parte1">en
-                                            horario:</span> <span id="turnoInfo" style="color: #004b93"><b></b></span> <span id="parte2">de</span>
-                                        <span id="horarioInfo" style="color: #004b93"><b></b></span>
+                                            horario:</span> <span class="fw-bold" id="turnoInfo" style="color: #004b93"><b></b></span> <span  id="parte2">de</span>
+                                        <span class="fw-bold" id="horarioInfo" style="color: #004b93"><b></b></span>
                                         <br>
                                         Inicio de clases: <span id="incioInfo" style="color: #004b93"><b></b></span><br>
                                         Vigencia: <span id="vigenciaInfo" style="color: #004b93"><b></b></span><br>

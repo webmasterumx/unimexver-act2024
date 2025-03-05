@@ -177,15 +177,29 @@ function establecerValoresCosto(data) {
     //datos de informacion
     $('#carreraInfo').html(`<b>${nombreNivel} en ${nombreCarrera}</b>`);
 
-
-    if (nombrePlantel == "ONLINE" || data.Turno == "ONLINE" || data.Turno == "OnLine") {
-        $('#plantelInfo').html(`<b>${nombrePlantel}</b>`);
+    if (nombrePlantel == "ONLINE") {
+        $('#plantelInfo').html(`${nombrePlantel}`);
+        $('#turnoInfo').html(`${data.Turno}`);
         $("#parte1").addClass("d-none");
+        $("#turnoInfo").addClass("d-none");
         $("#parte2").addClass("d-none");
+        $("#horarioInfo").addClass("d-none");
+    }
+    else if (data.Turno == "ONLINE" || data.Turno == "OnLine") {
+        $('#plantelInfo').html(`${nombrePlantel}`);
+        $('#turnoInfo').html(`${data.Turno}`);
+        $("#parte2").addClass("d-none");
+        $("#horarioInfo").addClass("d-none");
+
     } else {
-        $('#plantelInfo').html(`<b>${nombrePlantel}</b>`);
-        $('#turnoInfo').html(`<b>${data.Turno}</b>`);
-        $('#horarioInfo').html(`<b>${data.Horario}</b>`);
+        $('#plantelInfo').html(`${nombrePlantel}`);
+        $('#turnoInfo').html(`${data.Turno}`);
+        $('#horarioInfo').html(`${data.Horario}`);
+
+        $("#parte1").removeClass("d-none");
+        $("#parte2").removeClass("d-none");
+        $("#turnoInfo").removeClass("d-none");
+        $("#horarioInfo").removeClass("d-none");
     }
 
 
