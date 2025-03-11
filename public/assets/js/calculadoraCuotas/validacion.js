@@ -108,6 +108,9 @@ $("#form_calculadora").validate({
                         let nombrePlantel = $('select[name="selectPlantel"] option:selected').text();
                         let nombrePeriodo = $('select[name="selectPeriodo"] option:selected').text();
 
+
+                        gtag('event', 'adw_formulario_contacto');
+
                         let formData = new FormData(form);
                         formData.append('nombreNivel', nombreNivel);
                         formData.append('nombrePlantel', nombrePlantel);
