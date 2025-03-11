@@ -11,37 +11,6 @@
     <!-- METAS -->
     @yield('metas')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8W3ET6H34Y"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            window.dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-8W3ET6H34Y');
-    </script>
-    <!--Metro-->
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TDWNMQ');
-    </script>
-    <!-- End Google Tag Manager -->
 
     <!-- FONTS -->
     <link
@@ -129,8 +98,7 @@
                     <br> PROFESIONISTAS</a>
             </div>
             <div class="col-12 col-md-2 col-lg-2 mt-2">
-                <a class="text-white" href="https://unimex.edu.mx/soyUNIMEX/" target="_blank">BLOG SOY
-                    UNIMEX<sup>®</sup></a>
+                <a class="text-white" href="https://unimex.edu.mx/soyUNIMEX/" target="_blank">BLOG SOY UNIMEX<sup>®</sup></a>
             </div>
             <div class="col-12 col-md-2 col-lg-2 mt-2">
                 <a class="text-white" href="{{ route('aviso_de_privacidad') }}" target="_blank">AVISO DE <br>
