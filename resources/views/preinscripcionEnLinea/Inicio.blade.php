@@ -104,10 +104,11 @@
             </div>
         </div>
     </div>
+    @include('modales.preinscripcionAviso')
+    @include('modales.confirmacion')
 @endsection
 
-@include('modales.preinscripcionAviso')
-@include('modales.confirmacion')
+
 
 @section('scripts')
     <script>
